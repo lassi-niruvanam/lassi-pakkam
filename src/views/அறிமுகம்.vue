@@ -80,6 +80,7 @@
                       <v-autocomplete
                         :items="niral_mozhikal"
                         v-model="niral_mozhi"
+                        label="கணினி மொழி"
                         cache-items
                         hide-no-data
                         outlined
@@ -92,6 +93,7 @@
                       <v-autocomplete
                         :items="mozhikal"
                         v-model="ul_mozhi"
+                        label="மூல் மொழி"
                         cache-items
                         hide-no-data
                         outlined
@@ -104,6 +106,7 @@
                       <v-autocomplete
                         :items="niral_enuru_muraimaikal"
                         v-model="ul_niral_enuru"
+                        label="எண்ணுரு முறைமை"
                         cache-items
                         hide-no-data
                         outlined
@@ -169,7 +172,7 @@
                 </v-row>
                 </v-toolbar>
                 <v-textarea
-                  v-model="udaranam_urai"
+                  v-model="velidu"
                   :height="500"
                   flat
                   :no-resize="true"
@@ -192,13 +195,29 @@ export default {
     name: 'அறிமுகம்',
     watch: {
       niral_mozhi: function (val) {
-        this.udaranam_urai = this.udaranankal[val]
+        this.udaranam_urai = this.lassi(this.udaranankal[val] || '', this.ul_mozhi, this.ul_niral_enuru)
+      },
+      ul_mozhi: function () {
+        this.udaranam_urai = this.lassi(this.udaranankal[this.niral_mozhi] || '', this.ul_mozhi, this.ul_niral_enuru)
+      },
+      ul_niral_enuru: function () {
+        this.udaranam_urai = this.lassi(this.udaranankal[this.niral_mozhi] || '', this.ul_mozhi, this.ul_niral_enuru)
+      },
+    },
+    computed: {
+      velidu: function() {
+        return this.lassi(this.udaranam_urai, this.vel_mozhi, this.vel_niral_enuru)
+      }
+    },
+    methods: {
+      lassi: function(txt, mozhi, ennuru) {
+        return txt + ' ' + mozhi + ' ' + ennuru
       }
     },
     data: () => ({
       niral_mozhikal: ['பைத்தான்', 'யாவாக்கிறிட்டு', 'ஜேஸான்'],
       niral_mozhi: 'பைத்தான்',
-      mozhikal: ['தமிழ்', 'ਪਂਜਾਬੀ', 'فارسی', 'français', 'English'],
+      mozhikal: ['தமிழ்', 'ਪੰਜਾਬੀ', 'فارسی', 'français', 'English'],
       ul_mozhi: 'தமிழ்',
       vel_mozhi: 'English',
       niral_enuru_muraimaikal: ['தனிப்பட்ட', 'தமிழ்', 'ਗੁਰਸੁਥੀ', 'فارسی', 'Latin'],
@@ -206,7 +225,7 @@ export default {
       vel_niral_enuru: 'தனிப்பட்ட',
       udaranankal: {
         'பைத்தான்': `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`,
-        'யாவாக்கிறிட்டு': `class Circle {\n    constructor(height, width) {\n        this.height = height;\n        this.width = width;\n    }\n}`,
+        'யாவாக்கிறிட்டு': `class Circle {\n    constructor(height, width) {\n        this.height = height;\n        this.width = width;\n    }\n}`
       },
       udaranam_urai: `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`
     })

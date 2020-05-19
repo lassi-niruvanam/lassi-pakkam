@@ -51,6 +51,10 @@
       <v-icon>mdi-heart</v-icon>
     </v-btn>
 
+    <v-btn icon>
+      <v-icon>mdi-login-variant</v-icon>
+    </v-btn>
+
     <v-btn
       icon
       href="https://github.com/lassi-samaaj/lassi-ilakkanangal"
@@ -68,7 +72,7 @@ export default {
     data: () => ({
       tab: 'அறிமுகம்',
       items: [
-        'அறிமுகம்', 'கேள்விகள்', 'பங்களி'
+        'அறிமுகம்', 'கேள்விகள்', 'பங்களி', 'மேம்பாடு'
       ],
     }),
 

@@ -23,6 +23,10 @@ export default new Router({
             component: () => import('./views/கேள்விகள்.vue')
         },
         {
+            path: '/மேம்பாடு',
+            name: 'மேம்பாடு',
+            component: () => import('./views/மேம்பாடு.vue')
+        },{
             path: '/sign-in',
             name: 'signin',
             component: () => import('./views/Signin.vue')
