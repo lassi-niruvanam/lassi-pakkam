@@ -80,7 +80,7 @@
                       <v-autocomplete
                         :items="niral_mozhikal"
                         v-model="niral_mozhi"
-                        label="கணினி மொழி"
+                        label="நிரல் மொழி"
                         cache-items
                         hide-no-data
                         outlined
@@ -149,6 +149,7 @@
                       <v-autocomplete
                         :items="mozhikal"
                         v-model="vel_mozhi"
+                        label="வேண்டிய மொழி"
                         cache-items
                         hide-no-data
                         outlined
@@ -161,6 +162,7 @@
                       <v-autocomplete
                         :items="niral_enuru_muraimaikal"
                         v-model="vel_niral_enuru"
+                        label="எண்ணுரு முறைமை"
                         cache-items
                         hide-no-data
                         outlined
