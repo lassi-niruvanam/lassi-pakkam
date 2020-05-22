@@ -172,7 +172,7 @@ export default {
           }
         },
         {
-          'பெயர்': 'ஸீயெஸெஸ்',
+          'பெயர்': 'விபாதா',
           'மூல்மொழி': 'English',
           'படம்':'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg',
           'பொருந்தக்கூடிய': {'ஒருங்குறி': true, 'இல்லக்கணம்': true, '': ''},
@@ -203,7 +203,7 @@ export default {
           }
         },
         {
-          'பெயர்': 'C++',
+          'பெயர்': 'சி++',
           'மூல்மொழி': 'English',
           'படம்':'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1920px-ISO_C%2B%2B_Logo.svg.png',
           'பொருந்தக்கூடிய': {'ஒருங்குறி': false, 'இல்லக்கணம்': true, '': ''},
@@ -213,7 +213,7 @@ export default {
           }
         },
         {
-          'பெயர்': 'Java',
+          'பெயர்': 'யாவா',
           'மூல்மொழி': 'English',
           'படம்':'https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1024px-Java_programming_language_logo.svg.png',
           'பொருந்தக்கூடிய': {'ஒருங்குறி': false, 'இல்லக்கணம்': true, '': ''},
@@ -223,7 +223,7 @@ export default {
           }
         },
         {
-          'பெயர்': 'React',
+          'பெயர்': 'ரியாக்ட்',
           'மூல்மொழி': 'English',
           'படம்':'https://cdn.auth0.com/blog/react-js/react.png',
           'பொருந்தக்கூடிய': {'ஒருங்குறி': false, 'இல்லக்கணம்': true, '': ''},

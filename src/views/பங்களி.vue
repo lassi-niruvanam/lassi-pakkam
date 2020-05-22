@@ -22,7 +22,7 @@
               color="orange"
               outlined
             >
-              பங்களி
+              {{ $t('பங்களி.பங்களி') }}
               <v-icon right>mdi-arrow-right</v-icon>
             </v-btn>
 

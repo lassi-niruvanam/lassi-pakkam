@@ -11,12 +11,11 @@
         </v-col>
         <v-col class="mb-4">
           <h1 class="display-2 font-weight-bold mb-3">
-            லஸ்ஸிக்கு உங்களை வரவேற்கிறோம்
+            {{ $t('அறிமுகம்.தலைப்பு') }}
           </h1>
-          <v-card flat class="mx-auto" max-width="550">
+          <v-card flat class="mx-auto" max-width="380">
             <p class="subheading font-weight-regular">
-              லஸ்ஸி என்பது கணினி மொழியின் மொழியாக்கத்துக்காக
-              <br>ஒரு மென்பொருள் சட்டகம் ஆகும்.
+              {{ $t('அறிமுகம்.துணைத்தலைப்பு') }}
             </p>
           </v-card>
         </v-col>
@@ -26,13 +25,12 @@
           cols="12"
         >
           <h2 class="headline font-weight-bold mb-3">
-            எதற்கு தேவை?
+            {{ $t('அறிமுகம்.எதற்கு') }}
           </h2>
 
           <v-card flat class="mx-auto" max-width="550">
             <p class="subheading font-weight-regular">
-              ஒவ்வொரு நிரல் மொழியுக்கு பின்னால் ஒரு இயற்கை அல்லது மநிதர் மொழி உள்ளது.
-              லஸ்ஸியால் எல்லோரால் சொந்த மொழியில் நிரலாக்கம் செய்ய முடியும்.
+              {{ $t('அறிமுகம்.எதற்கு_பதில்') }}
             </p>
           </v-card>
         </v-col>
@@ -42,13 +40,12 @@
           cols="12"
         >
           <h2 class="headline font-weight-bold mb-3">
-            எப்படி வேலை செய்கிறது?
+            {{ $t('அறிமுகம்.எப்படி') }}
           </h2>
 
           <v-card flat class="mx-auto" max-width="550">
             <p class="subheading font-weight-regular">
-              தரப்படுத்தப்பட்ட இலக்கணம் மொழியாக்கம் விதிகள் மற்றும் மொழிபெயர்ப்புகளால்
-              லஸ்ஸி உங்கள் நிரலின் மொழிமாற்றம் செய்யும்.
+              {{ $t('அறிமுகம்.எப்படி_பதில்') }}
             </p>
           </v-card>
         </v-col>
@@ -58,12 +55,12 @@
           cols="12"
         >
           <h2 class="headline font-weight-bold mb-3">
-            செயலில் உதாரணம்
+            {{ $t('அறிமுகம்.செயலில்') }}
           </h2>
 
           <v-card flat class="mx-auto" max-width="550">
             <p class="subheading font-weight-regular">
-              கீழ்கண்ட பெட்டியில் லஸ்ஸியின் திறன்களை சோதியுங்கள்.
+              {{ $t('அறிமுகம்.செயலில்_விவரம்') }}
             </p>
           </v-card>
         </v-col>
@@ -80,7 +77,7 @@
                       <v-autocomplete
                         :items="niral_mozhikal"
                         v-model="niral_mozhi"
-                        label="நிரல் மொழி"
+                        :label="$t('அறிமுகம்.உதாரணம்.நிரல்_மொழி')"
                         cache-items
                         hide-no-data
                         outlined
@@ -93,7 +90,7 @@
                       <v-autocomplete
                         :items="mozhikal"
                         v-model="ul_mozhi"
-                        label="மூல் மொழி"
+                        :label="$t('அறிமுகம்.உதாரணம்.மூல்_மொழி')"
                         cache-items
                         hide-no-data
                         outlined
@@ -104,10 +101,9 @@
                     </v-col>
                     <v-col cols=4 class="pr-0">
                       <v-autocomplete
-                        :items="niral_enuru_muraimaikal"
+                        :items="[$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட')].concat(niral_enuru_muraimaikal)"
                         v-model="ul_niral_enuru"
-                        label="எண்ணுரு முறைமை"
-                        cache-items
+                        :label="$t('அறிமுகம்.உதாரணம்.எண்ணுரு')"
                         hide-no-data
                         outlined
                         dense
@@ -122,7 +118,7 @@
                   height="500"
                   flat
                   :no-resize="true"
-                  label="லஸ்ஸிக்கு உள்ளீடு"
+                  :label="$t('அறிமுகம்.உதாரணம்.உள்ளீடு')"
                   outlined
                   color="amber accent-4"
                 ></v-textarea>
@@ -137,7 +133,7 @@
                       <v-autocomplete
                         :items="niral_mozhikal"
                         v-model="niral_mozhi"
-                        readonly
+                        disabled
                         hide-no-data
                         outlined
                         dense
@@ -149,7 +145,7 @@
                       <v-autocomplete
                         :items="mozhikal"
                         v-model="vel_mozhi"
-                        label="வேண்டிய மொழி"
+                        :label="$t('அறிமுகம்.உதாரணம்.வேண்டிய_மொழி')"
                         cache-items
                         hide-no-data
                         outlined
@@ -160,10 +156,9 @@
                     </v-col>
                     <v-col cols=4 class="pr-0">
                       <v-autocomplete
-                        :items="niral_enuru_muraimaikal"
+                        :items="[$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட')].concat(niral_enuru_muraimaikal)"
                         v-model="vel_niral_enuru"
-                        label="எண்ணுரு முறைமை"
-                        cache-items
+                        :label="$t('அறிமுகம்.உதாரணம்.எண்ணுரு')"
                         hide-no-data
                         outlined
                         dense
@@ -178,7 +173,7 @@
                   :height="500"
                   flat
                   :no-resize="true"
-                  label="வெளியீடு"
+                  :label="$t('அறிமுகம்.உதாரணம்.வெளியீடு')"
                   outlined
                   color="amber accent-4"
                   :readonly="true"
@@ -193,6 +188,8 @@
 </template>
 
 <script>
+const mozhikal = ['தமிழ்', 'ਪੰਜਾਬੀ', 'فارسی', 'français', 'English']
+
 export default {
     name: 'அறிமுகம்',
     watch: {
@@ -216,21 +213,23 @@ export default {
         return txt + ' ' + mozhi + ' ' + ennuru
       }
     },
-    data: () => ({
-      niral_mozhikal: ['பைத்தான்', 'யாவாக்கிறிட்டு', 'ஜேஸான்'],
-      niral_mozhi: 'பைத்தான்',
-      mozhikal: ['தமிழ்', 'ਪੰਜਾਬੀ', 'فارسی', 'français', 'English'],
-      ul_mozhi: 'தமிழ்',
-      vel_mozhi: 'English',
-      niral_enuru_muraimaikal: ['தனிப்பட்ட', 'தமிழ்', 'ਗੁਰਸੁਥੀ', 'فارسی', 'Latin'],
-      ul_niral_enuru: 'தனிப்பட்ட',
-      vel_niral_enuru: 'தனிப்பட்ட',
-      udaranankal: {
-        'பைத்தான்': `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`,
-        'யாவாக்கிறிட்டு': `class Circle {\n    constructor(height, width) {\n        this.height = height;\n        this.width = width;\n    }\n}`
-      },
-      udaranam_urai: `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`
-    })
+    data: function() {
+      return {
+        niral_mozhikal: ['பைத்தான்', 'யாவாக்கிறிட்டு', 'ஜேஸான்'],
+        niral_mozhi: 'பைத்தான்',
+        mozhikal: mozhikal,
+        ul_mozhi: mozhikal.includes(this.$i18n.locale) ? this.$i18n.locale : 'தமிழ்',
+        vel_mozhi: 'English',
+        niral_enuru_muraimaikal: ['தமிழ்', 'ਗੁਰਸੁਥੀ', 'فارسی', 'Latin'],
+        ul_niral_enuru: 'தனிப்பட்ட',
+        vel_niral_enuru: 'தனிப்பட்ட',
+        udaranankal: {
+          'பைத்தான்': `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`,
+          'யாவாக்கிறிட்டு': `class Circle {\n    constructor(height, width) {\n        this.height = height;\n        this.width = width;\n    }\n}`
+        },
+        udaranam_urai: `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`
+      }
+    }
 };
 </script>
 

@@ -35,6 +35,11 @@ export default new Router({
             path: '/பங்களி',
             name: 'பங்களி',
             component: () => import('./views/பங்களி.vue')
+        },
+        {
+            path: '/பதிவிறக்கங்கள்',
+            name: 'பதிவிறக்கங்கள்',
+            component: () => import('./views/பதிவிறக்கங்கள்.vue')
         }
     ]
 });

@@ -29,7 +29,7 @@
           :ripple="false"
           class="font-weight-black"
         >
-          {{ item }}
+          {{ $t('தாவல்.' + item) }}
         </v-tab>
     </v-tabs>
 
@@ -43,16 +43,45 @@
       >
     </v-text-field>
 
-    <v-btn icon>
-      <v-icon>mdi-earth</v-icon>
-    </v-btn>
+    <v-menu
+      transition="slide-y-transition"
+      bottom
+      offset-y offset-x
+      min-width="225"
+    >
+      <template v-slot:activator="{ on }">
+        <v-btn icon v-on="on">
+          <v-icon>mdi-earth</v-icon>
+        </v-btn>
+      </template>
+      <v-list>
+      <v-list-item
+        v-for="(item, i) in மொழிகள்"
+        :key="i"
+        @click="mozhimattram(item)"
+      >
+        <v-list-item-action>
+          <v-icon v-if="mozhi === item">mdi-check</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+          <v-list-item-title>{{ item }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
+
+      <v-list-item :ripple="false"  @click.stop="dialog = true">
+        <v-list-item-action>
+          <v-icon>mdi-plus</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+          <v-list-item-title>{{ $t('மொழி.மேலும்') }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+    </v-menu>
 
     <v-btn icon>
       <v-icon>mdi-heart</v-icon>
-    </v-btn>
-
-    <v-btn icon>
-      <v-icon>mdi-login-variant</v-icon>
     </v-btn>
 
     <v-btn
@@ -63,6 +92,10 @@
       <v-icon>mdi-github</v-icon>
     </v-btn>
 
+    <v-btn icon>
+      <v-icon>mdi-login-variant</v-icon>
+    </v-btn>
+
   </v-app-bar>
 </template>
 
@@ -71,10 +104,20 @@ export default {
     name: 'AppNavigation',
     data: () => ({
       tab: 'அறிமுகம்',
+      மொழிகள்: [
+        'தமிழ்', 'français', 'ਪੰਜਾਬੀ', 'Kaqchikel', "Tz'utujil", "Kanyen'ké:ha", 'پنجابی'
+      ],
       items: [
-        'அறிமுகம்', 'கேள்விகள்', 'மேம்பாடு', 'பங்களி'
+        'அறிமுகம்', 'கேள்விகள்', 'மேம்பாடு', 'பங்களி', 'பதிவிறக்கங்கள்'
       ],
     }),
+    methods: {
+      mozhimattram: function (மொழி) {
+        this.$vuetify.lang.current = மொழி
+        this.$i18n.locale = மொழி
+        this.$cookies.set('மொழி', மொழி)
+      }
+    }
 
 };
 </script>
