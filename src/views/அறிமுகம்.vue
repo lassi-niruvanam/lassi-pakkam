@@ -225,7 +225,7 @@ export default {
         vel_niral_enuru: 'தனிப்பட்ட',
         udaranankal: {
           'பைத்தான்': `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`,
-          'யாவாக்கிறிட்டு': `class Circle {\n    constructor(height, width) {\n        this.height = height;\n        this.width = width;\n    }\n}`
+          'யாவாக்கிறிட்டு': `class Circle {\n    constructor(radius) {\n        this.radius = radius;\n    }\n}`
         },
         udaranam_urai: `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`
       }

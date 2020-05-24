@@ -40,7 +40,7 @@
          "கேள்வி": "எதற்கு சாதாரன் ஆங்கிலத்தில் நிரலாக்கம் செய்ய முடியாது?",
          "பதில்": {
            "௧": "உன்கள் மொழி எந்த இருந்தாலோ, [நிரலாக்கம் செய்யும் வாய்ப்பு இருக்க வேண்டும்](https://www.wired.com/story/coding-is-for-everyoneas-long-as-you-speak-english/).",
-           "௨": "வேவ்வேறு ஆங்கில மொழி மூலம் எழுதப்பட்ட நிரலாக்க மொழிகளில் இடையே மாற்றம் செய்யும் பல நிரல்மொழிமாற்றிகள் ஏற்கனவை உள்ளன. உதாரணத்துக்காக, காஃபீக்கிறிட்டு, ரியாக்ட், மற்றும் வியூ ஆகிய மொழிகள் அல்லது சட்டகங்கள் எல்லாம் கணினியால் பயன்ப்படுத்தும் முன்னால் யாவாக்கிறிட்டுக்கு மாற்றப்பட்டன. ஆனால் இந்த மொழிகள் எல்லாம் சாதாரன யாவாக்கிறிட்டு அல்லது இருமவடிவ உரையை விட நம் சின்ன மனிதர் மூளைகளுக்காக சுலபமாக இருக்கிறதால், நாம் இந்த மொழிகளில் தானே நிரல் குறியீடு எழுதி, இறுதியில் ஒரு நிரல்மொழிமாற்றியால் அவற்றை கணினிக்கு புரிந்த வடிவத்துக்கு மாற்றுகிறோம்.",
+           "௨": "வேவ்வேறு ஆங்கில மொழி மூலம் எழுதப்பட்ட நிரலாக்க மொழிகளில் இடையே மாற்றம் செய்யும் பல நிரல்மொழிமாற்றிகள் ஏற்கனவை உள்ளன. உதாரணத்துக்காக, [காஃபீக்கிறிட்டு](https://coffeescript.org/), [ரியாக்ட்](https://ta.reactjs.org/), மற்றும் [வியூ](https://fr.vuejs.org/index.html) ஆகிய மொழிகள் அல்லது சட்டகங்கள் எல்லாம் கணினியால் பயன்ப்படுத்தும் முன்னால் யாவாக்கிறிட்டுக்கு மாற்றப்பட்டன. ஆனால் இந்த மொழிகள் எல்லாம் சாதாரன யாவாக்கிறிட்டு அல்லது இருமவடிவ உரையை விட நம் சின்ன மனிதர் மூளைகளுக்காக சுலபமாக இருக்கிறதால், நாம் இந்த மொழிகளில் தானே நிரல் குறியீடு எழுதி, இறுதியில் ஒரு நிரல்மொழிமாற்றியால் அவற்றை கணினிக்கு புரிந்த வடிவத்துக்கு மாற்றுகிறோம்.",
            "௩": "இறுதியில், லஸ்ஸி ஒரு சர்வதேச நிரல்மொழிமாற்றி, வேறு ஒன்றும் இல்லை."
          }
        },
@@ -74,7 +74,46 @@
      }
   },
   "ਪੰਜਾਬੀ": {"மொழி": {"மேலும்": "ਹੋਰ"}},
-  "हिंदी": {"மொழி": {"மேலும்": "और"}},
+  "हिंदी": {
+    "மொழி": {"மேலும்": "और"},
+    "பங்களி": {"பங்களி": "योगदान"},
+    "தாவல்": {
+      "அறிமுகம்": "परिचय",
+      "கேள்விகள்": "प्रश्न",
+      "மேம்பாடு": "प्रगति",
+      "பங்களி": "योगदान",
+      "பதிவிறக்கங்கள்": "स्थापनाएं"
+     },
+    "அறிமுகம்": {
+      "தலைப்பு": "लस्सी पर आपका स्वागत हो",
+      "துணைத்தலைப்பு": "लस्सी संगणक भाषाओं के अनुवाद के लिये विनिर्देश होता है।",
+      "எதற்கு": "लस्सी की क्या आवश्यकता?",
+      "எதற்கு_பதில்": "हर एक संगणक भाषा के निचे एक मानव या प्राकृतिक भाषा है। लस्सी से ये संभाव हो जाता है कि हर किसी अपने मात्रभाषा में ही संगणक संकेत लिखें।",
+      "எப்படி": "काम कैसा करता है?",
+      "எப்படி_பதில்": "लस्सी व्यााकरण के अनुवाद के निर्दिष्ट नियम के अनुसार आपकी संकेत के अनुवाद कर देता है।",
+      "செயலில்": "उपयोग में उदाहरण",
+      "செயலில்_விவரம்": "निचे दिये गए डिब्बे में लस्सी की क्षमताओं के अन्वेशण कीजिये।",
+      "உதாரணம்": {
+        "நிரல்_மொழி": "संगणक भाषा",
+        "மூல்_மொழி": "स्रोत भाषा",
+        "எண்ணுரு": "संख्या प्रणाली",
+        "உள்ளீடு": "निवेश",
+        "வேண்டிய_மொழி": "लक्ष्य भाषा",
+        "வெளியீடு": "परिणाम",
+        "தனிப்பட்ட": "स्वचालित"
+      }
+    },
+    "கேள்விகள்": {
+      "தலைப்பு": "बार बार पूछे जाने वाले प्रश्न",
+      "பெயர்": {
+        "கேள்வி": "उसका नाम क्यों है लस्सी?",
+        "பதில்": {
+          "௧": "क्यों नहीं?"
+        }
+      }
+    }
+  },
+  "پنجابی": {},
   "Kaqchikel": {"மொழி": {"மேலும்": "Chïk"}},
   "français": {
     "மொழி": {"மேலும்": "Plus"},
@@ -90,11 +129,11 @@
       "தலைப்பு": "Bienvenue à Lassi",
       "துணைத்தலைப்பு": "Lassi est une infrastructure logicielle pour la traduction des langages informatiques.",
       "எதற்கு": "À quoi est-ce que cela sert ?",
-      "எதற்கு_பதில்": "Chaque langage informatique este basé sur une langue humaine. Lassi vous donne la liberté d'écrire votre code dans la languee humaine de votre choix.",
+      "எதற்கு_பதில்": "Chaque langage informatique est basé sur une langue humaine. Lassi vous donne la liberté d'écrire votre code dans la languee humaine de votre choix.",
       "எப்படி": "Comment est-ce que cela fonctionne ?",
-      "எப்படி_பதில்": "Lassi compile votre code à base de traductions de grammaires standardisées.",
+      "எப்படி_பதில்": "Lassi compile votre code à base de règles de traduction standardisées pour la grammaire de chaque langage informatique inclus.",
       "செயலில்": "Démonstration en action",
-      "செயலில்_விவரம்": "Vous pouvez essayer les fonctionnalités de Lassi dans l'espace ci-dessous.",
+      "செயலில்_விவரம்": "Vous pouvez explorer les fonctionnalités de Lassi dans l'espace ci-dessous.",
       "உதாரணம்": {
         "நிரல்_மொழி": "Langage informatique",
         "மூல்_மொழி": "Langue source",
@@ -117,7 +156,7 @@
         "கேள்வி": "Pourquoi ne pas simplement écrire son code en anglais ?",
         "பதில்": {
           "௧": "Tout le monde devrait avoir l'opportunité de devenir programmeuse ou programmeur, [peu importe leur langue](https://www.wired.com/story/coding-is-for-everyoneas-long-as-you-speak-english/).",
-          "௨": "Il existe déjà des transpileurs qui convertissent entre de différents langages informatiques. Des langages et infrastructures tels que CoffeeScript, React, et Vue doivent tous être convertis en JavaScript standard avant leur exécution par l'ordinateur. C'est justement parce que ces langages sont plus faciles que le JavaScript ou le code binaire pour nos petits cerveaux que nous prenons la peine d'écrire notre code dans ces langages avant de les compiler.",
+          "௨": "Il existe déjà des transpileurs qui convertissent entre de différents langages informatiques. Des langages et infrastructures tels que [CoffeeScript](https://coffeescript.org/), [React](https://fr.reactjs.org/), et [Vue](https://fr.vuejs.org/index.html) doivent tous être convertis en JavaScript standard avant leur exécution par l'ordinateur. C'est justement parce que ces langages sont plus faciles que le JavaScript ou le code binaire pour nos petits cerveaux d'humain que nous prenons la peine d'écrire notre code dans ces langages avant de les compiler en quelque chose que l'ordinateur peut comprendre.",
           "௩": "À la fin, Lassi n'est qu'un transpileur international qui continue la longue tradition de rendre les langages informatiques plus intuitifs pour les humains."
         }
       },

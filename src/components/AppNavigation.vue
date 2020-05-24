@@ -56,16 +56,24 @@
       </template>
       <v-list>
       <v-list-item
-        v-for="(item, i) in மொழிகள்"
+        v-for="(item, i) in மொழி_மேலாண்மை.மொழிகள்"
         :key="i"
         @click="mozhimattram(item)"
       >
         <v-list-item-action>
-          <v-icon v-if="mozhi === item">mdi-check</v-icon>
+          <v-icon v-if="mozhi === item" color="amber accent-4">mdi-check-bold</v-icon>
         </v-list-item-action>
         <v-list-item-content>
           <v-list-item-title>{{ item }}</v-list-item-title>
         </v-list-item-content>
+        <v-list-item-action>
+          <v-icon v-if="மொழி_மேலாண்மை.மேம்பாடு[item] === 1" color="amber accent-4">mdi-check-circle</v-icon>
+          <v-progress-circular v-else
+            :value="மொழி_மேலாண்மை.மேம்பாடு[item] * 100"
+            :size="20"
+            color="amber accent-4"
+          ></v-progress-circular>
+        </v-list-item-action>
       </v-list-item>
       <v-divider></v-divider>
 
@@ -100,17 +108,22 @@
 </template>
 
 <script>
+import { மொழி_மேலாண்மை } from '../plugins/vuetify'
+
 export default {
     name: 'AppNavigation',
     data: () => ({
       tab: 'அறிமுகம்',
-      மொழிகள்: [
-        'தமிழ்', 'français', 'ਪੰਜਾਬੀ', 'Kaqchikel', "Tz'utujil", "Kanyen'ké:ha", 'پنجابی'
-      ],
+      மொழி_மேலாண்மை: மொழி_மேலாண்மை,
       items: [
         'அறிமுகம்', 'கேள்விகள்', 'மேம்பாடு', 'பங்களி', 'பதிவிறக்கங்கள்'
       ],
     }),
+    computed: {
+      mozhi: function () {
+        return this.$i18n.locale
+      }
+    },
     methods: {
       mozhimattram: function (மொழி) {
         this.$vuetify.lang.current = மொழி
