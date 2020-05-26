@@ -34,7 +34,7 @@
                   <h1 class="font-weight-bold my-3">
                     மொழிகள்
                   </h1>
-                  <p class="display-2">{{ Object.values(niral.மொழிகள்).length + 1 }}</p>
+                  <p class="display-2">{{ uraikku(Object.values(niral.மொழிகள்).length + 1) }}</p>
                 </v-col>
                 <v-col class="text-center" cols=4>
                   <h1 class="font-weight-bold my-3">
@@ -47,7 +47,7 @@
                     :value="tyar(niral.பொருந்தக்கூடிய)"
                     width="7"
                     color="amber accent-4"
-                  >{{ tyar(niral.பொருந்தக்கூடிய) }}%</v-progress-circular>
+                  >{{ uraikku(tyar(niral.பொருந்தக்கூடிய)) }}%</v-progress-circular>
                 </v-col>
               </v-row>
             </v-expansion-panel-header>
@@ -128,11 +128,17 @@
     </v-container>
 </template>
 <script>
+import uraikku from '../ennikkai/ennikkai'
+
+
 export default {
     name: 'அறிமுகம்',
     methods: {
       tyar: function (பொருந்தக்கூடிய) {
         return Math.round(Object.values(பொருந்தக்கூடிய).filter(k=>k).length / Object.keys(பொருந்தக்கூடிய).length * 100)
+      },
+      uraikku: function (en) {
+        return uraikku(en, this.$i18n.locale)
       }
     },
     data: () => ({

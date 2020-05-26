@@ -1,0 +1,25 @@
+{
+  "Python": {
+    "ext": ".py",
+    "grammaire": {
+      "abc": "file_input: (NEWLINE | stmt)*",
+      "def": "!decorator : \"@\" dotted_name [ \"(\" [ arguments ] \")\" ] NEWLINE",
+      "ghi": "funcdef : \"def\" NAME \"(\" parameters ? \")\" [ \"->\" test ] \":\" suite "
+    },
+    "trads": {
+      "français": {
+        "nom": "Python",
+        "ext": ".py",
+        "grammaire": {
+          "abc": {
+            "file_input: (NEWLINE | stmt)*"
+          }
+        }
+      },
+      "தமிழ்": {
+        "nom": "பைத்தான்",
+        "ext": ".பை"
+      }
+    }
+  }
+}
