@@ -25,4 +25,11 @@ export default class மொழியாக்கம் {
       }, 0
     )
   }
+
+  சாபிகள்() {
+    return Array.from(
+      Object.keys(this.மொழிபெயர்ப்புகள்[this.இயல்புநில]),
+       இ => இ
+     )
+  }
 }

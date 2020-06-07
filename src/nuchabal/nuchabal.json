@@ -1,0 +1,50 @@
+{
+  "français": {
+    "dàg": false,
+    "numération": "latin"
+  },
+  "தமிழ்": {
+    "dàg": false,
+    "numération": "தமிழ்"
+  },
+  "മലയാളം": {
+    "dàg": false,
+    "numération": "മലയാളം"
+  },
+  "ਪੰਜਾਬੀ": {
+    "dàg": false,
+    "numération": "ਪੰਜਾਬੀ"
+  },
+  "हिंदी": {
+    "dàg": false,
+    "numération": "देवनागरी"
+  },
+  "Kanyen'ké:ha": {
+    "dàg": false,
+    "numération": "latin"
+  },
+  "پنجابی": {
+    "dàg": true,
+    "numération": "فارسی"
+  },
+  "فارسی": {
+    "dàg": true,
+    "numération": "فارسی"
+  },
+  "العربية": {
+    "dàg": true,
+    "numération": "عربية"
+  },
+  "اردو": {
+    "dàg": true,
+    "numération": "فارسی"
+  },
+  "Kaqchikel": {
+    "dàg": false,
+    "numération": "Mayab'"
+  },
+  "汉语": {
+    "dàg": false,
+    "numération": "进位汉语"
+  }
+}

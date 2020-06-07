@@ -26,7 +26,12 @@ export default new Router({
             path: '/மேம்பாடு',
             name: 'மேம்பாடு',
             component: () => import('./views/மேம்பாடு.vue')
-        },{
+        },
+        {
+            path: '/மேம்பாடு/:niralmozhi',
+            component: () => import('./views/நிரல்மொழி.vue')
+        },
+        {
             path: '/sign-in',
             name: 'signin',
             component: () => import('./views/Signin.vue')
@@ -40,6 +45,11 @@ export default new Router({
             path: '/பதிவிறக்கங்கள்',
             name: 'பதிவிறக்கங்கள்',
             component: () => import('./views/பதிவிறக்கங்கள்.vue')
+        },
+        {
+            path: '/மொழியாக்கம்',
+            name: 'மொழியாக்கம்',
+            component: () => import('./views/மொழியாக்கம்.vue')
         }
     ]
 });

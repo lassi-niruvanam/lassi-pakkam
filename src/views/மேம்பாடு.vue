@@ -61,14 +61,16 @@
                   <v-tab :ripple="false">மொழியாக்கம் மேம்பாடு</v-tab>
                   <v-tab :ripple="false">விவரக்குறிப்பு</v-tab>
                 </v-tabs>
-                <v-btn
-                  class="my-auto"
-                  color="orange"
-                  outlined
-                >
-                  இப்பொதே பங்களி
-                  <v-icon right>mdi-arrow-right</v-icon>
-                </v-btn>
+                <router-link :to="'/மேம்பாடு/' + niral.பெயர்">
+                  <v-btn
+                    class="my-auto"
+                    color="orange"
+                    outlined
+                  >
+                    இப்பொதே பங்களி
+                    <v-icon right>mdi-arrow-right</v-icon>
+                  </v-btn>
+                </router-link>
               </div>
               <v-tabs-items v-model="tabs">
                 <v-tab-item>
@@ -129,6 +131,7 @@
 </template>
 <script>
 import uraikku from '../ennikkai/ennikkai'
+import { num } from '../nuchabal/nuchabal'
 
 
 export default {
@@ -138,7 +141,7 @@ export default {
         return Math.round(Object.values(பொருந்தக்கூடிய).filter(k=>k).length / Object.keys(பொருந்தக்கூடிய).length * 100)
       },
       uraikku: function (en) {
-        return uraikku(en, this.$i18n.locale)
+        return uraikku(en, num(this.$i18n.locale))
       }
     },
     data: () => ({
@@ -146,7 +149,7 @@ export default {
       tabs: 0,
       niralmozhikal: [
         {
-          'பெயர்': 'பைத்தான்',
+          'பெயர்': 'Python',
           'மூல்மொழி': 'English',
           'படம்': 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg',
           'பொருந்தக்கூடிய': {'ஒருங்குறி': true, 'இல்லக்கணம்': true, '': ''},

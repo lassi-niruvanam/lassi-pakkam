@@ -27,7 +27,6 @@ function mattram_idancar(எண், குறிகள்) {
   return உரை
 }
 function _அடிமானம்_எழுதல்(எண், குறிகள், அடிமானங்கள்) {
-  console.log(எண், குறிகள், அடிமானங்கள்)
   var மீதி = எண்
   var உரை = ''
 
@@ -71,14 +70,6 @@ function mattram_adimanam(எண், குறிகள், அடிமான�
 
 }
 export default function uraikku(en, mozhi) {
-
-  if (mozhi === 'हिंदी'){
-    mozhi = 'देवनागरी'
-  } else if (mozhi === 'français') {
-    mozhi = 'latin'
-  } else if (mozhi === 'Kaqchikel') {
-    mozhi = "Mayab'"
-  }
   const takaval_mozhi = takavalkal[mozhi] || takavalkal['தமிழ்']
 
   if (takaval_mozhi['வகை']==='இடஞ்சார்') {

@@ -5,7 +5,7 @@
       class="text-center"
       cols="12"
     >
-      {{ uraikku(new Date().getFullYear()) }} — <strong>லஸ்ஸி</strong>
+      {{ uraikku(new Date().getFullYear()) }} — <strong>{{ $t('லஸ்ஸி') }}</strong>
     </v-col>
   </v-footer>
 
@@ -13,13 +13,13 @@
 
 <script>
 import uraikku from '../ennikkai/ennikkai'
+import { num } from '../nuchabal/nuchabal'
 
 export default {
   name: 'Footer',
   methods: {
     uraikku: function (en) {
-      console.log(en)
-      return uraikku(en, this.$i18n.locale)
+      return uraikku(en, num(this.$i18n.locale))
     }
   },
   data: () => ({

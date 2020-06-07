@@ -3,10 +3,10 @@
       <v-row class="text-center">
         <v-col cols="12">
           <v-img
-            :src="require('../assets/logo.svg')"
+            :src="require('../assets/lassi.svg')"
             class="my-3"
             contain
-            height="200"
+            height="250"
           />
         </v-col>
         <v-col class="mb-4">
@@ -83,6 +83,7 @@
                         outlined
                         dense
                         color="amber accent-4"
+                        item-color="amber accent-4"
                         hide-details
                       ></v-autocomplete>
                     </v-col>
@@ -96,6 +97,7 @@
                         outlined
                         dense
                         color="amber accent-4"
+                        item-color="amber accent-4"
                         hide-details
                       ></v-autocomplete>
                     </v-col>
@@ -108,6 +110,7 @@
                         outlined
                         dense
                         color="amber accent-4"
+                        item-color="amber accent-4"
                         hide-details
                       ></v-autocomplete>
                     </v-col>
@@ -120,6 +123,7 @@
                   :no-resize="true"
                   :label="$t('அறிமுகம்.உதாரணம்.உள்ளீடு')"
                   outlined
+                  :dir="dàg(ul_mozhi) ? 'rtl': 'ltr'"
                   color="amber accent-4"
                 ></v-textarea>
               </v-card>
@@ -138,6 +142,7 @@
                         outlined
                         dense
                         color="amber accent-4"
+                        item-color="amber accent-4"
                         hide-details
                       ></v-autocomplete>
                     </v-col>
@@ -151,6 +156,7 @@
                         outlined
                         dense
                         color="amber accent-4"
+                        item-color="amber accent-4"
                         hide-details
                       ></v-autocomplete>
                     </v-col>
@@ -163,6 +169,7 @@
                         outlined
                         dense
                         color="amber accent-4"
+                        item-color="amber accent-4"
                         hide-details
                       ></v-autocomplete>
                     </v-col>
@@ -175,6 +182,8 @@
                   :no-resize="true"
                   :label="$t('அறிமுகம்.உதாரணம்.வெளியீடு')"
                   outlined
+                  :loading="!lassi_tayar"
+                  :dir="dàg(vel_mozhi) ? 'rtl': 'ltr'"
                   color="amber accent-4"
                   :readonly="true"
                 ></v-textarea>
@@ -188,6 +197,9 @@
 </template>
 
 <script>
+import { dàg } from '../nuchabal/nuchabal'
+import scriptjs from 'scriptjs'
+
 const mozhikal = ['தமிழ்', 'ਪੰਜਾਬੀ', 'فارسی', 'français', 'English']
 
 export default {
@@ -205,16 +217,47 @@ export default {
     },
     computed: {
       velidu: function() {
-        return this.lassi(this.udaranam_urai, this.vel_mozhi, this.vel_niral_enuru)
+        try {
+          return window.pyodide.runPython(
+            `லஸ்ஸி("""${this.udaranam_urai}, ${this.vel_mozhi}, ${this.vel_niral_enuru}"""[::-1])`
+          )
+        }
+        catch(err) {
+          return err
+        }
       }
     },
+    mounted() {
+      const t = this
+      scriptjs('https://pyodide-cdn2.iodide.io/v0.15.0/full/pyodide.js',
+        function () {
+          window.languagePluginLoader.then(
+            () => {
+              window.pyodide.runPythonAsync("import setuptools, micropip")
+            }
+          ).then(
+            () => {
+              window.pyodide.runPythonAsync("micropip.install('lassi')")
+            }
+          ).then(
+            () => {
+              window.pyodide.runPythonAsync("import லஸ்ஸி")
+            }
+          ).then( () => {
+            console.log('Eureka!')
+            t.lassi_tayar = true
+            }
+          )
+        })
+    },
     methods: {
-      lassi: function(txt, mozhi, ennuru) {
-        return txt + ' ' + mozhi + ' ' + ennuru
+      dàg: function(langue) {
+        return dàg(langue)
       }
     },
     data: function() {
       return {
+        lassi_tayar: false,
         niral_mozhikal: ['பைத்தான்', 'யாவாக்கிறிட்டு', 'ஜேஸான்'],
         niral_mozhi: 'பைத்தான்',
         mozhikal: mozhikal,

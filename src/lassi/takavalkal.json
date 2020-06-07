@@ -4,7 +4,11 @@
     "grammaire": {
       "abc": "file_input: (NEWLINE | stmt)*",
       "def": "!decorator : \"@\" dotted_name [ \"(\" [ arguments ] \")\" ] NEWLINE",
-      "ghi": "funcdef : \"def\" NAME \"(\" parameters ? \")\" [ \"->\" test ] \":\" suite "
+      "ghi": "decorators : decorator + ",
+      "jlk": "decorated : decorators ( classdef | funcdef | async_funcdef ) ",
+      "mno": "async_funcdef : \"async\" funcdef",
+      "pqr": "funcdef : \"def\" NAME \"(\" parameters ? \")\" [ \"->\" test ] \":\" suite ",
+      "stu": "!parameters : paramvalue ( \",\" paramvalue ) * [ \",\" [ starparams | kwparams ] ] \n | starparams \n | kwparams "
     },
     "trads": {
       "français": {
@@ -12,13 +16,22 @@
         "ext": ".py",
         "grammaire": {
           "abc": {
-            "file_input: (NEWLINE | stmt)*"
+            "abc": "file_input: (NEWLINE | stmt)*"
           }
         }
       },
       "தமிழ்": {
         "nom": "பைத்தான்",
-        "ext": ".பை"
+        "ext": ".பை",
+        "grammaire": {
+          "abc": "file_input: (NEWLINE | stmt)*",
+          "def": "!decorator : \"@\" dotted_name [ \"(\" [ arguments ] \")\" ] NEWLINE",
+          "ghi": "decorators : decorator + ",
+          "jlk": "decorated : decorators ( classdef | funcdef | async_funcdef ) ",
+          "mno": "async_funcdef : \"async\" funcdef",
+          "pqr": "funcdef : \"def\" NAME \"(\" parameters ? \")\" [ \"->\" test ] \":\" suite ",
+          "stu": "!parameters : paramvalue ( \",\" paramvalue ) * [ \",\" [ starparams | kwparams ] ] \n | starparams \n | kwparams "
+        }
       }
     }
   }
