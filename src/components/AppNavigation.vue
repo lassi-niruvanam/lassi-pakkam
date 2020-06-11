@@ -8,7 +8,7 @@
       <div class="d-flex align-center">
         <v-img
           alt="Lassi Logo"
-          class="shrink mr-2"
+          class="shrink me-2"
           contain
           src="../assets/logo.svg"
           transition="scale-transition"

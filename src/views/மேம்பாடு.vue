@@ -2,9 +2,9 @@
     <v-container class="mt-10">
       <v-card
         class="mx-auto"
-          max-width="1000"
-          flat
-        >
+        max-width="1000"
+        flat
+      >
         <v-expansion-panels
           v-model="panel"
           multiple
@@ -18,7 +18,7 @@
               <v-row>
                 <v-col cols=3>
                   <v-img v-if="niral.படம்"
-                    tile class="mx-auto" width="70"
+                    tile class="mx-auto" max-height="70" contain max-width="70"
                     :src="niral.படம்">
                   </v-img>
                   <h1 v-else class="text-center display-4">
@@ -235,6 +235,16 @@ export default {
           'பெயர்': 'ரியாக்ட்',
           'மூல்மொழி': 'English',
           'படம்':'https://cdn.auth0.com/blog/react-js/react.png',
+          'பொருந்தக்கூடிய': {'ஒருங்குறி': false, 'இல்லக்கணம்': true, '': ''},
+          'மொழிகள்': {
+            'français': [40, 2, 0],
+            'ਪੰਜਾਬੀ': [40, 40, 0]
+          }
+        },
+        {
+          'பெயர்': 'லார்க்',
+          'மூல்மொழி': 'English',
+          'படம்':'https://raw.githubusercontent.com/lark-parser/lark/master/docs/ide/lark-logo.png',
           'பொருந்தக்கூடிய': {'ஒருங்குறி': false, 'இல்லக்கணம்': true, '': ''},
           'மொழிகள்': {
             'français': [40, 2, 0],

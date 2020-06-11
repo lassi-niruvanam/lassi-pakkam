@@ -41,7 +41,7 @@
          "கேள்வி": "எதற்கு சாதாரன் ஆங்கிலத்தில் நிரலாக்கம் செய்ய முடியாது?",
          "பதில்": {
            "௧": "உன்கள் மொழி எந்த இருந்தாலோ, [நிரலாக்கம் செய்யும் வாய்ப்பு இருக்க வேண்டும்](https://www.wired.com/story/coding-is-for-everyoneas-long-as-you-speak-english/).",
-           "௨": "வேவ்வேறு ஆங்கில மொழி மூலம் எழுதப்பட்ட நிரலாக்க மொழிகளில் இடையே மாற்றம் செய்யும் பல நிரல்மொழிமாற்றிகள் ஏற்கனவை உள்ளன. உதாரணத்துக்காக, [காஃபீக்கிறிட்டு](https://coffeescript.org/), [ரியாக்ட்](https://ta.reactjs.org/), மற்றும் [வியூ](https://fr.vuejs.org/index.html) ஆகிய மொழிகள் அல்லது சட்டகங்கள் எல்லாம் கணினியால் பயன்ப்படுத்தும் முன்னால் யாவாக்கிறிட்டுக்கு மாற்றப்பட்டன. ஆனால் இந்த மொழிகள் எல்லாம் சாதாரன யாவாக்கிறிட்டு அல்லது இருமவடிவ உரையை விட நம் சின்ன மனிதர் மூளைகளுக்காக சுலபமாக இருக்கிறதால், நாம் இந்த மொழிகளில் தானே நிரல் குறியீடு எழுதி, இறுதியில் ஒரு நிரல்மொழிமாற்றியால் அவற்றை கணினிக்கு புரிந்த வடிவத்துக்கு மாற்றுகிறோம்.",
+           "௨": "வேவ்வேறு ஆங்கில மொழி மூலம் எழுதப்பட்ட நிரலாக்க மொழிகளில் இடையே மாற்றம் செய்யும் பல நிரல்மொழிமாற்றிகள் ஏற்கனவே உள்ளன. உதாரணத்துக்காக, [காஃபீக்கிறிட்டு](https://coffeescript.org/), [ரியாக்ட்](https://ta.reactjs.org/), மற்றும் [வியூ](https://fr.vuejs.org/index.html) ஆகிய மொழிகள் அல்லது சட்டகங்கள் எல்லாம் கணினியால் பயன்ப்படுத்தும் முன்னால் யாவாக்கிறிட்டுக்கு மாற்றப்பட்டன. ஆனால் இந்த மொழிகள் எல்லாம் சாதாரன யாவாக்கிறிட்டு அல்லது இருமவடிவ உரையை விட நம் சின்ன மனிதர் மூளைகளுக்காக சுலபமாக இருக்கிறதால், நாம் இந்த மொழிகளில் தானே நிரல் குறியீடு எழுதி, இறுதியில் ஒரு நிரல்மொழிமாற்றியால் அவற்றை கணினிக்கு புரிந்த வடிவத்துக்கு மாற்றுகிறோம்.",
            "௩": "இறுதியில், லஸ்ஸி ஒரு சர்வதேச நிரல்மொழிமாற்றி, வேறு ஒன்றும் இல்லை."
          }
        },
@@ -59,17 +59,25 @@
            "௨": "உங்கள் தாய்மொழி எந்த மொழி இருந்தாலோ, அதற்கு மேலே வேறு மொழிகள் தெரிந்தாலோ தெரியாவிட்டாலோ, நிரலாக்கத்தில் உங்களுக்காக ஒரு இடம் காத்திருக்கிறது."
          }
        },
+       "ஆங்கிலம்தெரியும்": {
+         "கேள்வி": "எனக்கு ஆங்கிலம் ஏற்கனவே தெரியது. எனக்கு லஸ்ஸி தேவையானதா?",
+         "பதில்": {
+           "௧": "வாழ்த்துக்கள்! இன்று நிரலாக்கம் புலத்தில் உங்களுக்கு ஏற்கனவே அனுகூலம் உள்ளது.",
+           "௨": "ஆயினும் லஸ்ஸி உங்களுக்காக பலனமாக இருக்கலாம். உங்கள் பன்மொழி உடனுழைப்பவர்கள் மற்றும் கூட்டாளிகளுடன் வேலை செய்கிறதற்கு லஸ்ஸி உங்களுக்கு உதவும். மேலும், லஸ்ஸியால் உருவாக்கப்பட்ட மென்பொருட்களை பயன்படுத்துவதற்கு லஸ்ஸி தேவையாக இருக்கும்.",
+           "௩": "மேலும், இருமொழி தெரிந்த மனிதர்கள் வெவ்வெறு மொழிகளில் நிரலாக்கம் செய்கிறதால் தானே பன்மொழி நிரலாக்கம் திட்டங்கள் மற்றம் வளங்கள் எல்லோருக்கும் கிடைக்கும்."
+         }
+       },
        "கூகல்": {
          "கேள்வி": "லஸ்ஸி எதற்கு தேவை, கூகல் மொழியாக்கம் உபயோக முடியாதா?",
          "பதில்": {
            "௧": "அருமையான கேள்வி அது. [செய்து பாருங்கள்](https://translate.google.com/#view=home&op=translate&sl=en&tl=ta&text=Circle%28object%29%253A%250A%2520%2520%2520%2520def%2520__init__%28self%252C%2520radius%29%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520self.radius%2520%253D%2520radius%250Acircle%2520%253D%2520Circle%282%29%250Aprint%28circle.radius%29) என்ன ஆகும்."
          }
        },
-       "ஏற்கனவை": {
-         "கேள்வி": "ஏற்கனவை உபயோகத்தில் உள்ள [எழில்](https://github.com/Ezhil-Language-Foundation/Ezhil-Lang), [हिंदावी](https://sourceforge.net/projects/hindawi/) அல்லது [قلب](https://github.com/nasser/---) மாதிரி நிரல்மொழிகளை எதற்கு பயன் செய்ய வேண்டாம்?",
+       "ஏற்கனவே": {
+         "கேள்வி": "ஏற்கனவே உபயோகத்தில் உள்ள [எழில்](https://github.com/Ezhil-Language-Foundation/Ezhil-Lang), [हिंदावी](https://sourceforge.net/projects/hindawi/) அல்லது [قلب](https://github.com/nasser/---) மாதிரி நிரல்மொழிகளை எதற்கு பயன் செய்ய வேண்டாம்?",
          "பதில்": {
-           "௧": "கண்டிப்பாக பயன் செய்ய வேண்டும்! ஆனால் உலகத்தில் [௭௲ (ஏழாாயிரம்) த்துக்கு மேலே](https://glottolog.org/glottolog/language) ேவ்வேறு இயற்கை அல்லது மனிதர் மொழிகள் உள்ளன. அதற்கு மேலே ஏற்கனவை ஆங்கில மொழி மூலமான பல நிரல்மொழிகள் உபயோகத்தில் உள்ளன. ஒவ்வொரு மனிதர் மொழியுக்காக புதுச நிரல்மொழி [உருவாக்க முடியாது](https://www.mic.com/articles/130331/this-arabic-programming-language-shows-how-computers-revolve-around-the-western-world). முடிந்தாலும், பல பொதுவான நிரல் தொகுதிகளை தேவை இல்லாமல் மறுப்படியும் ஒவ்வொரு புதுச மொழியில் உருவாக்க வேண்டியது. உதாரணத்துக்காக, யாவாக்கிறிட்டுக்கு தற்பொது [௲௲ (பத்து லச்சியம்) த்துக்கு மேலே](https://www.npmjs.com/) தனிப்பட்ட சமூக தொகுதிகள் கிடைக்கும்.",
-           "௨": "லஸ்ஸி ஒரு புது நிரல்மொழியல்ல. அதாவது லஸ்ஸி ஏற்கனவை உபயோகத்தில் உள்ள நிரல்மொழிகளை வேவ்வேறு மனிதர் மொழிகளுக்கு கொண்டு வரும் ஒரு கருவி ஆகும்."
+           "௧": "கண்டிப்பாக பயன் செய்ய வேண்டும்! ஆனால் உலகத்தில் [௭௲ (ஏழாாயிரம்) த்துக்கு மேலே](https://glottolog.org/glottolog/language) ேவ்வேறு இயற்கை அல்லது மனிதர் மொழிகள் உள்ளன. அதற்கு மேலே ஏற்கனவே ஆங்கில மொழி மூலமான பல நிரல்மொழிகள் உபயோகத்தில் உள்ளன. ஒவ்வொரு மனிதர் மொழியுக்காக புதுச நிரல்மொழி [உருவாக்க முடியாது](https://www.mic.com/articles/130331/this-arabic-programming-language-shows-how-computers-revolve-around-the-western-world). முடிந்தாலும், பல பொதுவான நிரல் தொகுதிகளை தேவை இல்லாமல் மறுப்படியும் ஒவ்வொரு புதுச மொழியில் உருவாக்க வேண்டியது. உதாரணத்துக்காக, யாவாக்கிறிட்டுக்கு தற்பொது [௲௲ (பத்து லச்சியம்) த்துக்கு மேலே](https://www.npmjs.com/) தனிப்பட்ட சமூக தொகுதிகள் கிடைக்கும்.",
+           "௨": "லஸ்ஸி ஒரு புது நிரல்மொழியல்ல. அதாவது லஸ்ஸி ஏற்கனவே உபயோகத்தில் உள்ள நிரல்மொழிகளை வேவ்வேறு மனிதர் மொழிகளுக்கு கொண்டு வரும் ஒரு கருவி ஆகும்."
          }
        }
      }
@@ -227,13 +235,21 @@
           "௨": "Nous avons toutes et tous le droit aux mêmes opportunités, peu importent notre langue maternelle ou notre niveau de multilinguisme."
         }
       },
+      "ஆங்கிலம்தெரியும்": {
+        "கேள்வி": "Moi je parle déjà anglais. Est-ce que Lassi est toujours utile pour moi ?",
+        "பதில்": {
+          "௧": "Félicitations ! Vous avez, dès le début, un avantage dans le monde de la programmation tel qu'il existe aujourd'hui.",
+          "௨": "Cependant Lassi saura bien vous être utile. En premier lieu, il vous pemettra de mieux collaborer avec vos collègues et contributeurs et contributrices multilingues. En sus, il sera bien necessaire si vous devez utiliser des programmes développés avec Lassi.",
+          "௩": "En outre, ce n'est qu'à travers le travail de développeurs multilingues qui décideront malgré tout de développer dans des langues autres que l'anglais que la quantité de ressources et de code dans d'autres langues atteindra la parité avec l'anglais et permettra aux développeurs unilingues aussi de s'atteindre tout leur potentiel."
+        }
+      },
       "கூகல்": {
         "கேள்வி": "Bon, mais enfin, je ne pourrais pas tout simplement utiliser le traducteur de Google ?",
         "பதில்": {
           "௧": "Bonne question. [Essayez donc voir](https://translate.google.com/#view=home&op=translate&sl=en&tl=fr&text=Circle%28object%29%253A%250A%2520%2520%2520%2520def%2520__init__%28self%252C%2520radius%29%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520self.radius%2520%253D%2520radius%250Acircle%2520%253D%2520Circle%282%29%250Aprint%28circle.radius%29), et surtout n'oubliez pas de m'en donner des nouvelles."
         }
       },
-      "ஏற்கனவை": {
+      "ஏற்கனவே": {
         "கேள்வி": "Pourquoi ne pas utiliser des langages existants tels que [எழில்](https://github.com/Ezhil-Language-Foundation/Ezhil-Lang), [हिंदावी](https://sourceforge.net/projects/hindawi/) ou [قلب](https://github.com/nasser/---) ?",
         "பதில்": {
           "௧": "Mais bien sûr, utilisez-les ! Cependant, nous avons plus de [7000 langues parlées](https://glottolog.org/glottolog/language) dans le monde. En sus, nous avons déjà une grande variété de langages informatiques uniquement pour l'anglais. [Ce n'est pas bien pratique](https://www.mic.com/articles/130331/this-arabic-programming-language-shows-how-computers-revolve-around-the-western-world) de développer un nouveau langage informatique pour chaque langue humaine. Et même si vous réussissiez, vous devriez encore recréer une grande quantité de modules et librairies populaires pour chaque langage. À titre d'exemple, JavaScript lui-même compte déjà [plus d'un million](https://www.npmjs.com/) de paquets externes.",

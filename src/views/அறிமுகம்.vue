@@ -69,11 +69,11 @@
           class="pa-12 mx-auto mb-10" min-width="1200"
         >
           <v-row class="text-center">
-            <v-col cols="6">
+            <v-col cols="6" class="mx-auto">
               <v-card class="mx-auto" width="500" flat>
                 <v-toolbar class="mb-5" flat>
                   <v-row>
-                    <v-col cols=4 class="pl-0">
+                    <v-col cols=4 class="ps-0">
                       <v-autocomplete
                         :items="niral_mozhikal"
                         v-model="niral_mozhi"
@@ -101,7 +101,7 @@
                         hide-details
                       ></v-autocomplete>
                     </v-col>
-                    <v-col cols=4 class="pr-0">
+                    <v-col cols=4 class="pe-0">
                       <v-autocomplete
                         :items="[$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட')].concat(niral_enuru_muraimaikal)"
                         v-model="ul_niral_enuru"
@@ -128,12 +128,11 @@
                 ></v-textarea>
               </v-card>
             </v-col>
-
-            <v-col cols="6">
+            <v-col cols="6" class="mx-auto">
               <v-card class="mx-auto" width="500" flat>
                 <v-toolbar class="mb-5" flat>
                   <v-row>
-                    <v-col cols=4 class="pl-0">
+                    <v-col cols=4 class="ps-0">
                       <v-autocomplete
                         :items="niral_mozhikal"
                         v-model="niral_mozhi"
@@ -160,7 +159,7 @@
                         hide-details
                       ></v-autocomplete>
                     </v-col>
-                    <v-col cols=4 class="pr-0">
+                    <v-col cols=4 class="pe-0">
                       <v-autocomplete
                         :items="[$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட')].concat(niral_enuru_muraimaikal)"
                         v-model="vel_niral_enuru"
@@ -176,17 +175,33 @@
                 </v-row>
                 </v-toolbar>
                 <v-textarea
+                  v-if="lassi_tayar"
                   v-model="velidu"
-                  :height="500"
+                  height="500"
                   flat
                   :no-resize="true"
                   :label="$t('அறிமுகம்.உதாரணம்.வெளியீடு')"
                   outlined
-                  :loading="!lassi_tayar"
                   :dir="dàg(vel_mozhi) ? 'rtl': 'ltr'"
                   color="amber accent-4"
                   :readonly="true"
                 ></v-textarea>
+                <v-card
+                 v-else
+                 height="500"
+                 flat
+                >
+                  <v-progress-circular
+                    size="100"
+                    indeterminate=""
+                    width="15"
+                    class="mt-10"
+                    color="amber lighten-4"
+                  />
+                  <p class="my-5">
+                    லஸ்ஸியை ஏற்றுகிறது...
+                  </p>
+                </v-card>
               </v-card>
             </v-col>
           </v-row>
@@ -217,10 +232,16 @@ export default {
     },
     computed: {
       velidu: function() {
+        const தனிப்பட்ட = this.$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட')
         try {
-          return window.pyodide.runPython(
-            `லஸ்ஸி("""${this.udaranam_urai}, ${this.vel_mozhi}, ${this.vel_niral_enuru}"""[::-1])`
-          )
+          return `லஸ்ஸி.மொழியாக்கம்(
+              உரை="""${this.udaranam_urai}""",
+              நிரல்மொழி="${this.niral_mozhi}",
+              மொழி="${this.vel_mozhi}",
+              எண்ணுரு=${this.vel_niral_enuru === தனிப்பட்ட ? "None" : this.vel_niral_enuru},
+              மூல்மொழி="${this.ul_mozhi}",
+              மூலெண்ணுரு=${this.ul_niral_enuru === தனிப்பட்ட ? "None" : this.ul_niral_enuru}
+            )`
         }
         catch(err) {
           return err
