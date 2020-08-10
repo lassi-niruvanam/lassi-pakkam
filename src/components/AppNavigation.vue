@@ -103,9 +103,11 @@
       <v-icon>mdi-github</v-icon>
     </v-btn>
 
-    <v-btn icon>
-      <v-icon>mdi-login-variant</v-icon>
-    </v-btn>
+    <router-link to="/sign-in">
+      <v-btn icon>
+        <v-icon>mdi-login-variant</v-icon>
+      </v-btn>
+    </router-link>
 
   </v-app-bar>
 </template>
@@ -120,7 +122,7 @@ export default {
       tab: 'அறிமுகம்',
       மொழி_மேலாண்மை: மொழி_மேலாண்மை,
       items: [
-        'அறிமுகம்', 'கேள்விகள்', 'மேம்பாடு', 'பங்களி', 'பதிவிறக்கங்கள்'
+        'அறிமுகம்', 'கேள்விகள்', 'மேம்பாடு', 'பங்களி', 'பதிவிறக்கங்கள்', 'தொடர்பு'
       ],
     }),
     computed: {

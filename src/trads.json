@@ -8,13 +8,14 @@
       "கேள்விகள்": "கேள்விகள்",
       "மேம்பாடு": "மேம்பாடு",
       "பங்களி": "பங்களி",
-      "பதிவிறக்கங்கள்": "பதிவிறக்கங்கள்"
+      "பதிவிறக்கங்கள்": "பதிவிறக்கங்கள்",
+      "தொடர்பு": "தொடர்பு"
      },
      "அறிமுகம்": {
        "தலைப்பு": "லஸ்ஸிக்கு உங்களை வரவேற்கிறோம்",
-       "துணைத்தலைப்பு": "லஸ்ஸி என்பது கணினி மொழியின் மொழியாக்கத்துக்காக ஒரு மென்பொருள் சட்டகம் ஆகும்.",
+       "துணைத்தலைப்பு": "லஸ்ஸி என்பது நிரல்மொழியின் மொழியாக்கத்துக்காக ஒரு கட்டற்ற மென்பொருள் சட்டகம் ஆகும்.",
        "எதற்கு": "எதற்கு தேவை?",
-       "எதற்கு_பதில்": "ஒவ்வொரு நிரல் மொழியுக்கு பின்னால் ஒரு இயற்கை அல்லது மனிதர் மொழி உள்ளது. லஸ்ஸியால் எல்லோரால் சொந்த மொழியில் நிரலாக்கம் செய்ய முடியும்.",
+       "எதற்கு_பதில்": "ஒவ்வொரு நிரல்மொழியுக்கு பின்னால் ஒரு இயற்கை அல்லது மனிதர் மொழி உள்ளது. லஸ்ஸியால் எல்லோரால் சொந்த மொழியில் நிரலாக்கம் செய்ய முடியும்.",
        "எப்படி": "எப்படி வேலை செய்கிறது?",
        "எப்படி_பதில்": "தரப்படுத்தப்பட்ட இலக்கணம் மொழியாக்கம் விதிகள் மற்றும் மொழிபெயர்ப்புகளால் லஸ்ஸி உங்கள் நிரலின் மொழிமாற்றம் செய்யும்.",
        "செயலில்": "செயலில் உதாரணம்",
@@ -74,13 +75,28 @@
          }
        },
        "ஏற்கனவே": {
-         "கேள்வி": "ஏற்கனவே உபயோகத்தில் உள்ள [எழில்](https://github.com/Ezhil-Language-Foundation/Ezhil-Lang), [हिंदावी](https://sourceforge.net/projects/hindawi/) அல்லது [قلب](https://github.com/nasser/---) மாதிரி நிரல்மொழிகளை எதற்கு பயன் செய்ய வேண்டாம்?",
+         "கேள்வி": "ஏற்கனவே உபயோகத்தில் உள்ள [எழில்](https://github.com/Ezhil-Language-Foundation/Ezhil-Lang), [Linotte](http://langagelinotte.free.fr/wordpress/), [हिंदावी](https://sourceforge.net/projects/hindawi/) அல்லது [قلب](https://github.com/nasser/---) மாதிரி நிரல்மொழிகளை எதற்கு பயன் செய்ய வேண்டாம்?",
          "பதில்": {
-           "௧": "கண்டிப்பாக பயன் செய்ய வேண்டும்! ஆனால் உலகத்தில் [௭௲ (ஏழாாயிரம்) த்துக்கு மேலே](https://glottolog.org/glottolog/language) ேவ்வேறு இயற்கை அல்லது மனிதர் மொழிகள் உள்ளன. அதற்கு மேலே ஏற்கனவே ஆங்கில மொழி மூலமான பல நிரல்மொழிகள் உபயோகத்தில் உள்ளன. ஒவ்வொரு மனிதர் மொழியுக்காக புதுச நிரல்மொழி [உருவாக்க முடியாது](https://www.mic.com/articles/130331/this-arabic-programming-language-shows-how-computers-revolve-around-the-western-world). முடிந்தாலும், பல பொதுவான நிரல் தொகுதிகளை தேவை இல்லாமல் மறுப்படியும் ஒவ்வொரு புதுச மொழியில் உருவாக்க வேண்டியது. உதாரணத்துக்காக, யாவாக்கிறிட்டுக்கு தற்பொது [௲௲ (பத்து லச்சியம்) த்துக்கு மேலே](https://www.npmjs.com/) தனிப்பட்ட சமூக தொகுதிகள் கிடைக்கும்.",
+           "௧": "கண்டிப்பாக பயன் செய்ய வேண்டும்! ஆனால் உலகத்தில் [௭௲ (ஏழாயிரம்) த்துக்கு மேலே](https://glottolog.org/glottolog/language) வேவ்வேறு இயற்கை அல்லது மனிதர் மொழிகள் உள்ளன. அதற்கு மேலே ஏற்கனவே ஆங்கில மொழி மூலமான பல நிரல்மொழிகள் உபயோகத்தில் உள்ளன. ஒவ்வொரு மனிதர் மொழியுக்காக புதுச நிரல்மொழி [உருவாக்க முடியாது](https://www.mic.com/articles/130331/this-arabic-programming-language-shows-how-computers-revolve-around-the-western-world). முடிந்தாலும், பல பொதுவான நிரல் தொகுதிகளை தேவை இல்லாமல் மறுப்படியும் ஒவ்வொரு புதுச மொழியில் உருவாக்க வேண்டியது. உதாரணத்துக்காக, யாவாக்கிறிட்டுக்கு தற்பொது [௲௲ (பத்து லச்சியம்) த்துக்கு மேலே](https://www.npmjs.com/) தனிப்பட்ட சமூக தொகுதிகள் கிடைக்கும்.",
            "௨": "லஸ்ஸி ஒரு புது நிரல்மொழியல்ல. அதாவது லஸ்ஸி ஏற்கனவே உபயோகத்தில் உள்ள நிரல்மொழிகளை வேவ்வேறு மனிதர் மொழிகளுக்கு கொண்டு வரும் ஒரு கருவி ஆகும்."
          }
        }
      }
+  },
+  "తెలుగు": {
+    "லஸ்ஸி": "లస్సి",
+    "மொழி": {"மேலும்": "మరింత"},
+    "பங்களி": {"பங்களி": "సహకరించండి"},
+    "தாவல்": {
+      "அறிமுகம்": "పరిచయం",
+      "கேள்விகள்": "ప్రశ్నలు",
+      "மேம்பாடு": "పురోగతి",
+      "பங்களி": "సహకరించండి",
+      "பதிவிறக்கங்கள்": "పోందండి"
+    },
+    "அறிமுகம்": {
+      "தலைப்பு": "లస్సికు మీకు స్నాగతం ఉంది"
+    }
   },
   "മലയാളം": {
     "லஸ்ஸி": "ലസ്സി",
@@ -111,7 +127,7 @@
      },
     "அறிமுகம்": {
       "தலைப்பு": "लस्सी पर आपका स्वागत हो",
-      "துணைத்தலைப்பு": "लस्सी संगणक भाषाओं के अनुवाद के लिये विनिर्देश होता है।",
+      "துணைத்தலைப்பு": "लस्सी संगणक भाषाओं के अनुवाद के लिये एक खुला स्रोत का विनिर्देश होता है।",
       "எதற்கு": "लस्सी की क्या आवश्यकता?",
       "எதற்கு_பதில்": "हर एक संगणक भाषा के निचे एक मानव या प्राकृतिक भाषा है। लस्सी से ये संभाव हो जाता है कि हर किसी अपने मात्रभाषा में ही संगणक संकेत लिखें।",
       "எப்படி": "काम कैसा करता है?",
@@ -160,10 +176,59 @@
   "汉语": {
     "லஸ்ஸி": "拉西",
     "மொழி": {"மேலும்": "更多"},
+    "பங்களி": {"பங்களி": "贡献"},
+    "தாவல்": {
+      "அறிமுகம்": "介绍",
+      "கேள்விகள்": "问题",
+      "மேம்பாடு": "发展",
+      "பங்களி": "贡献",
+      "பதிவிறக்கங்கள்": "下载"
+     },
     "அறிமுகம்": {
       "தலைப்பு": "欢迎来到拉西",
+      "துணைத்தலைப்பு": "拉西是一个计算机语言的开放源翻译框架。",
       "எதற்கு": "拉西有什么用途？",
-      "எப்படி": "拉西是如何工作的？"
+      "எதற்கு_பதில்": "每种计算机语言的的背后有一个自然语言。拉西通过，每个人能在自己的语言做程式设计。",
+      "எப்படி": "拉西是如何工作的？",
+      "உதாரணம்": {
+        "நிரல்_மொழி": "算机语言",
+        "மூல்_மொழி": "原始语言",
+        "எண்ணுரு": "记数系统",
+        "உள்ளீடு": "拉西的输入",
+        "வேண்டிய_மொழி": "目标语言",
+        "வெளியீடு": "输出",
+        "தனிப்பட்ட": "自动"
+      }
+    },
+    "கேள்விகள்": {
+      "தலைப்பு": "关于拉西经常问的问题",
+      "பெயர்": {
+        "கேள்வி": "这个为什么叫拉西？",
+        "பதில்": {
+          "௧": "为什么不叫？"
+        }
+      },
+      "ஆங்கிலம்": {
+        "கேள்வி": "为什么我们不能用英语写我们的计算机程序？"
+      },
+      "தெரியாதா": {
+        "கேள்வி": "但是，每个人都说英语，对不对？",
+        "பதில்": {
+          "௧": "[不对](https://cdn.statcdn.com/Infographic/images/normal/14919.jpeg)。"
+        }
+      },
+      "கற்றுக்கொள்ள": {
+        "கேள்வி": "好吧，所以他们都为什么不学习英语？"
+      },
+      "ஆங்கிலம்தெரியும்": {
+        "கேள்வி": "我会说英语。拉西有用吗？"
+      },
+      "கூகல்": {
+        "கேள்வி": "我为什么需要拉西，不能用谷歌翻译吗？",
+        "பதில்": {
+          "௧": "那个是很好的问题。[看看一下吧](https://translate.google.com/#view=home&op=translate&sl=en&tl=zh-CN&text=Circle%28object%29%253A%250A%2520%2520%2520%2520def%2520__init__%28self%252C%2520radius%29%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520self.radius%2520%253D%2520radius%250Acircle%2520%253D%2520Circle%282%29%250Aprint%28circle.radius%29)。"
+        }
+      }
     }
   },
   "Kaqchikel": {
@@ -172,7 +237,7 @@
     "அறிமுகம்": {
       "தலைப்பு": "Ütz ipetïk pa Lassi",
       "எதற்கு": "¿Achike ruk'atzin ri Lassi?",
-      "எப்படி": "¿Achike rub'eyal nusamaj ri Lassi?"
+      "எப்படி": "¿Achike rub'eyal nisamaj ri Lassi?"
     }
   },
   "français": {
@@ -188,7 +253,7 @@
     },
     "அறிமுகம்": {
       "தலைப்பு": "Bienvenue à Lassi",
-      "துணைத்தலைப்பு": "Lassi est une infrastructure logicielle pour la traduction des langages informatiques.",
+      "துணைத்தலைப்பு": "Lassi est une infrastructure logicielle source ouverte pour la traduction des langages informatiques.",
       "எதற்கு": "À quoi est-ce que cela sert ?",
       "எதற்கு_பதில்": "Chaque langage informatique est basé sur une langue humaine. Lassi vous donne la liberté d'écrire votre code dans la languee humaine de votre choix.",
       "எப்படி": "Comment est-ce que cela fonctionne ?",
@@ -250,7 +315,7 @@
         }
       },
       "ஏற்கனவே": {
-        "கேள்வி": "Pourquoi ne pas utiliser des langages existants tels que [எழில்](https://github.com/Ezhil-Language-Foundation/Ezhil-Lang), [हिंदावी](https://sourceforge.net/projects/hindawi/) ou [قلب](https://github.com/nasser/---) ?",
+        "கேள்வி": "Pourquoi ne pas utiliser des langages existants tels que [Linotte](http://langagelinotte.free.fr/wordpress/), [எழில்](https://github.com/Ezhil-Language-Foundation/Ezhil-Lang), [हिंदावी](https://sourceforge.net/projects/hindawi/) ou [قلب](https://github.com/nasser/---) ?",
         "பதில்": {
           "௧": "Mais bien sûr, utilisez-les ! Cependant, nous avons plus de [7000 langues parlées](https://glottolog.org/glottolog/language) dans le monde. En sus, nous avons déjà une grande variété de langages informatiques uniquement pour l'anglais. [Ce n'est pas bien pratique](https://www.mic.com/articles/130331/this-arabic-programming-language-shows-how-computers-revolve-around-the-western-world) de développer un nouveau langage informatique pour chaque langue humaine. Et même si vous réussissiez, vous devriez encore recréer une grande quantité de modules et librairies populaires pour chaque langage. À titre d'exemple, JavaScript lui-même compte déjà [plus d'un million](https://www.npmjs.com/) de paquets externes.",
           "௨": "Lassi n'est pas un nouveau langage informatique. Au contraire, c'est un outil qui permet l'utilisation des langages informatiques existants dans toute langue humaine."

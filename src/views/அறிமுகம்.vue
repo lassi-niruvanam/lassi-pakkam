@@ -297,5 +297,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+::selection {
+  background: #FFECB3;
+  color: #000;
+  text-shadow: none;
+}
 </style>

@@ -8,17 +8,17 @@
             <v-card
               width="350"
               class="ma-10 pa-6"
-              v-for="(something, index) in somethingsArray" :key="index"
+              v-for="(murai, index) in muraigal" :key="index"
             >
-              <v-card-title class="headline">{{ something.பெயர் }}</v-card-title>
+              <v-card-title class="headline">{{ murai.பெயர் }}</v-card-title>
               <v-divider :inset="inset"></v-divider>
 
               <v-card-text class="text--primary">
-                <div>{{ something.தகவல்கள் }}</div>
+                <div>{{ murai.தகவல்கள் }}</div>
               </v-card-text>
 
           <v-card-actions>
-            <router-link :to="something.இணைப்பு">
+            <router-link :to="murai.இணைப்பு">
               <v-btn
                 color="orange"
                 outlined
@@ -39,16 +39,16 @@
 export default {
     name: 'அறிமுகம்',
     data: () => ({
-      somethingsArray: [
+      muraigal: [
         {
           'பெயர்': 'இலக்கணங்கள்',
           'தகவல்கள்': 'புது கணினி அல்லது மநிதர் மொழிகளை லஸ்ஸி குறிப்புக்கு சேருங்கள்.',
-          'இணைப்பு': '/மேம்பாடு/'
+          'இணைப்பு': '/மேம்பாடு'
         },
         {
           'பெயர்': 'வலைப் பக்கம்',
           'தகவல்கள்': 'இந்த வலைப் பக்கத்தை மொழிபெயர்ப்பு செய்யுங்கள்.',
-          'இணைப்பு': '/மொழியாக்கம்/'
+          'இணைப்பு': '/பங்களி/மொழியாக்கம்/'
         }
       ],
     }),

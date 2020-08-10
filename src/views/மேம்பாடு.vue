@@ -61,9 +61,11 @@
                   <v-tab :ripple="false">மொழியாக்கம் மேம்பாடு</v-tab>
                   <v-tab :ripple="false">விவரக்குறிப்பு</v-tab>
                 </v-tabs>
-                <router-link :to="'/மேம்பாடு/' + niral.பெயர்">
+                <router-link
+                  :to="'/பங்களி/இலக்கணங்கள்/' + niral.பெயர்"
+                  class="my-auto"
+                >
                   <v-btn
-                    class="my-auto"
                     color="orange"
                     outlined
                   >
@@ -236,6 +238,15 @@ export default {
           'மூல்மொழி': 'English',
           'படம்':'https://cdn.auth0.com/blog/react-js/react.png',
           'பொருந்தக்கூடிய': {'ஒருங்குறி': false, 'இல்லக்கணம்': true, '': ''},
+          'மொழிகள்': {
+            'français': [40, 2, 0],
+            'ਪੰਜਾਬੀ': [40, 40, 0]
+          }
+        },{
+          'பெயர்': 'Citrine',
+          'மூல்மொழி': 'English',
+          'படம்':'http://citrine-lang.org/img/logo.png',
+          'பொருந்தக்கூடிய': {'ஒருங்குறி': true, 'இல்லக்கணம்': true, '': ''},
           'மொழிகள்': {
             'français': [40, 2, 0],
             'ਪੰਜਾਬੀ': [40, 40, 0]

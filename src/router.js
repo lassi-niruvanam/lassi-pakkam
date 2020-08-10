@@ -28,18 +28,24 @@ export default new Router({
             component: () => import('./views/மேம்பாடு.vue')
         },
         {
-            path: '/மேம்பாடு/:niralmozhi',
-            component: () => import('./views/நிரல்மொழி.vue')
-        },
-        {
             path: '/sign-in',
             name: 'signin',
             component: () => import('./views/Signin.vue')
         },
         {
-            path: '/பங்களி',
-            name: 'பங்களி',
-            component: () => import('./views/பங்களி.vue')
+          path: '/பங்களி',
+          name: 'பங்களி',
+          component: () => import('./views/பங்களி.vue')
+        },
+        {
+            path: '/பங்களி/இலக்கணங்கள்/:niralmozhi',
+            component: () => import('./views/நிரல்மொழி.vue')
+        },
+        {
+            path: '/பங்களி/மொழியாக்கம்',
+            name: 'மொழியாக்கம்',
+            component: () => import('./views/மொழியாக்கம்.vue'),
+            meta: { requiresAuth: true }
         },
         {
             path: '/பதிவிறக்கங்கள்',
@@ -47,9 +53,17 @@ export default new Router({
             component: () => import('./views/பதிவிறக்கங்கள்.vue')
         },
         {
-            path: '/மொழியாக்கம்',
-            name: 'மொழியாக்கம்',
-            component: () => import('./views/மொழியாக்கம்.vue')
-        }
-    ]
+            path: '/தொடர்பு',
+            name: 'தொடர்பு',
+            component: () => import('./views/தொடர்பு.vue')
+        },
+        { path: '*', redirect: '/' }
+    ],
+    scrollBehavior (to, from, savedPosition) {
+      if (savedPosition) {
+        return savedPosition
+      } else {
+        return { x: 0, y: 0 }
+      }
+    }
 });
