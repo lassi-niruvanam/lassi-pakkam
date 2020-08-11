@@ -54,7 +54,7 @@ export default {
       tabs: 0,
       uruvakkiyavarkal: [
         {
-          'பெயர்': 'ஜூலீஎன் மலர்',
+          'பெயர்': 'ம. ஜூலீஎன்',
           'வேலை': 'முதலில் உருவாக்கியவர்',
           'மினஞ்சல்': 'julien.malard@mail.mcgill.ca',
           'இணைப்பு': 'https://github.com/julienmalard'
