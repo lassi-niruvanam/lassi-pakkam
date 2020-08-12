@@ -176,7 +176,7 @@
                 </v-toolbar>
                 <v-textarea
                   v-if="lassi_tayar"
-                  v-model="velidu"
+                  v-model="veliyidu"
                   height="500"
                   flat
                   :no-resize="true"
@@ -212,7 +212,7 @@
 </template>
 
 <script>
-import { dàg } from '../nuchabal/nuchabal'
+import { dàg, code, num } from '../nuchabal/nuchabal'
 import scriptjs from 'scriptjs'
 
 const mozhikal = ['தமிழ்', 'ਪੰਜਾਬੀ', 'فارسی', 'français', 'English']
@@ -221,31 +221,47 @@ export default {
     name: 'அறிமுகம்',
     watch: {
       niral_mozhi: function (val) {
-        this.udaranam_urai = this.lassi(this.udaranankal[val] || '', this.ul_mozhi, this.ul_niral_enuru)
+        console.log(this.udaranankal[val])
+        this.lassi(
+          this.udaranankal[val] || '',
+          this.niral_mozhi,
+          "English",
+          this.ul_mozhi,
+          'latin',
+          this.ul_niral_enuru).then(
+            (veliyidu) => {this.udaranam_urai = veliyidu}
+          )
       },
       ul_mozhi: function () {
-        this.udaranam_urai = this.lassi(this.udaranankal[this.niral_mozhi] || '', this.ul_mozhi, this.ul_niral_enuru)
+        this.lassi(
+          this.udaranankal[this.niral_mozhi] || '',
+          this.niral_mozhi,
+          "English",
+          this.ul_mozhi,
+          'latin',
+          this.ul_niral_enuru).then(
+            (veliyidu) => {this.udaranam_urai = veliyidu}
+          )
       },
       ul_niral_enuru: function () {
-        this.udaranam_urai = this.lassi(this.udaranankal[this.niral_mozhi] || '', this.ul_mozhi, this.ul_niral_enuru)
+        this.lassi(
+          this.udaranankal[this.niral_mozhi] || '',
+          this.niral_mozhi,
+          "English",
+          this.ul_mozhi,
+          'latin',
+          this.ul_niral_enuru).then(
+            (veliyidu) => {this.udaranam_urai = veliyidu}
+          )
       },
-    },
-    computed: {
-      velidu: function() {
-        const தனிப்பட்ட = this.$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட')
-        try {
-          return `லஸ்ஸி.மொழியாக்கம்(
-              உரை="""${this.udaranam_urai}""",
-              நிரல்மொழி="${this.niral_mozhi}",
-              மொழி="${this.vel_mozhi}",
-              எண்ணுரு=${this.vel_niral_enuru === தனிப்பட்ட ? "None" : this.vel_niral_enuru},
-              மூல்மொழி="${this.ul_mozhi}",
-              மூலெண்ணுரு=${this.ul_niral_enuru === தனிப்பட்ட ? "None" : this.ul_niral_enuru}
-            )`
-        }
-        catch(err) {
-          return err
-        }
+      udaranam_urai: function() {
+        this.pudippippu()
+      },
+      vel_mozhi: function() {
+        this.pudippippu()
+      },
+      vel_niral_enuru: function() {
+        this.pudippippu()
       }
     },
     mounted() {
@@ -254,19 +270,12 @@ export default {
         function () {
           window.languagePluginLoader.then(
             () => {
-              window.pyodide.runPythonAsync("import setuptools, micropip")
-            }
-          ).then(
-            () => {
-              window.pyodide.runPythonAsync("micropip.install('lassi')")
-            }
-          ).then(
-            () => {
-              window.pyodide.runPythonAsync("import லஸ்ஸி")
+              return window.pyodide.loadPackage(["micropip", "regex"])
             }
           ).then( () => {
             console.log('Eureka!')
             t.lassi_tayar = true
+            t.pudippippu()
             }
           )
         })
@@ -274,13 +283,57 @@ export default {
     methods: {
       dàg: function(langue) {
         return dàg(langue)
+      },
+      lassi: function(urai, niralmozhi, ul_mozhi, vel_mozhi, ul_niral_enuru, vel_niral_enuru) {
+        const தனிப்பட்ட = this.$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட')
+        const குறிப்பிடு = `
+def fonc(*args):
+  import லஸ்ஸி
+  return லஸ்ஸி.மொழியாக்கம்(
+      உரை="""${urai}\n""",
+      நிரல்மொழி="${niralmozhi}",
+      மொழி="${code(vel_mozhi)}",
+      எண்ணுரு="${vel_niral_enuru === தனிப்பட்ட ? num(vel_mozhi) : vel_niral_enuru}",
+      மூல்மொழி="${code(ul_mozhi)}",
+      மூலெண்ணுரு="${ul_niral_enuru === தனிப்பட்ட ? num(ul_mozhi) : ul_niral_enuru}"
+  )
+
+try:
+  res = fonc()
+except ModuleNotFoundError:
+  import micropip
+  micropip.install('lark-parser')
+  micropip.install('semantic-version')
+  micropip.install('lassi-ilakkanankal')
+  res = micropip.install('lassi').then(fonc)
+res
+`
+        return window.pyodide.runPythonAsync(குறிப்பிடு)
+      },
+      pudippippu: function() {
+
+        this.lassi(
+          this.udaranam_urai,
+          this.niral_mozhi,
+          this.ul_mozhi,
+          this.vel_mozhi,
+          this.ul_niral_enuru,
+          this.vel_niral_enuru
+        ).then(
+           (veliyidu) => {
+             console.log('veliyidu', veliyidu)
+             this.veliyidu = veliyidu
+           }
+         ).catch(err => this.veliyidu = err)
+
       }
     },
     data: function() {
       return {
         lassi_tayar: false,
-        niral_mozhikal: ['பைத்தான்', 'யாவாக்கிறிட்டு', 'ஜேஸான்'],
-        niral_mozhi: 'பைத்தான்',
+        niral_mozhikal: ['python', 'lark', 'json'],
+        niral_mozhi: 'python',
+        veliyidu: '',
         mozhikal: mozhikal,
         ul_mozhi: mozhikal.includes(this.$i18n.locale) ? this.$i18n.locale : 'தமிழ்',
         vel_mozhi: 'English',
@@ -288,8 +341,8 @@ export default {
         ul_niral_enuru: 'தனிப்பட்ட',
         vel_niral_enuru: 'தனிப்பட்ட',
         udaranankal: {
-          'பைத்தான்': `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`,
-          'யாவாக்கிறிட்டு': `class Circle {\n    constructor(radius) {\n        this.radius = radius;\n    }\n}`
+          'python': `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`,
+          'javascript': `class Circle {\n    constructor(radius) {\n        this.radius = radius;\n    }\n}`
         },
         udaranam_urai: `class Circle(object):\n    def __init__(self, radius):\n        self.radius = radius`
       }

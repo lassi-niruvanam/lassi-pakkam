@@ -12,7 +12,14 @@ export function dàg(langue, auto=false) {
 }
 export function  num(langue, auto='தமிழ்') {
   if (langues[langue]) {
-    return langues[langue].numération || auto
+    return langues[langue]["ajilanïk"] || auto
   }
   return auto
+}
+
+export function code(langue) {
+  if (langues[langue]) {
+    return langues[langue]["runuk'"] || langue
+  }
+  return langue
 }
