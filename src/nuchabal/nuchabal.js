@@ -17,6 +17,10 @@ export function  num(langue, auto='தமிழ்') {
   return auto
 }
 
+export function பெயர்(code_) {
+  return Object.keys(langues).find(x=>code(x)===code_)
+}
+
 export function code(langue) {
   if (langues[langue]) {
     return langues[langue]["runuk'"] || langue

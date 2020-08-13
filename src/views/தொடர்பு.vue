@@ -7,7 +7,7 @@
             max-width="600"
             flat
           >
-            <h1>லஸ்ஸி மென்பொருள் உருவாக்கியவர்களை இங்கே தொடரலாம்</h1>
+            <h1> {{ $t('தொடர்பு.தலைப்பு') }}</h1>
             <v-card
               v-for="(uruvakkiyavar, i) in uruvakkiyavarkal"
               :key="i"
@@ -25,9 +25,9 @@
                 <div>
                   <v-card-title
                     class="headline"
-                    v-text="uruvakkiyavar.பெயர்"
+                    v-text="$t('தொடர்பு.பெயர்கள்.'+uruvakkiyavar.பெயர்)"
                   ></v-card-title>
-                  <v-card-subtitle class="text-left" v-text="uruvakkiyavar.வேலை"></v-card-subtitle>
+                  <v-card-subtitle class="text-left" v-text="$t('தொடர்பு.வேலைகள்.'+uruvakkiyavar.வேலை)"></v-card-subtitle>
                   <v-card-text class="text--primary text-left">
                     <div>{{ uruvakkiyavar.மினஞ்சல் }}</div>
                   </v-card-text>
@@ -54,7 +54,7 @@ export default {
       tabs: 0,
       uruvakkiyavarkal: [
         {
-          'பெயர்': 'ம. ஜூலீஎன்',
+          'பெயர்': 'ஜூலீஎன்',
           'வேலை': 'முதலில் உருவாக்கியவர்',
           'மினஞ்சல்': 'julien.malard@mail.mcgill.ca',
           'இணைப்பு': 'https://github.com/julienmalard'

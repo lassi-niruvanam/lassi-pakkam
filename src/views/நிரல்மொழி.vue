@@ -104,7 +104,8 @@
 
 <script>
 import { obt_langues } from '../nuchabal/nuchabal'
-import lassi from '../lassi/lassi'
+import { விதிகள் } from 'lassi-ilakkanankal'
+
 
 export default {
   name: 'நிரல்மொழி',
@@ -113,7 +114,7 @@ export default {
     règles: function () {
       const langage = this.$route.params.niralmozhi
 
-      return lassi.infos[langage]["grammaire"]
+      return விதிகள்(langage)
     },
     trads: () => {
 

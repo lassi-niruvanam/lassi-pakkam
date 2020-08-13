@@ -8,28 +8,30 @@
             <v-card
               width="350"
               class="ma-10 pa-6"
-              v-for="(murai, index) in muraigal" :key="index"
+              v-for="(murai, index) in Object.keys(muraigal)" :key="index"
             >
-              <v-card-title class="headline">{{ murai.பெயர் }}</v-card-title>
+              <v-card-title class="headline">{{ $t(`பங்களி.${murai}.பெயர்`) }}</v-card-title>
               <v-divider :inset="inset"></v-divider>
 
               <v-card-text class="text--primary">
-                <div>{{ murai.தகவல்கள் }}</div>
+                <div>{{ $t(`பங்களி.${murai}.தகவல்`) }}</div>
               </v-card-text>
 
-          <v-card-actions>
-            <router-link :to="murai.இணைப்பு">
-              <v-btn
-                color="orange"
-                outlined
-              >
-                {{ $t('பங்களி.பங்களி') }}
-                <v-icon right>mdi-arrow-right</v-icon>
-              </v-btn>
-            </router-link>
-          </v-card-actions>
-        </v-card>
-        </v-row>
+              <v-card-actions>
+                <!-- <router-link :to="murai.இணைப்பு"> -->
+                  <v-btn
+                    color="orange"
+                    :href="muraigal[murai].இணைப்பு"
+                    target="_blank"
+                    outlined
+                  >
+                    {{ $t('பங்களி.பங்களி') }}
+                    <v-icon right>mdi-arrow-right</v-icon>
+                  </v-btn>
+                <!-- </router-link> -->
+              </v-card-actions>
+            </v-card>
+          </v-row>
         </v-col>
       </v-row>
 
@@ -39,18 +41,14 @@
 export default {
     name: 'அறிமுகம்',
     data: () => ({
-      muraigal: [
-        {
-          'பெயர்': 'இலக்கணங்கள்',
-          'தகவல்கள்': 'புது கணினி அல்லது மநிதர் மொழிகளை லஸ்ஸி குறிப்புக்கு சேருங்கள்.',
-          'இணைப்பு': '/மேம்பாடு'
+      muraigal: {
+        'இலக்கணங்கள்': {
+          'இணைப்பு': 'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/மூலம்/லஸ்ஸியிலக்கணங்கள்/இலக்கணங்கள்/',
         },
-        {
-          'பெயர்': 'வலைப் பக்கம்',
-          'தகவல்கள்': 'இந்த வலைப் பக்கத்தை மொழிபெயர்ப்பு செய்யுங்கள்.',
-          'இணைப்பு': '/பங்களி/மொழியாக்கம்/'
+        'வலைப் பக்கம்': {
+          'இணைப்பு': 'https://github.com/lassi-samaaj/lassi-pakkam/edit/master/src/trads.json'
         }
-      ],
+      }
     }),
 };
 </script>

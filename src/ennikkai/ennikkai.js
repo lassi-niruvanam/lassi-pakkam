@@ -1,5 +1,7 @@
 import takavalkal from './takavalkal.json'
 
+export const முறைமைகள் = Object.keys(takavalkal)
+
 function mattram_idancar(எண், குறிகள்) {
   குறிகள் = [...குறிகள்]
   const அடி = குறிகள்.length

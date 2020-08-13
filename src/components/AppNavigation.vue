@@ -37,13 +37,13 @@
 
     <v-spacer></v-spacer>
 
-    <v-text-field
+    <!-- <v-text-field
         hide-details
         prepend-icon="search"
         single-line
         color="brown"
       >
-    </v-text-field>
+    </v-text-field> -->
 
     <v-menu
       transition="slide-y-transition"
@@ -91,9 +91,32 @@
       </v-list>
     </v-menu>
 
-    <v-btn icon>
-      <v-icon>mdi-heart</v-icon>
-    </v-btn>
+    <v-menu
+      transition="slide-y-transition"
+      bottom
+      offset-y offset-x
+      min-width="225"
+    >
+      <template v-slot:activator="{ on }">
+        <v-btn icon v-on="on">
+          <v-icon>mdi-heart</v-icon>
+        </v-btn>
+      </template>
+      <v-list class="overflow-y-auto" style="max-height: 400px">
+        <v-list-item
+          v-for="(item, i) in Object.keys(உதவி)"
+          :key="i"
+          :href="உதவி[item]['இணைப்பு']"
+        >
+          <v-list-item-action>
+            <v-icon color="amber accent-4">{{ உதவி[item]['படம்'] }}</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>{{ $t(`பிடித்திருக்கு.${item}.பெயர்`) }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-menu>
 
     <v-btn
       icon
@@ -103,11 +126,11 @@
       <v-icon>mdi-github</v-icon>
     </v-btn>
 
-    <router-link to="/sign-in">
+    <!-- <router-link to="/sign-in">
       <v-btn icon>
         <v-icon>mdi-login-variant</v-icon>
       </v-btn>
-    </router-link>
+    </router-link> -->
 
   </v-app-bar>
 </template>
@@ -121,8 +144,18 @@ export default {
     data: () => ({
       tab: 'அறிமுகம்',
       மொழி_மேலாண்மை: மொழி_மேலாண்மை,
+      உதவி: {
+        "வணக்கம்": {
+          "இணைப்பு": "mailto:julien.malard@mail.mcgill.ca",
+          'படம்': 'mdi-emoticon-happy-outline'
+        },
+        "வேலை":{
+          "இணைப்பு": "/தொடர்பு",
+          'படம்': 'mdi-xml'
+        }
+      },
       items: [
-        'அறிமுகம்', 'கேள்விகள்', 'மேம்பாடு', 'பங்களி', 'பதிவிறக்கங்கள்', 'தொடர்பு'
+        'அறிமுகம்', 'கேள்விகள்', 'மேம்பாடு', 'பங்களி', 'தொடர்பு'
       ],
     }),
     computed: {

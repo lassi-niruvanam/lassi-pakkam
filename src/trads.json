@@ -2,6 +2,14 @@
   "தமிழ்": {
     "லஸ்ஸி": "லஸ்ஸி",
     "மொழி": {"மேலும்": "மேலும்"},
+    "பிடித்திருக்கு": {
+      "வணக்கம்": {
+        "பெயர்": "வணக்கம் சொல்லுங்கள்"
+      },
+      "வேலை": {
+        "பெயர்": "எங்களுக்கு ஒரு வேலை கொடுங்கள்"
+      }
+    },
     "பங்களி": {"பங்களி": "பங்களி"},
     "தாவல்": {
       "அறிமுகம்": "அறிமுகம்",
@@ -80,6 +88,32 @@
            "௧": "கண்டிப்பாக பயன் செய்ய வேண்டும்! ஆனால் உலகத்தில் [௭௲ (ஏழாயிரம்) த்துக்கு மேலே](https://glottolog.org/glottolog/language) வேவ்வேறு இயற்கை அல்லது மனிதர் மொழிகள் உள்ளன. அதற்கு மேலே ஏற்கனவே ஆங்கில மொழி மூலமான பல நிரல்மொழிகள் உபயோகத்தில் உள்ளன. ஒவ்வொரு மனிதர் மொழியுக்காக புதுச நிரல்மொழி [உருவாக்க முடியாது](https://www.mic.com/articles/130331/this-arabic-programming-language-shows-how-computers-revolve-around-the-western-world). முடிந்தாலும், பல பொதுவான நிரல் தொகுதிகளை தேவை இல்லாமல் மறுப்படியும் ஒவ்வொரு புதுச மொழியில் உருவாக்க வேண்டியது. உதாரணத்துக்காக, யாவாக்கிறிட்டுக்கு தற்பொது [௲௲ (பத்து லச்சியம்) த்துக்கு மேலே](https://www.npmjs.com/) தனிப்பட்ட சமூக தொகுதிகள் கிடைக்கும்.",
            "௨": "லஸ்ஸி ஒரு புது நிரல்மொழியல்ல. அதாவது லஸ்ஸி ஏற்கனவே உபயோகத்தில் உள்ள நிரல்மொழிகளை வேவ்வேறு மனிதர் மொழிகளுக்கு கொண்டு வரும் ஒரு கருவி ஆகும்."
          }
+       }
+     },
+     "மேம்பாடு": {
+       "இப்பொதே_பங்களி": "இப்பொதே பங்களி",
+       "மொழியாக்கம்_மேம்பாடு": "மொழியாக்கம் மேம்பாடு",
+       "மொழிகள்": "மொழிகள்",
+       "நிறைவு": "நிறைவு"
+     },
+     "பங்களி": {
+       "பங்களி": "பங்களி",
+       "இலக்கணங்கள்": {
+         "பெயர்": "இலக்கணங்கள்",
+         "தகவல்": "புது கணினி அல்லது மநிதர் மொழிகளை லஸ்ஸி குறிப்புக்கு சேருங்கள்."
+       },
+       "வலைப் பக்கம்": {
+         "பெயர்": "வலைப் பக்கம்",
+         "தகவல்": "இந்த வலைப் பக்கத்தை மொழிபெயர்ப்பு செய்யுங்கள்."
+       }
+     },
+     "தொடர்பு": {
+       "தலைப்பு": "லஸ்ஸி மென்பொருள் உருவாக்கியவர்களை இங்கே தொடரலாம்",
+       "வேலைகள்": {
+         "முதலில் உருவாக்கியவர்": "முதலில் உருவாக்கியவர்"
+       },
+       "பெயர்கள்": {
+         "ஜூலீஎன்": "ம. ஜூலீஎன்"
        }
      }
   },
@@ -243,13 +277,22 @@
   "français": {
     "லஸ்ஸி": "Lassi",
     "மொழி": {"மேலும்": "Plus"},
+    "பிடித்திருக்கு": {
+      "வணக்கம்": {
+        "பெயர்": "Dites-nous bonjour"
+      },
+      "வேலை": {
+        "பெயர்": "Offrez-nous un emploi"
+      }
+    },
     "பங்களி": {"பங்களி": "Contribuer"},
     "தாவல்": {
       "அறிமுகம்": "Général",
       "கேள்விகள்": "Questions",
       "மேம்பாடு": "Développement",
       "பங்களி": "Contribuer",
-      "பதிவிறக்கங்கள்": "Télécharger"
+      "பதிவிறக்கங்கள்": "Télécharger",
+      "தொடர்பு": "Contact"
     },
     "அறிமுகம்": {
       "தலைப்பு": "Bienvenue à Lassi",
@@ -305,7 +348,7 @@
         "பதில்": {
           "௧": "Félicitations ! Vous avez, dès le début, un avantage dans le monde de la programmation tel qu'il existe aujourd'hui.",
           "௨": "Cependant Lassi saura bien vous être utile. En premier lieu, il vous pemettra de mieux collaborer avec vos collègues et contributeurs et contributrices multilingues. En sus, il sera bien necessaire si vous devez utiliser des programmes développés avec Lassi.",
-          "௩": "En outre, ce n'est qu'à travers le travail de développeurs multilingues qui décideront malgré tout de développer dans des langues autres que l'anglais que la quantité de ressources et de code dans d'autres langues atteindra la parité avec l'anglais et permettra aux développeurs unilingues aussi de s'atteindre tout leur potentiel."
+          "௩": "En outre, ce n'est qu'à travers le travail de développeurs multilingues qui décideront malgré tout de développer dans des langues autres que l'anglais que la quantité de ressources et de code dans d'autres langues atteindra la parité avec l'anglais et permettra aux développeurs unilingues aussi d'atteindre tout leur potentiel."
         }
       },
       "கூகல்": {
@@ -320,6 +363,32 @@
           "௧": "Mais bien sûr, utilisez-les ! Cependant, nous avons plus de [7000 langues parlées](https://glottolog.org/glottolog/language) dans le monde. En sus, nous avons déjà une grande variété de langages informatiques uniquement pour l'anglais. [Ce n'est pas bien pratique](https://www.mic.com/articles/130331/this-arabic-programming-language-shows-how-computers-revolve-around-the-western-world) de développer un nouveau langage informatique pour chaque langue humaine. Et même si vous réussissiez, vous devriez encore recréer une grande quantité de modules et librairies populaires pour chaque langage. À titre d'exemple, JavaScript lui-même compte déjà [plus d'un million](https://www.npmjs.com/) de paquets externes.",
           "௨": "Lassi n'est pas un nouveau langage informatique. Au contraire, c'est un outil qui permet l'utilisation des langages informatiques existants dans toute langue humaine."
         }
+      }
+    },
+    "பங்களி": {
+      "பங்களி": "Contribuer",
+      "இலக்கணங்கள்": {
+        "பெயர்": "Grammaires",
+        "தகவல்": "Ajoutez une nouvelle langue ou un nouveau langage informatique à la spécification de Lassi."
+      },
+      "வலைப் பக்கம்": {
+        "பெயர்": "Site web",
+        "தகவல்": "Aidez à traduire ce site web dans votre langue préférée."
+      }
+    },
+    "மேம்பாடு": {
+      "இப்பொதே_பங்களி": "Contribuer maintenant",
+      "மொழியாக்கம்_மேம்பாடு": "Progrès de traduction",
+      "மொழிகள்": "Langues",
+      "நிறைவு": "Complétion"
+    },
+    "தொடர்பு": {
+      "தலைப்பு": "Contacts des développeurs de Lassi",
+      "வேலைகள்": {
+        "முதலில் உருவாக்கியவர்": "Développeur principal"
+      },
+      "பெயர்கள்": {
+        "ஜூலீஎன்": "Julien Malard Adam"
       }
     }
   },
