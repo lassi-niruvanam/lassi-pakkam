@@ -13,6 +13,7 @@ export default class மொழியாக்கம் {
     this.மேம்பாடு = Object.fromEntries(
        this.மொழிகள்.map( இ => [இ, this._மேம்பாடு(இ) / அள்ளவு])
      )
+    this.மொழிகள் = this.மொழிகள்.sort().sort((இ, ஈ) => this.மேம்பாடு[இ] > this.மேம்பாடு[ஈ] ? -1: 1)
   }
 
   _மேம்பாடு(இ) {

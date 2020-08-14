@@ -78,16 +78,21 @@
             ></v-progress-circular>
           </v-list-item-action>
         </v-list-item>
-        <v-divider></v-divider>
-
-        <v-list-item :ripple="false"  @click.stop="dialog = true">
-          <v-list-item-action>
-            <v-icon>mdi-plus</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>{{ $t('மொழி.மேலும்') }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        <v-footer
+          absolute
+          color="white"
+        >
+          <v-list-item :ripple="false"
+          href="https://github.com/lassi-samaaj/lassi-pakkam/blob/master/src/trads.json"
+          target="_blank">
+            <v-list-item-action>
+              <v-icon>mdi-plus</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>{{ $t('மொழி.மேலும்') }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-footer>
       </v-list>
     </v-menu>
 

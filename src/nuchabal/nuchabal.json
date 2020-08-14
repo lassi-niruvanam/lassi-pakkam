@@ -24,10 +24,17 @@
     "glottolog": "stan1293",
     "ajilanïk": "latin"
   },
+  "తెలుగు": {
+    "runuk'": "తె",
+    "glottolog": "telu1262",
+    "rumajaju": "te",
+    "ajilanïk": "తెలుగు"
+  },
   "தமிழ்": {
     "runuk'": "த",
     "glottolog": "tami1289",
-    "rumajaju": "ta"
+    "rumajaju": "ta",
+    "ajilanïk": "தமிழ்"
   },
   "ਪੰਜਾਬੀ": {
     "runuk'": "ਪੰ",
@@ -46,10 +53,10 @@
     "glottolog": "guja1252",
     "rumajaju": "gu"
   },
-  "العربية": {
+  "عربية": {
     "runuk'": "عرب",
     "dàg": true,
-    "numération": "عربية"
+    "ajilanïk": "عربية"
   },
   "اردو": {
     "runuk'": "ار",
@@ -70,7 +77,7 @@
     "dàg": true,
     "glottolog": "panj1256",
     "rumajaju": "pnb",
-    "ajilanïk": "ار"
+    "ajilanïk": "فارسی"
   },
   "मराठी": {
     "runuk'": "म",
@@ -110,7 +117,7 @@
   },
   "Kanyen'ké:ha": {
     "dàg": false,
-    "numération": "latin"
+    "ajilanïk": "latin"
   },
   "汉语": {
     "runuk'": "汉",
