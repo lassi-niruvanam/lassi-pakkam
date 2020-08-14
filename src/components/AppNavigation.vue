@@ -107,6 +107,7 @@
           v-for="(item, i) in Object.keys(உதவி)"
           :key="i"
           :href="உதவி[item]['இணைப்பு']"
+          target="_blank"
         >
           <v-list-item-action>
             <v-icon color="amber accent-4">{{ உதவி[item]['படம்'] }}</v-icon>
