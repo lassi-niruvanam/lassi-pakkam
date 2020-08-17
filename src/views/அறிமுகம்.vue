@@ -440,9 +440,35 @@ res
         ul_niral_enuru: this.$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட'),
         vel_niral_enuru: this.$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட'),
         udaranankal: {
-          'python': `class Circle(object):\n    pi = 3.141592653\n    def __init__(self, radius):\n        self.radius = radius\n    def circumference(self):\n        return 2 * self.pi * self.radius\n    def area(self):\n        return self.pi ** 2 * self.radius\nradii = range(5)\ncircles = [Circle(radius=r) for r in radii]\nfor c in circles:\n    print(c.circumference(), c.area())`,
-          'javascript': `class Circle {\n    constructor(radius) {\n        this.radius = radius;\n    }\n}`,
-          'json': `{\n    "list": [1,2,3.4],\n    "number": 1e5,\n    "nested": {\n        "bool": true, \n        "None": null}}`
+          'python': `class Circle(object):
+    pi = 3.141592653
+    def __init__(self, radius):
+        self.radius = radius
+        def circumference(self):
+            return 2 * self.pi * self.radius
+        def area(self):
+            return self.pi ** 2 * self.radius
+
+radii = range(5)
+circles = [Circle(radius=r) for r in radii]
+
+for c in circles:
+    print(c.circumference(), c.area())
+`,
+          'javascript': `class Circle {
+    constructor(radius) {
+        this.radius = radius;
+    }
+}
+`,
+          'json': `{
+    "list": [1,2,3.4],
+    "number": 1e5,
+    "nested": {
+        "bool": true,
+        "None": null
+      }
+  }`,
         },
         udaranam_urai: '',
         udaranam_urai_tayar: false,
