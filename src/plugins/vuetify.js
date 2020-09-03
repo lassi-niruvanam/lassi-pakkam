@@ -12,7 +12,6 @@ Vue.use(VueI18n)
 Vue.use(VueWorker)
 
 export const மொழி_மேலாண்மை = new மொழியாக்கம்(மொழிபெயர்ப்புகள், 'தமிழ்')
-console.log(Vue.$cookies.get('மொழி௨'))
 
 export const i18n = new VueI18n({
   locale: Vue.$cookies.get('மொழி') || 'தமிழ்',

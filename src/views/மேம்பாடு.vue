@@ -41,12 +41,10 @@
                     {{ $t('மேம்பாடு.நிறைவு') }}
                   </h1>
                   <v-progress-circular
-                    :indeterminate="indeterminate"
-                    :rotate="rotate"
                     size="60"
                     :value="niraivu_ellam(niral) * 100"
                     width="8"
-                    color="amber accent-4"
+                    :color="niraivu_ellam(niral) === 0 ? 'grey lighten-2' : 'amber accent-4'"
                   >{{ uraikku(Math.round(niraivu_ellam(niral) * 100)) }} %</v-progress-circular>
                 </v-col>
               </v-row>
@@ -160,7 +158,10 @@ export default {
         return இயற்கை_மொழிகள்(நிரல்மொழி)
       },
       niraivu_ellam: function(நிரல்மொழி) {
-        let மொழிகள் = this.mozhikal(நிரல்மொழி)
+        let மொழிகள் = this.mozhikal(நிரல்மொழி).slice(1)
+        if (!மொழிகள்.length) {
+          return  0
+        }
         return மொழிகள்.map(மொழி => this.niraivu(நிரல்மொழி, மொழி)).reduce((a, b) => (a + b)) / மொழிகள்.length;
       },
       niraivu: function(நிரல்மொழி, மொழி) {

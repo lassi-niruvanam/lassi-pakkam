@@ -1,3 +1,30 @@
+// import runExample from "./aviondb.js"
+// runExample();
+// const IPFS = require('ipfs')
+// const OrbitDB = require('orbit-db')
+
+// const ipfsOptions = {
+//       preload: { enabled: false },
+//       repo: './ipfs',
+//       EXPERIMENTAL: { pubsub: true },
+//       config: {
+//         Bootstrap: [],
+//         Addresses: { Swarm: [] }
+//       }
+//     }
+// async function main() {
+//   const ipfs = await IPFS.create(ipfsOptions);
+//   const orbitdb = await OrbitDB.createInstance(ipfs);
+//   const db = await orbitdb.docs('opews-db-test1');
+//   const address = db.address;
+//   console.log(address)
+
+// }
+
+// main();
+
+
+
 export default class மொழியாக்கம் {
   constructor(மொழிபெயர்ப்புகள், இயல்புநிலை) {
     this.மொழிபெயர்ப்புகள் = மொழிபெயர்ப்புகள்
@@ -28,13 +55,30 @@ export default class மொழியாக்கம் {
   }
 
   சாபிகள்() {
-    return Array.from(
-      Object.keys(this.மொழிபெயர்ப்புகள்[this.இயல்புநில]),
-       இ => இ
-     )
+    const applatir = (obj, context = '') =>
+      Object.keys(obj).reduce((acc, k) => {
+        const pre = context.length ? context + '.' : '';
+        if (typeof obj[k] === 'object') {
+          acc.push(...applatir(obj[k], pre + k))
+        } else {
+          acc.push(pre + k)
+        }
+        return acc;
+      },
+    [])
+    return applatir(this.மொழிபெயர்ப்புகள்[this.இயல்புநிலை])
   }
 
   உரை(சாபி, மொழி) {
-    return சாபி + மொழி
+    const சாபிகள் = சாபி.split(".")
+    let மொழிபெயர்ப்புகள் = this.மொழிபெயர்ப்புகள்[மொழி]
+    if (!மொழிபெயர்ப்புகள்) return சாபி
+    for (let சா = 0; சா < சாபிகள்.length; சா++) {
+      மொழிபெயர்ப்புகள் = மொழிபெயர்ப்புகள்[சாபிகள்[சா]]
+      if (!மொழிபெயர்ப்புகள்) {
+        return
+      }
+    }
+    return மொழிபெயர்ப்புகள்
   }
 }

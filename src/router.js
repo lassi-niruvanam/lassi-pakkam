@@ -15,7 +15,7 @@ export default new Router({
         {
             path: '/அறிமுகம்',
             name: 'அறிமுகம்',
-            component: () => import('./views/அறிமுகம்.vue')
+            component: அறிமுகம்
         },
         {
             path: '/கேள்விகள்',
