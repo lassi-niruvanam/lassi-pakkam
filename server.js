@@ -5,10 +5,11 @@ var path = require('path');
 var serveStatic = require('serve-static');
 
 var app = express();
-app.use(serveStatic(path.join(__dirname, "/dist")))
 
 var history = require('connect-history-api-fallback')
 app.use(history())
+
+app.use(serveStatic(path.join(__dirname, "/dist")))
 
 if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
