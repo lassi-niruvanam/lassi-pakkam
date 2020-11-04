@@ -252,7 +252,6 @@
 import { dàg, code, num, பெயர் } from '../nuchabal/nuchabal'
 import { முறைமைகள் } from '../ennikkai/ennikkai'
 import { நிரல்மொழிகள், இயற்கை_மொழிகள், நிறைவு } from 'lassi-ilakkanankal'
-// import scriptjs from 'scriptjs'
 
 
 export default {
@@ -287,7 +286,7 @@ export default {
         // self.languagePluginUrl = 'http://localhost:8000/'
 importScripts('https://pyodide-cdn2.iodide.io/v0.15.0/full/pyodide.js')
 self.postMessage({"செய்தி": "தயார்"});
-
+console.log('salut !')
 var onmessage = function(e) { // eslint-disable-line no-unused-vars
 languagePluginLoader.then(() => {
   self.pyodide.loadPackage(['micropip', 'regex']).then(() => {
@@ -300,8 +299,9 @@ languagePluginLoader.then(() => {
         self[key] = data[key];
       }
     }
+    console.log('arrivé ici !')
     self.pyodide.runPythonAsync(data.python, () => {})
-        .then((results) => { self.postMessage({results}); })
+        .then((results) => { console.log(results); self.postMessage({results}); })
         .catch((err) => {
           self.postMessage({error : err.message});
         });
@@ -316,15 +316,19 @@ languagePluginLoader.then(() => {
         console.log(`பையோடைட் பிழை: ${e.filename}, கோடு: ${e.lineno}, ${e.message}`)
       }
       this.pyodideWorker.onmessage = (e) => {
+        console.log('1', e)
         const {results, error, செய்தி} = e.data
         if (results) {
           if (this.lassi_veliyidu === 'உள்') {
             this.udaranam_urai = results
             this.udaranam_urai_tayar = true
+            console.log('2', 'உள்')
           } else if (this.lassi_veliyidu === 'வெள்') {
             this.veliyidu = results
             this.vel_urai_tayar = true
+            console.log('3', 'வெள்')
           }
+          console.log('4')
           this.lassi_veliyidu = null
         } else if (error) {
           console.log('பையோடைட் பிழை: ', error)
@@ -334,6 +338,7 @@ languagePluginLoader.then(() => {
           this.lassi_veliyidu = null
           this.vel_urai_tayar = true
         } else if (செய்தி) {
+          console.log('5', செய்தி)
           if (செய்தி === 'தயார்') {
             console.log('லஸ்ஸி தயார்')
             this.lassi_tayar = true
@@ -355,9 +360,20 @@ languagePluginLoader.then(() => {
         vel_niral_enuru = vel_niral_enuru || தனிப்பட்ட
 
         const குறிப்பிடு = `
+print('py: ici !')
 def fonc(*args):
+  print('py: dans fonc')
+  from lark import Lark
+  import lark
+  print(lark.__version__)
+  import semantic_version
   import லஸ்ஸி
-  return லஸ்ஸி.மொழியாக்கம்(
+
+
+  print('py: fonc')
+
+  print('lassi importé !')
+  res_lassi = லஸ்ஸி.மொழியாக்கம்(
       உரை="""${urai}\n""",
       நிரல்மொழி="${niralmozhi}",
       மொழி="${code(vel_mozhi)}",
@@ -366,17 +382,24 @@ def fonc(*args):
       மூலெண்ணுரு="${ul_niral_enuru === தனிப்பட்ட ? num(ul_mozhi) : ul_niral_enuru}",
       இனங்காட்டிகள்=${JSON.stringify(this.inankattikal)}
   )
+  print('py: fonc finie', res_lassi)
+  return res_lassi
 
 try:
   res = fonc()
+  print('py: tout était installé!')
 except ModuleNotFoundError:
+  print('py: ModuleNotFoundError')
   import micropip
-  micropip.install('lark-parser')
-  micropip.install('semantic-version')
-  micropip.install('lassi-ilakkanankal')
-  res = micropip.install('lassi').then(fonc)
+
+  res = micropip.install(['lark-parser', 'lassi', 'semantic-version', 'lassi-ilakkanankal']).then(fonc)
+  # micropip.install('lassi-ilakkanankal')
+  print('py: lassi')
+  # res = micropip.install('lassi').then(fonc)
+  # print('py: fini !', res)
 res
 `
+        console.log(குறிப்பிடு)
         this.pyodideWorker.postMessage({
           python: குறிப்பிடு
         })
@@ -395,7 +418,6 @@ res
             this.vel_niral_enuru,
           )
          }
-
       },
       ul_urai_pudippippu: function() {
         const udaranam_urai = this.udaranankal[this.niral_mozhi]
@@ -475,110 +497,182 @@ for c in circles:
         vel_urai_tayar: false,
         lassi_veliyidu: null,
         inankattikal: [
-            {
-                'fr': 'fonction',
-                'த': "செயலி",
-                'en': 'function'
-            },
-            {
-                'fr': 'soimême',
-                'த': "தன்",
-                'en': 'self'
-            },
-            {
-                'fr': 'Cercle',
-                'த': "வட்டம்_தொகுப்பு",
-                'en': 'Circle'
-            },
-            {
-                'fr': 'cercle',
-                'த': "வட்டம்",
-                'en': 'circle'
-            },
-            {
-                'fr': '__init__',
-                'த': "__துவக்கம்__",
-                'en': '__init__'
-            },
-            {
-                'fr': 'rayon',
-                'த': "ஆரம்",
-                'en': 'radius'
-            },
-            {
-                'fr': 'circonférence',
-                'த': "சுற்றளவு",
-                'en': 'circumference'
-            },
-            {
-                'fr': 'pi',
-                'த': "பை",
-                'en': 'pi'
-            }
-            ,
-            {
-                'fr': 'rayons',
-                'த': "ஆரங்கள்",
-                'en': 'radii'
-            }
-            ,
-            {
-                'fr': 'gamme',
-                'த': "சரகம்",
-                'en': 'range'
-            }
-            ,
-            {
-                'fr': 'cercles',
-                'த': "வட்டங்கள்",
-                'en': 'circles'
-            }
-            ,
-            {
-                'fr': 'r',
-                'த': "ஆ",
-                'en': 'r'
-            },
-            {
-                'fr': 'objet',
-                'த': "பொருள்",
-                'en': 'object'
-            },
-            {
-                'fr': 'affiche',
-                'த': "பதிப்பி",
-                'en': 'print'
-            },
-            {
-                'fr': 'superficie',
-                'த': "பரப்பளவு",
-                'en': 'area'
-            },
-            {
-                'fr': 'x',
-                'த': "இ",
-                'en': 'x'
-            },
-            {
-                'fr': 'y',
-                'த': "ஈ",
-                'en': 'y'
-            },
-            {
-                'fr': 'z',
-                'த': "ஊ",
-                'en': 'z'
-            },
-            {
-                'fr': 'w',
-                'த': "ஏ",
-                'en': 'w'
-            },
-            {
-                'fr': 'c',
-                'த': "வ",
-                'en': 'c'
-            }
+          {
+              'fr': 'fonction',
+              'த': "செயலி",
+              'en': 'function',
+              'de': 'funktion',
+              'rw': 'umumaro'
+          },
+          {
+              'fr': 'soimême',
+              'த': "தன்",
+              'en': 'self',
+              'de': 'eigen',
+              'rw': 'bwite',
+              'हिं': 'स्वयं',
+              '汉': '自个儿'
+          },
+          {
+              'fr': 'Cercle',
+              'த': "வட்டம்_தொகுப்பு",
+              'en': 'Circle',
+              'de': 'Kreis',
+              'rw': 'Uruziga',
+              'हिं': 'वृत्त_वर्ग',
+              '汉': '圈类別'
+          },
+          {
+              'fr': 'cercle',
+              'த': "வட்டம்",
+              'en': 'circle',
+              'de': 'kreis',
+              'rw': 'uruziga',
+              'हिं': 'वृत्त',
+              '汉': '圈'
+          },
+          {
+              'fr': '__init__',
+              'த': "__துவக்கம்__",
+              'en': '__init__',
+              'de': '__kreation__',
+              'rw': '__rema__',
+              'हिं': '__प्रारंभ__',
+              '汉': '__初始化__'
+          },
+          {
+              'fr': 'rayon',
+              'த': "ஆரம்",
+              'en': 'radius',
+              'de': 'radius',
+              'rw': 'akarambararo',
+              'हिं': 'त्रिज्या',
+              '汉': '半径'
+          },
+          {
+              'fr': 'circonférence',
+              'த': "சுற்றளவு",
+              'en': 'circumference',
+              'de': 'Umfang',
+              'rw': 'umuzenguruko',
+              'हिं': 'परिधि',
+              '汉': '圓周'
+          },
+          {
+              'fr': 'pi',
+              'த': "பை",
+              'en': 'pi',
+              'de': 'Pi',
+              'rw': 'pi',
+              'हिं': 'पाई',
+              '汉': '圓周率'
+          }
+          ,
+          {
+              'fr': 'rayons',
+              'த': "ஆரங்கள்",
+              'en': 'radii',
+              'de': 'radii',
+              'rw': 'uturambararo',
+              'हिं': 'त्रिज्याएं',
+              '汉': '半径清单'
+          }
+          ,
+          {
+              'fr': 'gamme',
+              'த': "சரகம்",
+              'en': 'range',
+              'de': 'reichweite',
+              'rw': 'kugeraKu',
+              'हिं': 'श्रृंखला',
+              '汉': '顺序'
+          }
+          ,
+          {
+              'fr': 'cercles',
+              'த': "வட்டங்கள்",
+              'en': 'circles',
+              'de': 'kreiseListe',
+              'rw': 'inziga',
+              'हिं': 'वृत्तएं',
+              '汉': '圈清单'
+          }
+          ,
+          {
+              'fr': 'r',
+              'த': "ஆ",
+              'en': 'r',
+              'de': 'r',
+              'हिं': 'त्रि',
+              '汉': '这个半径',
+              'rw': 'r'
+          },
+          {
+              'fr': 'objet',
+              'த': "பொருள்",
+              'en': 'object',
+              'de': 'Objekt',
+              'हिं': 'वस्तु',
+              '汉': '对象'
+          },
+          {
+              'fr': 'affiche',
+              'த': "பதிப்பி",
+              'en': 'print',
+              'de': 'drucke',
+              'rw': 'sohoraUrupapuro',
+              'हिं': 'चपाना',
+              '汉': '打印'
+          },
+          {
+              'fr': 'superficie',
+              'த': "பரப்பளவு",
+              'en': 'area',
+              'de': 'Fläche',
+              'rw': 'Ubuso',
+              'हिं': 'क्षेत्रफल',
+              '汉': '面积'
+          },
+          {
+              'fr': 'x',
+              'த': "இ",
+              'en': 'x',
+              'de': 'x',
+              'rw': 'x'
+          },
+          {
+              'fr': 'y',
+              'த': "ஈ",
+              'en': 'y',
+              'de': 'y',
+              'rw': 'y'
+          },
+          {
+              'fr': 'z',
+              'த': "ஊ",
+              'en': 'z',
+              'de': 'z',
+              'rw': 'z'
+          },
+          {
+              'fr': 'w',
+              'த': "ஏ",
+              'en': 'w',
+              'de': 'w'
+          },
+          {
+              'fr': 'c',
+              'த': "வ",
+              'en': 'c',
+              'de': 'c',
+              'हिं': 'वृ',
+              '汉': '这个圈',
+              'rw': 'i'
+          },
+          {
+            'de': 'drücke',
+            'en': 'push'
+          }
         ]
       }
     }

@@ -6,6 +6,18 @@
     "glottolog": "stan1290",
     "ajilanïk": "latin"
   },
+  "Kinyarwanda":{
+    "runuk'": "rw",
+    "rumajaju": "rw",
+    "glottolog": "kiny1244",
+    "ajilanïk": "latin"
+  },
+  "Deutsch": {
+    "runuk'": "de",
+    "rumajaju": "de",
+    "glottolog": "mode1258",
+    "ajilanïk": "latin"
+  },
   "español": {
     "runuk'": "es",
     "rumajaju": "fr",
@@ -61,7 +73,12 @@
   "ગુજરાતી": {
     "runuk'": "ગુ",
     "glottolog": "guja1252",
-    "rumajaju": "gu"
+    "rumajaju": "gu",
+    "ajilanïk": "ગુજરાતી"
+  },
+  "ଓଡ଼ିଆ": {
+    "runuk'": "ଓଡ଼",
+    "ajilanïk": "ଓଡ଼ିଆ"
   },
   "عربية": {
     "runuk'": "عرب",
@@ -128,6 +145,10 @@
   "Kanyen'ké:ha": {
     "dàg": false,
     "ajilanïk": "latin"
+  },
+  "ಕನ್ನಡ": {
+    "runuk'": "ಕ",
+    "ajilanïk": "ಕನ್ನಡ"
   },
   "汉语": {
     "runuk'": "汉",

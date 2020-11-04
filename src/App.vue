@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <app-navigation></app-navigation>
-    <v-content>
+    <v-main>
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
-    </v-content>
+    </v-main>
     <app-footer></app-footer>
   </v-app>
 </template>
