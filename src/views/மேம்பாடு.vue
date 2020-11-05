@@ -155,7 +155,7 @@ export default {
         return இயற்கை_மொழிகள்(நிரல்மொழி)[0]
       },
       mozhikal: function(நிரல்மொழி) {
-        return இயற்கை_மொழிகள்(நிரல்மொழி)
+        return இயற்கை_மொழிகள்(நிரல்மொழி).sort((a,b) => this.niraivu(நிரல்மொழி, a) < this.niraivu(நிரல்மொழி, b))
       },
       niraivu_ellam: function(நிரல்மொழி) {
         let மொழிகள் = this.mozhikal(நிரல்மொழி).slice(1)
