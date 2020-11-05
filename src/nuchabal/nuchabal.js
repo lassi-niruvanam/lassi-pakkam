@@ -18,7 +18,7 @@ export function  num(langue, auto='தமிழ்') {
 }
 
 export function பெயர்(code_) {
-  return Object.keys(langues).find(x=>code(x)===code_)
+  return Object.keys(langues).find(x=>code(x)===code_) || code_
 }
 
 export function code(langue) {

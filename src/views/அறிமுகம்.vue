@@ -236,7 +236,7 @@
                     color="amber lighten-4"
                   />
                   <p class="my-5">
-                    லஸ்ஸியை ஏற்றுகிறது...
+                    {{ $t('அறிமுகம்.லஸ்ஸியை_ஏற்றுகிறது') }}
                   </p>
                 </v-card>
               </v-card>
@@ -447,7 +447,7 @@ res
     },
     computed: {
       mozhikal: function() {
-        return இயற்கை_மொழிகள்(this.niral_mozhi).map(மொழி => பெயர்(மொழி))
+        return இயற்கை_மொழிகள்(this.niral_mozhi).map(மொழி => பெயர்(மொழி)).sort((a,b) => this.niraivu(a) < this.niraivu(b))
       }
     },
     data: function() {
