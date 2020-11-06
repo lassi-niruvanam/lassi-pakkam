@@ -53,7 +53,7 @@
     >
       <template v-slot:activator="{ on }">
         <v-btn icon v-on="on">
-          <v-icon>mdi-earth</v-icon>
+          <v-icon color="amber accent-4">mdi-earth</v-icon>
         </v-btn>
       </template>
       <v-list class="overflow-y-auto" style="max-height: 400px">
