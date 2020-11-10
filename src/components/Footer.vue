@@ -13,13 +13,13 @@
 
 <script>
 import uraikku from '../ennikkai/ennikkai'
-import { num } from '../nuchabal/nuchabal'
+import { எண்ணுரு } from '../nuchabal/nuchabal'
 
 export default {
   name: 'Footer',
   methods: {
     uraikku: function (en) {
-      return uraikku(en, num(this.$i18n.locale))
+      return uraikku(en, எண்ணுரு(this.$i18n.locale))
     }
   },
   data: () => ({

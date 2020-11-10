@@ -132,7 +132,7 @@
 </template>
 <script>
 import uraikku from '../ennikkai/ennikkai'
-import { num, code, பெயர் as மொழிபெயர் } from '../nuchabal/nuchabal'
+import { எண்ணுரு, குறியீடு, பெயர் as மொழிபெயர் } from '../nuchabal/nuchabal'
 import { நிரல்மொழிகள், இயற்கை_மொழிகள், நிறைவு, பெயர் as நிரல்பெயர்} from 'lassi-ilakkanankal'
 
 
@@ -143,10 +143,10 @@ export default {
         return Math.round(Object.values(பொருந்தக்கூடிய).filter(k=>k).length / Object.keys(பொருந்தக்கூடிய).length * 100)
       },
       uraikku: function (en) {
-        return uraikku(en, num(this.$i18n.locale))
+        return uraikku(en, எண்ணுரு(this.$i18n.locale))
       },
       niralmozhi_peyar: function(நிரல்மொழி) {
-        return நிரல்பெயர்(நிரல்மொழி, code(this.$i18n.locale)) || நிரல்மொழி
+        return நிரல்பெயர்(நிரல்மொழி, குறியீடு(this.$i18n.locale)) || நிரல்மொழி
       },
       mozhi_peyar: function(மொழி) {
         return மொழிபெயர்(மொழி)

@@ -120,7 +120,7 @@
                     <v-col cols=4 class="pe-0">
                       <v-autocomplete
                         v-model="ul_niral_enuru"
-                        :items="[$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட')].concat(niral_enuru_muraimaikal)"
+                        :items="[{text: $t('அறிமுகம்.உதாரணம்.தனிப்பட்ட'), value: null}].concat(niral_enuru_muraimaikal.map(x => ({text: x, value :x})))"
                         :label="$t('அறிமுகம்.உதாரணம்.எண்ணுரு')"
                         :disabled="!udaranam_urai_tayar"
                         hide-no-data
@@ -139,7 +139,7 @@
                   :loading="!udaranam_urai_tayar"
                   :no-resize="true"
                   :label="$t('அறிமுகம்.உதாரணம்.உள்ளீடு')"
-                  :dir="dàg(ul_mozhi) ? 'rtl': 'ltr'"
+                  :dir="வலதிலிருந்து(ul_mozhi) ? 'rtl': 'ltr'"
                   height="500"
                   flat
                   outlined
@@ -195,7 +195,7 @@
                     </v-col>
                     <v-col cols=4 class="pe-0">
                       <v-autocomplete
-                        :items="[$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட')].concat(niral_enuru_muraimaikal)"
+                        :items="[{text: $t('அறிமுகம்.உதாரணம்.தனிப்பட்ட'), value: null}].concat(niral_enuru_muraimaikal.map(x => ({text: x, value :x})))"
                         v-model="vel_niral_enuru"
                         :label="$t('அறிமுகம்.உதாரணம்.எண்ணுரு')"
                         :disabled="!vel_urai_tayar || !udaranam_urai_tayar"
@@ -220,7 +220,7 @@
                   :no-resize="true"
                   :label="$t('அறிமுகம்.உதாரணம்.வெளியீடு')"
                   outlined
-                  :dir="dàg(vel_mozhi) ? 'rtl': 'ltr'"
+                  :dir="வலதிலிருந்து(vel_mozhi) ? 'rtl': 'ltr'"
                   color="amber accent-4"
                 ></v-textarea>
                 <v-card
@@ -249,7 +249,7 @@
 </template>
 
 <script>
-import { dàg, code, num, பெயர் } from '../nuchabal/nuchabal'
+import { வலதிலிருந்து, குறியீடு, எண்ணுரு, பெயர் } from '../nuchabal/nuchabal'
 import { முறைமைகள் } from '../ennikkai/ennikkai'
 import { நிரல்மொழிகள், இயற்கை_மொழிகள், நிறைவு } from 'lassi-ilakkanankal'
 
@@ -348,58 +348,41 @@ languagePluginLoader.then(() => {
       }
     },
     methods: {
-      dàg: function(langue) {
-        return dàg(langue)
+      வலதிலிருந்து: function(langue) {
+        return வலதிலிருந்து(langue)
       },
       niraivu: function(mozhi) {
-        return நிறைவு(this.niral_mozhi, code(mozhi))
+        return நிறைவு(this.niral_mozhi, குறியீடு(mozhi))
       },
-      lassi: function(urai, niralmozhi, ul_mozhi, vel_mozhi, ul_niral_enuru, vel_niral_enuru) {
-        const தனிப்பட்ட = this.$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட')
-        ul_niral_enuru = ul_niral_enuru || தனிப்பட்ட
-        vel_niral_enuru = vel_niral_enuru || தனிப்பட்ட
-
+      லஸ்ஸி: function(உரை, நிரல்மொழி, உள்_மொழி, வெள்_மொழி, உள்_நிரல்_எண்ணுரு, வெள்_நிரல்_எண்ணுரு) {
+        வெள்_நிரல்_எண்ணுரு = வெள்_நிரல்_எண்ணுரு ? வெள்_நிரல்_எண்ணுரு : எண்ணுரு(வெள்_மொழி)
+        உள்_நிரல்_எண்ணுரு = உள்_நிரல்_எண்ணுரு ? உள்_நிரல்_எண்ணுரு : எண்ணுரு(உள்_மொழி)
         const குறிப்பிடு = `
-print('py: ici !')
 def fonc(*args):
-  print('py: dans fonc')
   from lark import Lark
   import lark
   print(lark.__version__)
-  import semantic_version
   import லஸ்ஸி
 
-
-  print('py: fonc')
-
-  print('lassi importé !')
   res_lassi = லஸ்ஸி.மொழியாக்கம்(
-      உரை="""${urai}\n""",
-      நிரல்மொழி="${niralmozhi}",
-      மொழி="${code(vel_mozhi)}",
-      எண்ணுரு="${vel_niral_enuru === தனிப்பட்ட ? num(vel_mozhi) : vel_niral_enuru}",
-      மூல்மொழி="${code(ul_mozhi)}",
-      மூலெண்ணுரு="${ul_niral_enuru === தனிப்பட்ட ? num(ul_mozhi) : ul_niral_enuru}",
+      உரை="""${உரை}\n""",
+      நிரல்மொழி="${நிரல்மொழி}",
+      மொழி="${குறியீடு(வெள்_மொழி)}",
+      எண்ணுரு="${ வெள்_நிரல்_எண்ணுரு }",
+      மூல்மொழி="${குறியீடு(உள்_மொழி)}",
+      மூலெண்ணுரு="${ உள்_நிரல்_எண்ணுரு }",
       இனங்காட்டிகள்=${JSON.stringify(this.inankattikal)}
   )
-  print('py: fonc finie', res_lassi)
   return res_lassi
 
 try:
   res = fonc()
-  print('py: tout était installé!')
 except ModuleNotFoundError:
-  print('py: ModuleNotFoundError')
   import micropip
-
   res = micropip.install(['lark-parser', 'lassi', 'semantic-version', 'lassi-ilakkanankal']).then(fonc)
-  # micropip.install('lassi-ilakkanankal')
-  print('py: lassi')
-  # res = micropip.install('lassi').then(fonc)
-  # print('py: fini !', res)
+
 res
 `
-        console.log(குறிப்பிடு)
         this.pyodideWorker.postMessage({
           python: குறிப்பிடு
         })
@@ -409,7 +392,7 @@ res
         if (!this.lassi_veliyidu) {
           this.vel_urai_tayar = false
           this.lassi_veliyidu = 'வெள்'
-          this.lassi(
+          this.லஸ்ஸி(
             this.udaranam_urai,
             this.niral_mozhi,
             this.ul_mozhi,
@@ -429,7 +412,7 @@ res
           }
           this.udaranam_urai_tayar = false
           this.lassi_veliyidu = 'உள்'
-          this.lassi(
+          this.லஸ்ஸி(
             udaranam_urai,
             this.niral_mozhi,
             "English",
@@ -459,8 +442,8 @@ res
         ul_mozhi: 'தமிழ்',
         vel_mozhi: 'English',
         niral_enuru_muraimaikal: முறைமைகள்,
-        ul_niral_enuru: this.$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட'),
-        vel_niral_enuru: this.$t('அறிமுகம்.உதாரணம்.தனிப்பட்ட'),
+        ul_niral_enuru: null,
+        vel_niral_enuru: null,
         udaranankal: {
           'python': `class Circle(object):
     pi = 3.141592653

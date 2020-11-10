@@ -143,7 +143,7 @@
 
 <script>
 import { மொழி_மேலாண்மை } from '../plugins/vuetify'
-import { dàg } from '../nuchabal/nuchabal'
+import { வலதிலிருந்து } from '../nuchabal/nuchabal'
 
 export default {
     name: 'AppNavigation',
@@ -174,7 +174,7 @@ export default {
         this.$i18n.fallbackLocale = [this.$i18n.locale, 'தமிழ்']
         this.$vuetify.lang.current = மொழி
         this.$i18n.locale = மொழி
-        this.$vuetify.rtl = dàg(மொழி)
+        this.$vuetify.rtl = வலதிலிருந்து(மொழி)
         this.$cookies.set('மொழி', மொழி)
         this.$cookies.set('மொழி௨', JSON.stringify(this.$i18n.fallbackLocale))
         console.log(this.$cookies.get('மொழி௨'))

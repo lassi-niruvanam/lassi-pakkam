@@ -4,13 +4,13 @@ export function obt_langues() {
   return Object.keys(langues)
 }
 
-export function dàg(langue, auto=false) {
+export function வலதிலிருந்து(langue, auto=false) {
   if (langues[langue]) {
     return langues[langue].dàg || auto
   }
   return auto
 }
-export function  num(langue, auto='தமிழ்') {
+export function  எண்ணுரு(langue, auto='தமிழ்') {
   if (langues[langue]) {
     return langues[langue]["ajilanïk"] || auto
   }
@@ -18,10 +18,10 @@ export function  num(langue, auto='தமிழ்') {
 }
 
 export function பெயர்(code_) {
-  return Object.keys(langues).find(x=>code(x)===code_) || code_
+  return Object.keys(langues).find(x=>குறியீடு(x)===code_) || code_
 }
 
-export function code(langue) {
+export function குறியீடு(langue) {
   if (langues[langue]) {
     return langues[langue]["runuk'"] || langue
   }

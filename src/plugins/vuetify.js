@@ -3,7 +3,7 @@ import Vuetify from 'vuetify/lib';
 import VueI18n from 'vue-i18n'
 import மொழிபெயர்ப்புகள் from '../trads.json'
 import மொழியாக்கம் from '../மொழியாக்கம்/மொழியாக்கம்'
-import { dàg } from '../nuchabal/nuchabal'
+import { வலதிலிருந்து } from '../nuchabal/nuchabal'
 import VueWorker from 'vue-worker'
 
 Vue.use(require('vue-cookies'))
@@ -28,5 +28,5 @@ const ops = {
 
 export default new Vuetify({
   ops,
-  rtl: dàg(i18n.locale)
+  rtl: வலதிலிருந்து(i18n.locale)
 });
