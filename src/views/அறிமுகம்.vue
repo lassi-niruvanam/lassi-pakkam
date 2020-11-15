@@ -452,7 +452,7 @@ res
         def circumference(self):
             return 2 * self.pi * self.radius
         def area(self):
-            return self.pi ** 2 * self.radius
+            return self.pi * self.radius ** 2
 
 radii = range(5)
 circles = [Circle(radius=r) for r in radii]
