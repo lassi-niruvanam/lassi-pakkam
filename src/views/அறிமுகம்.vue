@@ -210,7 +210,7 @@
                 </v-row>
                 </v-toolbar>
                 <v-textarea
-                  v-if="lassi_tayar"
+                  v-if="$lassi.lassi_tayar"
                   v-model="veliyidu"
                   height="500"
                   flat
@@ -233,11 +233,11 @@
                     indeterminate=""
                     width="15"
                     class="mt-10"
-                    color="amber lighten-4"
+                    color="amber accent-2"
                   />
-                  <p class="my-5">
+                  <h2 class="my-5">
                     {{ $t('அறிமுகம்.லஸ்ஸியை_ஏற்றுகிறது') }}
-                  </p>
+                  </h2>
                 </v-card>
               </v-card>
             </v-col>
@@ -253,6 +253,7 @@ import { வலதிலிருந்து, குறியீடு, எண�
 import { முறைமைகள் } from '../ennikkai/ennikkai'
 import { நிரல்மொழிகள், இயற்கை_மொழிகள், நிறைவு } from 'lassi-ilakkanankal'
 
+const முதல்_நிரல்_மொழி = 'python'
 
 export default {
     name: 'அறிமுகம்',
@@ -260,13 +261,20 @@ export default {
       niral_mozhi: function() {
         this.ul_urai_pudippippu()
       },
-      ul_mozhi: function() {
+      ul_mozhi: function(புதுச, பழச) {
+        if (புதுச === this.vel_mozhi) {
+          this.vel_mozhi = பழச
+        }
         this.ul_urai_pudippippu()
       },
       ul_niral_enuru: function() {
         this.ul_urai_pudippippu()
       },
-      vel_mozhi: function() {
+      vel_mozhi: function(புதுச, பழச) {
+        if (புதுச === this.ul_mozhi) {
+          this.ul_mozhi = பழச
+          this.ul_urai_pudippippu()
+        }
         this.pudippippu()
       },
       vel_niral_enuru: function() {
@@ -281,71 +289,8 @@ export default {
       }
     },
     mounted() {
-      var blob = new Blob([
-        `
-        // self.languagePluginUrl = 'http://localhost:8000/'
-importScripts('https://pyodide-cdn2.iodide.io/v0.15.0/full/pyodide.js')
-self.postMessage({"செய்தி": "தயார்"});
-console.log('salut !')
-var onmessage = function(e) { // eslint-disable-line no-unused-vars
-languagePluginLoader.then(() => {
-  self.pyodide.loadPackage(['micropip', 'regex']).then(() => {
-    const data = e.data;
-    const keys = Object.keys(data);
-    for (let key of keys) {
-      if (key !== 'python') {
-        // Keys other than python must be arguments for the python script.
-        // Set them on self, so that \`from js import key\` works.
-        self[key] = data[key];
-      }
-    }
-    console.log('arrivé ici !')
-    self.pyodide.runPythonAsync(data.python, () => {})
-        .then((results) => { console.log(results); self.postMessage({results}); })
-        .catch((err) => {
-          self.postMessage({error : err.message});
-        });
-  });
-});
-}`
-      ], { type: "text/javascript" })
-
-      // Note: window.webkitURL.createObjectURL() in Chrome 10+.
-      this.pyodideWorker = new Worker(window.URL.createObjectURL(blob))
-      this.pyodideWorker.onerror = (e) => {
-        console.log(`பையோடைட் பிழை: ${e.filename}, கோடு: ${e.lineno}, ${e.message}`)
-      }
-      this.pyodideWorker.onmessage = (e) => {
-        console.log('1', e)
-        const {results, error, செய்தி} = e.data
-        if (results) {
-          if (this.lassi_veliyidu === 'உள்') {
-            this.udaranam_urai = results
-            this.udaranam_urai_tayar = true
-            console.log('2', 'உள்')
-          } else if (this.lassi_veliyidu === 'வெள்') {
-            this.veliyidu = results
-            this.vel_urai_tayar = true
-            console.log('3', 'வெள்')
-          }
-          console.log('4')
-          this.lassi_veliyidu = null
-        } else if (error) {
-          console.log('பையோடைட் பிழை: ', error)
-          if (this.lassi_veliyidu === 'வெள்') {
-            this.veliyidu = error
-          }
-          this.lassi_veliyidu = null
-          this.vel_urai_tayar = true
-        } else if (செய்தி) {
-          console.log('5', செய்தி)
-          if (செய்தி === 'தயார்') {
-            console.log('லஸ்ஸி தயார்')
-            this.lassi_tayar = true
-            this.ul_urai_pudippippu()
-          }
-        }
-      }
+      window.lassi = this.$lassi
+      this.ul_urai_pudippippu()
     },
     methods: {
       வலதிலிருந்து: function(langue) {
@@ -357,35 +302,29 @@ languagePluginLoader.then(() => {
       லஸ்ஸி: function(உரை, நிரல்மொழி, உள்_மொழி, வெள்_மொழி, உள்_நிரல்_எண்ணுரு, வெள்_நிரல்_எண்ணுரு) {
         வெள்_நிரல்_எண்ணுரு = வெள்_நிரல்_எண்ணுரு ? வெள்_நிரல்_எண்ணுரு : எண்ணுரு(வெள்_மொழி)
         உள்_நிரல்_எண்ணுரு = உள்_நிரல்_எண்ணுரு ? உள்_நிரல்_எண்ணுரு : எண்ணுரு(உள்_மொழி)
-        const குறிப்பிடு = `
-def fonc(*args):
-  from lark import Lark
-  import lark
-  print(lark.__version__)
-  import லஸ்ஸி
 
-  res_lassi = லஸ்ஸி.மொழியாக்கம்(
-      உரை="""${உரை}\n""",
-      நிரல்மொழி="${நிரல்மொழி}",
-      மொழி="${குறியீடு(வெள்_மொழி)}",
-      எண்ணுரு="${ வெள்_நிரல்_எண்ணுரு }",
-      மூல்மொழி="${குறியீடு(உள்_மொழி)}",
-      மூலெண்ணுரு="${ உள்_நிரல்_எண்ணுரு }",
-      இனங்காட்டிகள்=${JSON.stringify(this.inankattikal)}
-  )
-  return res_lassi
-
-try:
-  res = fonc()
-except ModuleNotFoundError:
-  import micropip
-  res = micropip.install(['lark-parser', 'lassi', 'semantic-version', 'lassi-ilakkanankal']).then(fonc)
-
-res
-`
-        this.pyodideWorker.postMessage({
-          python: குறிப்பிடு
-        })
+        this.$lassi.mozhiyakkam(
+          உரை, நிரல்மொழி, உள்_மொழி, வெள்_மொழி, உள்_நிரல்_எண்ணுரு, வெள்_நிரல்_எண்ணுரு,
+          JSON.stringify(this.inankattikal),
+          (e) => {
+            if (this.lassi_veliyidu === 'உள்') {
+              this.udaranam_urai = e
+              this.udaranam_urai_tayar = true
+            } else if (this.lassi_veliyidu === 'வெள்') {
+               this.veliyidu = e
+               this.vel_urai_tayar = true
+            }
+            this.lassi_veliyidu = null
+          },
+          (error) => {
+            console.log('பையோடைட் பிழை: ', error)
+            if (this.lassi_veliyidu === 'வெள்') {
+              this.veliyidu = error
+            }
+            this.lassi_veliyidu = null
+            this.vel_urai_tayar = true
+          }
+        )
       },
       pudippippu: function() {
 
@@ -406,7 +345,7 @@ res
         const udaranam_urai = this.udaranankal[this.niral_mozhi]
 
         if (udaranam_urai && !this.lassi_veliyidu) {
-          if (this.ul_mozhi === இயற்கை_மொழிகள்(this.niral_mozhi)[0]) {
+          if (குறியீடு(this.ul_mozhi) === இயற்கை_மொழிகள்(this.niral_mozhi)[0]) {
             this.udaranam_urai = udaranam_urai
             return
           }
@@ -435,9 +374,8 @@ res
     },
     data: function() {
       return {
-        lassi_tayar: false,
         niral_mozhikal: நிரல்மொழிகள்,
-        niral_mozhi: 'python',
+        niral_mozhi: முதல்_நிரல்_மொழி,
         veliyidu: '',
         ul_mozhi: 'தமிழ்',
         vel_mozhi: 'English',
@@ -449,10 +387,10 @@ res
     pi = 3.141592653
     def __init__(self, radius):
         self.radius = radius
-        def circumference(self):
-            return 2 * self.pi * self.radius
-        def area(self):
-            return self.pi * self.radius ** 2
+    def circumference(self):
+        return 2 * self.pi * self.radius
+    def area(self):
+        return self.pi * self.radius ** 2
 
 radii = range(5)
 circles = [Circle(radius=r) for r in radii]
