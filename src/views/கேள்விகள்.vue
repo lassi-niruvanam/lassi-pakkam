@@ -13,17 +13,17 @@
           </v-col>
           <v-col
             cols="12" class="px-10"
-            v-for="(kelvi, i) in kelvikal" :key="i"
+            v-for="(கேள்வி, இ) in கேள்விகள்" :key="இ"
           >
             <h2
               class="headline font-weight-bold mb-3"
-              v-html="compiledMarkdown( $t('கேள்விகள்.'+ kelvi.கேள்வி) )"
+              v-html="compiledMarkdown( $t('கேள்விகள்.'+ கேள்வி.கேள்வி) )"
             >
             </h2>
 
             <div
-             v-for="(badil, j) in kelvi.பதில்" :key="j"
-             v-html="compiledMarkdown( $t('கேள்விகள்.' + badil) )"
+             v-for="(பதில், ஈ) in கேள்வி.பதில்" :key="ஈ"
+             v-html="compiledMarkdown( $t('கேள்விகள்.' + பதில்) )"
             ></div>
 
           </v-col>
@@ -37,13 +37,12 @@ import marked from 'marked'
 export default {
     name: 'கேள்விகள்',
     methods: {
-      compiledMarkdown: (txt) => {
-        console.log(marked)
-        return marked(txt, { sanitize: true });
+      compiledMarkdown: (உரை) => {
+        return marked(உரை, { sanitize: true });
       }
     },
     data: () => ({
-      kelvikal: [
+      கேள்விகள்: [
         {
           'கேள்வி': 'பெயர்.கேள்வி',
           'பதில்': ['பெயர்.பதில்.௧']

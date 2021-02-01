@@ -27,3 +27,9 @@ export function குறியீடு(langue) {
   }
   return langue
 }
+
+export function நோக்குநிலை(மொழி) {
+  if (langues[மொழி]) {
+    return langues[மொழி].நோக்குநிலை
+  }
+}

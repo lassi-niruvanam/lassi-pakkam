@@ -27,7 +27,7 @@ export default {
   props: ['tuvakkaminnancal'],
   data: function () {
     return {
-      மின்னஞ்சல்: ''
+      மின்னஞ்சல்: this.tuvakkaminnancal
     }
   },
   watch: {

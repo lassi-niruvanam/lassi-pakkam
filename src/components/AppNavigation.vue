@@ -52,8 +52,8 @@
       min-width="225"
     >
       <template v-slot:activator="{ on }">
-        <v-btn icon v-on="on">
-          <v-icon color="amber accent-4">mdi-earth</v-icon>
+        <v-btn icon v-on="on" color="amber accent-4">
+          <v-icon>mdi-earth</v-icon>
         </v-btn>
       </template>
       <v-list class="overflow-y-auto" style="max-height: 400px">
@@ -83,8 +83,10 @@
           color="white"
         >
           <v-list-item :ripple="false"
-          href="https://github.com/lassi-samaaj/lassi-pakkam/blob/master/src/trads.json"
-          target="_blank">
+           href="https://github.com/lassi-samaaj/lassi-pakkam/blob/master/src/trads.json"
+           rel=”noopener”
+           target="_blank"
+          >
             <v-list-item-action>
               <v-icon>mdi-plus</v-icon>
             </v-list-item-action>
@@ -112,6 +114,7 @@
           v-for="(item, i) in Object.keys(உதவி)"
           :key="i"
           :href="உதவி[item]['இணைப்பு']"
+          rel=”noopener”
           target="_blank"
         >
           <v-list-item-action>
@@ -127,16 +130,17 @@
     <v-btn
       icon
       href="https://github.com/lassi-samaaj/lassi-ilakkanangal"
+      rel=”noopener”
       target="_blank"
     >
       <v-icon>mdi-github</v-icon>
     </v-btn>
 
-    <!-- <router-link to="/sign-in">
+    <router-link to="/கணக்கு">
       <v-btn icon>
-        <v-icon>mdi-login-variant</v-icon>
+        <v-icon>mdi-account-circle-outline</v-icon>
       </v-btn>
-    </router-link> -->
+    </router-link>
 
   </v-app-bar>
 </template>

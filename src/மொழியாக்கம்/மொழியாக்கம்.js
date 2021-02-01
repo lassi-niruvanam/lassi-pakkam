@@ -1,28 +1,3 @@
-// import runExample from "./aviondb.js"
-// runExample();
-// const IPFS = require('ipfs')
-// const OrbitDB = require('orbit-db')
-
-// const ipfsOptions = {
-//       preload: { enabled: false },
-//       repo: './ipfs',
-//       EXPERIMENTAL: { pubsub: true },
-//       config: {
-//         Bootstrap: [],
-//         Addresses: { Swarm: [] }
-//       }
-//     }
-// async function main() {
-//   const ipfs = await IPFS.create(ipfsOptions);
-//   const orbitdb = await OrbitDB.createInstance(ipfs);
-//   const db = await orbitdb.docs('opews-db-test1');
-//   const address = db.address;
-//   console.log(address)
-
-// }
-
-// main();
-
 
 
 export default class மொழியாக்கம் {
@@ -30,6 +5,7 @@ export default class மொழியாக்கம் {
     this.மொழிபெயர்ப்புகள் = மொழிபெயர்ப்புகள்
     this.இயல்புநிலை = இயல்புநிலை
     this.மொழிகள் = Object.keys(மொழிபெயர்ப்புகள்)
+    this.சாபிகள் = this._சாபிகள்()
 
     if (!this.மொழிகள்.includes(this.இயல்புநிலை)) {
       throw new Error(`${this.இயல்புநிலை} என்று இயல்புநிலை மொழி மொழிபெயர்ப்புகளில் கிடையாது.`)
@@ -54,7 +30,7 @@ export default class மொழியாக்கம் {
     )
   }
 
-  சாபிகள்() {
+  _சாபிகள்() {
     const applatir = (obj, context = '') =>
       Object.keys(obj).reduce((acc, k) => {
         const pre = context.length ? context + '.' : '';

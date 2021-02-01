@@ -64,6 +64,7 @@
                 >
                   <v-btn
                     :href="'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/மூலம்/லஸ்ஸியிலக்கணங்கள்/இலக்கணங்கள்/' + niral"
+                    rel=”noopener”
                     target="_blank"
                     color="orange"
                     outlined

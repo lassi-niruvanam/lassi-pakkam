@@ -20,6 +20,7 @@
               :key="i"
               class="my-10"
               :href="uruvakkiyavar.இணைப்பு"
+              rel=”noopener”
               target="_blank"
             >
               <div class="d-flex flex-no-wrap">
@@ -47,7 +48,7 @@
     </v-container>
 </template>
 <script>
-import MD5 from 'crypto-js/md5';
+import MD5 from 'crypto-js/md5'
 
 export default {
     name: 'தொடர்பு',

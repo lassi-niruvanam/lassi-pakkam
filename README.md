@@ -1,4 +1,4 @@
-# lassi-pakkam
+# லஸ்ஸி வலைப் பக்கம்
 
 ## Project setup
 ```

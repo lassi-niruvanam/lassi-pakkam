@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import AppNavigation from './components/AppNavigation';
-import AppFooter from './components/Footer';
+import AppNavigation from './components/AppNavigation'
+import AppFooter from './components/Footer'
 
 export default {
   name: 'App',

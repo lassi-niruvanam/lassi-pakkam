@@ -1,0 +1,255 @@
+<template>
+  <v-container class="mt-10">
+    <v-row>
+      <v-toolbar class="mb-7">
+        <v-col cols="5">
+          <v-row>
+            <v-col cols="6">
+              <v-autocomplete
+                v-model="மூல்மொழி"
+                :items="மொழிகள்"
+                :label="'மூல் மொழி'"
+                cache-items
+                hide-no-data
+                outlined
+                dense
+                color="amber accent-4"
+                item-color="amber accent-4"
+                hide-details
+              >
+                <template v-slot:item="{ item }">
+                  <v-list-item-avatar>
+                    <v-icon v-if="நிரைவு(item) === 1" color="amber accent-4">mdi-check-circle</v-icon>
+                    <v-progress-circular v-else
+                      :value="நிரைவு(item) * 100"
+                      size="20"
+                      rotate="270"
+                      color="amber accent-4"
+                    ></v-progress-circular>
+                  </v-list-item-avatar>
+                  <v-list-item-content>
+                    <v-list-item-title v-text="item"></v-list-item-title>
+                  </v-list-item-content>
+                </template>
+              </v-autocomplete>
+            </v-col>
+            <v-col cols="6">
+              <v-autocomplete
+                v-model="நிலை"
+                :items="நிலைகள்"
+                :label="'நிலை'"
+                cache-items
+                hide-no-data
+                outlined
+                dense
+                color="amber accent-4"
+                item-color="amber accent-4"
+                hide-details
+              >
+                <template v-slot:item="{ item }">
+                  <v-list-item-content>
+                    <v-list-item-title v-text="item"></v-list-item-title>
+                  </v-list-item-content>
+                  <v-list-item-action-text>
+                    ({{ உரைக்கு(காண்கசாபிகள்(item).length) }})
+                  </v-list-item-action-text>
+                </template>
+              </v-autocomplete>
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="7">
+          <v-row>
+            <v-col cols="6">
+              <v-autocomplete
+                v-model="வேண்டியமொழி"
+                :items="மொழிகள்"
+                :label="'மொழியாக்க மொழி'"
+                cache-items
+                hide-no-data
+                outlined
+                dense
+                color="amber accent-4"
+                item-color="amber accent-4"
+                hide-details
+              >
+                <template v-slot:item="{ item }">
+                  <v-list-item-avatar>
+                    <v-icon v-if="நிரைவு(item) === 1" color="amber accent-4">mdi-check-circle</v-icon>
+                    <v-progress-circular v-else
+                      :value="நிரைவு(item) * 100"
+                      size="20"
+                      rotate="270"
+                      color="amber accent-4"
+                    ></v-progress-circular>
+                  </v-list-item-avatar>
+                  <v-list-item-content>
+                    <v-list-item-title v-text="item"></v-list-item-title>
+                  </v-list-item-content>
+                </template>
+              </v-autocomplete>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-toolbar>
+    </v-row>
+    <v-divider class="mb-2"/>
+    <v-row>
+      <v-col cols="5">
+        <v-card outlined>
+          <mozhiyakkam-pattiyal
+           v-show="உரைப்பட்டியல்.length"
+           :uraipattiyal="உரைப்பட்டியல்"
+           @terndedu="terndedu"
+          />
+          <div v-show="!உரைப்பட்டியல்.length" class="text-center py-12">
+            <h2>எந்த முடிவும் கிடைக்கவில்லை</h2>
+            <v-img
+             :src="require('../../assets/உன்றா-விண்மீன்.svg')"
+             max-height="150"
+             contain
+             class="ma-10"
+            ></v-img>
+            <v-btn
+              outlined
+              color="orange"
+              class="my-12"
+              @click="நிலை='எல்லாம்'"
+            >
+              எல்லாம் வாக்கயிங்களை காமி
+            </v-btn>
+          </div>
+        </v-card>
+      </v-col>
+      <v-col cols="7">
+        <mozhiyakkam-parinduraikal
+         v-if="தேர்ந்தேடுக்கப்பட்டது"
+         :parinduraikal="பரிந்துரைகள்"
+         :mulurai='this.மொழியாக்கம்(this.தேர்ந்தேடுக்கப்பட்டது, this.மூல்மொழி, true)'
+         :irukkummozhiyakkam="this.மொழியாக்கம்(this.தேர்ந்தேடுக்கப்பட்டது, this.வேண்டியமொழி)"
+         @parindurai="parinduraiyu"
+         @nikku="parindurainikku"
+        />
+        <div v-else class="text-center py-12">
+          <h2>ஆரம்புகிறதற்கு மொழியாக்கத்துக்காக ஓர் உரையை தேர்ந்தேடுங்கள்</h2>
+          <v-img
+           :src="require('../../assets/உன்றா-விண்மீன்.svg')"
+           max-height="150"
+           contain
+           class="ma-10"
+          ></v-img>
+        </div>
+        <lassi-uradanam/>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script>
+import MD5 from 'crypto-js/md5'
+
+import uraikku from '../../ennikkai/ennikkai'
+import { எண்ணுரு } from '../../nuchabal/nuchabal'
+import { மொழி_மேலாண்மை } from '../../plugins/vuetify'
+import mozhiyakkamPattiyal from './மொழியாக்கம்-பட்டியல்'
+import mozhiyakkamParinduraikal from './மொழியாக்கம்-பரிந்துரைகள்'
+
+
+export default {
+  name: "மொழியாக்கம்",
+  components: { mozhiyakkamPattiyal, mozhiyakkamParinduraikal },
+  data: function () {
+    return {
+      மூல்மொழி: 'தமிழ்',
+      வேண்டியமொழி: this.$i18n.locale === 'தமிழ்' ? 'français': this.$i18n.locale,
+      நிலை: 'எல்லாம்',
+      நிலைகள்: ['எல்லாம்', 'காலியானது', 'மொழிப்பெயர்க்கப்பட்டது'],
+      தேர்ந்தேடுக்கப்பட்டது: null,
+      பரிந்துரைகள்: []
+    }
+  },
+  computed: {
+    சாபிகள்: () => மொழி_மேலாண்மை.சாபிகள்,
+    மொழிகள்: () => மொழி_மேலாண்மை.மொழிகள்,
+    உரைப்பட்டியல்: function () {
+      return this.காண்கசாபிகள்(this.நிலை).map((சாபி) => {
+        return {
+          சாபி, மூல்மொழி: this.மூல்மொழி, வேண்டியமொழி: this.வேண்டியமொழி,
+          மூலுரை: this.மொழியாக்கம்(சாபி, this.மூல்மொழி, true),
+          மொழியாக்கம்: this.மொழியாக்கம்(சாபி, this.வேண்டியமொழி)
+        }
+      }
+    )
+    }
+  },
+  watch: {
+    மூல்மொழி: function(){this.பரிந்துரைகள்_பெறு()},
+    வேண்டியமொழி: function(){this.பரிந்துரைகள்_பெறு()},
+    தேர்ந்தேடுக்கப்பட்டது: function(){
+      this.பரிந்துரைகள் = []
+      this.பரிந்துரைகள்_பெறு()
+    }
+  },
+  methods: {
+    உரைக்கு: function (எண்) {
+      return uraikku(எண், எண்ணுரு(this.$i18n.locale))
+    },
+    காண்கசாபிகள்: function(நிலை) {
+      switch (நிலை) {
+        case 'எல்லாம்':
+          return this.சாபிகள்;
+        case 'காலியானது':
+          return this.சாபிகள்.filter(சாபி => !this.மொழியாக்கம்(சாபி, this.வேண்டியமொழி))
+        case 'மொழிப்பெயர்க்கப்பட்டது':
+          return this.சாபிகள்.filter(சாபி => this.மொழியாக்கம்(சாபி, this.வேண்டியமொழி))
+        default:
+          return [];
+      }
+    },
+    மொழியாக்கம்: function (சாபி, மொழி, தனிப்பட்டது=false) {
+      var உரை = மொழி_மேலாண்மை.உரை(சாபி, மொழி)
+      if (தனிப்பட்டது) {
+        return உரை || மொழி_மேலாண்மை.உரை(சாபி, மொழி_மேலாண்மை.இயல்புநிலை)
+      } else {
+        return உரை || ''
+      }
+    },
+    நிரைவு: (மொழி) => மொழி_மேலாண்மை.மேம்பாடு[மொழி],
+
+    பரிந்துரைகள்_பெறு() {
+      if (!this.தேர்ந்தேடுக்கப்பட்டது) return
+      this.$கணக்கு.தத.பரிந்துரைகள்_பெறு(
+        'வலைப்பக்கம்', this.தேர்ந்தேடுக்கப்பட்டது, this.வேண்டியமொழி
+      ).then(பரிந்துரைகள் => this.பரிந்துரைகள் = பரிந்துரைகள்)
+    },
+
+    terndedu: function (சாபி) {
+      this.தேர்ந்தேடுக்கப்பட்டது = சாபி
+    },
+
+    parinduraiyu: function(பரிந்துரை) {
+      const மூலுரை = MD5(this.மொழியாக்கம்(this.தேர்ந்தேடுக்கப்பட்டது, this.மூல்மொழி, true)).toString()
+      this.$கணக்கு.தத.பரிந்துரையு(
+        this.தேர்ந்தேடுக்கப்பட்டது, பரிந்துரை, மூலுரை, this.மூல்மொழி, this.வேண்டியமொழி, 'வலைப்பக்கம்'
+      )
+    },
+
+    parindurainikku: function(குறி) {
+      this.$கணக்கு.தத.பரிந்துரையைநீக்கு(
+        குறி, this.வேண்டியமொழி, 'வலைப்பக்கம்'
+      )
+    }
+  },
+  mounted() {
+    this.$கணக்கு.on('தத தயார்', this.பரிந்துரைகள்_பெறு.bind(this))
+    if (this.$கணக்கு.தத && this.$கணக்கு.தத.தயார்) {
+      this.பரிந்துரைகள்_பெறு()
+    }
+  }
+
+}
+</script>
+
+<style>
+
+</style>

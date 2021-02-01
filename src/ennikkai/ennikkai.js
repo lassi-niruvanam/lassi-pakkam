@@ -80,3 +80,34 @@ export default function uraikku(en, mozhi) {
     return mattram_adimanam(en, takaval_mozhi['குறிகள்'], takaval_mozhi['அடிமானங்கள்'])
   }
 }
+
+const மூப்பத்தின்மம்_எழுத்துக்கள் = {
+  'தமிழ்': 'ஆஇஈஊஏஐஒஓஔகஙசஞடணதநபமயரறலளழயஸஷஜஹ'.split(''),
+  'latin': 'abcdefghjkmnpqrsuvwxyz23456789'.split('')
+}
+
+export function மூப்பத்தின்மம்_மொழியாக்கம்(உரை, மூல்மொழி, வேண்டியமொழி) {
+  const மூலெழுத்து = மூப்பத்தின்மம்_எழுத்துக்கள்[மூல்மொழி] || மூப்பத்தின்மம்_எழுத்துக்கள்['தமிழ்']
+  const வேண்டியவெழுத்து = மூப்பத்தின்மம்_எழுத்துக்கள்[வேண்டியமொழி] || மூப்பத்தின்மம்_எழுத்துக்கள்['தமிழ்']
+  const மாற்றம் = (எ) => {
+    return வேண்டியவெழுத்து[மூலெழுத்து.findIndex(இ=>எ === இ)]
+  }
+  return உரை.split('').map(மாற்றம்).join('')
+}
+
+/*
+// https://github.com/Ezhil-Language-Foundation/open-tamil/blob/master/solthiruthi/data/mooligaigal.txt
+// https://ask4knowledgebase.com/questions/18729405/how-to-convert-utf8-string-to-byte-array-
+
+export const base30 = {
+  encode: (bytes: Uint8Array) => {
+    const toLetter = (n: number) => {
+      const index = Math.round(((BASE30_LENGTH - 1) * n) / 256)
+      return BASE30_ALPHABET[index]
+    }
+    return Array.from(bytes)
+      .map(toLetter)
+      .join('')
+  },
+}
+*/

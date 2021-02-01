@@ -133,6 +133,7 @@
                     </v-col>
                 </v-row>
                 </v-toolbar>
+
                 <v-textarea
                   v-model="udaranam_urai"
                   :disabled="!udaranam_urai_tayar"
@@ -140,11 +141,13 @@
                   :no-resize="true"
                   :label="$t('அறிமுகம்.உதாரணம்.உள்ளீடு')"
                   :dir="வலதிலிருந்து(ul_mozhi) ? 'rtl': 'ltr'"
+                  v-bind:class="[nokkunilai(ul_mozhi)]"
                   height="500"
                   flat
                   outlined
                   color="amber accent-4"
-                ></v-textarea>
+                >
+                </v-textarea>
               </v-card>
             </v-col>
             <v-col cols="6" class="mx-auto">
@@ -212,8 +215,8 @@
                 <v-textarea
                   v-if="$lassi.lassi_tayar"
                   v-model="veliyidu"
+                  v-bind:class="[nokkunilai(vel_mozhi)]"
                   height="500"
-                  flat
                   :readonly="vel_urai_tayar"
                   :disabled="!vel_urai_tayar || !udaranam_urai_tayar"
                   :loading="!vel_urai_tayar"
@@ -249,7 +252,7 @@
 </template>
 
 <script>
-import { வலதிலிருந்து, குறியீடு, எண்ணுரு, பெயர் } from '../nuchabal/nuchabal'
+import { வலதிலிருந்து, நோக்குநிலை, குறியீடு, எண்ணுரு, பெயர் } from '../nuchabal/nuchabal'
 import { முறைமைகள் } from '../ennikkai/ennikkai'
 import { நிரல்மொழிகள், இயற்கை_மொழிகள், நிறைவு } from 'lassi-ilakkanankal'
 
@@ -271,6 +274,7 @@ export default {
         this.ul_urai_pudippippu()
       },
       vel_mozhi: function(புதுச, பழச) {
+        this.veliyidu = ''
         if (புதுச === this.ul_mozhi) {
           this.ul_mozhi = பழச
           this.ul_urai_pudippippu()
@@ -313,6 +317,7 @@ export default {
             } else if (this.lassi_veliyidu === 'வெள்') {
                this.veliyidu = e
                this.vel_urai_tayar = true
+               this.pizhai = null
             }
             this.lassi_veliyidu = null
           },
@@ -320,6 +325,7 @@ export default {
             console.log('பையோடைட் பிழை: ', error)
             if (this.lassi_veliyidu === 'வெள்') {
               this.veliyidu = error
+              this.pizhai = error
             }
             this.lassi_veliyidu = null
             this.vel_urai_tayar = true
@@ -365,6 +371,15 @@ export default {
       },
       ul_mozhi_pudippippu: function() {
         this.mozhi = this.mozhi || பெயர்(this.mozhikal[0])
+      },
+      nokkunilai: function(மொழி) {
+        const nokkunilai = நோக்குநிலை(மொழி)
+        switch (nokkunilai) {
+          case 'செங்குத்து-வஇட':
+          return 'vertical-rl'
+          case 'செங்குத்து-இடவ':
+          return 'vertical-lr'
+        }
       }
     },
     computed: {
@@ -382,6 +397,7 @@ export default {
         niral_enuru_muraimaikal: முறைமைகள்,
         ul_niral_enuru: null,
         vel_niral_enuru: null,
+        pizhai: null,
         udaranankal: {
           'python': `class Circle(object):
     pi = 3.141592653
@@ -605,5 +621,13 @@ for c in circles:
   background: #FFECB3;
   color: #000;
   text-shadow: none;
+}
+
+.vertical-rl textarea {
+  writing-mode: vertical-rl
+}
+
+.vertical-lr textarea {
+  writing-mode: vertical-lr
 }
 </style>

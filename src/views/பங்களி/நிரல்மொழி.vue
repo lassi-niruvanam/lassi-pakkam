@@ -103,7 +103,7 @@
 </template>
 
 <script>
-import { obt_langues } from '../nuchabal/nuchabal'
+import { obt_langues } from '../../nuchabal/nuchabal'
 import { விதிகள் } from 'lassi-ilakkanankal'
 
 
