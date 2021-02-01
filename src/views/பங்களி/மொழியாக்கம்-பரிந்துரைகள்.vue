@@ -7,6 +7,7 @@
             <v-text-field
              v-model="உரை"
              label="பரிந்துரையை உள்ளிடு"
+             :dir="வலதிலிருந்து(vendiyamozhi) ? 'rtl': 'ltr'"
              outlined autofocus hide-details
              color="amber"
             >பரிந்துரையு</v-text-field>
@@ -54,6 +55,7 @@
       <parindurai
        v-for="பரிந்துரை in parinduraikal" :key="பரிந்துரை.குறி"
        :parindurai="பரிந்துரை" :mulurai="mulurai" :irukkummozhiyakkam="irukkummozhiyakkam"
+       :vendiyamozhi="vendiyamozhi"
        @nikku="parindurainikku(பரிந்துரை.குறி)"
       >
       </parindurai>
@@ -62,11 +64,13 @@
 </template>
 
 <script>
+import { வலதிலிருந்து } from '../../nuchabal/nuchabal'
+
 import parindurai from './பரிந்துரை'
 
 export default {
   name: 'மொழியாக்கம்-பரிந்துரைகள்',
-  props: ['parinduraikal', 'mulurai', 'irukkummozhiyakkam'],
+  props: ['parinduraikal', 'mulurai', 'irukkummozhiyakkam', 'vendiyamozhi'],
   components: {parindurai},
   data: function () {
     return {
@@ -88,7 +92,8 @@ export default {
     },
     parindurainikku(குறி) {
       this.$emit('nikku', குறி)
-    }
+    },
+    வலதிலிருந்து
   }
 }
 </script>

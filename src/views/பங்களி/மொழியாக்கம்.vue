@@ -125,8 +125,9 @@
         <mozhiyakkam-parinduraikal
          v-if="தேர்ந்தேடுக்கப்பட்டது"
          :parinduraikal="பரிந்துரைகள்"
-         :mulurai='this.மொழியாக்கம்(this.தேர்ந்தேடுக்கப்பட்டது, this.மூல்மொழி, true)'
-         :irukkummozhiyakkam="this.மொழியாக்கம்(this.தேர்ந்தேடுக்கப்பட்டது, this.வேண்டியமொழி)"
+         :vendiyamozhi="வேண்டியமொழி"
+         :mulurai='மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, மூல்மொழி, true)'
+         :irukkummozhiyakkam="மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, வேண்டியமொழி)"
          @parindurai="parinduraiyu"
          @nikku="parindurainikku"
         />
@@ -242,6 +243,14 @@ export default {
   },
   mounted() {
     this.$கணக்கு.on('தத தயார்', this.பரிந்துரைகள்_பெறு.bind(this))
+    this.$கணக்கு.on('தரவுத்தளம் மாற்றம்', (தகவல்கள்)=>{
+      console.log('ici', தகவல்கள்)
+      if (தகவல்கள்.தரவுத்தளம் === 'பரிந்துரை' && தகவல்கள்.திட்டம் === 'வலைப்பக்கம்' && தகவல்கள்.மொழி === this.வேண்டியமொழி) {
+
+        this.பரிந்துரைகள்_பெறு()
+      }
+    })
+
     if (this.$கணக்கு.தத && this.$கணக்கு.தத.தயார்) {
       this.பரிந்துரைகள்_பெறு()
     }

@@ -27,6 +27,7 @@
         <v-card
          max-height="100" class="overflow-y-auto ma-4 pa-2"
          :class="{ காலாவதியானது: காலாவதியானது && !உபயோகத்தில்}"
+         :dir="வலதிலிருந்து(vendiyamozhi) ? 'rtl': 'ltr'"
          flat
         >{{parindurai.உரை}}</v-card>
         <v-card-actions>
@@ -48,10 +49,12 @@
 
 <script>
 import MD5 from 'crypto-js/md5'
+import { வலதிலிருந்து } from '../../nuchabal/nuchabal'
+
 
 export default {
   name: 'பரிந்துரை',
-  props: ['parindurai', 'mulurai', 'irukkummozhiyakkam'],
+  props: ['parindurai', 'mulurai', 'irukkummozhiyakkam', 'vendiyamozhi'],
   computed: {
     சொந்தது: function(){
       return this.parindurai.பங்களிப்பாளர் === this.$கணக்கு.பயனாளர்_அடையாளம்
@@ -66,7 +69,8 @@ export default {
   methods: {
     nikku: function() {
       this.$emit('nikku')
-    }
+    },
+    வலதிலிருந்து
   }
 }
 </script>
