@@ -20,5 +20,13 @@ npm run build
 npm run lint
 ```
 
+?மொழி=Kaqchikel
+
+### பண்புக்கூறுகள்
+https://commons.wikimedia.org/wiki/User:Valluvar_Vallalar_Vattam?uselang=ta
+https://creativecommons.org/licenses/by-sa/4.0/deed.bn
+
+https://undraw.co/
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

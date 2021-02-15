@@ -38,28 +38,32 @@
         </v-card>
       </v-list-item>
     </v-list>
-    <h2>பரிந்துரைகள்</h2>
-    <v-divider/>
-    <v-list style="max-height: 70vh" class="overflow-y-auto">
-      <v-list-item v-if="!parinduraikal.length">
+    <transition-group name="fade" mode="out-in" tag="div">
+      <div v-if="parinduraikal.length" :key="0">
+        <h2>பரிந்துரைகள்</h2>
+        <v-divider/>
+        <v-list style="max-height: 70vh" class="overflow-y-auto">
+          <v-list-item>
+            <parindurai
+             v-for="பரிந்துரை in parinduraikal" :key="பரிந்துரை.குறி"
+             :parindurai="பரிந்துரை" :mulurai="mulurai" :irukkummozhiyakkam="irukkummozhiyakkam"
+             :vendiyamozhi="vendiyamozhi"
+             @nikku="parindurainikku(பரிந்துரை.குறி)"/>
+           </v-list-item>
+        </v-list>
+      </div>
+      <div v-else :key="1">
         <v-card flat class="text-center py-12">
           <h2>இப்பொழுது வரை பரிந்துரை ஒன்றும் இல்லை</h2>
           <v-img
-           :src="require('../../assets/உன்றா-விண்மீன்.svg')"
-           max-height="150"
+           :src="require('../../assets/கிணறு.svg')"
+           max-height="250"
            contain
            class="ma-10"
           ></v-img>
         </v-card>
-      </v-list-item>
-      <parindurai
-       v-for="பரிந்துரை in parinduraikal" :key="பரிந்துரை.குறி"
-       :parindurai="பரிந்துரை" :mulurai="mulurai" :irukkummozhiyakkam="irukkummozhiyakkam"
-       :vendiyamozhi="vendiyamozhi"
-       @nikku="parindurainikku(பரிந்துரை.குறி)"
-      >
-      </parindurai>
-    </v-list>
+      </div>
+    </transition-group>
   </div>
 </template>
 

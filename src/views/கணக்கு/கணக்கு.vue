@@ -85,6 +85,9 @@ export default {
       }
     })
     if (this.$கணக்கு.தத && this.$கணக்கு.தத.தயார்) this.பயனாளர்பெயர்கள் = this.$கணக்கு.தத.பயனாளர்_பெயர்கள்
+  },
+  destroyed: function() {
+    
   }
 }
 </script>

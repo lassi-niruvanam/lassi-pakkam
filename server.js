@@ -12,8 +12,11 @@ app.use(history())
 var compression = require('compression')
 app.use(compression())
 
-var secure = require('express-force-https')
-app.use(secure())
+// இது முக்கியமானது! உங்கள் கணினியில் உருவாக்கும் பொழுது இதை பயன்படுத்த கூடாது!
+if (process.env.NODE_ENV === 'production') {
+	var secure = require('express-force-https')
+	app.use(secure())
+}
 
 app.use(serveStatic(path.join(__dirname, "/dist")))
 
@@ -26,4 +29,3 @@ app.get('*', (request, response) => {
 
 var port = process.env.PORT || 8080
 app.listen(port)
-console.log('server started '+ port)

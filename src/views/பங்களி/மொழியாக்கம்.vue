@@ -94,61 +94,58 @@
       </v-toolbar>
     </v-row>
     <v-divider class="mb-2"/>
-    <v-row>
-      <v-col cols="5">
-        <v-card outlined>
-          <mozhiyakkam-pattiyal
-           v-show="உரைப்பட்டியல்.length"
-           :uraipattiyal="உரைப்பட்டியல்"
-           @terndedu="terndedu"
+    <transition-group name="fade" mode="out-in">
+      <v-row v-show="உரைப்பட்டியல்.length" :key="0">
+        <v-col cols="5">
+          <v-card outlined>
+            <mozhiyakkam-pattiyal
+             :uraipattiyal="உரைப்பட்டியல்"
+             @terndedu="terndedu"
+            />
+          </v-card>
+        </v-col>
+        <v-col cols="7">
+          <mozhiyakkam-parinduraikal
+           v-if="தேர்ந்தேடுக்கப்பட்டது"
+           :parinduraikal="பரிந்துரைகள்"
+           :vendiyamozhi="வேண்டியமொழி"
+           :mulurai='மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, மூல்மொழி, true)'
+           :irukkummozhiyakkam="மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, வேண்டியமொழி)"
+           @parindurai="parinduraiyu"
+           @nikku="parindurainikku"
           />
-          <div v-show="!உரைப்பட்டியல்.length" class="text-center py-12">
-            <h2>எந்த முடிவும் கிடைக்கவில்லை</h2>
+          <div v-else class="text-center py-12">
             <v-img
-             :src="require('../../assets/உன்றா-விண்மீன்.svg')"
-             max-height="150"
+             :src="require('../../assets/வளையல்_வண்டி.svg')"
+             max-height="300"
              contain
              class="ma-10"
             ></v-img>
-            <v-btn
-              outlined
-              color="orange"
-              class="my-12"
-              @click="நிலை='எல்லாம்'"
-            >
-              எல்லாம் வாக்கயிங்களை காமி
-            </v-btn>
+            <h2>ஆரம்புகிறதற்கு மொழியாக்கத்துக்காக ஒரு வாக்கியத்தை தேர்ந்தேடுங்கள்</h2>
           </div>
-        </v-card>
-      </v-col>
-      <v-col cols="7">
-        <mozhiyakkam-parinduraikal
-         v-if="தேர்ந்தேடுக்கப்பட்டது"
-         :parinduraikal="பரிந்துரைகள்"
-         :vendiyamozhi="வேண்டியமொழி"
-         :mulurai='மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, மூல்மொழி, true)'
-         :irukkummozhiyakkam="மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, வேண்டியமொழி)"
-         @parindurai="parinduraiyu"
-         @nikku="parindurainikku"
-        />
-        <div v-else class="text-center py-12">
-          <h2>ஆரம்புகிறதற்கு மொழியாக்கத்துக்காக ஓர் உரையை தேர்ந்தேடுங்கள்</h2>
-          <v-img
-           :src="require('../../assets/உன்றா-விண்மீன்.svg')"
-           max-height="150"
-           contain
-           class="ma-10"
-          ></v-img>
-        </div>
-        <lassi-uradanam/>
-      </v-col>
-    </v-row>
+        </v-col>
+      </v-row>
+      <div v-show="!உரைப்பட்டியல்.length" class="text-center" :key="1">
+        <v-img
+         :src="require('../../assets/கிணறு.svg')"
+         max-height="300"
+         contain
+        ></v-img>
+        <h2>எந்த முடிவும் கிடைக்கவில்லை</h2>
+        <v-btn
+          outlined
+          color="orange"
+          class="mt-4"
+          @click="நிலை='எல்லாம்'"
+        >
+          எல்லாம் வாக்கயிங்களை காமி
+        </v-btn>
+      </div>
+    </transition-group>
   </v-container>
 </template>
 
 <script>
-import MD5 from 'crypto-js/md5'
-
 import uraikku from '../../ennikkai/ennikkai'
 import { எண்ணுரு } from '../../nuchabal/nuchabal'
 import { மொழி_மேலாண்மை } from '../../plugins/vuetify'
@@ -184,8 +181,14 @@ export default {
     }
   },
   watch: {
-    மூல்மொழி: function(){this.பரிந்துரைகள்_பெறு()},
-    வேண்டியமொழி: function(){this.பரிந்துரைகள்_பெறு()},
+    மூல்மொழி: function(புதுசு, பழசு){
+      if (புதுசு === this.வேண்டியமொழி) this.வேண்டியமொழி = பழசு
+      this.பரிந்துரைகள்_பெறு()
+    },
+    வேண்டியமொழி: function(புதுசு, பழசு){
+      if (புதுசு === this.மூல்மொழி) this.மூல்மொழி = பழசு
+      this.பரிந்துரைகள்_பெறு()
+    },
     தேர்ந்தேடுக்கப்பட்டது: function(){
       this.பரிந்துரைகள் = []
       this.பரிந்துரைகள்_பெறு()
@@ -229,7 +232,7 @@ export default {
     },
 
     parinduraiyu: function(பரிந்துரை) {
-      const மூலுரை = MD5(this.மொழியாக்கம்(this.தேர்ந்தேடுக்கப்பட்டது, this.மூல்மொழி, true)).toString()
+      const மூலுரை = this.மொழியாக்கம்(this.தேர்ந்தேடுக்கப்பட்டது, this.மூல்மொழி, true)
       this.$கணக்கு.தத.பரிந்துரையு(
         this.தேர்ந்தேடுக்கப்பட்டது, பரிந்துரை, மூலுரை, this.மூல்மொழி, this.வேண்டியமொழி, 'வலைப்பக்கம்'
       )

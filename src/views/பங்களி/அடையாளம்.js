@@ -1,3 +1,4 @@
+/*
 import { v4 as uuidv4 } from 'uuid'
 const AccessController = require('orbit-db-access-controllers/src/access-controller-interface')
 
@@ -12,8 +13,6 @@ export class மொழியாக்கத்_தரவுத்தளம் {
       EXPERIMENTAL: { pubsub: true },
       repo: './ipfs'
     }).then((கணு)=>{
-      // this.கணு.on('error', (பிழை) => { throw (பிழை) })
-      // this.கணு.on('ready', this._ஆரம்பம்.bind(this))
       this._ஆரம்பம்(கணு)
     })
 
@@ -263,3 +262,4 @@ export class NPPAccessController extends AccessController {
 
   async grant () { }
 }
+*/

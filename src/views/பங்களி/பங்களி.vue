@@ -17,16 +17,17 @@
               <div class="text-center">
                 <p>Test test test</p>
                 <p>Test test test</p>
-
-                <v-btn
-                  color="orange"
-                  target="_blank"
-                  class="mb-5 text-center"
-                  outlined
-                >
-                  {{ $t('பங்களி.பங்களி') }}
-                  <v-icon right>mdi-arrow-right</v-icon>
-                </v-btn>
+                <router-link :to="encodeURI('/பங்களி/வலைப்பக்கம்')">
+                  <v-btn
+                    color="orange"
+                    target="_blank"
+                    class="mb-5 text-center"
+                    outlined
+                  >
+                    {{ $t('பங்களி.பங்களி') }}
+                    <v-icon right>mdi-arrow-right</v-icon>
+                  </v-btn>
+                </router-link>
               </div>
 
               <div v-for="i in முறை.items" :key="i.தலைப்பு">
