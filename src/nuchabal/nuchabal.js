@@ -10,7 +10,7 @@ export function வலதிலிருந்து(langue, auto=false) {
   }
   return auto
 }
-export function  எண்ணுரு(langue, auto='தமிழ்') {
+export function எண்ணுரு(langue, auto='தமிழ்') {
   if (langues[langue]) {
     return langues[langue]["ajilanïk"] || auto
   }

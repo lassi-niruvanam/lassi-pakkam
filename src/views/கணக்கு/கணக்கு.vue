@@ -10,6 +10,17 @@
     >
 
       <ullidu v-if="நிலை === 'வெளியேறிக்கப்பட்டுள்ளது'"></ullidu>
+      <span v-else-if="நிலை === 'ஏற்றுகொண்டிருக்கு'" class="text-center">
+        <v-img
+         :src="require('../../assets/தென்னை_மரம்.svg')"
+         max-height="250"
+         contain
+        ></v-img>
+        <h2>
+          <v-progress-circular indeterminate color="amber" class="mx-2"></v-progress-circular>
+          உங்கள் கணக்கை ஏற்றுகொண்டு இருக்கிறோம்...
+        </h2>
+      </span>
       <kanakkuyamaippukal v-else
        :peyarkal="பயனாளர்பெயர்கள்"
        :melalar_urimai="மேலாளர்_உரிமை"
@@ -36,7 +47,7 @@ export default {
       உள்நுழையப்பட்டது: false,
       இணையம்: true,
       மேலாளர்_உரிமை: false,
-      நிலை: 'வெளியேறிக்கப்பட்டுள்ளது',
+      நிலை: null,
       புது_குழு: '',
       பயனாளர்பெயர்கள்: {},
       சாதனங்கள்: [],
@@ -59,9 +70,7 @@ export default {
   },
   mounted: function() {
 
-    for (let இ of ['பயனாளர் மாற்றம்', 'குழு மாற்றம்']) {
-      this.$கணக்கு.on(இ, () => {this.நிலை = this.$கணக்கு.நிலை})
-    }
+    this.$கணக்கு.on('நிலை மாற்றம்', (நிலை) => {this.நிலை = நிலை})
     this.நிலை = this.$கணக்கு.நிலை
 
     this.$கணக்கு.on('புது குழு', () => {this.புது_குழு = this.$கணக்கு.புது_குழு})
@@ -87,7 +96,7 @@ export default {
     if (this.$கணக்கு.தத && this.$கணக்கு.தத.தயார்) this.பயனாளர்பெயர்கள் = this.$கணக்கு.தத.பயனாளர்_பெயர்கள்
   },
   destroyed: function() {
-    
+
   }
 }
 </script>

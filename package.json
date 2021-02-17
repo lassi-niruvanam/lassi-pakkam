@@ -1,7 +1,7 @@
 {
   "name": "lassi-pakkam",
   "version": "0.1.0",
-  "license": "GPL3-or-later",
+  "license": "GPL-3.-or-later",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,10 +11,14 @@
   },
   "dependencies": {
     "@localfirst/auth": "git+https://github.com/julienmalard/auth.git",
+    "bip39": "^3.0.3",
     "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.6.4",
     "crypto-js": "^4.0.0",
     "express": "^4.17.1",
+    "franc": "^5.0.0",
+    "franc-all": "^6.0.0",
+    "franc-min": "^5.0.0",
     "hyperswarm-web": "^2.1.1",
     "lassi-ilakkanankal": "^1.0.12",
     "material-design-icons-iconfont": "^5.0.1",
