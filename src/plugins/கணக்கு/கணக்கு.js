@@ -36,6 +36,7 @@ class கணக்கு extends EventEmitter{
       this.emit('புது குழு', குழுவேர்)
     })
     this.நிலை = நிலைகள்.துவக்க
+    this.emit('அங்கீகாரம் தயார்')
   }
 
   async தத_ஆரம்பு(முகவரி){
@@ -52,6 +53,11 @@ class கணக்கு extends EventEmitter{
       கோள்பாதை_அடையாளம்: this.தத.கோள்பாதை.identity.id,
       மூல்தத_முகவரி: this.தத.தத.மூல்தத.id
     }
+  }
+
+  get பயனாளர்_அடையாளம்() {
+    if (this.அங்கீகாரம்) return this.அங்கீகாரம்.சூழல்.user.userName
+    return ''
   }
 
   get நிலை() {
@@ -180,15 +186,6 @@ class கணக்கு extends EventEmitter{
     this.emit('குழு மாற்றம்')
   }
 
-  குழு_சேரு (அழைப்பு) {
-    this.ஆதாரம் = generateProof(அழைப்பு, this.பயனாளர்_அடையாளம்)
-    console.log('this.ஆதாரம்', this.ஆதாரம்)
-    localStorage.setItem('ஆதாரம்', JSON.stringify(this.ஆதாரம்))
-    for (var s of Object.values(this.திரள்_இணைப்புகள்)) {
-      this.அனுப்பு(s, { கோரிக்கை: 'அழைப்பு ஆதாரம்', ஆதாரம்: this.ஆதாரம் })
-      if (this.நிலை === உள்) break
-    }
-  }
   async அழைப்பால்_உள்ளிடு (அழைப்பு, பயனாளர்பெயர், சாதனம்பெயர்) {
     const பயனாளர் = this.பயனாளர்_உருவாக்கி(பயனாளர்பெயர், சாதனம்பெயர்)
     this.துவக்கம்(பயனாளர்)

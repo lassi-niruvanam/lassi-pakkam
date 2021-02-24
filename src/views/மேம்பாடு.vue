@@ -11,7 +11,7 @@
          contain
         ></v-img>
         <h1 class="display-1 font-weight-bold py-10">
-          நாங்கள் லஸ்ஸிக்கு மேலே தொடர்ந்து வேலை செய்கிறோம் 
+          நாங்கள் லஸ்ஸிக்கு மேலே தொடர்ந்து வேலை செய்கிறோம்
         </h1>
         <v-expansion-panels
           v-model="panel"
@@ -52,7 +52,7 @@
                     size="60"
                     :value="niraivu_ellam(niral) * 100"
                     width="8"
-                    :color="niraivu_ellam(niral) === 0 ? 'grey lighten-2' : 'amber accent-4'"
+                    :color="niraivu_ellam(niral) === 0 ? 'grey lighten-2' : 'primary'"
                   >{{ uraikku(Math.round(niraivu_ellam(niral) * 100)) }} %</v-progress-circular>
                 </v-col>
               </v-row>
@@ -62,7 +62,6 @@
               <div class="d-flex">
                 <v-tabs
                  v-model="tabs"
-                 color="amber accent-4"
                 >
                   <v-tab :ripple="false">{{ $t('மேம்பாடு.மொழியாக்கம்_மேம்பாடு') }}</v-tab>
                   <!-- <v-tab :ripple="false">விவரக்குறிப்பு</v-tab> -->
@@ -74,7 +73,7 @@
                     :href="'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/மூலம்/லஸ்ஸியிலக்கணங்கள்/இலக்கணங்கள்/' + niral"
                     rel=”noopener”
                     target="_blank"
-                    color="orange"
+                    color="primary"
                     outlined
                   >
                     {{ $t('மேம்பாடு.இப்பொதே_பங்களி') }}

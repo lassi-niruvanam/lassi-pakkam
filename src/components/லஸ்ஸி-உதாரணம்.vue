@@ -13,8 +13,6 @@
                 v-model="நிரல்மொழி"
                 :label="$t('அறிமுகம்.உதாரணம்.நிரல்_மொழி')"
                 :disabled="!உதாரணமுரைதயார்"
-                color="amber accent-4"
-                item-color="amber accent-4"
                 cache-items
                 hide-no-data
                 outlined
@@ -31,8 +29,6 @@
                 hide-no-data
                 outlined
                 dense
-                color="amber accent-4"
-                item-color="amber accent-4"
                 hide-details
               >
                 <template v-slot:item="{ item }">
@@ -41,8 +37,7 @@
                     <v-progress-circular v-else
                       :value="நிறைவு(item) * 100"
                       size="20"
-                      rotate="270"
-                      color="amber accent-4"
+                      rotate="270" color="primary"
                     ></v-progress-circular>
                   </v-list-item-avatar>
                   <v-list-item-content>
@@ -60,8 +55,6 @@
                 hide-no-data
                 outlined
                 dense
-                color="amber accent-4"
-                item-color="amber accent-4"
                 hide-details
               ></v-autocomplete>
             </v-col>
@@ -79,8 +72,6 @@
                 hide-no-data
                 outlined
                 dense
-                color="amber accent-4"
-                item-color="amber accent-4"
                 hide-details
               ></v-autocomplete>
             </v-col>
@@ -93,8 +84,6 @@
                 hide-no-data
                 outlined
                 dense
-                color="amber accent-4"
-                item-color="amber accent-4"
                 hide-details
               >
                 <template v-slot:item="{ item }">
@@ -103,8 +92,7 @@
                     <v-progress-circular v-else
                       :value="நிறைவு(item) * 100"
                       size="20"
-                      rotate="270"
-                      color="amber accent-4"
+                      rotate="270" color="primary"
                     ></v-progress-circular>
                   </v-list-item-avatar>
                   <v-list-item-content>
@@ -122,8 +110,6 @@
                 hide-no-data
                 outlined
                 dense
-                color="amber accent-4"
-                item-color="amber accent-4"
                 hide-details
               ></v-autocomplete>
             </v-col>
@@ -144,7 +130,6 @@
           height="500"
           flat
           outlined
-          color="amber accent-4"
         >
         </v-textarea>
       </v-col>
@@ -160,7 +145,6 @@
           :label="$t('அறிமுகம்.உதாரணம்.வெளியீடு')"
           outlined
           :dir="வலதிலிருந்து(வெள்மொழி) ? 'rtl': 'ltr'"
-          color="amber accent-4"
         ></v-textarea>
       </v-col>
     </v-row>
@@ -189,7 +173,7 @@
           size="50"
           indeterminate
           width="5"
-          color="amber accent-2"
+          color="primary"
         />
       </v-col>
     </v-row>

@@ -8,15 +8,14 @@
     <h1 class="display-1 font-weight-bold mb-3">
       பதிவிறக்கங்கள்
     </h1>
+    <h2 color="red--text">உங்கள் வேலையுக்காக லஸ்ஸி பெறுங்கள்</h2>
     <v-card class="my-7 px-5 mx-auto" max-width="1200">
       <v-row>
         <v-col cols="3">
           <v-autocomplete
             :items="வகை_சாத்தியங்கள்"
             label="வகை"
-            v-model="வகைள்"
-            color="amber accent-4"
-            item-color="amber accent-4"
+            v-model="வகைகள்"
             cache-items chips multiple deletable-chips
             small-chips clearable
             outlined
@@ -29,8 +28,6 @@
             :items="நிலை_சாத்தியங்கள்"
             label="நிலை"
             v-model="நிலைகள்"
-            color="amber accent-4"
-            item-color="amber accent-4"
             cache-items chips multiple deletable-chips
             small-chips clearable
             outlined
@@ -44,8 +41,6 @@
             :items="நிரல்மொழி_சாத்தியங்கள்"
             label="நிரல்மொழி"
             v-model="நிரல்மொழிகள்"
-            color="amber accent-4"
-            item-color="amber accent-4"
             cache-items chips multiple deletable-chips
             small-chips clearable
             outlined
@@ -59,7 +54,6 @@
             v-model="தேடல்"
             hide-details outlined dense
             prepend-icon="mdi-magnify"
-            color="amber accent-4"
             single-line clearable
           ></v-text-field>
         </v-col>
@@ -192,7 +186,7 @@ export default {
         }
       ],
       நிலை_சாத்தியங்கள்: ['நிலையானது', 'மேம்பாட்டில்', 'திட்டமிடப்பட்டுள்ளது'],
-      வகைள்: [],
+      வகைகள்: [],
       நிலைகள்: [],
       நிரல்மொழிகள்: [],
       தேடல்: null
@@ -206,7 +200,7 @@ export default {
     },
     தேர்ந்தேடுக்கப்பட்டன: function() {
       return this.பதிவிறக்கங்கள்.filter(
-        இ=>(!this.வகைள்.length || this.வகைள்.includes(இ.வகை))
+        இ=>(!this.வகைகள்.length || this.வகைகள்.includes(இ.வகை))
       ).filter(
         இ=>(!this.நிலைகள்.length || this.நிலைகள்.includes(இ.நிலை))
       ).filter(
