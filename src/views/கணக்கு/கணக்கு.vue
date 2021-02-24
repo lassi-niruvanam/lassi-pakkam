@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
 
-    <pudukuzhuyeccarikkai v-if="புது_குழு" pudu_kuzhu="புது_குழு"/>
+    <pudukuzhuyeccarikkai v-if="புது_குழு" :pudu_kuzhu="புது_குழு"/>
 
     <v-card
       class="mx-auto my-14 pa-10"
@@ -38,14 +38,15 @@
 import pudukuzhuyeccarikkai from '../../components/கணக்கு/புதுகுழுயெச்சரிக்கை'
 import ullidu from './உள்ளிடு'
 import kanakkuyamaippukal from './கணக்குயமைப்புகள்'
+import mixin from '../../mixins/நிகழ்வுகவனிப்பவாளர்'
 
 export default {
   name: 'கணக்கு',
   components: {ullidu, kanakkuyamaippukal, pudukuzhuyeccarikkai},
+  mixins: [mixin],
   data: function () {
     return {
       உள்நுழையப்பட்டது: false,
-      இணையம்: true,
       மேலாளர்_உரிமை: false,
       நிலை: null,
       புது_குழு: '',
@@ -59,31 +60,21 @@ export default {
       return this.பயனாளர்பெயர்கள்[this.$i18n.locale]
     }
   },
-  watch: {
-    இணையம்: function(மதி) {
-      if (மதி) {
-        // this.$அடையாளம்.இணையு()
-      } else {
-        // this.$அடையாளம்.வெளியேறி()
-      }
-    }
-  },
   mounted: function() {
-
-    this.$கணக்கு.on('நிலை மாற்றம்', (நிலை) => {this.நிலை = நிலை})
+    this.கவனி(this.$கணக்கு, 'நிலை மாற்றம்', (நிலை) => {this.நிலை = நிலை})
     this.நிலை = this.$கணக்கு.நிலை
 
-    this.$கணக்கு.on('புது குழு', () => {this.புது_குழு = this.$கணக்கு.புது_குழு})
+    this.கவனி(this.$கணக்கு, 'புது குழு', (வேர்) => {this.புது_குழு = வேர்})
     this.புது_குழு = this.$கணக்கு.புது_குழு
 
-    this.$கணக்கு.on('குழு மாற்றம்', () => {
+    this.கவனி(this.$கணக்கு, 'குழு மாற்றம்', () => {
       this.மேலாளர்_உரிமை = this.$கணக்கு.மேலாளர்_உரிமை
       this.சாதனங்கள் = this.$கணக்கு.சாதனங்கள்
     })
     this.மேலாளர்_உரிமை = this.$கணக்கு.மேலாளர்_உரிமை
     this.சாதனங்கள் = this.$கணக்கு.சாதனங்கள்
 
-    this.$கணக்கு.on('தரவுத்தளம் மாற்றம்', (தகவல்கள்) => {
+    this.கவனி(this.$கணக்கு, 'தரவுத்தளம் மாற்றம்', (தகவல்கள்) => {
       console.log('தரவுத்தளம் மாற்றம்', தகவல்கள்)
       switch (தகவல்கள்.தரவுத்தளம்) {
         case "பயனாளர்பெயர்கள்":
@@ -94,9 +85,6 @@ export default {
       }
     })
     if (this.$கணக்கு.தத && this.$கணக்கு.தத.தயார்) this.பயனாளர்பெயர்கள் = this.$கணக்கு.தத.பயனாளர்_பெயர்கள்
-  },
-  destroyed: function() {
-
   }
 }
 </script>

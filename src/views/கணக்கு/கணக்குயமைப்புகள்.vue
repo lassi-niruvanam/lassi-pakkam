@@ -3,9 +3,24 @@
     <v-row>
       <v-col>
         <div style="display: flex; justify-content: center;">
-          <v-avatar size="150" color="amber darken-2" style="margin-top:-85px ">
-            <v-img v-if="பயனாளர்_படம்" :src="பயனாளர்_படம்" :label="பயனாளர்_அடையாளம்"></v-img>
-            <span v-else class="white--text headline">{{ பயனாளர்_அடையாளம் }}</span>
+          <v-avatar v-if="பயனாளர்_படம்" size="150">
+            <v-img :src="பயனாளர்_படம்" :label="பயனாளர்_அடையாளம்"></v-img>
+          </v-avatar>
+          <v-avatar v-else
+           @drop.prevent="onPickFile" @dragover.prevent
+           size="150"
+           style="margin-top:-85px; background-color: white; border: 5px dashed grey"
+          >
+            <v-btn icon x-large @click="onPickFile">
+              <v-icon>mdi-camera-outline</v-icon>
+            </v-btn>
+            <input
+              type="file"
+              style="display: none"
+              ref="fileInput"
+              accept="image/*"
+              @change="onFilePicked"
+            />
           </v-avatar>
         </div>
 
@@ -267,15 +282,17 @@ import payanalarpeyarpetti from '../../components/கணக்கு/பயன�
 import sadanamurupadi from '../../components/கணக்கு/சாதனமுருப்படி'
 import sadanamserukapetti from '../../components/கணக்கு/சாதனம்சேருகப்பெட்டி'
 import minnancal from '../../components/கணக்கு/மின்னஞ்சல்'
+import mixin from '../../mixins/நிகழ்வுகவனிப்பவாளர்'
 
 export default {
   name: 'கணக்குயமைப்புகள்',
   components: {payanalarpeyarpetti, sadanamurupadi, sadanamserukapetti, minnancal},
   props: ['peyarkal', 'melalar_urimai', 'sadanankal', 'payanalarpeyar', 'nilai'],
+  mixins: [mixin],
   data: function () {
     return {
       பதாகை: 0,
-      இணையம்: true,
+      இணையம்: false,
       பயனாளர்_அடையாளம்: undefined,
       பயனாளர்_படம்: undefined,
       பயனாளர்_மின்னஞ்சல்: undefined,
@@ -283,13 +300,23 @@ export default {
       அழைப்பு: ''
     }
   },
+  watch: {
+    இணையம்: function(மதிப்பு) {
+      this.$கணக்கு.இணையம் = மதிப்பு
+    }
+  },
   mounted: function() {
-    this.$கணக்கு.on('பயனாளர் மாற்றம்', () => {
+    this.கவனி(this.$கணக்கு, 'பயனாளர் மாற்றம்', () => {
       this.பயனாளர்_அடையாளம் = this.$கணக்கு.பயனாளர்_அடையாளம்
     })
     this.பயனாளர்_அடையாளம் = this.$கணக்கு.பயனாளர்_அடையாளம்
 
-    this.$கணக்கு.on('தரவுத்தளம் மாற்றம்', (தகவல்கள்) => {
+    this.கவனி(this.$கணக்கு, 'இணையம் மாற்றம்', () => {
+      this.இணையம் = this.$கணக்கு.இணையம்
+    })
+    this.இணையம் = this.$கணக்கு.இணையம்
+
+    this.கவனி(this.$கணக்கு, 'தரவுத்தளம் மாற்றம்', (தகவல்கள்) => {
       switch (தகவல்கள்.தரவுத்தளம்) {
         case "பயனாளர்":
           this.பயனாளர்_படம் = this.$கணக்கு.தத.பயனாளர்_படம்
@@ -298,7 +325,7 @@ export default {
         }
     })
 
-    this.$கணக்கு.on('குழு மாற்றம்', () => {
+    this.கவனி(this.$கணக்கு, 'குழு மாற்றம்', () => {
       this.உரிமைக்கப்பட்ட_மொழிகள் = this.$கணக்கு.உரிமைக்கப்பட்ட_மொழிகள்
     })
   },
@@ -309,6 +336,18 @@ export default {
     },
     அனுமதிவாங்கு: function() {
       console.log(this.அனுமதிவாங்கு)
+    },
+    onPickFile () {
+      this.$refs.fileInput.click()
+    },
+    onFilePicked (event) {
+      const files = event.target.files
+      const fileReader = new FileReader()
+      fileReader.addEventListener('load', () => {
+        this.imageUrl = fileReader.result
+      })
+      fileReader.readAsDataURL(files[0])
+      this.image = files[0]
     }
   }
 }

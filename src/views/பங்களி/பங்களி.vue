@@ -1,5 +1,13 @@
 <template>
     <v-container fluid>
+      <v-img
+       :src="require('../../assets/ஆட்டுக்கல்.svg')"
+       max-height="250"
+       contain
+      ></v-img>
+      <h1 class="display-1 font-weight-bold py-10">
+        நாங்கள் லஸ்ஸிக்கு மேலே தொடர்ந்து வேலை செய்கிறோம்
+      </h1>
       <v-tabs vertical fixed color="amber accent-4" class="mt-3">
         <v-tab v-for="முறை in muraigal" :key="முறை.பெயர்">
           <v-icon left>

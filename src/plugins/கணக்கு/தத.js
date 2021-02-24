@@ -1,13 +1,13 @@
 import { EventEmitter } from 'events'
 import OrbitDB from 'orbit-db'
-import AccessControllers from './அணுகள்_கட்டுப்படுத்தி'
+import AccessControllers from './அணுகல்_கட்டுப்படுத்தி'
 const சகோயமை = import('./சகோயமை')
 
 export default async function தரவுத்தளத்தை_உருவாக்கு(
   கையெழுத்துசரிபார்ப்பு, தத_முகவரி
 ) {
   const தத = new தரவுத்தளங்கள்(கையெழுத்துசரிபார்ப்பு)
-  await தத.ஆரம்பம்()
+  await தத.ஆரம்பம்(தத_முகவரி)
   return தத
 }
 
@@ -28,7 +28,7 @@ class தரவுத்தளங்கள் extends EventEmitter {
     })
 
     this.தனிப்பட்டவமைப்புகள் = {
-      accessController: {type: அணுகல்_கட்டுப்படுத்தி, write: [this.கோள்பாதை.identity.id]}
+      accessController: {type: 'orbitdb-melalar', write: [this.கோள்பாதை.identity.id]}
     }
 
     this.தத = await தத_மரம்.உருவாக்கு(தத_முகவரி, this.கோள்பாதை, this.தனிப்பட்டவமைப்புகள்)
@@ -82,11 +82,11 @@ class தரவுத்தளங்கள் extends EventEmitter {
         const அனுமதி = this.கையெழுத்துசரிபார்ப்பு(செய்தி)
         const { சாதனம்_அடையாளம், மூல்தத_முகவரி } = செய்தி.contents
         const பயனாளர்_அடையாளம் = செய்தி.author.name
-        const தத = this.கூடபனியாளர்கள்_தத[பயனாளர்_அடையாளம்]
+        var தத = this.கூடபனியாளர்கள்_தத[பயனாளர்_அடையாளம்]
 
         if (அனுமதி) {
           if (!தத && பயனாளர்_அடையாளம் !== this.பயனாளர்_அடையாளம்) {
-            var தத = await தத_மரம்.உருவாக்கு(மூல்தத_முகவரி, this.கோள்பாதை)
+            தத = await தத_மரம்.உருவாக்கு(மூல்தத_முகவரி, this.கோள்பாதை)
             this.கூடபனியாளர்கள்_தத[பயனாளர்_அடையாளம்] = தத
           }
         } else {
@@ -133,7 +133,7 @@ class தத_மரம் extends EventEmitter {
     }
 
     for (let இ of ['write', 'replicated', 'ready']) {
-      தத.events.on(இ, ()=>this.emit('மாற்றம்', {பாதை: 'மூலம்'}))
+      this.மூல்தத.events.on(இ, ()=>this.emit('மாற்றம்', {பாதை: 'மூலம்'}))
     }
     await this.மூல்தத.load()
   }
@@ -171,7 +171,7 @@ class தத_மரம் extends EventEmitter {
         return _தத
       }
     }
-    const பாதை = typeof பெயர் === 'string' ? [பெயர்] : பெயர்
+    var பாதை = typeof பெயர் === 'string' ? [பெயர்] : பெயர்
     பாதை.forEach((இ) => {
       if (இ.index('-') !== -1) throw 'தரவுத்தளத்துடைய பெயரில் `-` இருக்க கூடாது.'
     })
@@ -222,12 +222,12 @@ class தத_மரம் extends EventEmitter {
 
   async அனுமதிக்கு(கோள்பாதை_அடையாளம்) {
     const எல்லாம் = await this.எல்லாம்_தத()
-    await Promise.all(எல்லாம்.forEach(இ=>இ.acccess.grant('write', கோள்பாதை_அடையாளம்))
+    await Promise.all(எல்லாம்.forEach(இ=>இ.acccess.grant('write', கோள்பாதை_அடையாளம்)))
   }
 
   async நீக்கு() {
     const எல்லாம் = await this.எல்லாம்_தத()
-    await Promise.all(எல்லாம்.forEach(இ=>இ.drop())
+    await Promise.all(எல்லாம்.forEach(இ=>இ.drop()))
   }
 
 }

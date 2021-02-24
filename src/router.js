@@ -52,6 +52,11 @@ const router = new Router({
           component: () => import('./views/பதிவிறக்கங்கள்.vue')
       },
       {
+        path: encodeURI('/விதிமுறைகள்'),
+        name: 'விதிமுறைகள்',
+        component: () => import('./views/விதிமுறைகள்.vue')
+      },
+      {
           path: encodeURI('/தொடர்பு'),
           name: 'தொடர்பு',
           component: () => import('./views/தொடர்பு.vue')

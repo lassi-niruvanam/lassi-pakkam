@@ -10,13 +10,14 @@ const குழு_வேர் = process.env.VUE_APP_KUZHU_VER
 
 
 export default class அங்கீகாரம் extends EventEmitter {
-  constructor(வணக்கம்_செய்தி) {
+  constructor(இணையம், வணக்கம்_செய்தி) {
     super()
+    this._இணையம் = இணையம்
     this.வணக்கம்_செய்தி = வணக்கம்_செய்தி
-    this.இணைப்புகள் = {}
+    this.திரள்_இணைப்புகள் = {}
 
     this.சூழல் = this.சூழல்_எற்று()
-    if (this.உள்ளிடுக்கப்பட்டுள்ளது()) this.திரளை_ஆரம்பு()
+    if (this.இணையம்) this.திரளை_ஆரம்பு()
   }
 
   கையெழுத்துசரிபார்ப்பு(செய்தி){
@@ -48,9 +49,13 @@ export default class அங்கீகாரம் extends EventEmitter {
       }
       சூழல்.team = loadTeam(சூழல்.team, குழு_சூழல்)
 
-      if (சூழல்.team.chain.root !== குழு_வேர்) {
-        delete சூழல்.team
-        this.சூழல்_சேமி()
+      if (குழு_வேர்) {
+        if (சூழல்.team.chain.root !== குழு_வேர்) {
+          delete சூழல்.team
+          this.சூழல்_சேமி()
+        }
+      } else {
+        this.புழு_குழு = சூழல்.team.chain.root
       }
     }
 
@@ -64,9 +69,7 @@ export default class அங்கீகாரம் extends EventEmitter {
       invitee: {type: 'DEVICE', name: சாதனம்பெயர்},
       invitationSeed: அழைப்பு
     })
-
     this.சூழல்_சேமி()
-    this.திரளை_ஆரம்பு()
   }
 
   அழைப்பால்_பயனாளர்_உள்ளிடு(அழைப்பு) {
@@ -77,13 +80,12 @@ export default class அங்கீகாரம் extends EventEmitter {
     })
 
     this.சூழல்_சேமி()
-    this.திரளை_ஆரம்பு()
   }
 
   உள்ளிடுக்கப்பட்டுள்ளது() {
     const தேவையானசாபிகள் = ['team', 'device', 'user']
     if (!தேவையானசாபிகள்.every(இ=>this.சூழல்[இ])) return false
-    return this.சூழல்.team.has(this.சூழல்.user.userName) && this.சூழல்.verify(this.சூழல்.sign('வணக்கம்'))
+    return this.சூழல்.team.has(this.சூழல்.user.userName) && this.சூழல்.team.verify(this.சூழல்.team.sign('வணக்கம்'))
   }
 
   பயனாளர்_உருவாக்கு(பயனாளர்பெயர், சாதனம்பெயர) {
@@ -100,14 +102,14 @@ export default class அங்கீகாரம் extends EventEmitter {
       const குழு = createTeam(குழுபெயர், குழு_சூழல்)
       this.சூழல்.team = குழு
       this.புது_குழு = குழு.chain.root
-      this.சூழல்_சேமி()
     }
+    this.சூழல்_சேமி()
   }
 
   async திரளை_ஆரம்பு () {
     const hyperswarm = require('hyperswarm-web')
-    const crp = await crypto()
-    this.திரள்_விஷயம் = crp.createHash('sha256')
+    const crypto = require('crypto')
+    this.திரள்_விஷயம் = crypto.createHash('sha256')
       .update('லஸ்ஸி-பக்கம்-மொழியாக்கம்')
       .digest()
 
@@ -116,11 +118,13 @@ export default class அங்கீகாரம் extends EventEmitter {
     this.திரள்.join(this.திரள்_விஷயம், {lookup: true, announce: true})
 
     this.திரள்.on('disconnection', (வாய்) => {
+      console.log('இணைப்பு முடி', வாய்._id)
       this.emit('திரளிணைப்பு மாற்றம்')
       delete this.திரள்_இணைப்புகள்[வாய்._id]
     })
 
     this.திரள்.on('connection', (வாய்) => {
+      console.log('இணைப்பு', வாய்._id)
       const _இணைப்பு = new இணைப்பு(வாய், this.சூழல்)
       _இணைப்பு.on('joined', ()=>this.சூழல்_சேமி())
       _இணைப்பு.on('change', ()=>this.சூழல்_சேமி())
@@ -133,6 +137,12 @@ export default class அங்கீகாரம் extends EventEmitter {
 
       this.emit('திரளிணைப்பு மாற்றம்')
     })
+  }
+
+  திரளை_முடி() {
+    this.திரள்.leave(this.திரள்_விஷயம்)
+    Object.values(this.திரள்_இணைப்புகள்).map(இ=>இ.நீக்கு())
+    this.திரள்.destroy()
   }
 
   திரள்செய்தி_கிடைத்தது(தகவல்கள், வாய்) {
@@ -153,9 +163,7 @@ export default class அங்கீகாரம் extends EventEmitter {
   }
 
   நீக்கு() {
-    this.திரள்.leave(this.திரள்_விஷயம்)
-    Object.values(this.திரள்_இணைப்புகள்).map(இ=>இ.நீக்கு())
-    this.திரள்.destroy()
+    this.திரளை_முடி()
     localStorage.clear(ஞாபகமாறிகள்.சூழல்)
   }
 
@@ -167,10 +175,26 @@ export default class அங்கீகாரம் extends EventEmitter {
     return this._புது_குழு
   }
 
+  get இணையம்() {
+    return this._இணையம்
+  }
+
+  set இணையம்(மதிப்பு) {
+    if (this._இணையம் === மதிப்பு) return
+    this._இணையம் = மதிப்பு
+    if (மதிப்பு) {
+      this.திரளை_ஆரம்பு()
+    } else {
+      this.திரளை_முடி()
+    }
+  }
+
 }
 
-class இணைப்பு {
+class இணைப்பு extends EventEmitter {
   constructor(வாய், சூழல்) {
+    super()
+
     this.வாய் = வாய்
     this.சூழல் = சூழல்
     this.செய்தி_எண் = 0
@@ -182,7 +206,7 @@ class இணைப்பு {
     }
 
     this.அங்கீகாரம்_இணைப்பு = new Connection(
-      செய்தியனுப்பு, this.சூழல்
+      { sendMessage: செய்தியனுப்பு, context: this.சூழல் }
     ).start()
 
     நிகழ்வுகளையிணையு(this.அங்கீகாரம்_இணைப்பு, this, ['connected', 'joined', 'disconnected', 'change'])

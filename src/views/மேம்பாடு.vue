@@ -1,10 +1,18 @@
 <template>
     <v-container class="mt-10">
       <v-card
-        class="mx-auto"
+        class="mx-auto text-center"
         max-width="1000"
         flat
       >
+        <v-img
+         :src="require('../assets/வழுக்கு_மரம்.svg')"
+         max-height="250"
+         contain
+        ></v-img>
+        <h1 class="display-1 font-weight-bold py-10">
+          நாங்கள் லஸ்ஸிக்கு மேலே தொடர்ந்து வேலை செய்கிறோம் 
+        </h1>
         <v-expansion-panels
           v-model="panel"
           multiple

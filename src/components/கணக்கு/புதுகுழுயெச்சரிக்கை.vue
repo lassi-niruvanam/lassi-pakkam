@@ -15,8 +15,8 @@
         புது குழு உருவாக்கப்பட்டுள்ளது:
         <span style="color:#FF6F00; border: 1px solid #FF6F00; border-radius: 4px; padding: 0px 5px; background-color: #FFE082">{{ pudu_kuzhu }}</span>
         <br/>
-        அதை `.env.local` என்று கோப்பில் `VUE_APP_KUZHU_SAGOYAMAI` என்று சூழல் மாறியால் நகலேடுக்கவும்.
-        <strong>நீர்கள் இந்த வலைப் பக்கத்தை வடிவமைப்பாளர் இல்லை என்றால், இது ஒரு பிழைத் தானே.
+        அதை `.env.local` என்று கோப்பில் `VUE_APP_KUZHU_VER` என்று சூழல் மாறியால் நகலேடுக்கவும்.
+        <strong>நீர்கள் இந்த வலைப் பக்கத்தின் வடிவமைப்பாளர் இல்லை என்றால், இது ஒரு பிழைத் தானே.
         <a
          href="https://github.com/lassi-samaaj/lassi-pakkam/issues/new"
          rel=”noopener”
@@ -26,7 +26,7 @@
         </strong>
       </v-col>
       <v-col class="shrink">
-        <v-btn outlined color="amber darken-3" @click="நகலேடு(pudu_kuzhu)">
+        <v-btn outlined color="amber darken-3" @click="நகலேடு('VUE_APP_KUZHU_VER = \'' + pudu_kuzhu + '\'')">
           <v-icon>mdi-copy</v-icon>
           நகலேடு
         </v-btn>
