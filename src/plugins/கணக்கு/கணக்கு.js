@@ -1,7 +1,8 @@
 import { EventEmitter } from 'events'
-// const crypto = () => import('crypto')
 const அங்கீகாரம் = () => import('./அங்கீகாரம்')
 import { ஞாபகமாறிகள் } from './தகவல்கள்'
+import { நிகழ்வுகளையிணையு } from './கருவிகள்'
+
 const தரவுத்தளத்தை_உருவாக்கு = () => import('./தத')
 const நிலைகள் = {
   வெளி: 'வெளியேறிக்கப்பட்டுள்ளது',
@@ -19,12 +20,15 @@ class கணக்கு extends EventEmitter{
     const இணையம் = localStorage.getItem(ஞாபகமாறிகள்.இணையம்)
     this._இணையம் = இணையம் === undefined ? true : இணையம் === 'true'
     if (localStorage.getItem(ஞாபகமாறிகள்.சூழல்)) this.அங்கீகாரம்_ஆரம்பு()
+    const மூல்முகவரி = localStorage.getItem(ஞாபகமாறிகள்.மூல்முகவரி)
+    if (மூல்முகவரி) this.தத_ஆரம்பு(மூல்முகவரி)
   }
 
   async பயனாளர்_உருவாக்கு(பயனாளர்பெயர், சாதனம்பெயர்) {
     await this.அங்கீகாரம்_ஆரம்பு()
     this.அங்கீகாரம்.பயனாளர்_உருவாக்கு(பயனாளர்பெயர், சாதனம்பெயர்)
     await this.தத_ஆரம்பு()
+    localStorage.setItem(this.ஞாபகமாறிகள்.மூல்முகவரி, this.தத.மூல்முகவரி)
   }
 
   async அங்கீகாரம்_ஆரம்பு() {
@@ -35,29 +39,65 @@ class கணக்கு extends EventEmitter{
       this.புது_குழு = குழுவேர்
       this.emit('புது குழு', குழுவேர்)
     })
+    நிகழ்வுகளையிணையு(this.அங்கீகாரம், this, ['திரளிணைப்பு மாற்றம்'])
+
     this.நிலை = நிலைகள்.துவக்க
     this.emit('அங்கீகாரம் தயார்')
   }
 
   async தத_ஆரம்பு(முகவரி){
     const செயலி = await தரவுத்தளத்தை_உருவாக்கு()
-    this.தத = await செயலி(()=> this.அங்கீகாரம்.கையெழுத்துசரிபார்ப்பு(), முகவரி)
+    console.log(செயலி)
+    if (!this.பயனாளர்_அடையாளம்) throw 'வெளியேறிக்கப்பட்டுள்ளீர்கள்! தரவுத்தளத்தை ஆரம்ப முடியாது.'
+    this.தத = await செயலி.default.உருவாக்கு(this.பயனாளர்_அடையாளம், ()=> this.அங்கீகாரம்.கையெழுத்துசரிபார்ப்பு(), முகவரி)
+    நிகழ்வுகளையிணையு(this.தத, this, ['தத மாற்றம்'])
+    this.நிலை = நிலைகள்.உள்
   }
 
   வணக்கம்() {
     if (!this.தத) return
     return {
       வகை: 'வணக்கம்',
-      பயனாளர்_அடையாளம்: this.சூழல்.user.userName,
-      சாதனம்_அடையாளம்: this.சூழல்.device.deviceName,
+      பயனாளர்_அடையாளம்: this.அங்கீகாரம்.சூழல்.user.userName,
+      சாதனம்_அடையாளம்: this.அங்கீகாரம்.சூழல்.device.deviceName,
       கோள்பாதை_அடையாளம்: this.தத.கோள்பாதை.identity.id,
-      மூல்தத_முகவரி: this.தத.தத.மூல்தத.id
+      மூல்தத_முகவரி: this.தத.மூல்முகவரி
     }
   }
 
+  திரளிணைப்பை_நீக்கு(இ) {
+    if (!this.அங்கீகாரம்) return
+    this.அங்கீகாரம்.திரளிணைப்பை_நீக்கு(இ)
+  }
+
   get பயனாளர்_அடையாளம்() {
-    if (this.அங்கீகாரம்) return this.அங்கீகாரம்.சூழல்.user.userName
-    return ''
+    if (this.அங்கீகாரம்) return this.அங்கீகாரம்.பயனாளர்_அடையாளம்
+    return undefined
+  }
+
+  get பயனாளர்() {
+    if (!this.அங்கீகாரம்) return []
+    return this.அங்கீகாரம்.பயனாளர்
+  }
+
+  get சாதனம்() {
+    if (!this.அங்கீகாரம்) return []
+    return this.அங்கீகாரம்.சாதனம்
+  }
+
+  get சாதனங்கள்() {
+    if (!this.அங்கீகாரம்) return []
+    return this.அங்கீகாரம்.சாதனங்கள்
+  }
+
+  get மேலாளர்_உரிமை() {
+    if (!this.அங்கீகாரம்) return false
+    return this.அங்கீகாரம்.மேலாளர்_உரிமை
+  }
+
+  get திரள்_இணைப்புகள்() {
+    if (!this.அங்கீகாரம்) return {}
+    return this.அங்கீகாரம்.திரள்_இணைப்புகள்
   }
 
   get நிலை() {
@@ -102,9 +142,6 @@ class கணக்கு extends EventEmitter{
   constructor () {
     super()
 
-
-    this.தத = this.குழு = this.திரள் = undefined
-
     if (this.பயனாளர்) {
 
       const தத_முகவரி = localStorage.getItem('மூல்_தத_முகவரி')
@@ -122,30 +159,6 @@ class கணக்கு extends EventEmitter{
       this.பயனாளர் ? this.திரள்_ஆரம்பம்() : this.திரள்_மூடி()
     })
     window.கணக்கு = this
-  }
-
-  வெளியேறி() {
-    // பயனாளர் தகஙல்களை நீக்கு
-    this.பயனாளர் = undefined
-    localStorage.clear('LF_AUTH_STORAGE__USER')
-
-    // குழுவை நீக்கு
-    this.குழு = undefined
-    localStorage.clear('லஸ்ஸி-குழு')
-
-    // திரளை நிற்கு
-    this.திரளை_மூடி()
-  }
-
-  திரளை_ஆரம்பு () {
-    this.திரள் = new திரள்()
-  }
-
-  திரளை_மூடி () {
-    if (this.திரள்) {
-      this.திரள்.மூடி()
-      this.திரள் = undefined
-    }
   }
 
   அழைப்பால்_உள்ளிடு(அழைப்பு) {
@@ -197,15 +210,6 @@ class கணக்கு extends EventEmitter{
     return this.குழு.roles().filter((மொழி)=>{this.குழு.memberHasRole(this.பயனாளர்_அடையாளம், மொழி)})
   }
 
-
-  get மேலாளர்_உரிமை() {
-    return this.குழு && this.குழு.has(this.பயனாளர்_அடையாளம்) && this.குழு.memberIsAdmin(this.பயனாளர்_அடையாளம்)
-  }
-
-  get சாதனங்கள்() {
-    if (!this.குழு || !this.குழு.has(this.பயனாளர்_அடையாளம்)) return []
-    return this.குழு.members(this.பயனாளர்_அடையாளம்).devices
-  }
 
   அழைக்க (பெயர், மொழிகள்) {
     if (மொழிகள்) {
@@ -276,18 +280,6 @@ class தரவுத்தளங்கள் {
 
     this.தயார் = true
     this.அறிக்கை('தத தயார்')
-  }
-
-
-
-  async பயனாளர்_பெயர்_சேரு (மொழி, பெயர்) {
-    if (!this.பெயர்_தரவுத்தளம்) return
-    await this.பெயர்_தரவுத்தளம்.set(மொழி, பெயர்)
-  }
-
-  async பயனாளர்_பெயர்_நீக்கு (மொழி) {
-    await this.பெயர்_தரவுத்தளம்.del(மொழி)
-    console.log(this.பெயர்_தரவுத்தளம்.all)
   }
 
   கூடபயனாளர்_சேரு(உள்ளடக்கம்) {
@@ -418,10 +410,6 @@ class தரவுத்தளங்கள் {
     return பரிந்துரைகள்
   }
 
-  get பயனாளர்_பெயர்கள்() {
-    if (!this.பெயர்_தரவுத்தளம்) return {}
-    return Object.fromEntries(Object.keys(this.பெயர்_தரவுத்தளம்.all).map((x)=>{return [x, this.பெயர்_தரவுத்தளம்.get(x)]}))
-  }
 
   get பயனாளர்_படம்() {
     const மின்னஞ்சல் = this.பயனாளர்_மின்னஞ்சல்

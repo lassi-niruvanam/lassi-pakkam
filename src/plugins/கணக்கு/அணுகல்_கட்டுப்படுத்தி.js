@@ -1,8 +1,11 @@
 
 import { AccessControllers } from 'orbit-db'
+import { EventEmitter } from 'events'
 const pMapSeries = require('p-map-series')
 
-const MODERATOR = 'மதிப்பீட்டாளர்'
+const மதிப்பீட்டாளர் = 'மதிப்பீட்டாளர்'
+const உறுப்பினர் = 'உறுப்பினர்'
+
 window.AccessControllers = AccessControllers
 /*
 MIT License
@@ -37,15 +40,17 @@ const ensureAddress = address => {
     : path.join(address, '/_access')
 }
 
-class அணுகல்_கட்டுப்படுத்தி {
+class அணுகல்_கட்டுப்படுத்தி extends EventEmitter {
   constructor (orbitdb, options) {
+    super()
+    console.log('constructor', 'அணுகல்_கட்டுப்படுத்தி', options)
     this._orbitdb = orbitdb
     this._db = null
     this._options = options || {}
   }
 
   // Returns the type of the access controller
-  static get type () { return "கோள்பாதை-தத-மதிப்பீட்டாளர்" }
+  static get type () { return "kolpadai-tata-madippittalar" }
 
   // Returns the address of the OrbitDB used as the AC
   get address () {
@@ -55,7 +60,7 @@ class அணுகல்_கட்டுப்படுத்தி {
   // Return true if entry is allowed to be added to the database
   async canAppend (entry, identityProvider) {
     // Write keys and admins keys are allowed
-    const access = new Set([...this.get('write'), ...this.get('admin')])
+    const access = new Set([...this.get(மதிப்பீட்டாளர்), ...this.get(உறுப்பினர்)])
     // If the ACL contains the writer's public key or it contains '*'
     if (access.has(entry.identity.id) || access.has('*')) {
       const verifiedIdentity = await identityProvider.verifyIdentity(entry.identity)
@@ -81,7 +86,7 @@ class அணுகல்_கட்டுப்படுத்தி {
         ...capabilities,
         // Add the root access controller's 'write' access list
         // as admins on this controller
-        ...{ admin: new Set([...(capabilities.admin || []), ...this._db.access.write]) }
+        ...{ மதிப்பீட்டாளர்: new Set([...(capabilities.மதிப்பீட்டாளர் || []), ...this._db.access._முதல்மதிப்பீட்டாளர்]) }
       }).forEach(toSet)
 
       return capabilities
@@ -102,10 +107,10 @@ class அணுகல்_கட்டுப்படுத்தி {
 
     // Force '<address>/_access' naming for the database
     this._db = await this._orbitdb.keyvalue(ensureAddress(address), {
-      // use ipfs controller as a immutable "root controller"
       accessController: {
-        type: 'மதிப்பீட்டாளர்-கட்டுப்படுத்தி',
-        write: this._options.admin || [this._orbitdb.identity.id]
+        type: 'madippittalar-kattuppatutti',
+        முதல்மதிப்பீட்டாளர்: this._options.admin || [this._orbitdb.identity.id],
+        உறுப்பினர்கள்: true
       },
       sync: true
     })
@@ -147,12 +152,13 @@ class அணுகல்_கட்டுப்படுத்தி {
 
   /* Factory */
   static async create (orbitdb, options = {}) {
+    console.log('create', this.type, {options})
     const ac = new அணுகல்_கட்டுப்படுத்தி(orbitdb, options)
     await ac.load(options.address || options.name || 'default-access-controller')
 
     // Add write access from options
-    if (options.write && !options.address) {
-      await pMapSeries(options.write, async (e) => ac.grant('write', e))
+    if (options.முதல்மதிப்பீட்டாளர் && !options.address) {
+      await pMapSeries(options.முதல்மதிப்பீட்டாளர், async (e) => ac.grant('மதிப்பீட்டாளர்', e))
     }
 
     return ac
@@ -185,95 +191,17 @@ class மதிப்பீட்டாளர்_கட்டுப்படு�
   SOFTWARE.
   */
 
-  constructor (firstModerator, options) {
-    this._firstModerator = firstModerator
-    this._write = []
-    this._options = options || {}
-  }
-
-  static get type () { return 'மதிப்பீட்டாளர்-கட்டுப்படுத்தி' }
-
-  மதிப்பீட்டாளரா(id) {
-    return this._write.includes(id)
-  }
-
-  isValidCapability (capability) {
-    return this._capabilityTypes.includes(capability)
-  }
-
-
-  get firstModerator () {
-    return this._firstModerator
-  }
-
-  async canAppend (entry, identityProvider) {
-    const entryID = entry.identity.id
-    const capability = entry.payload.value.capability
-    const idAdd = entry.payload.value.id
-    const மதிப்பீட்டாளர் = this.மதிப்பீட்டாளரா(entryID)
-    const validCapability = this.isValidCapability(capability)
-    const validSig = async () => identityProvider.verifyIdentity(entry.identity)
-    if (மதிப்பீட்டாளர் && validCapability && (await validSig())) {
-      if (capability === MODERATOR) {
-        if (idAdd === this.firstModerator) return true
-        this._write.push(idAdd)
-      }
-      return true
-    }
-
-    return false
-  }
-
-  async load (address) {
-    const addList = address.split('/')
-    const suffix = addList.pop()
-    const mod = suffix.includes('mod') ? suffix : addList.pop()
-    this._firstModerator = mod.split('_')[1]
-  }
-
-  async save () {
-    // TODO if entire obj saved in manfest, can just pass our own fields
-    let address = `${this.type}/mod_${this._firstModerator}`
-    const manifest =  { address }
-    return manifest
-  }
-
-  static async create (orbitdb, options = {}) {
-    let firstModerator
-
-    if (options.address) {
-      firstModerator = options.address.split('/')[1].split('_')[1]
-    } else {
-      firstModerator = options.firstModerator
-    }
-
-    if (!firstModerator) throw new Error('Moderator AC: firstModerator required')
-    return new மதிப்பீட்டாளர்_கட்டுப்படுத்தி(firstModerator)
-  }
-}
-
-AccessControllers.addAccessController({ AccessController: அணுகல்_கட்டுப்படுத்தி })
-AccessControllers.addAccessController({ AccessController: மதிப்பீட்டாளர்_கட்டுப்படுத்தி })
-
-export default AccessControllers
-/*
-const type = 'moderator-access'
-
-const MODERATOR = 'MODERATOR'
-const MEMBER = 'MEMBER'
-
-class ModeratorAccessController {
-  constructor (firstModerator, options) {
-    this._capabilityTypes = [MODERATOR]
+  constructor (முதல்மதிப்பீட்டாளர், options) {
+    this._capabilityTypes = [மதிப்பீட்டாளர்]
     this._write = []     // Allowed to add other mods or members
-    this._firstModerator = firstModerator
-    this._write.push(this._firstModerator)
-    this._members = Boolean(options.members)
-    if (this._members) this._capabilityTypes.push(MEMBER)
+    this._முதல்மதிப்பீட்டாளர் = முதல்மதிப்பீட்டாளர்
+    this._write.push(this._முதல்மதிப்பீட்டாளர்)
+    this._உறுப்பினர்கள் = Boolean(options.உறுப்பினர்கள்)
+    if (this._உறுப்பினர்கள்) this._capabilityTypes.push(உறுப்பினர்)
     this._encKeyId = options.encKeyId
   }
 
-  static get type () { return type }
+  static get type () { return 'madippittalar-kattuppatutti' }
 
   isMod(id) {
     return this._write.includes(id)
@@ -283,21 +211,23 @@ class ModeratorAccessController {
     return this._capabilityTypes.includes(capability)
   }
 
-  get firstModerator () {
-    return this._firstModerator
+  get முதல்மதிப்பீட்டாளர் () {
+    return this._முதல்மதிப்பீட்டாளர்
   }
 
   async canAppend (entry, identityProvider) {
     const entryID = entry.identity.id
-    const capability = entry.payload.value.capability
-    const idAdd = entry.payload.value.id
+    const capability = entry.payload.key
+    const idAdd = entry.payload.value
     const isMod = this.isMod(entryID)
     const validCapability = this.isValidCapability(capability)
     const validSig = async () => identityProvider.verifyIdentity(entry.identity)
+    console.log({
+      entry, entryID, capability, idAdd, isMod, validCapability, validSig: await validSig()
+    })
     if (isMod && validCapability && (await validSig())) {
-      if (capability === MODERATOR) {
-        if (idAdd === this.firstModerator) return true
-        this._write.push(idAdd)
+      if (capability === மதிப்பீட்டாளர்) {
+        this._write = idAdd
       }
       return true
     }
@@ -308,37 +238,40 @@ class ModeratorAccessController {
   async load (address) {
     const addList = address.split('/')
     const suffix = addList.pop()
-    this._members = suffix === 'members'
+    this._உறுப்பினர்கள் = suffix === 'members'
     const mod = suffix.includes('mod') ? suffix : addList.pop()
-    this._firstModerator = mod.split('_')[1]
+    this._முதல்மதிப்பீட்டாளர் = mod.split('_')[1]
   }
 
   async save () {
     // TODO if entire obj saved in manfest, can just pass our own fields
-    let address = `${type}/mod_${this._firstModerator}`
-    address += this._members ? '/members' : ''
+    let address = `${this.type}/mod_${this._முதல்மதிப்பீட்டாளர்}`
+    address += this._உறுப்பினர்கள் ? '/members' : ''
     const manifest =  { address }
     if (this._encKeyId) manifest.encKeyId = this._encKeyId
     return manifest
   }
 
   static async create (orbitdb, options = {}) {
-    let firstModerator, members, encKeyId
+    console.log('create', {options}, this.type)
+    let முதல்மதிப்பீட்டாளர், உறுப்பினர்கள், encKeyId
 
     if (options.address) {
-      members = options.address.includes('members')
-      firstModerator = options.address.split('/')[1].split('_')[1]
+      உறுப்பினர்கள் = options.address.includes('members')
+      முதல்மதிப்பீட்டாளர் = options.address.split('/')[1].split('_')[1]
       encKeyId = options.encKeyId
     } else {
-      members = options.members
-      firstModerator = options.firstModerator
+      உறுப்பினர்கள் = options.உறுப்பினர்கள்
+      முதல்மதிப்பீட்டாளர் = options.முதல்மதிப்பீட்டாளர்
       encKeyId = options.encKeyId
     }
 
-    if (!firstModerator) throw new Error('Moderator AC: firstModerator required')
-    return new ModeratorAccessController(firstModerator, {members, encKeyId})
+    if (!முதல்மதிப்பீட்டாளர்) throw new Error('மதிப்பீட்டாளர் அணுகல் கட்டுப்படுத்தி: முதல் மதிப்பீட்டாளர் தேவையானது')
+    return new மதிப்பீட்டாளர்_கட்டுப்படுத்தி(முதல்மதிப்பீட்டாளர், {உறுப்பினர்கள், encKeyId})
   }
 }
 
-module.exports = ModeratorAccessController
-*/
+AccessControllers.addAccessController({ AccessController: அணுகல்_கட்டுப்படுத்தி })
+AccessControllers.addAccessController({ AccessController: மதிப்பீட்டாளர்_கட்டுப்படுத்தி })
+
+export default AccessControllers

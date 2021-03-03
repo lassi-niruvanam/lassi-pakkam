@@ -33,8 +33,7 @@
             outlined
             dense
             hide-details
-          >
-          </v-autocomplete>
+          ></v-autocomplete>
         </v-col>
         <v-col cols="3">
           <v-autocomplete
@@ -46,8 +45,7 @@
             outlined
             dense
             hide-details
-          >
-          </v-autocomplete>
+          ></v-autocomplete>
         </v-col>
         <v-col cols="3">
           <v-text-field
@@ -74,7 +72,7 @@
         <v-card
           v-for="பதிவிறக்கம் in தேர்ந்தேடுக்கப்பட்டன"
           :key="பதிவிறக்கம்.பெயர்"
-          class="mx-4 my-5 px-3 py-5 justify-start text-start" height="500px" width="325px"
+          class="mx-4 my-5 px-3 py-5 justify-start text-start" min-height="500px" width="325px"
         >
           <v-img
             :src="பதிவிறக்கம்.படம் || require('../assets/lassi.svg')"
@@ -106,6 +104,9 @@
              outlined label small class="ma-1"
              @click="வகைகள்=[பதிவிறக்கம்.வகை]"
             >
+             <v-icon left small>
+              {{ வகை_படவுரு(பதிவிறக்கம்.வகை) }}
+             </v-icon>
              {{ பதிவிறக்கம்.வகை }}
             </v-chip>
 
@@ -133,12 +134,14 @@
             <div v-if="பதிவிறக்கம்.பதிவிறக்கம்" class="mt-2">
               பதிவிறக்கம்
               <v-divider/>
-              <v-chip label class="ms-5 my-2 px-2">
-                {{ பதிவிறக்கம்.பதிவிறக்கம் }}
-                <v-btn icon small>
-                  <v-icon small>mdi-content-copy</v-icon>
-                </v-btn>
-              </v-chip>
+              <div v-for="ப in பதிவிறக்கம்.பதிவிறக்கம்" :key="ப">
+                <v-chip label class="ms-5 my-2 px-2">
+                  {{ ப }}
+                  <v-btn icon small>
+                    <v-icon small>mdi-content-copy</v-icon>
+                  </v-btn>
+                </v-chip>
+              </div>
             </div>
           </v-card-text>
         </v-card>
@@ -156,7 +159,7 @@ export default {
           பெயர்: 'லஸ்ஸி பைத்தான்',
           தகவல்கள்: 'லஸ்ஸியின் மூல் செயல்படுத்தல். நீர்கள் லஸ்ஸியை பயன்படுத்த விரம்பினால், இதே உங்களுக்கு தேவையானது.',
           வகை: 'செயல்படுத்தல்',
-          பதிவிறக்கம்: 'poetry add lassi', நிலை: 'மேம்பாட்டில்', நிரல்மொழி: ['பைத்தான்'],
+          பதிவிறக்கம்: ['poetry add lassi'], நிலை: 'மேம்பாட்டில்', நிரல்மொழி: ['பைத்தான்'],
           கிட்: 'https://github.com/lassi-samaaj/Lassi',
           ஆவணங்கள்: 'https://லஸ்ஸி.இந்தியா',
           படம்: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg'
@@ -165,24 +168,29 @@ export default {
           பெயர்: 'லஸ்ஸி யாவாக்கிறீட்டு',
           தகவல்கள்: 'லஸ்ஸியின் அதே செயல்படுத்தல், ஆனால் யாவாக்கிறீட்டில்.',
           வகை: 'செயல்படுத்தல்',
-          பதிவிறக்கம்: 'yarn add lassi-js', நிலை: 'திட்டமிடப்பட்டுள்ளது', நிரல்மொழி: ['யாவாக்கிறீட்டு']
+          பதிவிறக்கம்: ['yarn add lassi-js'], நிலை: 'திட்டமிடப்பட்டுள்ளது', நிரல்மொழி: ['யாவாக்கிறீட்டு'],
+          படம்: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png'
         },
         {
           பெயர்: 'லஸ்ஸி இலக்கணங்கள்', வகை: 'சட்டகம்',
           தகவல்கள்: 'லஸ்ஸி சட்டகத்தின் விவரக்குறிப்புகள். லஸ்ஸி மேம்பாடாளர்களுக்கு மட்டுமே இந்த மென்பொருள் சுவாரஸ்யமானதாகும்.',
           நிலை: 'மேம்பாட்டில்',
           நிரல்மொழி: ['பைத்தான்', 'யாவாக்கிறீட்டு'],
+          பதிவிறக்கம்: ['poetry add lassi-ilakkanankal', 'yarn add lassi-ilakkanankal'],
           கிட்: 'https://github.com/lassi-samaaj/lassi-ilakkanangal',
         },
         {
-          பெயர்: 'வெப் பாக் உட்சேருகி', நிலை: 'திட்டமிடப்பட்டுள்ளது', வகை: 'உட்சேருகி'
+          பெயர்: 'வெப் பாக் உட்சேருகி', நிலை: 'திட்டமிடப்பட்டுள்ளது', வகை: 'உட்சேருகி',
+          படம்: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Webpack.svg/2880px-Webpack.svg.png'
         },
         {
           பெயர்: 'பைச்சார்ம் உட்சேருகி', நிலை: 'திட்டமிடப்பட்டுள்ளது', வகை: 'உட்சேருகி',
-          கிட்: 'https://github.com/lassi-samaaj/pycharm-utceruki'
+          கிட்: 'https://github.com/lassi-samaaj/pycharm-utceruki',
+          படம்: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/PyCharm_Logo.svg/langfr-1920px-PyCharm_Logo.svg.png'
         },
         {
-          பெயர்: 'ஆத்தாம் உட்சேருகி', நிலை: 'திட்டமிடப்பட்டுள்ளது', வகை: 'உட்சேருகி'
+          பெயர்: 'ஆத்தாம் உட்சேருகி', நிலை: 'திட்டமிடப்பட்டுள்ளது', வகை: 'உட்சேருகி',
+          படம்: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Atom_icon.svg/2880px-Atom_icon.svg.png'
         }
       ],
       நிலை_சாத்தியங்கள்: ['நிலையானது', 'மேம்பாட்டில்', 'திட்டமிடப்பட்டுள்ளது'],
@@ -211,6 +219,18 @@ export default {
     }
   },
   methods: {
+    வகை_படவுரு: function(வகை) {
+      switch (வகை) {
+        case 'உட்சேருகி':
+          return 'mdi-connection'
+        case 'செயல்படுத்தல்':
+          return 'mdi-cogs'
+        case 'சட்டகம்':
+          return 'mdi-database-outline'
+        default:
+          return ''
+      }
+    },
     மேம்பாடு_படவுரு: function(நிலை) {
       switch (நிலை) {
         case 'நிலையானது':

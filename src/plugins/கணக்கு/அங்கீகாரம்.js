@@ -1,6 +1,7 @@
 import { EventEmitter } from 'events'
 import { createUser, createTeam, loadTeam, Connection, create as createDevice } from '@localfirst/auth'
 import { ஞாபகமாறிகள் } from './தகவல்கள்'
+import { நிகழ்வுகளையிணையு } from './கருவிகள்'
 
 const குழுபெயர் = 'லஸ்ஸி-மொழியாக்கங்கள்'
 const வாடிக்கையாளர் = {
@@ -21,6 +22,7 @@ export default class அங்கீகாரம் extends EventEmitter {
   }
 
   கையெழுத்துசரிபார்ப்பு(செய்தி){
+    if (!this.குழு) return false
     return this.குழு.has(செய்தி.author.name) && this.குழு.verify(செய்தி)
   }
 
@@ -85,7 +87,7 @@ export default class அங்கீகாரம் extends EventEmitter {
   உள்ளிடுக்கப்பட்டுள்ளது() {
     const தேவையானசாபிகள் = ['team', 'device', 'user']
     if (!தேவையானசாபிகள்.every(இ=>this.சூழல்[இ])) return false
-    return this.சூழல்.team.has(this.சூழல்.user.userName) && this.சூழல்.team.verify(this.சூழல்.team.sign('வணக்கம்'))
+    return this.குழு.has(this.சூழல்.user.userName) && this.குழு.verify(this.குழு.sign('வணக்கம்'))
   }
 
   பயனாளர்_உருவாக்கு(பயனாளர்பெயர், சாதனம்பெயர) {
@@ -119,8 +121,8 @@ export default class அங்கீகாரம் extends EventEmitter {
 
     this.திரள்.on('disconnection', (வாய்) => {
       console.log('இணைப்பு முடி', வாய்._id)
-      this.emit('திரளிணைப்பு மாற்றம்')
       delete this.திரள்_இணைப்புகள்[வாய்._id]
+      this.emit('திரளிணைப்பு மாற்றம்')
     })
 
     this.திரள்.on('connection', (வாய்) => {
@@ -128,6 +130,7 @@ export default class அங்கீகாரம் extends EventEmitter {
       const _இணைப்பு = new இணைப்பு(வாய், this.சூழல்)
       _இணைப்பு.on('joined', ()=>this.சூழல்_சேமி())
       _இணைப்பு.on('change', ()=>this.சூழல்_சேமி())
+      _இணைப்பு.on('disconnected', ()=>{this.திரளிணைப்பை_நீக்கு(வாய்._id); this.emit('திரளிணைப்பு மாற்றம்')})
 
       this.திரள்_இணைப்புகள்[வாய்._id] = _இணைப்பு
       வாய்.on('data', (தகவல்கள்)=>this.திரள்செய்தி_கிடைத்தது(தகவல்கள், வாய்))
@@ -136,13 +139,20 @@ export default class அங்கீகாரம் extends EventEmitter {
       if (வணக்கம்_செய்தி) வாய்.write(JSON.stringify(வணக்கம்_செய்தி))
 
       this.emit('திரளிணைப்பு மாற்றம்')
+      console.log('திரளிணைப்பு மாற்றம்')
     })
   }
 
   திரளை_முடி() {
     this.திரள்.leave(this.திரள்_விஷயம்)
-    Object.values(this.திரள்_இணைப்புகள்).map(இ=>இ.நீக்கு())
+    Object.keys(this.திரள்_இணைப்புகள்).map(இ=>this.திரளிணைப்பை_நீக்கு(இ))
     this.திரள்.destroy()
+  }
+
+  திரளிணைப்பை_நீக்கு(இ) {
+    this.திரள்_இணைப்புகள்[இ].நீக்கு()
+    delete this.திரள்_இணைப்புகள்[இ]
+    this.emit('திரளிணைப்பு மாற்றம்')
   }
 
   திரள்செய்தி_கிடைத்தது(தகவல்கள், வாய்) {
@@ -165,6 +175,27 @@ export default class அங்கீகாரம் extends EventEmitter {
   நீக்கு() {
     this.திரளை_முடி()
     localStorage.clear(ஞாபகமாறிகள்.சூழல்)
+  }
+
+  get குழு() { return this.சூழல்.team }
+
+  get பயனாளர்() { return this.சூழல்.user }
+
+  get சாதனம்() { return this.சூழல்.device }
+
+  get பயனாளர்_அடையாளம்() {
+    if (this.சூழல்.user) return this.சூழல்.user.userName
+    if (this.சூழல்.device) return this.சூழல்.device.userName
+    return undefined
+  }
+
+  get சாதனங்கள்() {
+    if (!this.குழு || !this.குழு.has(this.பயனாளர்_அடையாளம்)) return []
+    return this.குழு.members(this.பயனாளர்_அடையாளம்).devices
+  }
+
+  get மேலாளர்_உரிமை() {
+    return this.குழு && this.குழு.has(this.பயனாளர்_அடையாளம்) && this.குழு.memberIsAdmin(this.பயனாளர்_அடையாளம்)
   }
 
   set புது_குழு(மதி) {
@@ -208,7 +239,6 @@ class இணைப்பு extends EventEmitter {
     this.அங்கீகாரம்_இணைப்பு = new Connection(
       { sendMessage: செய்தியனுப்பு, context: this.சூழல் }
     ).start()
-
     நிகழ்வுகளையிணையு(this.அங்கீகாரம்_இணைப்பு, this, ['connected', 'joined', 'disconnected', 'change'])
   }
 
@@ -220,6 +250,3 @@ class இணைப்பு extends EventEmitter {
     this.அங்கீகாரம்_இணைப்பு.stop()
   }
 }
-
-const நிகழ்வுகளையிணையு = (மூலம், இலக்கு, நிகழ்வுகள்) =>
-  நிகழ்வுகள்.forEach(நிகழ்வு => மூலம்.on(நிகழ்வு, தகவல்கள் => இலக்கு.emit(நிகழ்வு, தகவல்கள்)))

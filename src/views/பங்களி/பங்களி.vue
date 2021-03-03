@@ -1,23 +1,49 @@
 <template>
-    <v-container fluid>
+    <v-container fluid class="mt-10 text-center">
+      <v-navigation-drawer
+       absolute
+       class="text-start"
+       :right="$vuetify.rtl"
+      >
+        <v-list>
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-plus</v-icon>
+            </v-list-item-icon>
+
+            <v-list-item-title>பொருளடக்கம்</v-list-item-title>
+            <v-btn
+              icon
+              @click.stop="சின்ன_வழிசெலுத்தல் = !சின்ன_வழிசெலுத்தல்"
+            >
+              <v-icon>mdi-chevron-left</v-icon>
+            </v-btn>
+          </v-list-item>
+          <v-divider/>
+          <v-list-item v-for="முறை in முறைகள்" :key="முறை.பெயர்" link>
+            <v-list-item-icon>
+              <v-icon>{{ முறை.படவுரு }}</v-icon>
+            </v-list-item-icon>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ முறை.பெயர் }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-navigation-drawer>
+
       <v-img
        :src="require('../../assets/ஆட்டுக்கல்.svg')"
        max-height="250"
        contain
       ></v-img>
-      <h1 class="display-1 font-weight-bold py-10">
-        நாங்கள் லஸ்ஸிக்கு மேலே தொடர்ந்து வேலை செய்கிறோம்
+      <h1 class="display-1 font-weight-bold py-10 text-center">
+        லஸ்ஸியின் தயாரிப்பில் உங்கள் உதவியை மகிழ்ச்சியுடன் எதிர்பார்ப்போம்
       </h1>
-      <v-tabs vertical fixed color="amber accent-4" class="mt-3">
-        <v-tab v-for="முறை in muraigal" :key="முறை.பெயர்">
-          <v-icon left>
-            {{ முறை.action }}
-          </v-icon>
-          {{ முறை.பெயர் }}
-          <v-spacer/>
-        </v-tab>
 
-        <v-tab-item  v-for="முறை in muraigal" :key="முறை.பெயர்">
+      <v-tabs vertical fixed color="amber accent-4" class="mt-3">
+
+        <v-tab-item  v-for="முறை in முறைகள்" :key="முறை.பெயர்">
           <v-card flat height="70vh" style="overflow: auto" class="bl-3">
             <v-card-title class="display-2 font-weight-bold mb-3 justify-center">{{ முறை.தலைப்பு }}</v-card-title>
             <v-card-text>
@@ -54,6 +80,7 @@
 export default {
     name: 'அறிமுகம்',
     data: () => ({
+      சின்ன_வழிசெலுத்தல்: false,
       muraigal0: {
         'இலக்கணங்கள்': {
           'இணைப்பு': 'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/மூலம்/லஸ்ஸியிலக்கணங்கள்/இலக்கணங்கள்/',
@@ -62,9 +89,9 @@ export default {
           'இணைப்பு': 'https://github.com/lassi-samaaj/lassi-pakkam/edit/master/src/trads.json'
         }
       },
-      muraigal: [
+      முறைகள்: [
         {
-          action: 'mdi-abugida-devanagari',
+          படவுரு: 'mdi-abugida-devanagari',
           பெயர்: 'மொழிகள்',
           தலைப்பு: 'புது மொழியாக்கங்களை எப்படி சேர்க்கவும்',
           items: [
@@ -80,7 +107,7 @@ export default {
           ]
         },
         {
-          action: 'mdi-xml',
+          படவுரு: 'mdi-xml',
           பெயர்: 'நிரலாக்கமொழிகள்',
           தலைப்பு: 'புது நிரல்மொழிகளை எப்படி சேர்க்கவும்',
           items: [
@@ -90,7 +117,7 @@ export default {
           ]
         },
         {
-          action: 'mdi-application',
+          படவுரு: 'mdi-application',
           பெயர்: 'வலைப் பக்கம்',
           தலைப்பு: 'இந்த வலைப் பக்கத்தை உங்கள் பிடித்த மொழியில் மொழிபெயர்ப்புங்கள்',
           items: [

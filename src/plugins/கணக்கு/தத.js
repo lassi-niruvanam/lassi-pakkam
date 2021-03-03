@@ -1,15 +1,4 @@
 import { EventEmitter } from 'events'
-import OrbitDB from 'orbit-db'
-import AccessControllers from './அணுகல்_கட்டுப்படுத்தி'
-const சகோயமை = import('./சகோயமை')
-
-export default async function தரவுத்தளத்தை_உருவாக்கு(
-  கையெழுத்துசரிபார்ப்பு, தத_முகவரி
-) {
-  const தத = new தரவுத்தளங்கள்(கையெழுத்துசரிபார்ப்பு)
-  await தத.ஆரம்பம்(தத_முகவரி)
-  return தத
-}
 
 class தரவுத்தளங்கள் extends EventEmitter {
   constructor(பயனாளர்_அடையாளம், கையெழுத்துசரிபார்ப்பு) {
@@ -20,20 +9,31 @@ class தரவுத்தளங்கள் extends EventEmitter {
   }
 
   async ஆரம்பம்(தத_முகவரி) {
-    if (this._கணு) return this._கணு
-    this.கணு = await சகோயமை()
+    if (this.கணு) return this.கணு
+
+    const சகோயமை = require('ipfs')
+    this.கணு = await சகோயமை.create({
+      relay: { enabled: true, hop: { enabled: true, active: true } },
+      EXPERIMENTAL: { pubsub: true },
+      repo: './ipfs'
+    })
+    this.OrbitDB = require('orbit-db')
+    const AccessControllers = require('./அணுகல்_கட்டுப்படுத்தி').default
+
     this.சகோயமை_அடையாளம் = await this.கணு.id()
-    this.கோள்பாதை = await OrbitDB.createInstance(this.கணு, {
+    this.கோள்பாதை = await this.OrbitDB.createInstance(this.கணு, {
       AccessControllers
     })
 
     this.தனிப்பட்டவமைப்புகள் = {
-      accessController: {type: 'orbitdb-melalar', write: [this.கோள்பாதை.identity.id]}
+      accessController: {type: "kolpadai-tata-madippittalar", முதல்மதிப்பீட்டாளர்: [this.கோள்பாதை.identity.id]}
     }
 
     this.தத = await தத_மரம்.உருவாக்கு(தத_முகவரி, this.கோள்பாதை, this.தனிப்பட்டவமைப்புகள்)
+    this.மூல்முகவரி = this.தத.மூல்தத.id
 
     this.தத.on('மாற்றம்', (தகவல்கள்) => {
+      this.emit('தத மாற்றம்',  {பெயர்: தகவல்கள்.பாதை[0]})
       switch (தகவல்கள்.பெயர்) {
         case 'கூடபணியாளர்கள்':
           this.கூடபணியாளர்களை_தத_சரிபாரு()
@@ -45,6 +45,12 @@ class தரவுத்தளங்கள் extends EventEmitter {
 
     setInterval(this.கூடபணியாளர்களுடன்_இணையு.bind(this), 10000)
     this.கூடபணியாளர்களுடன்_இணையு()
+  }
+
+  static async உருவாக்கு (பயனாளர்_அடையாளம், கையெழுத்துசரிபார்ப்பு, தத_முகவரி) {
+    const தத = new தரவுத்தளங்கள்(பயனாளர்_அடையாளம், கையெழுத்துசரிபார்ப்பு)
+    await தத.ஆரம்பம்(தத_முகவரி)
+    return தத
   }
 
   async கூடபணியாளர்களுடன்_இணையு() {
@@ -110,56 +116,91 @@ class தரவுத்தளங்கள் extends EventEmitter {
 
 }
 
+export default class லஸ்ஸிபக்கம்_தரவுத்தளங்கள் extends தரவுத்தளங்கள் {
+
+  static async உருவாக்கு (பயனாளர்_அடையாளம், கையெழுத்துசரிபார்ப்பு, தத_முகவரி) {
+    const தத = new லஸ்ஸிபக்கம்_தரவுத்தளங்கள்(பயனாளர்_அடையாளம், கையெழுத்துசரிபார்ப்பு)
+    await தத.ஆரம்பம்(தத_முகவரி)
+    தத.தத.தத_பெறு('பயனாளர்பெயர்கள்')
+    return தத
+  }
+
+  async பயனாளர்_பெயர்_சேரு(மொழி, பெயர்) {
+    const பெயர்_தரவுத்தளம் = await this.தத.தத_பெறு('பயனாளர்பெயர்கள்')
+    await பெயர்_தரவுத்தளம்.set(மொழி, பெயர்)
+    console.log('salut', பெயர்_தரவுத்தளம்.all)
+  }
+
+  async பயனாளர்_பெயர்_நீக்கு (மொழி) {
+    const பெயர்_தரவுத்தளம் = await this.தத.தத_பெறு('பயனாளர்பெயர்கள்')
+    await பெயர்_தரவுத்தளம்.del(மொழி)
+    console.log('salut', பெயர்_தரவுத்தளம்.all)
+  }
+
+  async பயனாளர்_பெயர்களை_பெறு() {
+    const பெயர்_தரவுத்தளம் = await this.தத.தத_பெறு('பயனாளர்பெயர்கள்')
+    return Object.fromEntries(Object.keys(பெயர்_தரவுத்தளம்.all).map((x)=>{return [x, பெயர்_தரவுத்தளம்.get(x)]}))
+  }
+
+}
+
 class தத_மரம் extends EventEmitter {
-  constructor(தத_முகவரி, கோள்பாதை, தனிப்பட்டவமைப்புகள்) {
+  constructor(கோள்பாதை, தனிப்பட்டவமைப்புகள்) {
     super()
+    console.log('தத_மரம்')
     this.கோள்பாதை = கோள்பாதை
     this.சொந்தது = Boolean(தனிப்பட்டவமைப்புகள்)
     this.தனிப்பட்டவமைப்புகள் = தனிப்பட்டவமைப்புகள்
     this._ததளங்கள் = {}
   }
 
-  static async உருவாக்கு(தத_முகவரி, கோள்பாதை) {
-    const தத = new தத_மரம்(கோள்பாதை)
+  static async உருவாக்கு(தத_முகவரி, கோள்பாதை, தனிப்பட்டவமைப்புகள்) {
+    const தத = new தத_மரம்(கோள்பாதை, தனிப்பட்டவமைப்புகள்)
     await தத.ஆரம்பம்(தத_முகவரி)
     return தத
   }
 
   async ஆரம்பம்(தத_முகவரி) {
+    console.log('ஆரம்பம்')
     if (தத_முகவரி) {
       this.மூல்தத = await this.கோள்பாதை.kvstore(தத_முகவரி)
     } else {
       this.மூல்தத = await this.கோள்பாதை.kvstore('மூலம்', this.தனிப்பட்டவமைப்புகள்)
     }
+    window.t = this
 
     for (let இ of ['write', 'replicated', 'ready']) {
-      this.மூல்தத.events.on(இ, ()=>this.emit('மாற்றம்', {பாதை: 'மூலம்'}))
+      this.மூல்தத.events.on(இ, ()=>this.emit('மாற்றம்', {பாதை: ['மூலம்']}))
     }
     await this.மூல்தத.load()
   }
 
   async தத_பெறு(பெயர்) {
-
+    console.log('தத_பெறு', பெயர்)
+    var தன் = this
     async function _தத_பெறு(பாதை, மூல்தத, மூல்தத_பாதை = []) {
-
+      console.log('_தத_பெறு', {பாதை, மூல்தத, மூல்தத_பாதை})
       const சாபி = பாதை.join('-')
-      if (this._ததளங்கள்[சாபி]) return this._ததளங்கள்[சாபி]
+      console.log(தன்._ததளங்கள்)
+      if (தன்._ததளங்கள்[சாபி]) return தன்._ததளங்கள்[சாபி]
 
       const முகவரி = await மூல்தத.get(பாதை[0])
-      const பாதை_இப்பொவரை = மூல்தத_பாதை.concat(பெயர்[0])
+      const பாதை_இப்பொவரை = மூல்தத_பாதை.concat(பாதை[0])
       let தத
+      console.log({முகவரி, பாதை_இப்பொவரை})
 
       if (முகவரி) {
-        தத = await this.கோள்பாதை.open(முகவரி)
-      } else if (this.சொந்தது) {
+        தத = await தன்.கோள்பாதை.open(முகவரி)
+      } else if (தன்.சொந்தது) {
         const தத_பெயர் = பாதை_இப்பொவரை.join('-')
-        தத = await this.கோள்பாதை.kvstore(தத_பெயர், this.தனிப்பட்டவமைப்புகள்)
+        தத = await தன்.கோள்பாதை.kvstore(தத_பெயர், தன்.தனிப்பட்டவமைப்புகள்)
         await மூல்தத.set(பாதை[0], தத.id)
       } else {
         return
       }
+      தன்._ததளங்கள்[சாபி] = தத
       for (let இ of ['write', 'replicated', 'ready']) {
-        தத.events.on(இ, ()=>this.emit('மாற்றம்', {பாதை}))
+        தத.events.on(இ, ()=>தன்.emit('மாற்றம்', {பாதை}))
       }
 
       await தத.load()
@@ -173,7 +214,7 @@ class தத_மரம் extends EventEmitter {
     }
     var பாதை = typeof பெயர் === 'string' ? [பெயர்] : பெயர்
     பாதை.forEach((இ) => {
-      if (இ.index('-') !== -1) throw 'தரவுத்தளத்துடைய பெயரில் `-` இருக்க கூடாது.'
+      if (இ.indexOf('-') !== -1) throw 'தரவுத்தளத்துடைய பெயரில் `-` இருக்க கூடாது.'
     })
 
     if (பாதை[0] === 'மூலம்') பாதை = பாதை.slice(1,)
@@ -195,20 +236,20 @@ class தத_மரம் extends EventEmitter {
   }
 
   async எல்லாம்_தத() {
+    const தான் = this
     async function _எல்லாம்_தத(மூல்தத) {
       await மூல்தத.load()
       const மதிப்புகள் = Object.values(மூல்தத.all)
 
       var ததளங்கள் = await Promise.all(
         மதிப்புகள்.map(async (மதிப்பு)=>{
-          if (this.கோள்பாதை.isValidAddress(மதிப்பு)) {
-            let தத = await this.கோள்பாதை.open(மதிப்பு)
-            let _தத_பட்டியல் = [தத]
+          if (this.OrbitDB.isValidAddress(மதிப்பு)) {
+            let தத = await தான்.கோள்பாதை.open(மதிப்பு)
+            let உள்_ததங்கள்
             if (தத.type === 'keyvalue') {
-              const உள்_ததங்கள் = await _எல்லாம்_தத(தத)
-              _தத_பட்டியல் = _தத_பட்டியல்.concat(உள்_ததங்கள்)
+              உள்_ததங்கள் = await _எல்லாம்_தத(தத)
             }
-            return _தத_பட்டியல்
+            return [தத, ...(உள்_ததங்கள் || [])]
           }
         })
       )
@@ -222,12 +263,12 @@ class தத_மரம் extends EventEmitter {
 
   async அனுமதிக்கு(கோள்பாதை_அடையாளம்) {
     const எல்லாம் = await this.எல்லாம்_தத()
-    await Promise.all(எல்லாம்.forEach(இ=>இ.acccess.grant('write', கோள்பாதை_அடையாளம்)))
+    await Promise.all(எல்லாம்.map(இ=>இ.acccess.grant('மதிப்பீட்டாளர்', கோள்பாதை_அடையாளம்)))
   }
 
   async நீக்கு() {
     const எல்லாம் = await this.எல்லாம்_தத()
-    await Promise.all(எல்லாம்.forEach(இ=>இ.drop()))
+    await Promise.all([...எல்லாம்].map(இ=>இ.drop()))
   }
 
 }
