@@ -3,24 +3,24 @@
     <v-row>
       <v-col>
         <div style="display: flex; justify-content: center;">
-          <v-avatar v-if="பயனாளர்_படம்" size="150">
-            <v-img :src="பயனாளர்_படம்" :label="பயனாளர்_அடையாளம்"></v-img>
-          </v-avatar>
-          <v-avatar v-else
+          <v-avatar
            @drop.prevent="onPickFile" @dragover.prevent
            size="150"
-           style="margin-top:-85px; background-color: white; border: 5px dashed grey"
+           :style="`margin-top:-85px; background-color: white; ${பயனாளர்_படம் ? 'border: 5px solid white': 'border: 5px dashed grey'}`"
           >
-            <v-btn icon x-large @click="onPickFile">
-              <v-icon>mdi-camera-outline</v-icon>
-            </v-btn>
-            <input
-              type="file"
-              style="display: none"
-              ref="fileInput"
-              accept="image/*"
-              @change="onFilePicked"
-            />
+            <v-img v-if="பயனாளர்_படம்" :src="பயனாளர்_படம்" :label="பயனாளர்_அடையாளம்"></v-img>
+            <span v-else>
+              <v-btn icon x-large @click="onPickFile">
+                <v-icon>mdi-camera-outline</v-icon>
+              </v-btn>
+              <input
+                type="file"
+                style="display: none"
+                ref="fileInput"
+                accept="image/*"
+                @change="onFilePicked"
+              />
+            </span>
           </v-avatar>
         </div>
 
@@ -190,35 +190,38 @@
           </v-tab-item>
 
           <v-tab-item :key="1">
-
-            <v-col v-if="Object.keys(இணைப்புகள்).length">
-              <v-img
-               :src="require('../../assets/உன்றா-உலகம்.svg')"
-               max-height="150"
-               contain
-               class="ma-10"
-              ></v-img>
-              <h3>திரள் இணைப்புகள்</h3>
-              <v-list>
-                <tiraluruppadi
-                 v-for="[இ, ஈ] of Object.entries(இணைப்புகள்)"
-                 :key="இ"
-                 :uruppadi="ஈ"
-                 @nikku="இணைப்பை_நீக்கு(இ)"
-                />
-              </v-list>
-            </v-col>
-            <v-col v-else>
-              <div class="text-center">
+            <transition-group name="fade" mode="out-in">
+              <v-col v-if="Object.keys(இணைப்புகள்).length" :key="0">
                 <v-img
-                 :src="require('../../assets/உறியடி.svg')"
-                 max-height="200"
+                 :src="require('../../assets/உன்றா-உலகம்.svg')"
+                 max-height="150"
                  contain
-                 class="my-3"
+                 class="ma-10"
                 ></v-img>
-                <h2>இப்பொழுது வரை எந்த இணைப்பையும் கண்டுப்பிடிக்க முடியவில்லை</h2>
-              </div>
-            </v-col>
+                <h3>திரள் இணைப்புகள்</h3>
+                <v-list>
+                  <transition-group name="fade" mode="out-in">
+                    <tiraluruppadi
+                     v-for="[இ, ஈ] of Object.entries(இணைப்புகள்)"
+                     :key="இ"
+                     :uruppadi="ஈ"
+                     @nikku="இணைப்பை_நீக்கு(இ)"
+                    />
+                  </transition-group>
+                </v-list>
+              </v-col>
+              <v-col v-else :key="1">
+                <div class="text-center">
+                  <v-img
+                   :src="require('../../assets/உறியடி.svg')"
+                   max-height="200"
+                   contain
+                   class="my-3"
+                  ></v-img>
+                  <h2>இப்பொழுது வரை எந்த இணைப்பையும் கண்டுப்பிடிக்க முடியவில்லை</h2>
+                </div>
+              </v-col>
+            </transition-group>
           </v-tab-item>
 
           <v-tab-item :key="2" v-if="melalar_urimai">
@@ -356,14 +359,15 @@ export default {
     this.இணைப்புகள் = இணைப்புகளை_படி(this.$கணக்கு.திரள்_இணைப்புகள்)
     console.log('ici2', this.$கணக்கு.திரள்_இணைப்புகள்)
 
-    this.கவனி(this.$கணக்கு, 'தரவுத்தளம் மாற்றம்', (தகவல்கள்) => {
-      switch (தகவல்கள்.தரவுத்தளம்) {
-        case "பயனாளர்":
-          this.பயனாளர்_படம் = this.$கணக்கு.தத.பயனாளர்_படம்
-          this.பயனாளர்_மின்னஞ்சல் = this.$கணக்கு.தத.பயனாளர்_மின்னஞ்சல்
+    this.கவனி(this.$கணக்கு, 'தத மாற்றம்', (தகவல்கள்) => {
+      switch (தகவல்கள்.பெயர்) {
+        case "பயனாளர்தகவல்கள்":
+          this.பயனாளர்_தகவல்களை_பெறு()
           break;
         }
     })
+    this.கவனி(this.$கணக்கு, 'தத தயார்', () => this.பயனாளர்_தகவல்களை_பெறு())
+    if (this.$கணக்கு.தத) this.பயனாளர்_தகவல்களை_பெறு()
 
     this.கவனி(this.$கணக்கு, 'குழு மாற்றம்', () => {
       this.உரிமைக்கப்பட்ட_மொழிகள் = this.$கணக்கு.உரிமைக்கப்பட்ட_மொழிகள்
@@ -379,6 +383,12 @@ export default {
     },
     இணைப்பை_நீக்கு: function(இ) {
       this.$கணக்கு.திரளிணைப்பை_நீக்கு(இ)
+    },
+    பயனாளர்_தகவல்களை_பெறு: async function() {
+      const மின்னஞ்சல் = await this.$கணக்கு.தத.பயனாளர்_மின்னஞ்சலை_பெறு()
+      this.பயனாளர்_மின்னஞ்சல் = மின்னஞ்சல்
+      const படம் = await this.$கணக்கு.தத.பயனாளர்_படத்தை_பெறு()
+      this.பயனாளர்_படம் = படம்
     },
     onPickFile () {
       this.$refs.fileInput.click()

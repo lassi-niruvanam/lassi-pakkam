@@ -52,6 +52,7 @@ class கணக்கு extends EventEmitter{
     this.தத = await செயலி.default.உருவாக்கு(this.பயனாளர்_அடையாளம், ()=> this.அங்கீகாரம்.கையெழுத்துசரிபார்ப்பு(), முகவரி)
     நிகழ்வுகளையிணையு(this.தத, this, ['தத மாற்றம்'])
     this.நிலை = நிலைகள்.உள்
+    this.emit('தத தயார்', undefined)
   }
 
   வணக்கம்() {
@@ -125,9 +126,6 @@ class கணக்கு extends EventEmitter{
 }
 /*
 
-// import MD5 from 'crypto-js/md5'
-
-//
 
 const toBuffer = require('it-to-buffer')
 // import { v4 as uuidv4 } from 'uuid'
@@ -409,22 +407,6 @@ class தரவுத்தளங்கள் {
     console.log(திட்டம், சாபி, வேண்டியமொழி, பரிந்துரைகள்)
     return பரிந்துரைகள்
   }
-
-
-  get பயனாளர்_படம்() {
-    const மின்னஞ்சல் = this.பயனாளர்_மின்னஞ்சல்
-    if (மின்னஞ்சல்) return 'https://www.gravatar.com/avatar/' + MD5(மின்னஞ்சல்.trim().toLowerCase()) + '?s=200'
-    return ''
-  }
-
-  get பயனாளர்_மின்னஞ்சல்() {
-    return this.பயனாளர்_தரவுத்தளம்.get('மின்னஞ்சல்')
-  }
-
-  set பயனாளர்_மின்னஞ்சல் (மின்னஞ்சல்) {
-   this.பயனாளர்_தரவுத்தளம்.set('மின்னஞ்சல்', மின்னஞ்சல்)
-  }
-
 
 
 }
