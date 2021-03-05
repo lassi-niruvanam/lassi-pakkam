@@ -105,24 +105,45 @@
           </v-card>
         </v-col>
         <v-col cols="7">
-          <mozhiyakkam-parinduraikal
-           v-if="தேர்ந்தேடுக்கப்பட்டது"
-           :parinduraikal="பரிந்துரைகள்"
-           :vendiyamozhi="வேண்டியமொழி"
-           :mulurai='மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, மூல்மொழி, true)'
-           :irukkummozhiyakkam="மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, வேண்டியமொழி)"
-           @parindurai="parinduraiyu"
-           @nikku="parindurainikku"
-          />
-          <div v-else class="text-center py-12">
-            <v-img
-             :src="require('../../assets/வளையல்_வண்டி.svg')"
-             max-height="300"
-             contain
-             class="ma-10"
-            ></v-img>
-            <h2>ஆரம்புகிறதற்கு மொழியாக்கத்துக்காக ஒரு வாக்கியத்தை தேர்ந்தேடுங்கள்</h2>
-          </div>
+          <transition-group name="fade" mode="out-in">
+            <span v-if="தேர்ந்தேடுக்கப்பட்டது" :key="0">
+              <v-list-item v-if="மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, மூல்மொழி)" class="my-2">
+                <v-card flat width="100%">
+                  <v-card-subtitle class="px-0">இருக்கும் மொழிபெயர்ப்பு</v-card-subtitle>
+                  <v-card-text class="pa-0">
+                    <v-text-field
+                     v-if="மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, வேண்டியமொழி)"
+                     outlined no-resize readonly
+                     append-outer-icon="mdi-content-copy"
+                     @click:append-outer="copy()"
+                     :value="மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, வேண்டியமொழி)"
+                    >
+
+                    </v-text-field>
+                  </v-card-text>
+                  <v-divider/>
+                </v-card>
+              </v-list-item>
+
+              <mozhiyakkam-parinduraikal
+               :parinduraikal="பரிந்துரைகள்"
+               :vendiyamozhi="வேண்டியமொழி"
+               :mulurai='மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, மூல்மொழி, true)'
+               :irukkummozhiyakkam="மொழியாக்கம்(தேர்ந்தேடுக்கப்பட்டது, வேண்டியமொழி)"
+               @parindurai="parinduraiyu"
+               @nikku="parindurainikku"
+              />
+            </span>
+            <div v-show="!தேர்ந்தேடுக்கப்பட்டது" class="text-center py-12" :key="1">
+              <v-img
+               :src="require('../../assets/வளையல்_வண்டி.svg')"
+               max-height="300"
+               contain
+               class="ma-10"
+              ></v-img>
+              <h2>ஆரம்புகிறதற்கு மொழியாக்கத்துக்காக ஒரு வாக்கியத்தை தேர்ந்தேடுங்கள்</h2>
+            </div>
+          </transition-group>
         </v-col>
       </v-row>
       <div v-show="!உரைப்பட்டியல்.length" class="text-center" :key="1">
@@ -134,7 +155,7 @@
         <h2>எந்த முடிவும் கிடைக்கவில்லை</h2>
         <v-btn
           outlined
-          color="orange"
+          color="amber"
           class="mt-4"
           @click="நிலை='எல்லாம்'"
         >
@@ -172,7 +193,9 @@ export default {
     உரைப்பட்டியல்: function () {
       return this.காண்கசாபிகள்(this.நிலை).map((சாபி) => {
         return {
-          சாபி, மூல்மொழி: this.மூல்மொழி, வேண்டியமொழி: this.வேண்டியமொழி,
+          சாபி,
+          மூல்மொழி: this.மூல்மொழி,
+          வேண்டியமொழி: this.வேண்டியமொழி,
           மூலுரை: this.மொழியாக்கம்(சாபி, this.மூல்மொழி, true),
           மொழியாக்கம்: this.மொழியாக்கம்(சாபி, this.வேண்டியமொழி)
         }

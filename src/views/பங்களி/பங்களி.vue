@@ -40,6 +40,17 @@
       <h1 class="display-1 font-weight-bold py-10 text-center">
         லஸ்ஸியின் தயாரிப்பில் உங்கள் உதவியை மகிழ்ச்சியுடன் எதிர்பார்ப்போம்
       </h1>
+      <router-link :to="encodeURI('/பங்களி/வலைப்பக்கம்')">
+        <v-btn
+          color="amber"
+          target="_blank"
+          class="mb-5 text-center"
+          outlined
+        >
+          {{ $t('பங்களி.பங்களி') }}
+          <v-icon right>mdi-arrow-right</v-icon>
+        </v-btn>
+      </router-link>
 
       <v-tabs vertical fixed color="amber accent-4" class="mt-3">
 
@@ -51,17 +62,7 @@
               <div class="text-center">
                 <p>Test test test</p>
                 <p>Test test test</p>
-                <router-link :to="encodeURI('/பங்களி/வலைப்பக்கம்')">
-                  <v-btn
-                    color="orange"
-                    target="_blank"
-                    class="mb-5 text-center"
-                    outlined
-                  >
-                    {{ $t('பங்களி.பங்களி') }}
-                    <v-icon right>mdi-arrow-right</v-icon>
-                  </v-btn>
-                </router-link>
+
               </div>
 
               <div v-for="i in முறை.items" :key="i.தலைப்பு">

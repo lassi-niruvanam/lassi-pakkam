@@ -2,40 +2,47 @@
   <div>
     <v-list>
       <v-list-item>
-        <v-card flat width="100%">
-          <v-card-text class="pa-0">
-            <v-text-field
-             v-model="உரை"
-             label="பரிந்துரையை உள்ளிடு"
-             :dir="வலதிலிருந்து(vendiyamozhi) ? 'rtl': 'ltr'"
-             outlined autofocus hide-details
-             color="amber"
-            >பரிந்துரையு</v-text-field>
-          </v-card-text>
-          <v-card-actions>
-            <v-spacer/>
-            <v-btn
-             icon color="blue"
-             @click="nagaledu"
-            >
-              <v-icon>mdi-copy</v-icon>
-            </v-btn>
-            <v-btn
-             icon color="green"
-             :disabled="!உரை.trim().length"
-             @click="parinduraiyu"
-            >
-              <v-icon>mdi-check</v-icon>
-            </v-btn>
-            <v-btn
-             icon color="red"
-             :disabled="!உரை.trim().length"
-             @click="nikku"
-            >
-              <v-icon>mdi-delete</v-icon>
-            </v-btn>
-          </v-card-actions>
-        </v-card>
+        <payanalar-padam :peyar="பயனாளர்_அடையாளம்" :padam="பயனாளர்_படம்"/>
+        <v-list-item-content class="pt-0">
+          <v-card flat width="100%">
+            <v-card-text class="pa-0">
+              <v-text-field
+               v-model="உரை"
+               label="பரிந்துரையை உள்ளிடு"
+               :dir="வலதிலிருந்து(vendiyamozhi) ? 'rtl': 'ltr'"
+               outlined autofocus hide-details
+               color="amber"
+              >
+                <template v-slot:prepend>
+
+                </template>
+             </v-text-field>
+            </v-card-text>
+            <v-card-actions>
+              <v-spacer/>
+              <v-btn
+               icon color="blue"
+               @click="nagaledu"
+              >
+                <v-icon>mdi-copy</v-icon>
+              </v-btn>
+              <v-btn
+               icon color="green"
+               :disabled="!உரை.trim().length"
+               @click="parinduraiyu"
+              >
+                <v-icon>mdi-check</v-icon>
+              </v-btn>
+              <v-btn
+               icon color="red"
+               :disabled="!உரை.trim().length"
+               @click="nikku"
+              >
+                <v-icon>mdi-delete</v-icon>
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-list-item-content>
       </v-list-item>
     </v-list>
     <transition-group name="fade" mode="out-in" tag="div">
@@ -69,16 +76,22 @@
 
 <script>
 import { வலதிலிருந்து } from '../../nuchabal/nuchabal'
+import payanalarPadam from '../../components/பயனாளர்_படம்'
 
 import parindurai from './பரிந்துரை'
+import mixin from '../../mixins/நிகழ்வுகவனிப்பவாளர்'
+
 
 export default {
   name: 'மொழியாக்கம்-பரிந்துரைகள்',
   props: ['parinduraikal', 'mulurai', 'irukkummozhiyakkam', 'vendiyamozhi'],
-  components: {parindurai},
+  components: { parindurai, payanalarPadam},
+  mixins: [mixin],
   data: function () {
     return {
-      உரை: ''
+      உரை: '',
+      பயனாளர்_அடையாளம்: null,
+      பயனாளர்_படம்: null
     }
   },
   methods: {
@@ -97,8 +110,29 @@ export default {
     parindurainikku(குறி) {
       this.$emit('nikku', குறி)
     },
-    வலதிலிருந்து
-  }
+    வலதிலிருந்து,
+    பயனாளர்_படத்தை_பெறு: async function() {
+      const படம் = await this.$கணக்கு.தத.பயனாளர்_படத்தை_பெறு()
+      this.பயனாளர்_படம் = படம்
+    },
+  },
+  mounted: function() {
+    this.கவனி(this.$கணக்கு, ['பயனாளர் மாற்றம்', 'அங்கீகாரம் தயார்'], () => {
+      this.பயனாளர்_அடையாளம் = this.$கணக்கு.பயனாளர்_அடையாளம்
+    })
+    this.பயனாளர்_அடையாளம் = this.$கணக்கு.பயனாளர்_அடையாளம்
+
+    this.கவனி(this.$கணக்கு, 'தத மாற்றம்', (தகவல்கள்) => {
+      switch (தகவல்கள்.பெயர்) {
+        case "பயனாளர்தகவல்கள்":
+          this.பயனாளர்_படத்தை_பெறு()
+          break;
+        }
+    })
+    this.கவனி(this.$கணக்கு, 'தத தயார்', () => this.பயனாளர்_படத்தை_பெறு())
+    if (this.$கணக்கு.தத) this.பயனாளர்_படத்தை_பெறு()
+
+  },
 }
 </script>
 
