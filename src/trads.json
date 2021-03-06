@@ -478,19 +478,10 @@
       "தலைப்பு": "Karibu katika Lassi",
       "துணைத்தலைப்பு": "Lassi ni miundombinu ya programu cha chanzo wazi kwa tafsiri ya lugha ya programu.",
       "எதற்கு": "Nini anafanya?",
-      "எதற்கு_பதில்": "Cada linguagem de programação é baseado em uma língua humana. Lassi dá você a liberdade de escrever o seu código na língua de sua escolha.",
-      "எப்படி": "Como funciona?",
-      "எப்படி_பதில்": "Lassi compila o seu código em base em regras de tradução padronizadas pela gramática de cada linguagem de programação.",
-      "செயலில்": "Demostração em açao",
-      "செயலில்_விவரம்": "Você pode explorar as funcionalidades de Lassi no espaço abaixo.",
       "உதாரணம்": {
         "நிரல்_மொழி": "Lugha ya programu",
         "மூல்_மொழி": "Lugha asili",
-        "எண்ணுரு": "Nambari",
-        "உள்ளீடு": "Entrada",
-        "வேண்டிய_மொழி": "Língua desejada",
-        "வெளியீடு": "Resultado",
-        "தனிப்பட்ட": "Automático"
+        "எண்ணுரு": "Nambari"
       }
     }
   },
@@ -626,5 +617,11 @@
   "Kanyen'ké:ha": {
     "லஸ்ஸி": "Lassi",
     "மொழி": {"மேலும்": "Ó:ya"}
-  }
+  },
+  "Ch'orti'": {
+    "லஸ்ஸி": "Lassi",
+     "அறிமுகம்": {
+       "தலைப்பு": "Inb'utz iyo'pa'r tama Lassi"
+     }
+   }
 }
