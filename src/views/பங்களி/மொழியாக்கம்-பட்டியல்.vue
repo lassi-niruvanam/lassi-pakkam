@@ -7,7 +7,7 @@
         >
           <v-list-item-content>
             {{உரை.மூலுரை.slice(0, 50) + (உரை.மூலுரை.length > 50 ? "..." : '')}}
-            <v-list-item-subtitle>{{உரை.சாபி}}</v-list-item-subtitle>
+            <v-list-item-subtitle v-if="உரை.சாபி !== உரை.மூலுரை">{{உரை.சாபி}}</v-list-item-subtitle>
           </v-list-item-content>
 
           <v-list-item-action>

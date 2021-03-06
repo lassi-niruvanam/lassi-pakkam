@@ -6,17 +6,13 @@
         <v-list-item-content class="pt-0">
           <v-card flat width="100%">
             <v-card-text class="pa-0">
-              <v-text-field
+              <v-textarea
                v-model="உரை"
                label="பரிந்துரையை உள்ளிடு"
                :dir="வலதிலிருந்து(vendiyamozhi) ? 'rtl': 'ltr'"
-               outlined autofocus hide-details
+               outlined autofocus hide-details auto-grow rows="1"
                color="amber"
-              >
-                <template v-slot:prepend>
-
-                </template>
-             </v-text-field>
+              />
             </v-card-text>
             <v-card-actions>
               <v-spacer/>
@@ -28,7 +24,7 @@
               </v-btn>
               <v-btn
                icon color="green"
-               :disabled="!உரை.trim().length"
+               :disabled="!உரை.trim().length || (உரை.trim() === irukkummozhiyakkam)"
                @click="parinduraiyu"
               >
                 <v-icon>mdi-check</v-icon>
@@ -49,24 +45,21 @@
       <div v-if="parinduraikal.length" :key="0">
         <h2>பரிந்துரைகள்</h2>
         <v-divider/>
-        <v-list style="max-height: 70vh" class="overflow-y-auto">
-          <v-list-item>
-            <parindurai
-             v-for="பரிந்துரை in parinduraikal" :key="பரிந்துரை.குறி"
-             :parindurai="பரிந்துரை" :mulurai="mulurai" :irukkummozhiyakkam="irukkummozhiyakkam"
-             :vendiyamozhi="vendiyamozhi"
-             @nikku="parindurainikku(பரிந்துரை.குறி)"/>
-           </v-list-item>
+        <v-list style="max-height: 50vh" class="overflow-y-auto">
+          <parindurai
+           v-for="பரிந்துரை in parinduraikal" :key="பரிந்துரை.குறி"
+           :parindurai="பரிந்துரை" :mulurai="mulurai" :irukkummozhiyakkam="irukkummozhiyakkam"
+           :vendiyamozhi="vendiyamozhi"
+           @nikku="parindurainikku(பரிந்துரை.குறி)"/>
         </v-list>
       </div>
       <div v-else :key="1">
-        <v-card flat class="text-center py-12">
+        <v-card flat class="text-center">
           <h2>இப்பொழுது வரை பரிந்துரை ஒன்றும் இல்லை</h2>
           <v-img
            :src="require('../../assets/கிணறு.svg')"
            max-height="250"
            contain
-           class="ma-10"
           ></v-img>
         </v-card>
       </div>
@@ -107,7 +100,7 @@ export default {
     nagaledu: function() {
       this.உரை = this.mulurai
     },
-    parindurainikku(குறி) {
+      parindurainikku(குறி) {
       this.$emit('nikku', குறி)
     },
     வலதிலிருந்து,
