@@ -27,12 +27,12 @@ const router = new Router({
           path: encodeURI('/மேம்பாடு'),
           name: 'மேம்பாடு',
           component: () => import('./views/மேம்பாடு.vue')
-      },
+      },/*
       {
           path: encodeURI('/கணக்கு'),
           name: 'கணக்கு',
           component: () => import('./views/கணக்கு/கணக்கு.vue')
-      },
+      },*/
       {
         path: encodeURI('/பங்களி'),
         name: 'பங்களி',
