@@ -7,7 +7,6 @@
             v-model="மூல்மொழி"
             :items="மொழிகள்"
             :label="'மூல் மொழி'"
-            cache-items
             hide-no-data
             outlined
             dense
@@ -17,9 +16,9 @@
           >
             <template v-slot:item="{ item }">
               <v-list-item-avatar>
-                <v-icon v-if="நிரைவு(item) === 1" color="amber accent-4">mdi-check-circle</v-icon>
+                <v-icon v-if="நிறைவு(item) === 1" color="amber accent-4">mdi-check-circle</v-icon>
                 <v-progress-circular v-else
-                  :value="நிரைவு(item) * 100"
+                  :value="நிறைவு(item) * 100"
                   size="20"
                   rotate="270"
                   color="amber accent-4"
@@ -59,7 +58,6 @@
             v-model="வேண்டியமொழி"
             :items="மொழிகள்"
             :label="'மொழியாக்க மொழி'"
-            cache-items
             hide-no-data
             outlined
             dense
@@ -69,9 +67,9 @@
           >
             <template v-slot:item="{ item }">
               <v-list-item-avatar>
-                <v-icon v-if="நிரைவு(item) === 1" color="amber accent-4">mdi-check-circle</v-icon>
+                <v-icon v-if="நிறைவு(item) === 1" color="amber accent-4">mdi-check-circle</v-icon>
                 <v-progress-circular v-else
-                  :value="நிரைவு(item) * 100"
+                  :value="நிறைவு(item) * 100"
                   size="20"
                   rotate="270"
                   color="amber accent-4"
@@ -181,7 +179,7 @@
 </template>
 
 <script>
-import { நிரல்மொழிகள், விதிகள் } from 'lassi-ilakkanankal'
+import { நிரல்மொழிகள், விதிகள், நிறைவு, இயற்கை_மொழிகள் } from 'lassi-ilakkanankal'
 
 import uraikku from '../../ennikkai/ennikkai'
 import { எண்ணுரு } from '../../nuchabal/nuchabal'
@@ -211,7 +209,10 @@ export default {
       if (this.திட்டம் === 'வலைப்பக்கம்') return மொழி_மேலாண்மை.சாபிகள்
       return விதிகள்(this.திட்டம்)
     },
-    மொழிகள்: () => மொழி_மேலாண்மை.மொழிகள்,
+    மொழிகள்: function() {
+      if (this.திட்டம் === 'வலைப்பக்கம்') return மொழி_மேலாண்மை.மொழிகள்
+      return இயற்கை_மொழிகள்(this.திட்டம்)
+    },
     இருக்கும்_மொழிபெயர்ப்பு: function() {
       return this.மொழியாக்கம்(this.தேர்ந்தேடுக்கப்பட்டது, this.வேண்டியமொழி)
     },
@@ -230,7 +231,6 @@ export default {
           }
         }
       )
-      console.log(பட்டியல்)
       return பட்டியல்
     },
     மூல்_கோப்பு: function() {
@@ -275,8 +275,10 @@ export default {
         return உரை || ''
       }
     },
-    நிரைவு: (மொழி) => மொழி_மேலாண்மை.மேம்பாடு[மொழி],
-
+    நிறைவு: function(மொழி) {
+      if (this.திட்டம் === 'வலைப்பக்கம்') return மொழி_மேலாண்மை.மேம்பாடு[மொழி]
+      return நிறைவு(this.திட்டம், மொழி)
+    },
     பரிந்துரைகள்_பெறு() {
       if (!this.தேர்ந்தேடுக்கப்பட்டது) return
       this.$கணக்கு.தத.பரிந்துரைகளை_பெறு(

@@ -150,6 +150,7 @@
     </v-card>
   </v-container>
 </template>
+
 <script>
 export default {
     name: 'பதிவிறக்கங்கள்',
