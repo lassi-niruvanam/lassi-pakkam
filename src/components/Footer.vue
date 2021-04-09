@@ -6,9 +6,9 @@
       cols="12"
     >
       {{ உரைக்கு(new Date().getFullYear()) }} — <strong>{{ $t('லஸ்ஸி') }} </strong>
-      <router-link :to='encodeURI("/விதிமுறைகள்")' style="color: #000000">
+      <!-- <router-link :to='encodeURI("/விதிமுறைகள்")' style="color: #000000">
         விதிமுறைகள்
-      </router-link>
+      </router-link> -->
     </v-col>
   </v-footer>
 

@@ -41,7 +41,7 @@
       </v-col>
       <v-col cols="6">
         <h2> நம்ம தொடர்பு </h2>
-        <p><v-icon>mdi-email</v-icon> <a href="mailto:தொடர்பு@லஸ்ஸி.இந்தியா">தொடர்பு@லஸ்ஸி.இந்தியா</a></p>
+        <p><v-icon>mdi-email</v-icon> <a href="mailto:julien.malard@mail.mcgill.ca">julien.malard@mail.mcgill.ca</a></p>
         <p><v-icon>mdi-xml</v-icon> <a href="https://github.com/lassi-samaaj">https://github.com/lassi-samaaj</a></p>
 
         <h2> படம் பண்புக்கூறுகள் </h2>
