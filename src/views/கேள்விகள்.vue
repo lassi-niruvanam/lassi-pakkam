@@ -7,13 +7,18 @@
       >
         <v-row>
           <v-col cols="12" class="text-center pa-10">
+            <v-img
+             :src="require('../assets/தென்னை_மரம்.svg')"
+             max-height="250"
+             contain
+            ></v-img>
             <h1 class="display-1 font-weight-bold mb-3">
               {{ $t('கேள்விகள்.தலைப்பு') }}
             </h1>
           </v-col>
           <v-col
             cols="12" class="px-10"
-            v-for="(கேள்வி, இ) in கேள்விகள்" :key="இ"
+            v-for="(கேள்வி, இ) in கேள்விகள்" :key="'கேள்வி-' + இ"
           >
             <h2
               class="headline font-weight-bold mb-3"
@@ -22,10 +27,17 @@
             </h2>
 
             <div
-             v-for="(பதில், ஈ) in கேள்வி.பதில்" :key="ஈ"
+             v-for="(பதில், ஈ) in கேள்வி.பதில்" :key="'பதில்-' + ஈ"
              v-html="compiledMarkdown( $t('கேள்விகள்.' + பதில்) )"
             ></div>
 
+          </v-col>
+          <v-col cols="12" class="text-center pa-10">
+            <v-img
+             :src="require('../assets/பனை.svg')"
+             max-height="250"
+             contain
+            ></v-img>
           </v-col>
         </v-row>
       </v-card>

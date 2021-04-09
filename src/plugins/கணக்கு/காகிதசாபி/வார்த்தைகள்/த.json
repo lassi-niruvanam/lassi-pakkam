@@ -1,0 +1,3393 @@
+[
+  "சித்திரை",
+  "வைகாசி",
+  "ஆனி",
+  "ஆடி",
+  "ஆவணி",
+  "புரட்டாசி",
+  "ஐப்பசி",
+  "கார்த்திகை",
+  "மார்கழி",
+  "தை",
+  "மாசி",
+  "பங்குனி",
+  "பயிறு",
+  "பட்டாணி",
+  "பூக்கோசு",
+  "கொத்தவரங்காய்",
+  "வேர்க்கடலை",
+  "புதினா",
+  "பரங்கிக்காய்",
+  "பசலைக்கீரை",
+  "முளைக்கீரை",
+  "சேனைக்கிழங்கு",
+  "மரவள்ளிக்கிழங்கு",
+  "மல்லிகை",
+  "மௌவல்",
+  "முகரி",
+  "முட்செவ்வந்தி",
+  "முளரி",
+  "பன்னீர்ப்பூ",
+  "வெளிராதவன்",
+  "அல்லி",
+  "ஆம்பல்",
+  "நீராம்பல்",
+  "செங்கழுநீர்",
+  "தாமரை",
+  "கமலம்",
+  "திருமலர்",
+  "நீரோருகம்",
+  "தோடகம்",
+  "நீரசம்",
+  "காட்டுசெண்பகம்",
+  "செம்பருத்தி",
+  "பிணவல்லி",
+  "சாமந்தி",
+  "சிவந்தி",
+  "குங்குமப்பூ",
+  "மந்தாரை",
+  "சூரல்",
+  "பெரணி",
+  "பன்னம்",
+  "அத்திப்பழம்",
+  "வாழைப்பழம்",
+  "தேங்காய்",
+  "சீதாப்பழம்",
+  "பேரீட்சம்பழம்",
+  "அத்திப்பழம்",
+  "நெல்லிக்காய்",
+  "திராட்சைப்பழம்",
+  "கொய்யாப்பழம்",
+  "பலாப்பழம்",
+  "நார்த்தம்பழம்",
+  "எலுமிச்சம்பழம்",
+  "லைச்சிப்பழம்",
+  "மாம்பழம்",
+  "மாங்கிஸ்",
+  "பப்பாளிப்பழம்",
+  "பேரிக்காய்",
+  "அன்னாசிப்பழம்",
+  "மாதுளம்பழம்",
+  "கிஸ்மிஸ்",
+  "புளிச்சிக்காய்",
+  "சாத்துக்குடி",
+  "தர்ப்பூசணி",
+  "முதலை",
+  "கரடி",
+	"பறவை",
+  "எருது",
+  "பூனை",
+  "மாடு",
+  "மான்",
+  "நாய்",
+  "கழுதை",
+  "கழுகு",
+  "யானை",
+  "ஒட்டகச்சிவிங்கி",
+  "ஆடு",
+  "குதிரை",
+  "சிங்கம்",
+  "குரங்கு",
+  "சுண்டெலி",
+  "முயல்",
+  "பாம்பு",
+  "புலி",
+  "ஓநாய்",
+  "காளை",
+  "நான்",
+  "நீ",
+  "நீங்கள்",
+  "அவள்",
+  "அவன்",
+  "அவர்கள்",
+  "நாங்கள்",
+  "நாம்",
+  "அவை",
+  "ஆண்",
+  "பெண்",
+  "தந்தை",
+  "தாய்",
+  "அண்ணன்",
+  "தம்பி",
+  "அக்கா",
+  "தங்கை",
+  "சிற்றப்பா",
+  "பெரியப்பா",
+  "அத்தை",
+  "சித்தி",
+  "பெரியம்மா",
+  "சிறுவன்",
+  "சிறுமி",
+  "முகவரி",
+  "விலாசம்",
+  "நீட்சி",
+  "கரை",
+  "அடைப்புக்குறி",
+  "குறிப்பு",
+  "உலாவி",
+  "மையம்",
+  "மத்தி",
+  "நடு",
+  "மாற்றல்",
+  "எழுத்த",
+  "சொடுக்குதல்",
+  "மறைப்பலகை",
+  "வாடிக்கையாளர்",
+  "வண்ணம்",
+  "நிறம்",
+  "கட்டளை",
+  "விளக்கம்",
+  "குறிப்பு",
+  "கணினி",
+  "தொடர்பு",
+  "நகல்",
+  "உருவாக்கு",
+  "செதுக்கு",
+  "ஏவல்",
+  "விரிவாக்கு",
+  "மேசை",
+  "பிரசுரம்",
+  "அகராதி",
+  "வினியோகி",
+  "ஆவணம்",
+  "அணுக்கம்",
+  "துல்லியம்",
+  "செயல்",
+  "இயக்கு",
+  "செயல்பாடு",
+  "பொருத்தி",
+  "மிகவும்",
+  "முற்றிலும்",
+  "அழகான",
+  "உண்மையாக",
+  "வேகமாக",
+  "நன்கு",
+  "கடினமாக",
+  "வேகமாக",
+  "மெதுவாக",
+  "கவனமாக",
+  "அபூர்வமாக",
+  "போதும்",
+  "பெரும்பாலும்",
+  "அநேகமாக",
+  "ஒன்றாய்",
+  "தனியாக",
+  "எப்பொழுதும்",
+  "அடிக்கடி",
+  "வழக்கமாக",
+  "சமயம்",
+  "அரிதாய்",
+  "என்றும்",
+  "நிலை",
+  "மொழி",
+  "அரபு",
+  "சீனம்",
+  "ஆங்கிலம்",
+  "பிரெஞ்சு",
+  "இந்தி",
+  "இத்தாலியம்",
+  "ஜப்பானியம்",
+  "கொரியம்",
+  "இலத்தீன்",
+  "ஸ்பானியம்",
+  "உருது",
+  "மளிகை",
+  "பொருள்",
+  "நிர்வாகி",
+  "தொகுப்பு",
+  "மொழி",
+  "நெறிமுறை",
+  "இசைவு",
+  "ஒதுக்கீடு",
+  "சோதனை",
+  "அகரவரிசை",
+  "நெடுங்கணக்கு",
+  "கவர்படுநிலை",
+  "பெருக்கு",
+analogrepresentation    ஒப்புமை மீள்வடிவாக்கம்
+analog    ஒப்புமை
+analytical-engine    பகுப்பாய்வு பொறி
+animation    அசைவூட்டம்
+anonymous    அநாமதேய
+anti-virus    நச்சுநிரற்கொல்லி/நச்சுநிரல் எதிர்ப்பான்
+appearance    தோற்றம்
+append    பின்சேர்
+applet    குறுநிரல்
+application-level    பயன்பாட்டு நிலை
+application-programmer    பயன்பாட்டு நிரலாளர்
+application-programming    பயன்பாட்டு நிரலாக்கம்
+application-programs    பயன்பாட்டு நிரல்கள்
+application-service-provider    பயன்பாட்டுச் சேவை வழங்குனர்
+application-software    பயன்பாட்டு மென்பொருள்
+application    செயலி
+architecture    கட்டமைப்பு
+archive-file    காப்பகக் கோப்பு
+archive-gateway    காப்பக நுழைவாயில்
+archive    காப்பகம்
+archiving    காப்பகப்படுத்தல்
+area-search    பரப்பில் தேடல்
+arithmetic    எண் கணிதம்
+array-processor    அணிச் செயலி
+array    அணி
+arrow-key    திசை விசை/திசை குறி
+artificial-intelligence    செயற்கை நுண்ணறிவு
+assembler    பொறிமொழியாக்கி
+assembly-language    பொறி மொழி
+audio-blog    ஒலிதப்பதிவு
+audio    ஒலிதம்
+auto-block    தானியங்கித் தடை
+auto-restart    தானியக்க மீள்தொடக்கம்
+automated-data-processing    தன்னியக்கத் தரவுச் செயலாக்கம்
+automatic    தன்னியக்க
+auxiliary-equipments    துணைக்கருவிகள்
+auxiliary-function    துணைச்செயற்கூறு
+auxiliary-memory    துணை நினைவகம்
+auxiliary-operation    துணை செயல்பாடு
+auxiliary-storage    துணை தேக்கம்
+availability    கிடைத்தல்
+axes    அச்சுகள்
+backup    காப்புநகல்/காப்புநகலெடு
+background    பின்னணி
+backspace    பின்நகர்வு
+bar-chart    பட்டை வரைப்படம்
+bar-code    பட்டைக்குறிமுறை
+barcode-scanner    பட்டைக்குறிமுறை வருடி
+bar-printer    பட்டை அச்சுப்பொறி
+basic    அடிப்படை
+batch-processing    தொகுதிச்செயலாக்கம்
+beta    அறிமுகப் பதிப்பு
+binarycode    இரும குறிமுறை
+binary-device    இருமக் கருவி
+binarydigit    இரும இலக்கம்
+bit            இரும இலக்கம்
+binarynumber    இரும எண்
+binary-operation    இரும செயற்பாடு
+binar-ysystem     இரும கட்டகம்
+bitmap-display    நுண் படக் காட்சி
+bitmap-scanning    நுண் பட வருடி
+bitmapped-screen    நுண் பட திரை
+bit-values    நுண்மியின் மதிப்புகள்
+bit    நுண்மி
+bitmap    நுண் படம்
+bit-mapped-font    நுண் பட எழுத்துரு
+blank-character    வெற்றுரு
+blank-page    வெற்றுப்பக்கம்
+blanking    வெறுமைப்படுத்தல்
+block    தடை
+blog    வலைப்பதிவு
+blog-info    வலைப்பதிவு தகவல்கள்
+blog-tools    வலைப்பதிவுக் கருவிகள்
+blogger    வலைப்பதிவர்
+blogger-circle    வலைப்பதிவர் வட்டம்
+blogging    வலைப்பதிதல்
+bookmark    புத்தகக் குறி
+boot    தொடக்கு
+border    கரைகள்
+branching    கிளைப்பிரிதல்
+bridge    இணைவி
+broadband    அகலப்பட்டை
+browser    உலாவி
+browsing    உலாவுதல்
+buddy    நண்பர்
+bug    வழு
+bug-report    வழு அறிக்கை
+bus    பாட்டை
+cache    தேக்கம்
+calculating    கணக்கிடல்
+calculation    கணக்கீடு
+calculator-mode    கணிப்பான் நிலை
+calculator    கணிப்பான்
+cancel    தவிர்
+capacity    கொள்திறன்
+carriage-return    ஏந்தி மீளல்
+catalog    விவரப்பட்டியல்
+category    பக்கவகை
+CD-burning    குறுவட்டு எரித்தல்
+CD-player    இறுவட்டு இயக்கி
+center    மையம்/நடுவம்
+central-processing-unit    மையச் செயலகம்
+CPU                        மையச் செயலகம்
+central-processor    மையச் செயலி
+chain-printer    தொடர்ப்பதிப்பான்
+change    மாற்றல்/மாற்று
+channel    தடம்
+character    வரியுரு
+character-code    வரியுருக் குறி
+character-map    வரியுரு வரைப்படம்
+character-recognition    வரியுரு அறிதல்
+character-set    வரியுருக்கணம்
+character-string    வரியுருச்சரம்
+chart    வரைப்படம்
+chat    அரட்டை
+checkbox    தேர்வுப்பெட்டி
+chips    சில்லுகள்
+clear    துடை
+click    சொடுக்கு
+clipboard    மறைப்பலகை
+close    மூடு
+closed-file    மூடப்பட்ட கோப்பு
+cloud-computing    முகிலக் கணிப்பு
+collection    திரட்டல்
+color-coding    வண்ணக் குறிமுறை
+color-graphics    வண்ன வரைகலை
+column-split    நெடுவரிசைப் பிரிப்பு
+column    நெடுவரிசை
+command-key    கட்டளை விசை
+command    கட்டளை/ஆணை
+comment    கருத்துரை/பின்னூட்டம்/முன்னிகை
+comments-moderation    கருத்துரை மட்டுறுத்தல்
+common-storage    பொதுத்தேக்கம்
+common    பொது
+communication-link    தொடர்பு இணைப்பு
+communication-processor    தொடர்பு செயலகம்
+communication-satellite    தொடர்பு செயற்கைக்கோள்
+communication-software    தொடர்பு மென்பொருள்
+communication-protocols    தொடர்பு நெறிமுறைகள்
+community-portal    சமுதாய வலைவாசல்
+compact-disc cd    குறுவட்டு/இறுவட்டு
+comparative-operator    ஒப்பீட்டு இயக்கி
+compare    ஒப்பிடு
+comparison    ஒப்பிடுதல்
+compilation    தொகுப்பு
+compiler    தொகுப்பி
+complier-language    தொகுப்பு மொழி
+component    உறுப்புக்கூறு
+compress    அழுத்து/அமுக்கு
+computer-engineer    கணிப் பொறியாளர்
+computer-game    கணினி விளையாட்டு
+computer-graphic    கணினி வரைகலை
+computer-language    கணினி நிரல் மொழி
+computer-motherboard    கணினி தாய்பலகை
+computer-network    கணினி வலையமைப்பு
+computer operation    கணினிச் செயல்பாடுகள்
+computer-program    கணனி நிரல்
+computer-resources    கணினி வளங்கள்
+computer-user    கணினி பயனர்
+computer-utility    கணனி பயனமைப்பு
+computer    கணினி
+computerization    கணினிமயமாக்கல்
+computerized-data-base    கணினிமய தரவு தளம்
+computerized-data-processing    கணினிமய தரவு செயலாக்கம்
+computing    கணினிப்பணி
+condition    நிபந்தனை/நிலை
+configuration    அமைவடிமம்
+connectors    இணைப்பான்கள்
+console    முனையம்
+constants    மாறிலிகள்
+content-policy    உள்ளடக்கக் கொள்கை
+contributions    பங்களிப்புகள்
+contributor    பங்களிப்பாளர்/பங்களிப்போர்
+control-key    கட்டுப்பாட்டு விசை
+control-panel    கட்டுபாட்டு பலகை/கட்டுப்பாட்டகம்
+control-program    கட்டுப்பாட்டு நிரல்
+control-statement    கட்டுப்பாட்டுக்கூற்று
+control-structure    கட்டுப்பாட்டு உருவம்
+control-system    கட்டுப்பாட்டு கட்டகம்
+control-unit    கட்டுப்பாட்டு பிரிவு
+conversion    மாற்றம்
+convert    மாற்று
+cookie    நினைவி
+copy-protection    நகல் காப்பு
+copy    பிரதி/நகல்
+copyright-status    பதிப்புரிமை நிலை
+copyright    பதிப்புரிமை
+core-storage    வளையத் தேக்கம்
+cost-analysis    விலைப் பகுப்பாய்வு
+cost-benefit-analysis    விலை பயன் பகுப்பாய்வு
+cost-effectiveness    விலை பயன் திறன்
+create    உருவாக்கு
+crop    செதுக்கு
+current-events    நடப்பு நிகழ்வுகள்
+cursor    சுட்டி
+curve-fitting    வளைக்கோட்டுப் பொருத்தம்
+custom-software    தனிப்பயன் மென்பொருள்
+customize    விருப்பமை/தனிப்பயனாக்கு
+cut    வெட்டு
+cyber    மின்வெளி
+dashboard    கட்டுப்பாட்டகம்
+data    தரவு
+data-catalog    தரவு விவரப்பட்டியல்
+data-flow    தரவுப் பொழிவு
+data-processing    தரவுச் செயலாக்கம்
+database    தரவுத்தளம்
+decimal-digit    பதின்ம இலக்கம்
+decimal-number    பதின்ம எண்
+decimal-point    பதின்ம புள்ளி
+decimal    பதின்மம்
+decode    குறிமுறை நீக்கு/நீக்கி
+decompress    விரிவாக்கு
+default    முன்னிருப்பு/இயல்பிருப்பு
+definite    திட்டமிட்ட/தெளிவான
+delete    அழி
+deletion    அழித்தல்
+description    விவரணம்/விளக்கம்
+design    வடிவமைப்பு
+desktop-computer    மேசை கணினி
+desktop    முகத்திரை
+destination    அடையுமிடம்
+developer    மேம்படுத்துனர்
+device    கருவி
+diagram    விளக்கப்படம்
+digital    எண்மின்
+disambiguated    தெளிவாக்கிய/தெளிவுப்படுத்திய
+disambiguation    தெளிவாக்கம்/தெளிவாக்கல்
+discovery    கண்டறி/கண்டறிதல்
+discuss    கலந்தாலோசி
+disk-drive    வட்டு இயக்கி
+display-name    தோற்றப்பெயர்
+distribute    வினியோகி/வினியோகப்படுத்து
+dns    கொப்பெகம் [கொற்றப்பெயர்க்கட்டகம்]
+document    ஆவணம்
+documentation    ஆவணமாக்கம்
+domain    கொற்றம்/ஆள்களமையம்
+domain-name-system    கொற்றப் பெயர்க் கட்டகம்
+double-click    இரட்டைச் சொடுக்கு
+download    பதிவிறக்கம்
+drag    இழு
+driver    இயக்கி
+drum-plotter    உருளை வரைவு
+drum-printer    உருளை அச்சுப்பொறி
+drum-scanner    உருளை வருடி
+e-book    மென்நூல்
+edit    தொகு/மாற்று
+edit-profile    சுயவிபரத்தை மாற்று
+editor    தொகுப்பாளர்
+educational-software    அறிவியல் மென்பொருள்
+effective    பயன்விளையத்தக்க
+effects    விளைவுகள்
+e-governance    மின்-அரசாண்மை
+electrical-signal    மின் சமிக்ஞை
+electronic    மின்னணு
+e-mail    மின்னஞ்சல்
+embedded    பொதிந்துள்ள
+emulation    போலச்செய்தல்
+encoding    குறியாக்கம்
+encyclopedia    கலைக்களஞ்சியம்
+end    முடிவு
+equation    சமன்பாடு
+erase    அழி
+eraser    அழிப்பான்
+expansion-slots    விரிவாக்க செருகுவாய்கள்
+expiry    கெடுமுடிவு/காலாவதி
+extended-info    விரிவாக்கப்பட்ட தகவல்
+external-links    வெளி இணைப்புகள்
+external-search-engine    வெளித்தேடுபொறி
+faq     அடிக்கடி கேட்கப்படும் கேள்விகள்
+features    அம்சங்கள்
+field    புலம்
+file    கோப்பு
+file-management    கோப்பு மேலாண்மை
+file-share    கோப்பு பகிர்வான்
+file-sharing    கோப்பு பகிர்தல்
+find    கண்டறி/தேடு
+firewall    தீயரண்
+firmware    நிலைப்பொருள்
+flat-monitor    தட்டை திரையகம்
+floppy-drive    நெகிழ் வட்டு
+flow-chart    நெறிமுறை விளக்கப்படம்
+folder    கோப்புறை
+font    எழுத்துரு
+font-and-word-processor    எழுத்துருவும் சொல் செயலாக்கியும்
+font-name    எழுத்துரு பெயர்
+footer    அடிப்பாகம்
+formal-language    வடிவ மொழி
+format    வடிவம்/வடிவூட்டம்
+formatting    வடிவமைத்தல்
+formula    சூத்திரம்
+free-software    இலவச மென்பொருள்
+function    செயற்கூறு/செயற்பாடு
+gallery    காட்சியகம்
+gateway    நுழைவாயில்
+global-dashboard    கோளக் கட்டுப்பாட்டகம்
+global-positioning-system    கோள இருப்பிடக் கட்டகம்
+grammar-checker    இலக்கணத் திருத்தி
+graphic    வரையியல்/வரைகலை
+group    குழுமம்
+guest    விருந்தினர்
+hand-held-devices    கையடக்கக் கருவிகள்
+hand-held-scanner    கையடக்க வருடுபொறி
+handwriting-recognition    கையெழுத்து அறிதல்
+hard-disc    வன்வட்டு
+hardware    வன்பொருள்
+header    தலைப்பு
+help-center    உதவி மையம்
+help-group    உதவி குழுமம்
+high-speed-computer    அதிவேகக் கணினி
+higher-level-language    உயர்நிலை மொழி
+home    முகப்பு
+homepage    முகப்புப்பக்கம்
+horizontal-line    கிடைக்கோடு
+host-computer    புரவலர் கணினி
+hyphenation    சொல் பிரித்தல்
+icon    உருச்சின்னம்/படவுரு
+identity    அடையாளம்
+idns    வலைக்கொற்றப் பெயர்க் கட்டகம்
+idomain    வலைக்கொற்றம்
+ignore    புறக்கணி
+image    படிமம்
+import    இறக்கம்
+incompatible    முரண்பாடு
+indefinite    திட்டமிடாத
+index    சுட்டெண்
+index-variable    சுட்டுமாறி
+information    தகவல்
+information-data    தகவல் தரவு
+information-super-highways    தகவல் மீப் பெருவழிகள்
+information-technology    தகவல் தொழில்நுட்பம்
+input-unit    உள்ளீட்டுப் பகுதி
+insert    உள்ளிடு/செருகு
+install    நிறுவு
+installation    நிறுவுதல்
+integrated-chips    சுற்றமைப்புச் சில்லுகள்
+integrated-circuit-chips    ஒருங்கிணைப்பு சுற்றமைப்புச் சில்லுகள்
+inter-language    மொழியிடை
+interactive-sites    ஊடாட்ட தளங்கள்
+interests    ஆர்வங்கள்
+interface    இடைமுகம்/இடைமுகப்பு
+internal    உள்ளக
+internal-error    உள்ளகத் தவறு
+international    பன்னாட்டு
+international dns    பன்னாட்டுக் கொப்பெகம்
+internet    இணையம்
+internet-explorer இண்டெர்நெட் எக்ஸ்ப்ளோரர்
+internet-protocol-address    இணைய நெறிமுறை முகவரி
+internet-protocol ip    இணைய நெறிமுறை
+internet-service-provider isp    இணையச் சேவை வழங்குனர்
+interpreter    வரிமொழிமாற்றி/இடைமாற்று
+invalid    செல்லாத/செல்லுபடியாகாத
+invention    கண்டுப்பிடிப்பு
+italic-text    சாய்வெழுத்து
+iteration    பன்முறைச் செய்தல்
+java-script    ஜாவா ஆணைத்தொகுதி
+key    விசை
+keyboard    விசைப்பலகை/தட்டச்சுப்பலகை
+keypad    விசைத்தளம்
+keyword    குறிப்புச்சொல்
+landscape    அகலவாக்கி
+laptop-computer    மடிக்கணினி
+layout    தளவமைப்பு
+lcd-monitor liquid-crystal-display    திரவ பளிங்குத் திரையகம்
+left-click    இடதுச் சொடுக்கு
+lexing-error    தொகுத்தல் தவறு
+license    உரிமம்
+light-pen    எழுதுகோல்
+line    கோடு/வரி
+link    இணைப்பு/தொடுப்பு
+list    பட்டியல்
+live    நேரடி
+log-in    புகுபதி/உற்புகு
+log out    விடுபதி/வெளியேறு
+machine-language    பொறிமொழி
+machine-translation    எந்திர மொழிபெயர்ப்பு
+magnetic-disk    காந்த வட்டு
+magnetic-tape    காந்தா நாடா
+main-page    முகப்புப்பக்கம்/முதற்பக்கம்
+maintenance-page    மேலாண்மைப் பக்கம்
+management    ஆளுமை/முகாமைத்துவம்
+mechanical-calculator    எந்திர கணிப்பான்
+media    ஊடகம்
+media-player    ஊடக இயக்கி
+memory-unit    நினைவகப் பகுதி
+memory    நினைவகம்
+menu    பட்டியல்
+metadata    தரவு விவரம்
+micro-processor    நுண் செயலி
+microphone    ஒலிவாங்கி
+microsoft-office மைக்ரோசாப்ட் ஆபீஸ்
+modem    இணக்கி
+moderation    மட்டுறுத்தல்
+moderator    மட்டுறுத்துனர்
+monetize    மதிப்புடைச்செய்
+monitor    கணித்திரை/திரையகம்
+more-features    கூடுதல் அம்சங்கள்
+motherboard    தாய்ப்பலகை
+mouse    சொடுக்கி
+multimedia    பல்லூடகம்
+multitasking    பல்பணியாக்கம்
+my-account    எனது கணக்கு
+natural-language    இயற்கை மொழி
+navigation    வழிசெலுத்தல்
+negative    எதிர்வு
+network    பிணையம்/வலையமைப்பு
+networking    வலைப்பின்னல்
+neutral-point of-view    நடுநிலைநோக்கு
+new-post    புதிய இடுகை
+non-terminals    முடியா முனையங்கள்
+notation    குறிமானம்
+note    குறிப்பு
+number    எண்
+numeral    எண் முறை
+object    பொருள்
+offline    இணைப்பறு/இணைப்பின் வெளியே
+online    இணைப்பில்
+operating-system    இயங்குக் கட்டகம்
+option    தேர்வு
+orphaned-pages    உறவிலிப் பக்கங்கள்
+other-languages    பிறமொழிகள்/ஏனைய மொழிகள்
+outsourcing    அயலாக்கம்
+package    பொதி
+packets    பொட்டலங்கள/பொதிகள்
+page-layout    பக்க வடிவமைப்பு
+page-views    பக்கப் பார்வைகள்
+page    பக்கம்
+panel    பலகை
+paperless office    தாளில்லா அலுவலகம்
+paragraph    பந்தி
+parallel-processing-computers    இணைச் செயலாக்க கணினிகள்
+parent-category    முதன்மை பக்கவகை
+password    கடவுச்சொல்
+paste    ஒட்டு
+patch    பொருத்து
+peripherals    உபகரணங்கள்
+permission    அனுமதி
+personal-computer    தனி கணினி
+photograph    புகைப்படம்
+picture    படம்
+piracy    களவுநகலாக்கம்
+plug-in    சொருகு/சொருகி
+pointer    சுட்டு
+portable-printer    கையடக்க அச்சுப்பொறி
+portal    வலைவாசல்
+post    இடுகை
+posting    இடுகையிடல்
+posts    இடுகைகள்
+preferences    விருப்புத்தேர்வுகள்
+presentation    அளிக்கை
+press    அமுக்கு
+preview    முன்தோற்றம்
+principals    கோட்பாடு
+print    அச்சிடு
+printer    அச்சுப்பொறி
+privacy    தனிக்காப்பு/தனிமறைவு
+problem    சிக்கல்/பிரச்சினை
+processor    செயலி
+program    நிரல்
+programmers    நிரலர்கள்
+programming-language    நிரலாக்க மொழி
+prompt    தூண்டி
+protect    காப்புச்செய்
+protection-log    தடைப்பதிகை
+protocols    நெறிமுறைகள்
+proxy-server    பதில் சேவையகம்
+public-domain    பொதுக்கொற்றம்/பொதுக்களம்
+publications    வெளியீடுகள்
+publish    பதிவிடு/வெளியிடு
+publisher    பதிப்பாளர்
+publishing    பதிப்பிடல்
+query    வினா/வினவல்
+ram random-access-memory    நினைவகம்
+random-page    ஒழுங்கிலாப் பக்கம்
+recent-changes    அண்மைய மாற்றங்கள்
+recovery-tool    மீட்சி கருவி
+redirects    வழிமாற்றிகள்
+redo    செய்தது தவிர்/திரும்பச்செய்
+reference-desk    எடுகோள் மேடை
+reference    எடுகோள்
+refresh    புதுப்பி
+reinstall    மீள்நிறுவு
+release    வெளியீடு
+remember-me    என்னை நினைவில் வை
+removal    அகற்றல்
+remove    அகற்று
+replace    மீள்வை
+reprogramming    மறுநிரலாக்கம்
+required    வேண்டப்பட்ட/தேவைப்பட்ட
+reset    மீட்டமை
+restore    மீள வை/ மீள்வி
+result    விளைவு
+review    மீளாய்வு
+revision    புதிபித்தல்/திருத்தம்
+right-click    வலச்சொடுக்கு
+root    மூலம்
+root-directory    மூல அடைவு
+router    வழிச்செயலி
+row    குறுக்கு வரிசை/நிரை
+rule    விதி/விதிமுறை
+save    சேமி
+save-as    என சேமி
+scanner    வருடுபொறி
+screensaver    திரைக்காப்பு
+search    தேடு/தேடல்
+search-engine    தேடு பொறி
+search-query    தேடல் வினா
+search    தேடல்/தேடு
+section    பகுதி
+see-also    இவற்றையும் பார்
+select    தேர்வுசெய்
+sensor    உணரி
+server    வழங்கி
+sessions    அமர்வுகள்
+setting    அமைப்புகள்
+share-my-profile    எனது சுயவிவரத்தை பகிர்
+shared-files    பகிரப்பட்ட கோப்புகள்
+shareware    பகிர்மானம்
+shortcut    குறுவழி/குறுக்குவழி
+show-all    எல்லாம் காண்பி
+shutdown    அணை/மூடு
+sign-in    புகுபதிகை/புகுபதிவு
+sign off    விடுபதிகை/விடுபதி
+sign out    வெளியேறு
+single-click    தனிச் சொடுக்கு
+sister-projects    பிற திட்டங்கள்
+site-feed    தள ஓடை
+socket    பொருத்துவாய்
+software    மென்பொருள்
+software-package    மென்பொருள் பொதி
+sorting-algorithms    தீர்வு நெறிகள்
+sorting-and-searching    வரிசையாக்கமும் தேடலும்
+sound-card    ஒலிக்கிரமி
+source-code    மூலவரைவு
+skype     ஸ்கைப்
+webcam வெப்கேமரா
+source    மூலம்
+space    வெளி/இடைவெளி
+spacing    இடைவெளியிடல்
+spam    எரிதம்
+speaker    ஒலிப்பெருக்கி
+special-pages    சிறப்பு பக்கங்கள்
+specification    விவர வரையறை
+spell-checker    எழுத்துப் பிழை திருத்தி
+split    பிரிப்பு
+spooler    சுருளி
+spreadsheet    விரித்தாள்
+standard    நியமம்/தரப்பாடு
+standardisation    தரப்படுத்துதல்
+stats    புள்ளிவிவரங்கள்
+string-literals    சர மதிப்புருக்கள்
+structured-programming    கட்டுரு நிரலாக்கம்
+stub    குறுங்கட்டுரை
+subtitle    துணையுரை
+suffix    பின்னொட்டு
+super-computer    மிகுவேகக் கணினி/மீக்கணினி
+support    உதவி
+syntax-error    தொடரமைப்புத் தவறு
+sysop    முறைமைச் செயற்படுத்துனர்
+system-operator    கட்டக இயக்குநர்
+system-programmer    கட்டக நிரலாளர்
+system    கட்டகம்
+tab    தத்தல்
+technology    தொழில் நுட்பம்
+template    வார்ப்புரு
+terminal    முனையம்
+terms-of-service    சேவை விதிமுறைகள்
+text-formatting    உரை வடிவம்
+text-to-speech    உரையை பேச்சாக்குதல்
+text-to-voice    உரையைக் குரலாக்குதல்
+theme    தோற்றக்கரு
+theory    தேற்றை
+thesis    தேற்று
+time-zone    நேரவலையம்
+title    தலைப்பு
+toolbar    கருவிப்பட்டை
+top-level-domain    உயர் மட்டக் கொற்றம்
+transistor    திரிதடையம்
+trash    குப்பை
+uncategorized    வகைப்படுத்தப்படாதவை
+undo    செய்தவிர்/செய்ததைத் தவிர்
+unit    பிரிவு
+update    இற்றைப்படுத்து
+upgrade    மேம்படுத்து/மேம்படுத்தல்
+upload    பதிவேற்று
+url    இணைய முகவரி
+user    பயனர்
+user-account    பயனர் கணக்கு
+users-guide    பயனர் வழிக்காட்டி
+utility    பயனமைப்பு
+vandalism    நாசவேலை
+variable    மாறி/மாறுப்படுகிற
+version    பதிப்பு
+video-blog    ஒளிதப் பதிவு
+video    ஒளிதம்/காணொளி
+view-profile    சுயவிவரம் காண்பி
+view    பார்வை
+viewer    பார்வையாளர்
+virtual-server    மெய்நிகர்ச் சேவையகம்
+virus    நச்சுநிரல்
+visitor    வருகையாளர்
+voice-mail    குரலஞ்சல்
+voice-recognition    குரலறிதல்
+volume    ஒலியளவு
+watch-list    கவனிப்புப் பட்டியல்
+watch    கவனி
+website    இணையத்தளம்
+window    சாளரம்
+wireless    கம்பியில்லா
+wish-list    விருப்பப்பட்டியல்
+wizard    வழிகாட்டி
+word-processor    சொற் செயலி
+working-environment    பணிச்சூழல்
+worksheet    பணித்தாள்
+workstation    பணிநிலையம்
+world-wide-web    வைய விரிவு வலை
+www               வைய விரிவு வலை
+wallpaper         மேசைப்பின்னணி
+# Ref: https://yarl.wordpress.com/2009/05/26/%E0%AE%95%E0%AE%A3%E0%AE%BF%E0%AE%A9%E0%AE%BF-%E0%AE%95%E0%AE%B2%E0%AF%88%E0%AE%9A%E0%AF%8D-%E0%AE%9A%E0%AF%8A%E0%AE%B1%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%8D/
+absolute address  தனி முகவரி
+absolute cell address  தனித்த நுண்ணறை முகவரி வழங்கல்
+access   அணுக்கம், அணுகல்
+accuracy   துல்லியம்
+action   செயல்
+active cell   இயங்கு கலன்
+address modification   முகவரி மாற்றம்
+address   முகவரி
+addressing   முகவரியிடல்
+album   தொகுப்பு
+algorithm    வழிமுறை
+algorithm    நெறி முறை
+algorithmic language    நெறிப்பாட்டு மொழி
+alignment    இசைவு
+allocation    ஒதுக்கீடு
+alphabetic string    எழுத்துச் சரம்
+alphameric    எண்ணெழுத்து
+alphanumeric sort    எண்ணெழுத்து வரிசையாக்கம்
+alphanumeric    எண்ணெழுத்து
+alphanumeric    எண்ணெழுத்து
+AND gate    உம்மை வாயில்
+animation    அசைவூட்டம்
+animation    அசைவூட்டம்
+anti virus    நச்சு நிரற் கொல்லி
+append    பின் தொடர், பின்சேர்
+apperarance    தோற்றம்
+application    செயலி
+application    பயன்பாடு
+applications-oriented-language    பயன்பாட்டு நோக்கு மொழி
+applications-program பயன்பாட்டு நிரல்கள்
+applications-programmer    பயன்பாட்டு நிரலர்
+applications-programming    பயன்பாட்டு நிரலாக்கம்
+applications-software    பயன்பாட்டு மென்பொருள்
+architecture    கட்டமைப்பு
+archive    பெட்டகம்
+archive   ஆவணக்காப்பகம்
+area-search   பரப்பில் தேடல்
+arithmetic-expression    எண்கணிதக் கோவை
+arithmetic-operation  எண்கணித வினை
+arithmetic operator    எண்கணித வினைக்குறி
+array    வரிசை, அணி
+arrow keydirection key    திசைப் பொத்தான்
+artificial intelligence  செயற்கை நுண்ணறிவு
+assembler    பொறிமொழியாக்கி
+assembly language  பொறி மொழி
+audio   ஒலி
+audio    ஒலியுணர்
+automated data processing    தன்னியக்கத் தரவுச் செயலாக்கம்
+automatic    தன்னியக்க
+autopilot    தன்னியக்க வலவன்
+auxiliary function    துணைச் செயல் கூறு
+axes    அச்சுகள்
+background    பின்னணி
+backspace பின்னழிக்க, பின்வெளி
+backspace    பின்நகர்வு
+bad sector    கெட்ட துண்டம்
+bar chart    பட்டை வரைபடம்
+bar code பட்டைக் குறிமுறை
+bar printer பட்டை அச்சுப்பொறி
+bar-code scanner    பட்டைக் குறிமுறை வருடி
+batch processing    தொகுதிச் செயலாக்கம்
+bebugging    பிழைவிதைத்தல்
+bill    விலைப்பட்டியல்
+binary device    இரும நிலைக் கருவி
+binary digit    இரும இலக்கம்
+binary number    இரும எண்
+binary operation    இருமச்செயற்பாடு
+binary system    இரும எண்முறை
+binary    இரும
+bit map    பிட்டுப்படம்
+bit mapped screen பிட்டுப் படத்திரை
+bit    நுண்மி, துணு, பிட்டு
+blank character    வெற்றுரு
+block diagram    கட்ட வரைபடம்
+block   கட்டம், தொகுதி
+blog   வலைப்பதிவு
+boolean    பூலியன்
+boot   தொடக்கு
+Brennen-    எரிக்க
+browser   உலாவி
+browsing மேலோடல்
+buttonkey பொத்தான்
+byte    எண்பிட்டு, எண்ணுண்மி
+cache memory   பதுக்கு நினைவகம்
+caculations    கணக்கீடுகள்
+caculations    கணக்கீடுகள்
+caculator    கணிப்பான்
+caculator    கணிப்பான்
+calculating    கணக்கிடல்
+calculating    கணக்கிடல்
+calculator mode    கணிப்பான் நிலை
+calculator mode    கணிப்பான் நிலை
+cancel    நீக்கு
+cancel    நீக்கு
+capacity    கொள்திறன்
+capacity    கொள்திறன்
+caps lock    மேலெழுத்துப் பூட்டு
+caps lock    மேலெழுத்துப் பூட்டு
+carriage returnCR   ஏந்தி மீளல்
+carriage returnCR   ஏந்தி மீளல்
+catalog    அடைவு
+catalog    அடைவு
+CD player   குறுவட்டு இயக்கி
+cell pointer    நுண்ணறைச்சுட்டி
+cell pointer    நுண்ணறைச்சுட்டி
+cell    சிற்றறை, நுண்ணறை
+cell    சிற்றறை, நுண்ணறை
+center    மையம், மையப்படுத்து
+center    மையம், மையப்படுத்து
+central processing unitCPU    மைய செயலகம்
+central processing unitCPU    மைய செயலகம்
+central processor    மையச் செயலி
+central processor    மையச் செயலி
+channel    தடம்
+channel    தடம்
+character code    உருக்குறிமுறை
+character code    உருக்குறிமுறை
+character generator    உரு ஆக்கி
+character generator    உரு ஆக்கி
+character map    உரு விவரப்படம்
+character map    உரு விவரப்படம்
+character recognition    உரு அறிதல்
+character recognition    உரு அறிதல்
+character set    உருக்கணம்
+character set    உருக்கணம்
+character string    உருச்சரம்
+character string    உருச்சரம்
+character வரியுரு
+character    உரு
+character    உரு
+characteristic    படி
+characteristic    படி
+chart    வரைபடம்
+chart    வரைபடம்
+clear துடை
+clear    துடை
+clear    துடை
+click சொடுக்கு
+click    ‘கிளிக்’, அழுத்து
+click    ‘கிளிக்’, அழுத்து
+client    சேவைக்கான பயன்பாடு.
+client வாங்கி
+clone    நகலி, போலிகை
+clone    நகலி, போலிகை
+close    மூடு
+close    மூடு
+closed file    மூடிய கோப்பு
+closed file    மூடிய கோப்பு
+coaxial cable    அச்சு ஒன்றிய வடம்
+coaxial cable    அச்சு ஒன்றிய வடம்
+code   நிரற்தொடர்
+code    குறிமுறை
+code    குறிமுறை
+collection    திரட்டல்
+collection    திரட்டல்
+color coding    வண்ணக் குறிமுறை
+color coding    வண்ணக் குறிமுறை
+color graphics  வண்ண வரைவியல்
+color graphics  வண்ண வரைவியல்
+column split    நெடுவரிசைப் பிரிப்பு
+column split    நெடுவரிசைப் பிரிப்பு
+column நிரல், நெடுவரிசை
+column    நெடுவரிசை
+column    நெடுவரிசை
+command key    கட்டளைத்திறவு, கட்டளைப்பொத்தான்
+command key    கட்டளைத்திறவு, கட்டளைப்பொத்தான்
+command    கட்டளை, ஆணை
+command    கட்டளை, ஆணை
+comment    குறிப்புரை
+comment    குறிப்புரை
+common storage    பொதுத் தேக்கம்
+common storage    பொதுத் தேக்கம்
+communication    தொடர்பு
+communication    தொடர்பு
+communications link    தொடர்பு இணைப்பு
+communications link    தொடர்பு இணைப்பு
+communications processor  தொடர்பு செயலகம்
+communications processor  தொடர்பு செயலகம்
+communications satellite    தொடர்பு செயற்கைக்கோள்
+communications satellite    தொடர்பு செயற்கைக்கோள்
+communications software    தொடர்பு மென்பொருள்
+communications software    தொடர்பு மென்பொருள்
+compact disc CD  இறுவட்டு
+compaction    நெருக்கம்
+compaction    நெருக்கம்
+comparative operator    ஒப்பீட்டு இயக்கி
+comparative operator    ஒப்பீட்டு இயக்கி
+compare    ஒப்பிடு
+compare    ஒப்பிடு
+comparison    ஒப்பீடு
+comparison    ஒப்பீடு
+compilation    தொகுத்தல்
+compilation    தொகுத்தல்
+compiler language    தொகுப்பு மொழி
+compiler language    தொகுப்பு மொழி
+compiler    தொகுப்பி
+compiler    தொகுப்பி
+component    உறுப்புக்கூறு
+component    உறுப்புக்கூறு
+compuserve    கணிச்சேவை
+compuserve    கணிச்சேவை
+computation    கணிப்பு
+computation    கணிப்பு
+computer code    கணிப்பொறி நிரல்
+computer code    கணிப்பொறி நிரல்
+computer game    கணிப்பொறி விளையாட்டு
+computer game    கணிப்பொறி விளையாட்டு
+computer graphics    கணிப்பொறி வரைவியல்
+computer graphics    கணிப்பொறி வரைவியல்
+computer network    கணிப்பொறி வலையமைப்பு
+computer network    கணிப்பொறி வலையமைப்பு
+computer operations    கணிப்பொறி சார் செயல்பாடுகள்
+computer operations    கணிப்பொறி சார் செயல்பாடுகள்
+computer user    கணிப்பொறி பயனர்
+computer utility    கணிப்பொறிப் பயனமைப்பு
+computer    கணிப்பொறி
+computer    கணிப்பொறி
+computer-aided manufacturing  கணிப்பொறிவலய உற்பத்தி
+computerised data processing    கணிப்பொறி வழித்தரவுசெயலாக்கம்
+computerization    கணிப்பொறிமயமாக்கல்
+computerized database    கணிப்பொறித் தரவுத் தளம்
+computing    கணிப்பு
+computing    கணிப்பு
+condition    நிபந்தனை, நிலை
+condition    நிபந்தனை, நிலை
+configuration   அமைவடிவம்
+console   முனையம்
+continuous scrolling    தொடர் உருளல்
+continuous scrolling    தொடர் உருளல்
+control key    கட்டுப்பாட்டுத்திறவுகோல், கட்டுப்பாட்டுப் பொத்தான்
+control key    கட்டுப்பாட்டுத்திறவுகோல், கட்டுப்பாட்டுப் பொத்தான்
+control program    கட்டுப்பாட்டு நிரல்
+control program    கட்டுப்பாட்டு நிரல்
+control statement    கட்டுப்பாட்டுக் கூற்று
+control statement    கட்டுப்பாட்டுக் கூற்று
+control system    கட்டுப்பாட்டு அமைப்பு
+control system    கட்டுப்பாட்டு அமைப்பு
+conversion    மாற்றம்
+conversion    மாற்றம்
+convert    மாற்று
+convert    மாற்று
+cookie நினைவி
+coordinates    ஆயத்தொலைவுகள்
+copy holder    நகல் தாங்கி
+copy protection    நகல் காப்பு
+copy    நகல்
+cordless   தொடுப்பில்லா
+core-storage    வளையத் தேக்கம்
+cost-analysis    விலை பகுப்பாய்வு
+cost-benefit-analysis    விலை பயன் பகுப்பாய்வு
+cost-effectiveness    விலை பயன் திறன்
+costing    விலையிடல்
+costing    விலையிடல்
+counter    எண்ணி
+counter    எண்ணி
+create    படை படைப்பு
+create    படை படைப்பு
+cursor-control    சுட்டிக் கட்டுப்பாடு
+cursor-control    சுட்டிக் கட்டுப்பாடு
+cursor-key    சுட்டிப்பொத்தான்
+cursor-key    சுட்டிப்பொத்தான்
+cursor-tracking    சுட்டி பின் தொடரல்
+cursor-tracking    சுட்டி பின் தொடரல்
+cursor    சுட்டி
+cursor    சுட்டி
+curve-fitting    வளைகோட்டுப் பொருத்தம்
+curve-fitting    வளைகோட்டுப் பொருத்தம்
+custom-software    தனிப்பயன் மென்பொருள்
+custom-software    தனிப்பயன் மென்பொருள்
+customize    தனிப்பயனாக்கு
+customize    தனிப்பயனாக்கு
+cut   வெட்டுக
+cut    வெட்டு
+cut    வெட்டு
+cyber   மின்வெளி
+data   தரவு
+delete   அழிக்க
+design   வடிவமைப்பு
+digital   எண்முறை
+discovery   கண்டறிதல்
+driver   இயக்கி
+DRM:    காப்புரிமை
+edit   தொகுக்க
+firewall   அரண்
+floppy   நெகிழ்வட்டு
+folder   உறை
+format   வடிவூட்டம், வடிவூட்டு
+function   செயற்பாடு
+gallery   காட்சியகம்
+graphics   வரைகலை
+guest   வருனர்
+home   முகப்பு, அகம்
+homepage   வலையகம், வலைமனை
+icon   படவுரு
+information   தகவல்
+interface   இடைமுகப்பு
+interpreter   வரிமொழிமாற்றி
+invention   கண்டுபிடிப்பு
+IRC   இணையத் தொடர் அரட்டை
+LAN   உள்ளகப் பிணையம்
+license   உரிமம்
+link   இணைப்பு, தொடுப்பு, சுட்டி
+live   cd நிகழ் வட்டு
+log-in   புகுபதிகை, புகுபதி
+log-off   விடுபதிகை, விடுபதி
+media-player   ஊடக இயக்கி
+menu   பட்டியல்
+microphone   ஒலிவாங்கி
+network   பிணையம், வலையம்
+object   பொருள்
+offline   இணைப்பறு
+online   இணைப்பில்
+package   பொதி
+password   கடவுச்சொல்
+paste   ஒட்டுக
+patch   பொருத்து
+plugin   சொருகு, சொருகி
+pointer   சுட்டி
+portal   வலை வாசல்
+preferences   விருப்பத்தேர்வுகள்
+preview   முன்தோற்றம்
+processor   முறைவழியாக்கி
+program   நிரல்
+proprietary   தனியுரிம
+RAM   நினைவகம்
+redo   திரும்பச்செய்க
+refresh   மீளேற்று
+release   வெளியீடு
+repository   களஞ்சியம்
+row   நிரை, குறுக்குவரிசை
+screensaver   திரைக்காப்பு
+server   வழங்கி
+settings   அமைப்பு
+shortcut   குறுக்குவழி
+shutdown   அணை
+sign-in   புகுபதிகை, புகுபதி
+sign-off   விடுபதிகை, விடுபதி
+skin   ஆடை
+space   வெளி, இடைவெளி
+speaker   ஒலிபெருக்கி
+spreadsheet   விரி தாள்
+subtitle   உரைத்துணை, துணையுரை
+system   கணினி
+tab   தத்தல்
+table   அட்டவணை
+terminal   முனையம்
+theme   கருத்தோற்றம், தோற்றக்கரு
+thumbnail   சிறுபடம்
+undo   திரும்பப்பெறுக
+update   இற்றைப்படுத்தல், இற்றைப்படுத்து
+upgrade   மேம்படுத்து, மேம்படுத்தல்
+URL   முகவரி
+version   பதிப்பு
+video   நிகழ் படம்
+view   பார்க்க
+virus   நச்சு நிரல்
+volume   ஒலியளவு
+wallpaper   மேசைப்பின்னணி
+window   சாளரம்
+wireless   கம்பியில்லா
+wizard   வழிகாட்டி
+worksheet   பணித் தாள்
+# Tamil Wikipedia words
+alphabetical   அகர-முதல
+recent-changes   அண்மைய-மாற்றங்கள்
+access   அணுக்கம்
+bureaucrat   அதிகாரி
+village-pump   ஆலமரத்தடி
+cache   இடைமாற்று
+cache   இடைத்தேக்கி
+interface   இடைமுகம்
+link   இணைப்பு
+website   இணையத்தளம்
+taget-article   இலக்குக்-கட்டுரை
+see-also   இவற்றையும்-பார்க்கவும்
+update   இற்றைப்படுத்து
+import   இறக்கம்
+browser   உலாவி
+browse   உலவு
+internal   உள்ளக
+internal-error   உள்ளகத்-தவறு
+orphaned-page   உறவிலிப்-பக்கங்கள்
+media   ஊடகம்
+negative   எதிர்மதிப்பு
+free-encyclopedia   கட்டற்ற-கலைக்களஞ்சியம்
+article   கட்டுரை
+password   கடவுச்-சொல்
+comment   கருத்துரை
+encyclopedia   கலைக்களஞ்சியம்
+ambiguation   கவர்படுநிலை
+watch   கவனி
+watch-list   கவனிப்புப்-பட்டியல்
+protect   காப்புச்-செய்
+protection-log   காப்புப்-பதிகை
+horizontal-line   கிடைக்-கோடு
+random-page   குறிப்பில்வழி-பக்கம்
+stub   குறுங்கட்டுரை
+file   கோப்பு
+community-portal   சமுதாய-வலைவாசல்
+italic-text   சாய்வெழுத்து
+special-pages   சிறப்புப்-பக்கங்கள்
+link   சுட்டி
+function   செயற்கூறு
+string-literals   சர-மதிப்புருக்கள்
+invalid   செல்லாத
+invalid   செல்லுபடியாகாத
+save   சேமி
+information   தகவல்
+bold-letter   தடித்த-எழுத்து
+block   தடை
+block-log   தடைப்பதிகை
+data   தரவு
+database   தரவுத்தளம்
+current-events   தற்போதைய-நிகழ்வுகள்
+autoblock   தானியங்கித்-தடை
+revision   திருத்தம்
+cache   தேக்கம்
+cache   இடைத்தேக்கி
+search   தேடல்
+search-query   தேடல்-வினவல்
+edit   தொகு
+syntax-error   தொடரமைப்புத்-தவறு
+dead-end-page   தொடராப்-பக்கம்
+current-events   நடப்பு-நிகழ்வுகள்
+update   நிகழ்நிலைப்படுத்து
+administrator   நிர்வாகி
+delete   நீக்கு
+positive   நேர்மதிப்பு
+time-zone   நேர-வலயம்
+contributor   பங்களிப்பாளர்
+contributions   பங்களிப்புகள்
+image   படிமம்
+author   படைப்பாளி
+log   பதிகை
+version   பதிப்பு
+copyright-status   பதிப்புரிமை-நிலை
+download   பதிவிறக்கம்
+log   பதிவு
+upload   பதிவேற்று
+user   பயனர்
+tutorial   பயிற்சிக்குறிப்புகள்
+maintenance-page   பராமரிப்புப்-பக்கம்
+manual-of-style   பாணி-தொடர்பான-கையேடு
+sister-projects   பிற-திட்டங்கள்
+log-in   புகுபதிகை
+naming-convention   பெயரிடல்-மரபு
+talk-page   பேச்சுப்பக்கம்
+embedded   பொதிந்துள்ள
+public-domain   பொதுக்-களம்
+sand-box   மணல்-தொட்டி
+email   மின்னஞ்சல்
+mediawiki   மீடியாவிக்கி
+revert   மீள்வி
+expiry-end   முடிவு
+main-page   முதற்-பக்கம்
+system-operator முறைமைச்-செயற்படுத்துனர்
+sysop   முறைமைச்-செயற்படுத்துனர்
+preview   முன்தோற்றம்
+preferences   முன்னுரிமைகள்
+default   முன்னிருப்பு
+interlanguage   மொழிகளிடை
+uncategorized   வகைப்படுத்தப்படாத
+server   வழங்கன்
+navigation   வழிசெலுத்தல்
+redirects   வழிமாற்றிகள்
+bug-report   வழு-அறிக்கை
+interwiki   விக்கியிடை
+cancel   விடு
+log-out   விடுபதிகை
+query   வினவல்
+external-links   வெளி-இணைப்புகள்
+blanking   வெறுமைப்படுத்தல்
+flash-drive    ஃப்ளாஷ்-டிரைவ்
+broadband    அகலப்பட்டை-இணைப்பு
+office-application-like-ms-word    அலுவலகப்-பயன்பாடு
+deletion,-removal    அழித்தல்
+eraser    அழிப்பான்,-எரேசர்
+permission    அனுமதி
+documents    ஆவணங்கள்
+internet-explorer    இண்டெர்நெட்-எக்ஸ்ப்ளோரர்
+web-operating-system    இணைய-இயங்குதளம்
+drivers    இயக்கிகளை
+windows-xp    இயங்குதளங்களிலும்
+operating-system    இயங்குதளம்
+browser    உலவி
+web-browser    உலவி
+digital-rights-management    எண்முறை-உரிமைகள்-முகாமைத்துவம்
+icon    ஐகான்
+head-phone-with-mic    ஒலிப்பான்+ஒலிவாங்கி
+compact-disk    ஒலிவட்டுகள்
+lichtleiter    ஒளியிழைகளைக்கான
+password    கடவுச்சொல்
+credit-card    கடனட்டை
+video    காணொளி
+shortcut    குறுக்கு-தட்டாச்சு
+pda    கையடக்கக்-கணினி-கருவிகள்
+file    கோப்பு
+files    கோப்புகள்
+file-sharing    கோப்புப்பகிர்வான்
+cd-burning    சிடியில்-எரித்தல்
+links    சுட்டிகளில்
+program    செயலியை
+mobile-cell-phone    செல்பேசி
+klick    சொடுக்கி
+team-viewer    டீம்வியூவர்
+information,-data    தகவல்
+updates    தர-முயர்த்திகளையும்
+download    தரவிறக்கம்
+database    தரவுத்தளமாக
+installation    நிறுவுதல்
+memory-ram    நினைவகம்
+firefox-add-ons    நீட்சிகள்
+shared-files    பகிரப்பட்ட-கோப்புகள்
+working-environment    பணிச்சூழல்
+software-applications    பயன்பாடுகள்
+user-account    பயனர்-கணக்கு
+read    பார்க்க
+beta    பீட்டா
+boot-startup    பூட்
+pen-drive    பென்-டிரைவ்
+paypal    பேபால்
+laptop    மடிக்கணினி
+laptop    மடிக்கணினி
+virtual    மாய
+edit    மாற்றியமைக்க
+recovery-tool    மீட்பான்
+incompatible    முரண்பாடு
+source-code    மூலவரைவு
+e-book    மென்நூல்
+software-application    மென்பொருள்
+microsoft-office    மைக்ரோசாப்ட்-ஆபீஸ்
+micro-processor    மைக்ரோப்ராசசர்
+live    லைவ்
+yearly-fee    வருடச்-சந்தா
+graphics    வரைகலை
+hardware    வன்பொருள்
+hard-disk    வன்வட்டு
+hard-disk    வன்வட்டு
+voice-mail    வாய்ஸ்-மெயில்
+windows-vista    விண்டோஸ்-விஸ்டா
+windows விண்டோஸ்
+linux லினக்ஸ்
+apple ஆப்பிள்
+mac  மேக்
+home-pc வீட்டுக்கணினி
+home-based-fixed-wired    வீட்டுத்-தொலைபேசி
+web-camera    வெப்கேமரா
+fast-internet-connection    வேகமான-இணைய-இணைப்பு
+skype    ஸ்கைப்
+skype-in    ஸ்கைப்-உள்ளே
+skype-out    ஸ்கைப்-வெளியே
+access    அணுக்கம்
+administrator    ஆளுநர்,-நிர்வாகி,-ஆள்வினைஞர்
+alphabet    அகர-வரிசை,-நெடுங்கணக்கு
+alphabetical    அகர-வரிசைப்படி
+ambiguation    குழப்பம்,-பொருள்மயக்கம்,-கவர்படுநிலை-தெளிவற்ற-நிலை-இருபொருள்படுநிலை
+anonymous    அடையாளமற்ற,-பெயரற்ற,-முகவரியற்ற-அநாமதேய-அடையாளம்-காட்டாத/முகமறியா
+article    கட்டுரை
+archive    சேமகம்
+archived    சேமப்பட்ட அடை
+author    படைப்பாளி-எழுத்தாளி/இயற்றி(யோர்)
+autoblock    தானியங்கித்-தடை
+back-up  காப்புநகல்,காப்புநகலெடு
+blanking வெறுமைப்பாடு,-வெறுமைப்படுத்தல்
+block    தடை
+block-log    தடைப்பதிகை
+blog    பதிவு
+bold-letter    தடியெழுத்து,-தடிமன்-எழுத்து,-தடித்த-எழுத்து
+bot    தானியங்கி
+browse    உலவு,-உலாவு
+browser    உலாவி
+bug-report    வழு-அறிக்கை
+bureaucrat    அதிகாரி
+cache    தேக்கம்,-இடைத்தேக்கம்,-இடைமாற்று
+cancel    கழி,-விடு,-நீக்கு
+category    வகை,-பக்க-வகை,-கட்டுக்-கூற்று
+click    சொடுக்கு
+column    நெடுவரிசை
+comment    கருத்துரை,-குறிப்புரை
+community-portal    சமுதாய-வலைவாசல்
+contact-us    எம்மை-அணுகவும்,-எங்களைத்-தொடர்பு-கொள்ளுங்கள்
+contingency-page    அவசர-காலப்பக்கம்
+contributions    பங்களிப்புகள்
+contributor    பங்களிப்பாளர்,-பங்களிப்போர்
+copyright-status    பதிப்புரிமை-நிலை,-காப்புரிமை-நிகழ்நிலை
+current-events-,-,    நடப்பு-நிகழ்வுகள்-இன்றைநிகழ்வுகள்,-இற்றைநிகழ்வுகள்,-நிகழ்கால-நிகழ்வுகள்-தற்போதைய-நிகழ்வுகள்
+data    தரவு,-அறிமம்,-தெரிமம்
+database    தரவுத்தளம்,-அறிமகம்,-அறிமத்தொகை,-தெரிமகம்
+dead-end-page    முட்டுப்பக்கம்,-தொடராப்-பக்கம்,-ப்பக்கத்தின்-முடிவு
+default    முன்னிருப்பு,-இயல்பிருப்பு
+delete    நீக்கு
+developer-,    உருவாக்குனர்-மேம்படுத்துனர்
+disambiguated    தெளிவாக்கிய,-தெளிவுபடுத்திய
+disambiguation    தெளிவாக்கம்,-தெளிவாக்கல்,-தெளிவுபடுத்தல்,-கவர்படுநிலைதீர்
+download    பெறவு,-பதிவிறக்கம்
+edit-,    தொகு-மாற்று
+email    மின்னஞ்சல்
+embedded    பொதிந்துள்ள
+encyclopedia    கலைக்களஞ்சியம்
+equation    சமன்பாடு,-ஈடுகோள்,-ஈடுகூற்று
+expiry    முடிவு,-கெடுமூய்வு,-கெடுமுடிவு,-கெடுமுற்று
+external-links    வெளி-இணைப்புகள்
+external-search-engine    வெளித்தேடன்,-வெளித்தேடி,-வெளித்தேடுபொறி,-புறத்துழாவி
+faq    அடிக்கடி-கேட்கும்-கேள்விகள்
+faux-paus    பிழை,-தவறு,-பிசகு,-ஒழுங்குப்-பிறழ்வுகள்
+feature-request    சிறப்பு-பயன்பாட்டு-வேண்டுகோள்-பண்புக்-கூறு-வேண்தடுகோள்
+file    கோப்பு
+free-encyclopedia    கட்டற்ற-கலைக்களஞ்சியம்
+font    எழுத்துரு,
+format    வடிவம்
+formula-,    சூத்திரம்-வாய்ப்பாடு
+function    செயல்,-செயற்கூறு
+gnu-free-documentation-license    கனூ-கட்டற்ற-ஆவண-அனுமதி
+guest    விருந்தினர்
+help-desk    உதவி-மன்றம்/அரங்கம்-உசாத்துணை-பக்கம்-ஒத்தாசை-பக்கம்
+horizontal-line    கிடைக்-கோடு
+icon    உரு
+information    அறிமானம்,-செய்தி,-தகவல்
+interface    இடைமுகம்
+interlanguage    இடைமொழி,-மொழியிடை,-மொழிகளிடை
+interwiki    விக்கியிடை
+image    படிமம்,-உருவம்
+import    இறக்கம்
+internal-,    உள்ளக-உள்ளமை
+internal-error-,    உட்பிழை,-உள்ளகத்-தவறு-உள்ளமைப்பிழை
+invalid    செல்லாத,-பொருந்தாத,-செல்லுபடியாகாத
+ip-address    ஐ.பி-முகவரி
+italic-text    சாய்வெழுத்து
+keyword-,-(keyword-is-a-word-or-concept-with-special-significance)    சிறப்புச்சொல்,-குறிப்புச்சொல்-முதன்மைச்சொல்
+lexing-error    தொகுத்தல்-தவறு
+link    சுட்டி,-இணைப்பு,தொடுப்பு
+log    பதிவு-பதிகை
+log-in    புகுபதிகை-உட்புகு
+log-out    விடுபதிகை-வெளியேறு
+mailing-list    அஞ்சல்-பட்டியல்-அஞ்சல்-வரிசை
+main-page  தலைப்பக்கம்,-முதற்-பக்கம்-இல்லம்
+maintenance-page பேணல்    பராமரிப்புப்-பக்கம்-பக்கம்
+manual-of-style    பாணிக்கையேடு,-பாணிநெறி,-பாந்தக்கையேடு
+media    ஊடகம்
+metadata    தரவு-விவரம்
+mediawiki    மீடியாவிக்கி
+management    ஆளுமை,-முகாமைத்துவம்
+meetings    கூட்டங்கள்
+name-space    பெயர்மண்டலம்,-பெயர்வெளி
+naming-convention    பெயரிடல்-மரபு,-பெயரீட்டுவழக்கு,-பெயரீட்டுநெறி
+navigation    வழிசெலுத்தல்
+negative எதிர்வு,-எதிர்மாறு,-எதிர்மதிப்பு;-எதிர்வான,-எதிர்மாறான,-எதிர்மதிப்பான
+neutral-point-of-view    நடுநிலைநோக்கு,-நடுநிலைக்கருத்து
+orphaned-page    உறவிலிப்-பக்கங்கள்
+other-languages    பிறமொழிகள்,-ஏனைய-மொழிகள்,-ஏனைமொழிகள்
+page-views    பக்கக்-காட்சிகள்,-பக்கப்-பார்வைகள்
+parent-category    முதன்மை-பக்க-வகை-முன்னோடி-பக்க-வகை-மூலக்-கட்டுக்-கூறு
+parse    பாகுபடுத்தல்
+password    கடவுச்-சொல்
+positive    நேர்முறை,-நேர்மதிப்பு;-நேர்முறையான,-நேர்மதிப்பான
+preferences    விருப்பங்கள்,-பிடித்தங்கள்,-முன்னுரிமைகள்
+preview    முன்தோற்றம்
+privacy    மறைவு,-ஒடுக்கம்,-தனிக்காப்பு,-தனிமறைவு
+program    நிரல்
+protect    தடு,-காப்புச்செய்,காத்திடு
+protection-log    தடைப்பதிகை,-காப்புப்-பதிகை
+public-domain    பொதுக்-களம்
+purge    கழி,-நீக்கு
+query    வினா,-வினவல்
+random-page    குறிப்பில்வழி-பக்கம்,-அறவட்டான-பக்கம்
+recent-changes    அண்மைய-மாற்றங்கள்
+redirects    வழிமாற்றிகள்
+reference-desk    கேள்வி-மன்றம்-ஆலோசனை-மேடை
+refresh-,    புதுப்பி-புதுப்பிக்கவும்-புதுக்கல்
+reset-,    மீட்டமை-நிலை-மீட்டல்
+restore    முன்னிலைக்கு-மீள்வி
+revert    மீள்வி,-மீள்-திருத்தம்
+revision    திருத்தம்,-மீள்பார்வை
+sand-box    மணல்-தொட்டி
+save    சேமி-சேமிக்கவும்
+search-(வினை)-(பெயர்)தேடல்    தேடு;
+search-query    தேடல்-வினா
+see-also    இவற்றையும்-பார்க்கவும்
+select    தேர்,-தேர்க,-தேரவும்,-தெரிவு-செய்
+server    வழங்கன்,வழங்கி
+session    அமர்வுகள்,-பிணையத்-தொடர்
+shortcut    குறுக்கு-வழி
+skin    தோல்
+software    மென்பொருள்
+special-pages    சிறப்புப்-பக்கங்கள்
+stub    குறுங்கட்டுரை
+sysop    முறைமைச்-செயற்படுத்துனர்
+sister-projects    இணைத்திட்டங்கள்,-பிற-திட்டங்கள்
+string-literals    சர-மதிப்புருக்கள்
+syntax-error    தொடரமைப்புத்-தவறு
+tag    காட்டி
+talk-page    பேச்சுப்பக்கம்
+taget-article    இலக்குக்-கட்டுரை
+text-formatting    உரை-அலங்காரம்-உரை-ஒப்பனை
+time-zone    நேர-வலயம்
+tutorial    பயிற்சிக்குறிப்புகள்
+uncategorized    வகைப்படுத்தாத
+update    நடப்பாக்கு,-நிகழ்நிலைப்படுத்து-இற்றைப்படுத்து
+upload    பதிவேற்று,-தரவேற்று
+user    பயனர்
+users-guide    பயனர்-கையேடு
+vandalism    நாசவேலை,-ஆக்கிரமிப்பு-போக்கிரித்தனம்
+version    பதிப்பு
+viewer    பார்ப்பான்,-பார்வையாளன்
+village-pump    ஆலமரத்தடி
+visitor    வருனர்-வருகையாளர்
+votes-for-deletion    நீக்குவதற்கான-வாக்கெடுப்பு
+watch-list    கவனிப்புப்-பட்டியல்
+website    இணையத்தளம்
+automobile தானியங்கி
+aviation பறப்பியல்
+birds பறவைகள்
+botany தாவரவியல்
+cricket துடுப்பாட்டம்
+finance நிதியியல்
+fish மீன்
+flowers பூ
+fruits பழங்கள்
+herbs மூலிகைகள்
+immigration குடிநுழைவு
+law சட்டம்
+mathematics கணிதம்
+pcb design சுற்றுப்பலகையியல்
+periodic table தனிம அட்டவணை
+physics இயற்பியல்
+physiology உடலியல்
+railways இருப்புப்பாதை
+rf வானலையியல்
+shipping கப்பலியல்
+vegetables காய்கறிகள்
+vlsi ஒருங்கிணைப்பியல்
+zoology விலங்கியல்
+eye கண் , விழி
+nose   மூக்கு , வாசனையறி
+lip   உதடு , இதழ்
+lens   வில்லை , விழிவில்லை , கண்வில்லை , விழியாடி
+nasal   மூக்கொலி
+oesophagus   உணவுக் குழாய், உணவுக்குழல் , அன்னக்குழாய்
+throat   மிடறு , தொண்டை , குரல்வளை , மூச்சுக்குழல் , கழுத்தூட்டி
+lungs   நுரையீரல் , வெள்ளீரல் , சுவாசப்பை , சுவாசாசயம்
+bronchus   கிளைமூச்சுக்குழாய் , மூச்சுக்கிளைக் குழல்
+bronchioles   மூச்சு நுண்குழாய் , மூச்சுக்கிளைச் சிறுக்குடல்
+stomach   இரைப்பை , வயிறு , அகடு , சார்பொருக்கம், தாங்குரம் , உணவுப்பை
+pancreas   கணையம் , கணையநீர்
+liver   ஈரற்குலை , ஈரல் , கல்லீரல்
+gall-bladder   பித்தப்பை
+small-intestine   சிறுங்குடல்
+large-intestine   பெருங்குடல்
+spine   முள்ளந்தண்டு , தண்டெலும்பு , முதுகெலும்பு , முள்ளெலும்பு , வளைமுள், முள்ளந்தண்டு , முதுகுத்தண்டு
+kidney   சிறுநீரகம் , மூத்திரக்காய் , சிறுநீர் வடிப்பி , மூத்திர கோசம்
+blood   இரத்தம் , குருதி , உதிரம் , சோரி
+bone   எலும்பு , எண்பு
+arm	 கை
+back	 முதுகு
+cheeks	 கன்னங்கள்
+chest	 மார்பு
+chin	 முகவாய்க் கட்டை
+ear	 காது
+elbow	 முழங்கை
+eye	 கண்
+face	 முகம்
+finger	 விரல்
+fingers	 விரல்கள்
+foot	 பாதம்
+hair	 முடி
+hand	 கை
+head	 தலை
+heart	 இதயம்
+knee	 முழங்கால்
+leg	 கால்
+lip	 உதடு
+mouth	 வாய்
+neck	 கழுத்து
+nose	 மூக்கு
+shoulder தோள்
+stomach	 வயிறு
+teeth	 பற்கள்
+thigh	 தொடை
+throat	 தொண்டை
+thumb	 கட்டைவிரல்
+toe	 கால் விரல்
+tongue	 நாக்கு
+tooth	 பல்
+coral பவளம்
+pearl முத்து
+cats_eye கோமேதகம்
+emerald மரகதம்
+diamond வைரம்
+saphire நீலம்
+topaz புஷ்பராகம்
+ruby மாணிக்கம்
+lapis வயிடூரியம்
+"நவரத்தினம்"
+numeric - எண் வரிசை
+3-phase circuit - மும்முனைச் சுற்று, முத்தறுவாய் சுற்று
+8b10b encoding - எட்டுக்குப்பத்து குறியாக்கம் - dvb-asi, sas, sata, pci-express போன்ற பல செந்தரங்களில் பயனாகும் குறியாக்கம், இதில் கடிகை உட்பதிந்துள்ளது; துணுக்கோடை (bitstream) எட்டு துணுக்கு குறிகளாக பிரிக்கப்பட்டு ஒவ்வொரு குறியும் பத்து துணுக்கு குறியாக 1 0 சமஎண்ணிக்கையாக அமையும்படி மாற்றப்படுகிதது
+ac current - ஆடலோட்டம், மாறுதிசை மின்னோட்டம்
+ac voltage - மாறுதிசை மின்னழுத்தம்
+acoustic coupler - கேட்பொலிப் பிணைப்பி
+acoustics - கேட்பொலியியல்
+active device - செயல்படுச் சாதனம்
+admittance - விடுப்பு - ஒரு உயிர்பற்ற மின்சுற்றின் (passive electric cicuit) மாறுதிசையோட்டம் கடத்தும் தன்மை; மறுப்பின் தலைகீழ்; இது கடத்தம் மற்றும் ஏற்பு ஆகியவற்றின் கூட்டு காவி மதிப்பு; g + j(bc-bl) மதிப்பு கொண்டுள்ளது; ஒருதிசையோட்ட கடத்தத்திற்கு நிகரானது
+active load - செயல்படு சுமை
+aliasing, alias frequency - புனைவு, புனையலைவெண் - ஒரு மாதிரியெடுப்பு முறைமையில் போதுமற்ற மாதிரிவிகிதத்தால் உள்ளீடு குறிகையை (உதாரணமாக கேட்பொலி, ஒளிதோற்றம்) மறுமீட்கும்போது உயர் அலைவெண்களில் முதலிருந்த குறிகை (ஒலி, ஒளி வகையறா) தவறாக தாழ் அலைவெண்ணாக பெறும் நிலை
+algorithm - படிமுறை
+amplidyne - மிகைப்பி மின்னாக்கி
+amplitude shift keying - வீச்சு பெயர்வு இணைத்தல் - சங்கேத குறியீடுகளை பல்வேறு வீச்சுகளாக பிரதிபலிக்கும் இலக்க பண்பேற்ற முறை
+analog electronics - ஒப்புமை மின்னணுவியல், ஒப்புமையியல்
+analysis - பகுப்பாய்வு
+analyzer - பகுப்பி
+and gate - உம்மை வாயில்
+anisotropic antenna - ஒருதிசை அலைக்கம்பம்
+anode - நேர்முனை
+antenna - அலைக்கம்பம் - மின்காந்த வானலையை மின்குறிகையாக அல்லது எதிர்மறையாக ஆக்கும் சாதனம்
+antenna coupler - அலைக்கம்பப் பிணைப்பி - அலைக்கம்பம் மற்றும் செலுத்தி அல்லது பெறுவி இடையே அமையும் மின்மறுப்பு பொறுத்தும் (impedence matching) சாதனம்
+apparent power - தோற்றத் திறன் - எதிர்வினை உறுப்பு (reactive element) கொண்ட மின்சுற்றில் செலவாகும் மின்திறன்; கண மின்னோட்டம் மற்றும் கண மின்னழுத்தம் ஆகியவற்றின் பெருக்கு; p = vinst x iinst
+argon - இலியன்
+armature - மின்னகம்
+arsenic - பிறாக்காண்டம்
+attenuation, attenuator - மெலிப்பு, மெலிப்பி
+atomic instruction - அணுநிலை ஆணை
+auto-correlation - தன் ஒட்டுறவு - ஒரு குறிகையில் தன்னுடனையே உள்ள ஒட்டுறவு; இக்கெழு அக்குறிகையின் சுழல் தன்மையை பிரதிபலிக்கிறது
+automatic gain control (agc) - தானியங்கு மிகைப்பு கட்டுப்பாடு - ஒரு மிகைப்பி அமைப்பு, இதில் தன் மிகைப்பை தேவைக்கேற்ப மாற்றி அதன் மீது வழங்கப்படும் உள்ளீடுகளின் வீச்சளவு வரம்புகளுக்கிடையே ஒரே வெளியீடு வீச்சளவை உற்பத்தி செய்யும்
+auto pilot - தானோட்டி
+auto router - தானியங்குத் திசைவி
+average current - சராசரி ஓட்டம்
+averager - சராசரிப்படுத்தி
+axiom - அடிகோள்
+azimuth - திசை ரேகை - கிடைத்தளத்தில் வலஞ்சுழி கோண அளவு
+balun (balanced-to-unbalanced transformer) - சமனிலாச்சமனி
+bandpass filter - பட்டைவிடு வடிப்பி
+bandstop filter - பட்டைத்தடை வடிப்பி
+bandwidth - பட்டை அகலம்
+battery - மின்கலம்
+beacon (= aeronautical beacon) - சுழலொளி - விமானங்களுக்கு அடையாளம் தெரிவிக்கும் தரையமைந்த தொடர் அல்லது சிமிட்டும் ஒளி
+beam (of light, electrons etc.) - கற்றை
+biasing - சாருகையிடுதல் - ஒரு திரிதடையத்தை (பொதுவாக மிகைப்பியாக) செயல்படுத்த, அதன் தளவாய் மீது ஒருதிசை மின்னழுத்தம் ஏற்படுத்துதல்
+bias voltage - சாருகை மின்னழுத்தம் - ஒரு திரிதடையம் செயல்படும்போது, தன் தளவாய் மீது ஏற்படுத்தப்படும் ஒருதிசை மின்னழுத்தம்
+bias current - சாருகை மின்னோட்டம் - ஒரு திரிதடையம் செயல்படும்போது, தன் தளவாய்-உமிழ்வாய் சந்தியில் பாயும் ஒருதிசை மின்னோட்டம்
+binary - இருமம்
+bit (data) - துணுக்கு (தரவு)
+bit rate - துகள் வீதம்
+blanking - மறைத்தல் - ஒரு பரவல் காட்சியின் (rastor display) மீள்வரைவு (retrace) காட்சித் திரையில் காணாமல் இருப்பதற்க்கு செருகப்படும் துடுப்புகள்; இவை நெடு மீள்வரைவு (vertical retrace), கிடை மீள்வரைவு (horizontal retrace) என வகைப்படுகின்றன
+bootstrap, bootstrapping, bootstrap circuit - ஈடேற்று, ஈடேற்றம், ஈடேற்றுச் சுற்று - மாறுமின்னழுத்தத்திற்கு அதிகாக மின்மறுப்பு தரும் ஒரு வகை சாருகை முறை
+broadband - அகலப்பட்டை, அகண்ட அலைவரிசை
+broadside array (antenna) - முகமியக்க அணி (அலைக்கம்பம்)
+bus (data) - பாட்டை (தரவு)
+bromine - நெடியம்
+bronze - வெண்கலம்
+buffer, buffer amplifer - இடையகம், இடையக மிகைப்பி
+buried via - மறைந்த வழிமம் - ஒரு சுற்றுப்பலகையில் இரு முகங்களை எட்டாத வழிமம்; இது ஒரு முகத்தை எட்டும் அல்லது உள்ளடுக்குகளில் மறைந்திருக்கும்
+busy, busy state - வேலயாக, வேலையான நிலை
+byte (= octet) - எண்ணெண்
+
+cable - வடம்
+cable modem- வடப் பண்பேற்றிறக்கி
+cache memory - இடைமாற்று நினைவகம் - பலமுறை அணுகப்படும் தரவுகளுக்கு ஒதுக்கப்படும் ஒரு விரைவு நினைவகம்
+calculator - கணிப்பான்
+calculus - நுண்கணிதம்
+camcorder - நிகழ்பதிவி
+capacitor - மின்தேக்கி, கொண்மி
+capacitive reactance - கொண்ம எதிர்வினைப்பு
+capillary action - புழை இயக்கம்
+carrier signal - சுமப்பி குறிகை
+cartridge - பொதியுறை
+cascade - ஓடையிணைப்பு
+catalyst - வினையூக்கி
+cathode - எதிர்முனை
+cdrom - படிப்பு குறுவட்டு
+cd read write - எழுதுப்படிப்புக் குறுவட்டு
+cd recordable - பதிவுக் குறுவட்டு
+cell phone (mobile phone) - கைபேசி (நகர்பேசி)
+centre of gravity - ஈர்ப்பு மையம்
+centre of mass - பொருண்மை மையம்
+charecteristic - சிறப்பியல்பு
+charecteristic impedence - சிறப்பு மின்மறுப்பு - ஒரு செலுத்துதடத்தில் ஏதேனும் இருப்பிடத்தின் மின்னழுத்தம்-மின்னோட்டம் விகிதம்
+charge - மின்னூட்டு
+charger - மின்னூட்டி
+chassis ground - சட்டநிலம்
+chipset - சில்லுத்தொகுதி
+chord (in a circle) - நாண்
+chord (music) - பன்னிசை
+chroma / chrominance - நிறப்பொலிவு
+circumference - பரிதி
+clock signal - கடிகாரக் குறிகை
+clock buffer - கடிகார இடையகம்
+coax(ial) cable - ஓரச்சு வடம்
+coaxial lenses - ஓரச்சு வில்லைகள்
+cobalt - மென்வெள்ளி
+codec - புரிப்பு
+collector (transistor) - ஏற்புவாய்
+combination, combination group - சேர்வு, சேர்வுக் குலம்
+composite video - கலவை ஒளிதோற்றம் - ஒளிர்மை (luma), நிறமை (chroma) மற்றும் நேரவிவரம் (timing) கலந்த ஒளிதோற்றக் குறிகை; தொலைகாட்சி பெட்டிகளில் இந்த உள்ளீடு வழக்கமாக ஒரு மஞ்சள் நிற இணைப்பியாக (yellow connector) அமையும்
+computer - கணிப்பொறி, கணிணி
+concave lens - குழிவில்லை
+commutator - திசைமாற்றி மின்னோடிகளில் மின்னோட்டத்தின் திசையை காலசுழற்சியில் திசைமாற்றும் சாதனம்
+computer - கணிப்பொறி, கணிணி
+concave mirror - குழியாடி
+conductance - கடத்தம் - ஒரு பொருளின் ஒருதிசை மின்சாரம் கடத்தும் தன்மை; g = i/v என்கிற மதிப்புடையது, அதாவது தடையத்தின் தலைகீழ்
+cone - கூம்பு
+configurable programmable logic device (cpld) - உள்ளமை நிரல்படு தருக்கச் சாதனம்
+configuration - உள்ளமைவு
+constant - மாறா, மாறிலி
+continuos function - தொடர்ச்சியுள்ள சார்வு
+convex lens - குவிவில்லை
+convex mirror - குவியாடி
+convolution - சுருளல்
+coordinate - ஆயம்
+correlation - ஒட்டுறவு
+crystal - படிகம்
+crystal oscillator - படிக அலைவி/அலைப்பி
+cube - கன சதுரம்
+current - மின்னோட்ட்ம், ஓட்டம்
+cyclotron - சுழற்சியலைவி
+
+dc current - நேரோட்டம்
+data - தரவு
+datasheet - தரவுத்தாள்
+dc current - நேரோட்டம், ஒருதிசை மின்னோட்டம்
+dc voltage - ஒருதிசை மின்னழுத்தம்
+decode, decoding, decoder - குறிவிலக்கு, குறிவிலக்கம், குறிவிலக்கி
+decimate, decimation - வீதக்குறை, வீதக்குறைவு - மாதிரித் தரவுகளை அதிக வீதத்திலிருந்து குறைந்த வீதத்திற்கு மாற்றுதல்; இடையுள்ள மாதிரிகள் விடப்படுகின்றன
+decrypt - மறைவிலக்கு
+demodulation - பண்பிறக்கம்
+descrambling - கலர்விலக்கம்
+detector - உணர்வி
+diac (diode for ac) - மாறுமின் இருமுனையம் மாறுமின்னோட்ட கட்டுப்பாட்டிற்கு பயனாகும் சாதனம்
+diameter - விட்டம்
+differential, differentiation, differentiator - வகையீட்டு, வகையீட்டல், வகையீட்டி
+diffraction - அலைவளைவு
+diffraction grating - அலைவளைவுக் கீற்றணி
+diode - இருமுனையம்
+directional antenna - திசைவு அலைக்கம்பம்
+directional coupler - திசைவுப் பிணைப்பி
+discreet values - தனித்த அளவுகள்
+discharge (electric) - மின்னிறக்கம்
+discriminator - பிரித்துணர்வி
+distorsion - உருக்குலைவு
+disc - வட்டு
+dish antenna - அலைக்கம்பா
+double-stub (impedence) matching - இருமுளை (மின் மறுப்புப்) பொறுத்தம்
+driver (software) - இயக்கமென்பொருள்
+dynamo - மின்னாக்கி
+
+earth ground - புவி நிலம்
+earthing - புவியிடுதல்
+earth wire - புவிக் கம்பி
+eddy current - சுழலோட்டம்
+egress - வெளிவாய்
+electric field - மின்புலம்
+electricity - மின்சாரம்
+electrocardiograph - மின் இதயத்துடிப்பு வரைவி
+electron - எதிர்மின்னி
+electrode - மின்வாய்
+electromagnetic interference (emi) - மின்காந்த இடையீடு
+electromagnetic wave - மின்காந்த அலை
+electromagnetics - மின்காந்தவியல்
+electrostatics - நிலைமின்னியல்
+electrostatic discharge (esd) - நிலைமின்னிறக்கம் - இரு மின்னூட்டமுடைய பொருட்கள் அருகில் நெருங்கும்போது ஏற்படும் மின்னிறக்கம்
+electrostatic sensitive (=esd sensitive) - நிலைமின்பாதிக்கப்படத்தக்க(து)
+electron - எதிர்மின்னி
+electronics - மின்னணுவியல்
+element - தனிமம்
+emitter - உமிழ்வாய்
+emulation - போன்மம்
+end-fire array (antenna) - முனையியக்க அணி (அலைக்கம்பம்)
+engine - பொறி
+entity - உருபொருள்
+elevation - உயர்வு ரேகை
+ethernet - தூயவெளியம், தூயவெளி வலை
+ethernet card - தூயவெளி அட்டை
+
+fabrication - கட்டுருவாக்கம்
+factorial - தொடர்பெருக்கு
+fall time - விழுநேரம்
+falling edge - விழுவிளிம்பு
+fan-in - வீச்சு சுருக்கம்
+fan out - வீச்சு விரிப்பு
+far-field region - தொலைபுல மண்டலம்
+fiducial - நம்பகப்புள்ளி - மின்சுற்றுப்பலகைகளின் தானியங்குத் தொகுத்தலில் உறுப்புகளை பொறுக்கியமைக்கும் இயந்திரத்திற்கு மேற்கோள்ளாக உதவும் (சுற்றுப்பலகைகளிலிலுள்ள) புள்ளிகள்
+feed horn - அலையூட்டுக் குழல்
+fetch cycle - கொணர் சுழர்ச்சி
+fibre-optic cable - ஒளியிழைவடம்
+fidelity - மெய்நிலை
+field - புலம்
+field programmable gate array - களம் நிரல்படு வாயிலணி
+field effect transistor (fet) - புலவிளைவுத் திரிதடையம்
+file - கோப்பு
+file allocation table (fat) - கோப்பு பிரிப்பு அட்டவணை
+finline - துடுப்புத்தடம் - மின்சுற்றுப்பலகைகளின் துளைகளில் (vias) அச்சிடப்பட்ட மின்தடங்கள்
+finite impulse response (=fir) filter - முடிவு கணத்தாக்க மறுமொழி விடிப்பி - பின்னூட்டம் உடைய இலக்க வட்ப்பி (digital filter); இவை நேரியல் கட்ட சிறப்பியல்வு (குறிகையில் உருக்குலைவு ஏற்படுத்தாத தன்மை) கொண்டவை
+flat panel display (fpd) - தட்டைப் பலகக் காட்சி
+flow chart - பாய்வுப்படம்
+forward bias - முன்னோக்கு சாருகை - ஒரு இருமுனையத்தின் p-முனையை சார்பான (relative) நிறைமின்னழுத்தத்திற்கும் n-முனையை குறைமின்னழுத்தத்திற்கும் இணைத்தல்; இவ்விணைப்பினால் திரிதடையத்தில் கடத்தம் ஏற்படும்
+frequency hopping - அலைவெண் துள்ளல்
+frequency modulation - அலைவெண் பண்பேற்றம்
+frequency shift keying - அலைவெண் பெயர்வு இணைத்தல்
+full adder - முழுக்கூட்டி
+function (mathematical) - சார்பு
+function (subroutine, subprogram) - துணைநிரல்
+functionality - செயல்கூறு
+fuse - உருகி
+fuzzy logic - இடைநிலை தருக்கம், இடைநிலை ஏரணம்
+
+gain - பெருக்கம்
+galvanometer - கல்வனோமானி
+gallium - மென்தங்கம்
+gate - வாயில்
+gate (in f.e.t.) - வாயில்வாய் (புலவிளைவு திரிதடையத்தில்)
+gate array - வாயிலணி, வாயில் அணி
+gateway - நுழைவாயில்
+gang, ganging - கூட்டியங்கு, கூட்டியங்குதல்
+general purpose register - பொதுப்பயன் பதிவகம்
+generator - மின்னியற்றி
+glitch - தடுமாற்றம்
+global positioning system - உலக இடம் காட்டும் அமைப்பு
+grating - கீற்றணி
+grid (electric) - மின்தொகுப்பு
+grounding - நிலமிடுதல்
+ground current - நிலஓட்டம்
+ground plane - நிலத் தளம்
+ground wave - நிலஅலை
+ground wire - நிலக் கம்பி
+
+half adder - அரைக்கூட்டி
+halogen - உப்பீனி
+hard disk - நிலைவட்டு
+hardware - வன்பொருள்
+harmonic(s) - இசையம்(ங்கள்)
+helical antenna - சுருள் அலைக்கம்பம்
+helium - எல்லியம்
+hetrodyne, hetrodyning - கலக்கிப்பிரி, கலக்கிப்பிரிப்பு - கலப்பி மற்றும் உள்ளிட அலைவி ஆகியவை கொண்டு வானலையை இடையலை ஆக்குதல் அல்லது எதிர்மாறாக
+hex number - பதின்அறும எண்
+hexode - அறுமுனையம்
+high pass filter - உயர்பட்டை வடிப்பி
+holography - ஒளிப்படவியல்
+homogenious - ஒருபடித்தான
+horizontal line - கிடை வரைவு - பரவல் காட்சியில் மின்னிக் கற்றையின் இடது-வலது பெயர்வு
+horizontally polarized wave - கிடை முனைவாக்கப்பட்ட அலை - மின்புலம் கிடைதளத்திலேயே அமையும் ஒளி அல்லது வானலை
+host - விருந்தோம்பி
+hue - வண்ணச்சாயல்
+hub - குவியன்
+hyperbola - அதிபரவளையம்
+ideal - கருதியல்
+idle, idle state - பயனிலான, பயனில் நிலை
+identity - முற்றொருமை
+impedence - மறுப்பு - ஒரு உயிர்பற்ற மின்சுற்றின் (passive electric cicuit) மாறுதிசையோட்டம் எதிர்ப்புத் தன்மை; விடுப்பின் தலைகீழ்; இது தடையம் மற்றும் எதிர்வினைப்பு ஆகியவற்றின் கூட்டு காவி மதிப்பு; z = r + j(xl-xc) மதிப்பு கொண்டுள்ளது
+impedence matching - மின் எதிர்ப்பு பொறுத்தம்
+impulse - கணத்தாக்கம்
+impulse response - கணத்தாக்க மறுமொழி
+incidence (light) - ஒளிப்படுகை
+inderminate - தேரா, தேரப்பெறாத
+indium - அவுரியம்
+inductive reactance - தூண்ட எதிர்வினைப்பு
+inertia - சடத்துவம், ஜடத்துவம்
+infinite impulse response (=iir) filter - முடிவற்ற கணத்தாக்க மறுமொழி வடிப்பி - பின்னூட்டு கொண்ட இலக்க வடிப்பி; இவை கொடுத்த மறுமொழியை செயல்படுத்த சிக்கனமானவை
+infinity - முடிவிலி
+ingress - உள்வாய்
+initiator - துவக்கி
+initialization - முன்னமைவு
+instrument landing system - தரையிறங்கு கருவி அமைப்பு - விமானம் தரையிறங்க பாதை மற்றும் வழிகாணலை அறிவிக்கும் தரையமைந்த துள்ளியமான கருவி
+insulate, insulation - மின்காப்பிடுதல், மின்காப்பு
+insulated - மின்காப்பிடப்பட்ட(து)
+intelligence - நுண்ணறிவு
+integer - முழு எண்
+integral, integration, integrator - தொகையிடு, தொகையீட்டல், தொகையீட்டி
+interlace - தொடர்பின்னல்
+interlaced scanning - பின்னிய துருவுதல்
+intermediate frequency (if) - இடைநிலை அலைவெண், இடையலை
+interference - இடையீடு
+interpolate, interpolation (dsp) - வீதமேற்று, வீதமேற்றம் - மாதிரித் தரவுகளை குறைந்த வீதத்திலிருந்து அதிக வீதத்திற்கு மாற்றுதல்; புதிதாக செருகப்படும் தரவுகள் சராசரி அல்லது பூச்சியமாக கருதப்படுகின்றன
+interpolate, interpolation (statistics) - இடைச்செருகு, இடைச்செருகல்
+interrupt - குறுக்கீடு
+invariant, invariance - மாற்றமுறாதது, மாற்றமுறாமை
+inverter - மாறுதிசையாக்கி - ஒருதிசை மின்னோட்டத்தை மாறுதிசையாக மாற்றும் சாதனம்
+inverse square law - எதிர் வர்க்க விதி
+involute, involution - சுருட்சிவரை, சுருட்சி
+isolation - தனிமையாக்கம் - குறிகைகள், சாதனங்கள் ஆகியவை இடையே மின் அல்லது காந்த தொடர்பை தடுத்தல்
+iridium - உறுதியம்
+irregularity - ஒழுங்கின்மை
+iron loss - இறும்பு இழப்பு
+isa - industry standard architecture - தொழிலக நெறிக் கட்டமைப்பு
+
+jacket - உறை
+jam - நெரிசல்
+jaw - தாடை
+job - பணி
+jump - தாவு
+junction - சந்தி
+junction diode - சந்திப்பு இருமுனையம்
+junction transistor - சந்திப்புத் திரிதடையம்
+joystick - இயக்குப்பிடி
+
+key bounce - விசைத் துள்ளல்
+keyboard (computer, typewriter) - விசைப்பலகை
+keyboard (music) - இசைப்பலகை
+key bounce - சாவித் துள்ளல், விசைத் துள்ளல்
+key way - சாவித் துளை
+kinetic energy - இயக்க ஆற்றல்
+klystron, klyston oscillator - மின் கற்றையலைக் குழல், மின் கற்றையலைவி/கற்றையலைப்பி - நுண்ணலைகளை எற்படுத்தும் ஒரு சாதனம்
+knob - குமிழ்
+knee point - திருப்பும் முனை
+keying - இணைத்தல்
+krypton - மறைவியம் - நிறமற்ற மந்த வளிமம்; சூழலில் 1ppm அளவுடையது; குழல்விளக்குகளில் (fluorescent lamps) பயன்பெறுகிறது
+
+laser - ஊடொளி
+laser diode - ஊடொளி இருமுனையம்
+latch - தாழ்ப்பாள்
+latency - சுணக்கம்
+latent heat - உள்ளுறை வெப்பம்
+lattice - உருபொருள்
+layout (ic, pcb) - மனையமைவு
+light emitting diode - ஒளி உமிழ் இருமுனையம்
+linear (particle) accelerator - நேரியல் (துகள்) முடுக்கி
+linear ic - நேரியல் ஒருங்கிணைச்சுற்று
+linker - தொடுப்பி
+liquid crystal display (lcd) - திரவப் படிகக் காட்சி
+lithium - மென்னியம் - குறையளவு எடைக்கொண்ட உலோகம்; வெள்ளி நிறமானது; கத்தியால் வெட்டக்கூடியது
+load, load (v.), loading - சுமை, சுமைக்கொடு, சுமைக்கொடுத்தல்
+locus - நியமாப்பாதை
+log in - புகுபதிகை
+log out - விடுபதிகை
+logic - தருக்கம், ஏரணம்
+logic element- தருக்கத் தனிமம்
+logarithm - மடக்கை
+logic design - தருக்க வடிவமைப்பு
+logic lock region - தருக்கம் அடைப்பு மண்டலம்
+longitude - நெட்டாங்கு
+low drop out regulator - தாழ்வீழ்ச்சி சீர்ப்படுத்தி, தாழ்வீழ்ச்சி சீர்ப்பி
+low pass filter - தாழ்பட்டை வடிப்பி
+low noise - தாழ் இரைச்சல்
+low noise block downconverter (lnb) - தாழ்விறைச்சல் பட்டை கீழ்மாற்றி (பட்டைமாற்றி) - செயற்கைக்கோள் குறிகையை l-பட்டை இடையலையாக மாற்றும் சாதனம்
+luminance - ஒளிர்மை
+lumped circuit elements - திரண்ட சுற்றுருப்புக்கள் - வானலை குறிகைப்பாதையில் போலி சுற்றுருப்புக்கள் - மின்தடையம், மின்தேக்கம் மற்றும் மின்தூண்டல் ஆகியவற்றை கருதியல் மின்தடங்களுடன் (ideal conductors) தனத்தனியான சுற்றுருப்புக்களாக பிரதிபலிக்க இயலும்; இச்சுற்றுருப்புக்கள் திரண்ட சுற்றுருப்புகள் எனப்படுகின்றன
+
+macro - குறுநிரல்
+magnetograph - காந்தவரைவி
+magnetometer - காந்தமானி
+magnetron - காந்த அலைவி
+magnification - உருப்பெருக்கம்
+magnitude - வீச்சளவு
+mantissa - அடிஎண்
+mass - நிறை
+master clock - முதன்மைக் கடிகாரம்
+mass storage - திரள் சேமிப்பகம்
+math coprocessor - கணித இணைச்செயலி
+matrix - அணி
+memory address - நினைவக முகவரி
+memory allocation - நினைவக ஒதுக்கீடு
+metal layer - உலோக அடுக்கு
+metallization - உலோகப்பூசு, உலோகப்பூசல்
+microphone - ஒலிவாங்கி
+microstrip - நுண்கீற்று - மின்சுற்றுப்பலகைகளில் வெளி அடுக்குகளில் அச்சிடப்பட்ட மின்தடங்கள்
+microwave oven - நுண்ணலை அடுப்பு
+mixer - கலப்பி
+model - மாதிரியுரு
+modem - இணக்கி
+modulation index - பண்பேற்ற குறியெண்
+modulator - பண்பேற்றி
+moment - திருப்பம்
+momentum - உந்தம்
+motherboard - தாய்ப்பலகை
+motor - மின்னோடி
+multimedia - பன்னூடகம்
+multimeter - பன்னளவி
+multiprocessor system - பல்செயலி முறைமை
+multirate system - பல்வீத அமைப்பு - பல மாதியெடுப்பு வீதங்கள் கோண்ட அமப்பு; ஒரு மாதியெடுப்பு வீதத்திலுள்ள தரவு வேறொரு வீதத்தில் எதிர்ப்பார்க்கும் அமைப்பிற்கு அளிக்கும் போது, ஒரு பல்வீத அமைப்பு தேவைப்படுகிறது
+multiswitch - பன்னிலைமாற்றி - ஒரு செயற்கைக்கோள் பெறு அமைப்பில் பல செயற்கைக்கோள் குறிகைகளை தனிமையோடு பல மேலமர்வுப் பெட்டிகளுக்கு தேர்வு செய்யும் சாதனம். இது கிண்ண அலைக்கம்பத்திற்கும் மேலமர்வுப் பெட்டி(களு)க்கிடையே அமைந்திருக்கும்
+multistage amplifier - பலகூற்று மிகைப்பி
+nand gate - இல்-உம்மை வாயில்
+navigational aid (=navaid) - வழிகாணுதவி - பார்வை அல்லது தரவு மூலமாக விமானப் பாதையை தெரிவிக்கும் தரை அல்லது வானமைந்த கருவி
+near-field region - அருகுபுல மண்டலம்
+network - பிணையம்
+network analysis - பிணையப் பகுப்பாய்வு
+neutron - நொதுமின்னி
+nibble - நாலெண்
+nickel - வன்வெள்ளி
+no load charecteristic - சுமையில் சிறப்பியல்பு
+no load current - சுமையிலோட்டம்
+node - கணு
+noise - இரைச்சல்
+noise figure, noise factor - இரைச்சல் அளவெண், இரைச்சல் காரணி - ஒரு செயல்படு சாதனத்தின் வெப்ப இரைச்சல் அளிப்பு தனது வெளியீட்டில் குறிப்பிடும் அளவு; உண்மை மிகைப்பியின் வெளி வெப்ப இரைச்சல்/கருதியல் மிகைப்பியின் வெளி வெப்ப இரைச்சல் என்ற விகிதம், db அளவில்
+noise resistance - இரைச்சல் மின்தடை
+noise suppression - இரைச்சல் நீக்கம்
+objective lens - பொருள்நோக்கு வில்லை
+observer - நோக்காளன்
+oblique - சாய்வான
+octet (= byte) - எண்ணெண்
+omnidirectional antenna - சமதிசை அலைக்கம்பம் - எல்லா திசைகளிலும் சமமாக மின்காந்த ஆற்றலை கதிர்வீசும் கருதியல் அலைக்கம்பம்
+open circuit - திறந்த மின்சுற்று, திறந்த மின்பாதை
+open loop gain - திறந்த வளையப் பெருக்கம்
+operating range - இயக்க நெடுக்கம்
+operational amplifier (op-amp) - செயல்படு மிகைப்பி (செய்மிகைப்பி)
+or gate - அல்லது வாயில்
+orbit - சுற்றுப்பாதை
+orientation - திசையமைவு
+oscillation - அலைவு
+oscilloscope - அலை(வு)நோக்கி
+overflow - வழிவு
+overshoot - மேல்பாய்வு
+panaromic - அகலப் பரப்பு
+parabolic reflector - பரவளைய எதிரொலிப்பி
+parallax - இடமாறு தோற்றம்
+parallel conncetion - பக்க இணைப்பு
+parallellogram - இணைகரம்
+para-magnet - இணைக்காந்தம்
+parameter - கூறளவு
+parasitic antenna - போலி அலைக்கம்பம்
+parasitic capacitance - போலி மின்தேக்கம், போலி மின்கொண்மம்
+parasitic inductance - போலி மின்தூண்டம்
+parasitic impedence - போலி மின் மறுப்பு
+parity bit - சமநிலைத் துகள் - தரவு பரப்புகைப்போது, கூடுதலாக சேர்க்கப்பட்ட துகள்; இவை, பெற்ற தகவல் தரவுத்துகள்களில் பிழைகள் உள்ளதா என அறிவிக்கவும் அல்லது பிழை இருப்பின், அவைகளை நீக்கவும் இயல்கின்றன
+parity check - சமநிலை சரிபார்ப்பு
+pass band - கடத்துப் பட்டை
+passive load - உயிர்ப்பில் சுமை, உயிர்பற்றச் சுமை
+patch cord - எளிதிணைப்பு வடம்
+peer - ஒப்பி
+peer-peer transfer - ஒப்பி-ஒப்பி பரிமாற்றம்
+pentode - ஐம்முனையம்
+periodic table - தனிம அட்டவணை
+peripheral component interconnect (pci) - புறக்கருவி இணைமுகம்
+permeability - காந்த உட்புகு திறன்
+permittivity - மின் தற்கோள் திறன்
+permutation, permutation group - வரிசைமாற்றம், வரிசைமாற்றக் குலம்
+phase (angular) - கட்டம்
+phase (eg. 3-phase circuit) - தறுவாய்
+phased array radar - கட்டஅணி கதிரலைக் கும்பா
+phase locked loop (pll) - கட்டமடைவு வளையம்
+phase shift keying (psk) - கட்டப் பெயர்வு இணைத்தல் - சங்கேத குறியீடுகளை பல்வேறு அலைக்கட்டங்களாக பிரதிபலிக்கும் இலக்க பண்பேற்ற முறை
+phosphorous - தீமுறி, பிரகாசிதம்
+photon - ஒளித்துகள்
+photosphere - ஒளிமண்டலம்
+picture tube - படக் குழாய்
+pick-up - அலையெடுப்பி
+piezo-electric crystal - அமுக்கமின் பளிங்கு
+place and route - இடவமைவு-திசைவு
+placement - இடவமைவு
+plane polarized wave - தள முனைவாக்கப்பட்ட அலை
+plasma - மின்மம்
+platinum - வெண்தங்கம்
+plotter - வரைவி
+plug - செருகி
+plutonium - அயலாம்
+pole (north/south) - முனை
+pole (of a transfer function) - முனைமம் - ஒரு மாற்றுச்சார்பின் வகுக்கோவையின் மூலங்கள்
+polar axes - துருவ அச்சுக்கள், முனையச்சுக்கள்
+polar coordinates - துருவ ஆயங்கள், முனை ஆயங்கள்
+polarimeter - முனைவாக்கமானி - ஒளி அல்லது மின்காந்த அலையின் முனைவாக்க நிலையை கண்டறியும் சாதனம்
+polarity (positve/negative; north/south) - கதிர்வு
+polarizer, polaroid - முனைவாக்கி - முனைவாக்கமற்ற ஒளி அல்லது மின்காந்த அலையை முனைவாக்கப்பட்ட ஒளி அல்லது மின்காந்த அலையாக மாற்றும் கண்ணாடி உட்பொருள்
+power plane - திறன் தளம்
+power spectrum - திறனிறமாலை
+power spectral density - திறனிறமாலை அடர்வு - ஒரு குறிகையின் திறன் பரவல், அலைவெண்ணின் சார்பாக; இதன் மதிப்பு அக்குறிகையின் தன்னொட்டுறவின் ஃபுரியர் உருமாற்ற வீச்சளவின் இருபடியாகும் (square of magnitude of auto-correlation)
+probe - தேட்டி
+prism - அரியம், பட்டகம்
+probability - நிகழ்தகவு
+probability density function - நிகழ்தகவு அடர்சார்பு
+programmer - நிரலி (device), நிரலர் (person)
+programmable logic device - நிரல்படு தருக்கக் கருவி
+propogation - பரப்புகை
+proton - நேர்முன்னி
+pulse amplifier - துடிப்பு மிகைப்பி
+pulse code modulation - துடிப்பு சங்கேத பண்பேற்றம் - நிகழ்நேர (real-time) தரவுகளை இணைநிலை இலக்கமாக்கி (parallelized digital) செலுத்துதல்
+pulse counter - துடிப்பு எண்ணி
+pulse generator - துடிப்பாக்கி
+pulse shaper - துடிப்பு உருமாற்றி
+pulse transformer - துடிப்பு மின்மாற்றி
+pump - எக்கி
+pyramid - கூம்பகம்
+q (quality) factor - தரக் காரணி
+quadrature phase shift keying (qpsk) - பரப்புக்காண் கட்டப் பெயர்வு இணைத்தல் - சங்கேத குறியீடுகளை பல்வேறு வீச்சு மற்றும் அலைக்கட்டம் சேர்வாக பிரதிபலிக்கும் இலக்க பண்பேற்ற முறை
+quadrilateral - நாற்கரம்
+quantization - சொட்டாக்கம் - தொடர்ச்சியுள்ள அளவுக் கணத்தை தனித்த அளவுக் கணமாக தோராயப்படுத்தி மாற்றுத்துதல்ல்; உதாரணமாக ஒரு ஒப்புமைக் குறிகையை ஒரு குறிப்பிட்ட படிநிலைகளில் இலக்கப்படுத்துதல்
+quantization level - சொட்டாக்க படிநிலை
+quantizer - சொட்டாக்கி
+quantum - துளிமம்
+quarter wave antenna - கால் அலைக்கம்பம்
+quartz - பளிங்கு
+radar - கதிரலைக் கும்பா
+radian - ஆரகம்
+radiation pattern - கதிர்வீச்சு உருபடிவம்
+radiator - கதிர்வீசி
+radio activity - கதிரியக்கம்
+radio beacon - வழிக்காணலை - விமானம் வழிகாணலுக்கான தரையமைந்த செலுத்தி எல்லா திசைகளிலும் கதிர்வீசும் வானலை
+radio beacon (transmitter) - வழிகாணலை செலுத்தி
+radio channel - வானலைத் அலைவரிசை
+radium - கருகன் - உற்பத்தியாகுபோது வெள்ளி நிறமாகவும், காற்றில் பட்டதும் உடனே கருக்கும் கதிரியக்க உலோகம்
+radius - ஆரம்
+radon - ஆரகன்
+random variable - சமவாய்ப்பு மாறி
+rating - செயல்வரம்பு
+reactance - எதிர்வினைப்பு - ஒரு மின்தேக்கி அல்லது மின்தூண்டியின் மாறுதிசையோட்டம் எதிர்க்கும் தன்மை; மின்தூண்டியில் jwl மற்றும் மின்தேக்கியில் 1/jwc என்கிற மதிப்புகள் கொண்டுள்ளது
+reactive component - எதிர்வினை உறுப்பு
+reciprocal, reciprocity - ஏற்றெதிர், ஏற்றெதிர்மை
+reconfiguration - மீள்உள்ளமைவு
+rectifier - (மின்)திருத்தி
+receiver - பெறுவி
+reflex klystron oscillator - எதிர்வினை மின் கற்றையலைவி/கற்றையலைப்பி
+refract - திரிபுறு
+refraction - ஒளித்திரிபு
+refractive index - ஒளித்திரிபுக் கெழு
+reflection (light, images) - எதிரொளி
+reflection (electric signals) - எதிரலை - முடிப்பு மின்தடை மற்றும் மின்செலுத்துத்தடங்களின் சிறப்பு மின்தடையம் பொறுந்தாததால் செலுத்தும் குறிகைக்கு எதிர்திசையில் குறிகைககள் எழும்பப்படுதல்
+relative motion - சார்பியக்கம்
+relativity theory - சார்பியல் கோட்பாடு
+relay - அஞ்சல் சுருள்
+reset - மீளமை, மீளமைவு
+resistance - தடையம் - ஒரு பொருளின் ஒருதிசை மின்சாரம் எதிர்க்கும் தன்மை; r = v/i என்கிற மதிப்புடையது
+resolution - பிரித்திறண்
+resonance - ஒத்திசை
+resonator - ஒத்திசைவி
+retrace - மீள்வரைவு - ஒரு பரவல் காட்சியில் (rastor display) மின்னி கற்றை திரையின் விளிம்பை எட்டியதும் விரைவாக அதன் துவங்கிடத்திற்கு வரைவாக பின் செல்லுதல்; கிடை மீள்வரைவு (horizontal retrace), நெடு மீள்வரைவு (vertical retrace) என வகைப்படுகிறது
+reverse bias - பின்னோக்கு சாருகை - ஒரு இருமுனையத்தின் p-முனையை சார்பான (relative) குறைமின்னழுத்தத்திற்கும் n-முனையை நிறைமின்னழுத்தத்திற்கும் இணைத்தல்; இவ்விணைப்பினால் திரிதடையத்தில் தடையம் ஏற்படும்
+revolution - சுற்று
+rf (radio frequency) - வானொலி அலை, வானலை
+rf engineering - வானலையியல்
+rf frequency - வானலைவெண்
+rf ground - வானலை நிலம்
+rheostat - தடைமாற்றி
+rhombus - சாய்வுசதுரம்
+ripple - குறுவலை - மாறுதிசையை மின்னோட்டத்தை ஒருதிசை மின்னோட்டமாக மாற்றும்போது, திகழும் மாறுதிசையோட்டத்தில் தோன்றும் ஏற்றத்தாழ்வுகள்
+rise time - எழுநேரம்
+rising edge - எழுவிளிம்பு
+rotation - சுழற்சி
+rotor - சுற்றகம்
+sample - மாதிரி
+sampling - மாதிரி எடுத்தல்
+sampling rate, sampling frequency - மாதிரி வீதம் - ஒரு மாதிரியெடுப்பு முறைமையில் ஒரு குறிப்பிட்ட காலகட்டத்தில் மாதிரியெடுப்பின் எண்ணிக்கை
+sampling theorem - மாதிரி எடுப்புத் தேற்றம் - ஒரு மாதிரியெடுப்பு முறைமையில் ஒரு குறிகையின் (கருதியலான) இழப்பின்றி மறுமீட்பிற்கு குறைந்தபட்ச மாதிரி வீதம் அக்குறிகையின் அதிக அலைவெண்ணின் இருபடியாவது இருத்தல் வேண்டிய நிபந்தனை
+sandpaper - மண்காகிதம்
+saturation - தெவிட்டு நிலை
+satellite - செயற்கைக் கோள்
+scanner - வருடி
+scattering parameters (s-parameters) - சிதறல் பண்பளவுகள் - ஒரு பலதுறை பிணையத்திற்கு (multi-port network) வழங்கும் அளிப்பு திறனின் எதிரொளிப்பு/பரப்புகை பண்புகளை (reflected/transmission charecteristics of power applied) விவரிக்கும் பண்பளவுகள்; இது அணியாக (matrix) வகைக்குறிக்கப்படுகிறது
+scrambling - கலரீடு
+sensor - உணரி
+serdes - இயைப்பி
+series connection - தொடர்நிலை இணைப்பு
+server - வழங்கி
+set - கணம்
+set top box - மேலமர்வுப் பெட்டி - மறையிடப்பட்ட வடம் அல்லது செயற்கைக்கோள் குறிகைகளை தொலைக்காட்சியில் பெற இயலும் சாதனம்
+short circuit - குறுக்கு மின்பாதை, குறுக்கிணைப்பு
+short circuit (fault, accident) - மின்கசிவு
+shot noise - மாது இரைச்சல் - ஒரு முடிவுறு எண்ணிக்கை துகள், எ.டு. கடத்திகளில் மின்னிகள், அல்லது ஒளியின் துளிமங்கள் ஆற்றலை ஏற்றிச்செல்லும்போது ஏற்படும் இரைச்சல்; இது அளவையில் புள்ளியியல் ஏற்றிறக்கங்களை அளிக்கிறது.
+side band - பக்கப்பட்டை - ஒரு சுமைப்பி குறிகையின் பண்பேற்றத்தால் சுமைப்பியின் அலைவெண்ணிற்கு இருபுறமும் உருவாகும் அலைவெண் பட்டைகள்--இவைகளில் ஒன்று
+signal - குறிகை
+signal integrity - குறிகை மெய்மை
+silicon - மண்ணியம்
+simulation - பாவனை
+simulator - பாவிப்பி
+single phase - ஒற்றைத் தறுவாய்
+single side band (ssb) modulation - ஒருபக்கப்பட்டைப் பண்பேற்றம் - வீச்சுப் பண்பேற்றத்தில் இரண்டில் ஒரு பக்கப்பட்டை நீக்கப்பட்ட வீச்சு பண்பேற்றம்; தொலைகாட்சி ஒளிபரப்பில் பயனாகிறது
+single-stub (impedence) matching - ஒருமுளை (மின் மறுப்பு) பொறுத்தம்
+skew - இடைச்சுணக்கம் - இரு/பல (இணைக்)குறிகைகளுக்கிடையே உள்ள பரப்புகையில் கால வேறுபாடு
+skin effect - பரிதி விளைவு - உயர் மாறுதிசை அலைவெண்களில், மின்னோட்டம் ஒரு கடத்தியின் மேல்பரப்பில் மட்டும் கட்டுப்படுதல்
+skyscraper - வானளாவி
+skywave - விண்ணலை
+socket - பொறுந்துவாய்
+sodium - உவர்மம்
+solid angle - திண்மக் கோணம்
+solder flux - சூட்டிணை மெழுகு
+solder iron - சூட்டிணைக் கோல்
+solder lead - சூட்டிணை உருகுகம்பி
+sonar - ஊடொலிக் கும்பா
+sound card - ஒலி அட்டை
+source code - மூலக் குறியீடு
+speaker - ஒலிபெருக்கி, ஒலிபரப்பி
+spectrometer - நிறமாலைமானி
+spectrum analyzer - நிறமாலைப் பகுப்பி
+sphere - கோளம்
+spread spectrum - பரவல் நிறமாலை
+spreadsheet - விரிவுத்தாள்
+stability - நிலைப்புத்தன்மை
+stability condition - நிலைப்பு நிபந்தனை - ஒரு முறைமையின் நிலைப்பை உறுதிபடுத்த அதன் மாற்றுச்சார்பின் கதிர்களின் (poles) இருப்பிடத்தை (குறிப்பாக s-தளத்தின் வலது பாதியில் அமைவது) நிர்ணயிக்கும் நிபந்தனை
+standing wave - நிலையலை
+standing wave ratio (swr) - நிலையலை (மின்னழுத்த) விகிதம்; காண்க voltage standing wave ratio
+static electricity - நிலைமின்சாரம் - ஒரு மின்காக்கும் பொருளில் சேரக்ரிக்கப்படும் மின்னூட்டம்
+stop band - தடைப் பட்டை
+strain - திரிபு, விகாரம்
+stream (of bits, data etc.) - தாரை
+stress - தகைவு
+stripline - கீற்றுத்தடம் - மின்சுற்றுப் பலகைகளில் உள்ளடுக்குகளில் அச்சிடப்பட்ட மின்தடங்கள்
+stub - முளை - ஒரு குறிப்பிட்ட நீளத்திலுள்ள திறந்த அல்லது குறுக்கிணைந்த (short-circuited) பரப்புத் தடம்
+subsystem - துணைமுறைமை, துணையமைப்பு
+superposition theorem - மேல்படி தேற்றம் - ஒரு நேரியல் அமைப்பில் பல உள்ளீடுகளின் உடன்பாடாக ஏற்படும் வெளியீடு, அவைகளின் தனித்தனியாக ஏற்படும் வெளியீடுகளின் கூட்டுத்தொகைக்கு சமம்
+supply voltage - வழங்கல் மின்னழுத்தம்
+surge - எழுச்சி
+surface mount component - மேல்பரப்பு உறுப்பு - மின்சுற்றுப் பலகைகளில் மேல்புறத்தில் பிணைக்கப்பட்ட உறுப்பு
+susceptance - ஏற்பு - ஒரு மின்தேக்கி அல்லது மின்தூண்டியின் மாறுதிசையோட்டம் கடத்தும் தன்மை; மின்தூண்டியில் 1/jwl மற்றும் மின்தேக்கியில் jwc என்கிற மதிப்புகள் கொண்டுள்ளது
+switch, switching - நிலைமாற்றி, நிலைமாற்றம்
+switcher, switching regulator - நிலைமாற்றுச் சீர்ப்படுத்தி
+synchronization - ஒத்தியக்கம்
+synch charecter - இசைவு உரு - ஒரு அமைப்பு மற்றொன்றுடன் ஒத்தியங்க செலுத்தப்படும் (இணை அல்லது தொடர்வரிசை) தரவு உருபடிவம் (data pattern)
+synchronous - ஒத்தியங்கு
+synthesis - இணைபடுத்தல்
+synthesizer - இணைபடுத்தி
+tachometer - சுழற்சிமானி, சுழற்சி அளவி
+tangent - தொடுகோடு
+tank circuit - தொட்டிச் சுற்று
+tantallum - இஞ்சாயம்
+tape recorder - நாடாப் பதிவி
+target (in a bus etc.) - இலக்கு
+telescope - தொலைநோக்கி
+tension - இழுவிசை
+terminate (transmission lines) - முடித்துவிடு - எதிரலைகளை கட்டுப்படுத்த மின்தடையங்களை பரப்புத் தடங்களில் சேர்த்தல்
+termination resistor, termination resistance - முடிப்பு மின்தடை, முடிப்பு மின்தடையம் - எதிரலைகள் ஏற்படுதலை தடுக்க மின் தடங்களின் சேர்க்கப்படும் அல்லது தற்செயலாக திகழும் மின்தடையம்
+terrestrial, terrestrially - புவிப்பரவு, புவிப்பரவாக
+test bench - சோதனை மேடை
+tetrode - நான்முனையம்
+thermistor - வெப்பத்தடையம்
+thermal noise - வெப்ப இரைச்சல் - ஒரு கடத்தியில் மின்னிகளின் துள்ளலால் ஏற்படும் இரைச்சல்
+thermocouple - வெப்ப இரட்டை
+thermodynamics - வெப்ப இயக்கியல்
+thick film - தடிபடலம்
+thick lens - தடிவில்லை
+thin film - மென்படலம்
+thin lens - மென்வில்லை
+thorium - இடியம்
+through-hole component - துளைப்புகு உறுப்பு - மின் சுற்றுப்ப்லகைகளில் துளை வழிமங்கள் (through-hole vias) மூலம் பிணைக்கப்பட்ட உறுப்புக்கள்
+through-hole via - துளை வழிமம் - ஒரு சுற்றுப்பலகையின் இரு முகங்களையும் எட்டும் வழிமம்
+throughput - செய்வீதம்
+thyratron - வளிமும்முனையம்
+timebase - காலவடி
+titanium - வெண்வெள்ளி
+tone - தொனி
+toroid(al coil) - நங்கூரச்சுருள்
+transponder - செலுத்துவாங்கி - வானலைக் குறிகையை ஒரு நிர்ணயிக்கப்பட்ட அலைவெண்ணில் பெற்று இன்னொரு நிர்ணயிக்கப்பட்ட அலைவெண்ணில் திரும்ப அக்குறிகையை செலுத்தும் சாதனம்; செயற்கைக்கோள்கள், விமானங்கள், கப்பல்கள் ஆகியவற்றில் இவை பொறுத்தப்படுகின்றன
+transfer function - மாற்றச் சார்பு
+transform - உருமாற்று, உருமாற்றம்
+transceiver - செலுத்துப்பெறுவி
+transient - மாறுநிலை
+transmission line - பரப்புத் தடம், செலுத்துத் தடம்
+transmitter - செலுத்தி
+travelling wave tube (twt) - இயங்குஅலைக் குழல் - நுண்ணலையை ஏற்படுத்தும் ஒரு சாதனம்
+triac (triode for ac) - மாறுமின் மும்முனையம் - மாறுமின்னோட்ட கட்டுப்பாட்டிற்கு பயனாகும் சாதனம்; இது தொராயமாக இரண்டு பின்பிணைந்த (back-to-back) மண்ணியத் திருத்திகளுக்கு (scr) சமம்
+triode - மும்முனையம்
+trigger(ing) - குதிரை(யிடல்)
+trippler - மும்மடங்காக்கி
+troposhere - அடிவளிமண்டலம்
+truth table - மெய் அட்டவணை
+tuner - இசைப்பி
+tuned - ஒத்தியைந்த, சுரம்கூட்டிய
+tuned amplifier - இசைப்புறு மிகைப்பி
+tunnel diode - சுரங் இருமுனையம், சுரங்கி
+tungsten - மெல்லிழையம்
+turbine - சுழலி
+tweeter - மேல்சுர ஒலிபெருக்கி
+twinax cable - ஈரச்சு வடம்
+ultraviolet - புறஊதா
+ultra high frequency (uhf) - அதிஉயர் அலைவெண்
+ultrasonic - கேளாஒலி
+ultrasound - ஊடொலி
+underflow - குறைப்பாய்வு
+undershoot - கீழ்பாய்வு
+uniform quantization - சீரானச் சொட்டாக்கம் - உள்ளீட்டுக் குறிகை வீச்சை சீரான படிநிலைகளாக பிரிக்கும் சொட்டாக முறை
+uranium - அடரியம் - அதிகளவு அடர்த்தியான கதிரியக்க உலோகம்; வெள்ளி நிறமானது
+vanadium - பழீயம்
+variance - மாறுபாட்டெண்
+vector quantization - நெறிமச் சொட்டாக்கம் - நெறிமங்களை வகைக்குறிக்கும் சொட்டாக முறை; உள்ளீடு குறிகையை ஒரு நெறிம வெளியை (vector space) சேர்ந்ததாக கருதினால், அதை குறைந்த நெறிமங்களில் தோராயப்படுத்தும் சொட்டாக்க முறை
+velocity - திசைவேகம்
+vertically polarized wave - செங்குத்து/நெடு முனைவாக்கப்பட்ட அலை - மின்புலம் நெடுதளத்திலேயே அமையும் ஒளி அல்லது வானலை
+vestigial side-band modulation - எச்சத்தக்கப் பக்கப்பட்டை பண்பேற்றம் - ஒரு வகையான வீச்சு பண்பேற்றம்; இதில் ஒரு பக்கப் பட்டையின் ஒரு பகுதியும் மற்றது முழுமையாகவும் செலுத்தப்படுகிறது; தொலைகாட்சி ஒளிபரப்பில் பயனாகிறது
+via - வழிமம் - ஒரு பன்னடுக்கு மின் சுற்றுப்பலகையில், மின் தடம் ஒரு அடுக்கிலிருந்து மற்ற அடுக்கிற்கு கடப்பதற்கு அமைக்கபடும் சிறுதுளை
+video - ஒளிதோற்றம்
+video recorder - ஒளிதோற்றப் பதிவி
+voltage regulator - மின்னழுத்தச் சீர்ப்பி
+voltage stabilizer - மின்னழுத்த நிலைப்பி
+voltage standing wave ratio (vswr) - நிலையலை (மின்னழுத்த) விகிதம் - எதிரலையின் வலுமையை குறிப்படும் அளவு; இது 1 அருகில் இருப்பதே சிறந்தது; அதிக அளவு என்பது முனைப்படுத்தல் மின்தடையத்தின் பொறுந்தாநிலை; நிலையலையின் அதிகபட்ச-குறந்தபட்ச மின்னழுத்த விகிதம்
+wafer - சீவல்
+wave front - அலை முகப்பு
+wave propagation- அலைப் பரவுதல்
+waveguide - அலையடை, அலைவழிகாட்டி, அலைவழிபடுத்தி
+waveform - அலைவடிவம், அலைப்படம்
+waypoint - பாதைப்புள்ளி - கடல், தரை அல்லது வான வழிக்காட்டலுக்கு மேற்கோள்ளாக பயன்படுத்தும் ஒரு குறிப்பிட்ட புவி இருப்பிடம்; இது உலக இடம் காட்டும் அமைப்பில் (gps) பயனாகிறது
+weather radar - வானிலை கதிரலைக் கும்பா
+white noise - வெண்ணிறைச்சல்
+wireless fidelity (wi-fi) - கம்பியில்லா மெய்நிலை
+woofer - அடிச்சுர ஒலிபெருக்கி
+word - ஈரெண்ணெண்
+double-byte - ஈரெண்ணெண்
+x-ray - ஊடுக்கதிர்
+yoke - நுகம்
+zero (of a transfer function) - சுழியம் - ஒரு மாற்றுச்சார்பின் வகுபடுக் கோவையின் மூலங்கள்
+colors	 நிறங்கள்
+black	 கருப்பு
+blue	 நீலம்
+brown	 பழுப்பு
+gray	 சாம்பல்
+green	 பச்சை
+orange	 செம்மஞ்சள்
+purple	 ஊதா
+red	 சிகப்பு
+white	 வெள்ளை
+yellow	 மஞ்சள்
+sizes	 பரிமானங்கள்
+big	 பெரிய
+deep	 ஆழமான
+long	 நீளமான
+narrow	 குறுகலான
+short	 குட்டையான
+small	 சிறிய
+tall	 உயரமான
+thick	 தடியான
+thin	 ஒல்லியான
+wide	 அகலமான
+shapes	 வடிவங்கள்
+circular	 வட்டமான
+straight	 நேரான
+square	 சதுரமான
+triangular	 முக்கோணமான
+tastes	 சுவைகள்
+bitter	 கசப்பான
+fresh	 உவர்ப்பற்ற
+salty  உப்பு கரிக்கிற
+sour	 புளிப்பான
+spicy	 காரசாரமான
+sweet	 இனிப்பான
+qualities	 தரங்கள்
+bad	 மோசமான
+clean	 சுத்தமான
+dark  கரு நிறமான
+difficult	 கடினமான
+dirty	 அழுக்கான
+dry	 காய்ந்த
+easy	 எளிதான
+empty	 காலியான
+expensive	 கிராக்கியான
+fast	 வேகமான
+foreign	 அயலான
+full	 நிறைந்த
+good	 நல்ல
+hard	 கெட்டியான
+heavy	 கனமான
+inexpensive	 மலிவான
+light	 இலேசான
+local	 ஓரிடத்திற்குரிய
+new	 புதிய
+noisy	 சத்தமான
+old	 பழைய
+powerful	 சக்தியுள்ள
+quiet	 அசையாத
+correct	 சரியான
+slow	 மெதுவான
+soft	 மிருதுவான
+very	 மிகவும்
+weak	 வலுக்குறைந்த
+wet	 ஈரமான
+wrong	 தவறான
+young	 இளமையான
+quantities	 அளவுகள்
+few	 குறைவான
+little	 சிறிதளவான
+many	 ஏராளமான
+much	 மிகுந்த
+part	 பகுதி
+some	 கொஞ்சம்
+a few	 சில
+whole	 முழுமையான
+yesterday	 நேற்று
+today	 இன்று
+tomorrow	 நாளை
+now	 இப்பொழுது
+then	 அப்பொழுது
+later	 பிறகு
+tonight	 இன்றிரவு
+right now	 இப்பொழுதே
+last night	 நேற்றிரவு
+this morning  இன்று காலை
+next week  அடுத்த வாரம்
+already	 ஏற்கெனவே
+recently	 அண்மையில்
+lately  சிறிது காலத்திற்கு முன்
+soon	 விரைவில்
+immediately	 உடனடியாய்
+still	 இன்னும்
+yet	 ஆயினும்
+ago	 முன்னர்
+>>இட வினை உரிச்சொற்கள்
+here	 இவ்விடம்
+there	 அவ்விடம்
+over there  அதோ தொலைவிலுள்ள
+everywhere  எல்ல இடங்களிலும்
+anywhere  எந்த இடத்திலாவது
+nowhere	 எங்குமின்றி
+home	 வீடு
+away	 தொலைவில்
+out	 வெளியே
+
+
+சந்திரகாவிச்சேலை
+மஞ்சள்
+ஓமம்
+புளி
+கரும்பு
+சர்க்கரை
+சீனி
+ஜீனி
+கரம் மசாலாத் தூள்
+மசாலா
+மசாலை
+ஜவ்வரிசி
+ரவை
+தாழை
+ரவா
+குங்குமப்பூ
+உப்பு
+பொட்டுக் கடலை
+சிவப்பு மிளகாய்
+வற்றல் மிளகாய்
+அரிசி
+மாதுளை
+மாதுளம் விதை
+நெல்
+ஜாதிக்காய்	பாக்கு
+சாதிக்காய்
+கடுகு
+மாங்காய்ப் பொடி
+மாங்காய்
+மாங்கா
+மாம்பழம்
+கர்ப்பூரப்புல்	 போதைப்புல்
+போதைப்புல்
+கர்ப்பூரப்புல்
+எலுமிச்சம் பழம்
+எலுமிச்சை
+பேரீச்சை
+வெந்தயம்
+சுக்கு
+பேரீச்சம்பழம்
+மேதி
+மைதா மாவு
+பூண்டு
+வெள்ளைப் பூண்டு
+வெள்ளுள்ளி
+பச்சை மிளகாய்
+பாசிப்பருப்பு
+பயத்தம் பருப்பு
+குடை மிளகாய்
+கருப்பட்டி
+எலுமிச்சை
+கருப்புக்கட்டி
+சீதளை
+பனீர்
+வெல்லம்
+எலுமிச்சம் பழம்
+கர்ப்பூரப்புல்
+காடி
+புளிக்காடி
+கோதுமை
+கோதுமை மாவு
+பெருங்காயம்
+வெள்ளை மிளகு
+வெள்ளைக் கருமிளகு
+துவரம்பருப்பு
+algebra இயற்கணிதம் , அட்சர கணிதம் , குறிக் கணக்கியல்
+logarithm மடக்கை
+base_of_a_logarithm மடக்கை அடி , மகை அடி
+quadratic_equation இருபடிச் சமன்பாடு
+geometry வடிவியல் , கேத்திர கணிதம்
+differentiation வகையீட்டல் ,  பகுத்தல்
+index_number குறியீட்டு எண் , குறிப்பெண்
+simultaneous_equations ஒருங்கமைச் சமன்பாடுகள்
+tangent  தொடுகோடு
+axis_of_symmetry சமச்சீரச்சு
+angle கோணம்
+intersection :குறுக்கீட்டுச் சந்திப்பு
+derivative சார்பியம் ,வழிச்சொல்
+radius அரைவிட்டம் , ஆரம்
+gradient சரிவு , வாட்டம்
+sector வட்டகோணப்பகுதி
+frequency அதிர்வெண்
+arc வளைவு , வில்
+perpendicular_bisector செங்குத்தான இருசமவெட்டு
+right_angle செங்கோணம்
+degree பாகை
+obtuse_angle விகோணம்
+வெண்டை
+காட்டுக்கஸ்தூரி
+தாலிசப்பத்திரி
+குன்றிமணி
+துத்தி
+கருவேல்
+சீக்காய்
+குடைவேல்
+இஞ்சி
+காட்டுசிகை
+கிட்டிக்கிழங்கு
+நாயுருவி
+நாபி
+அதிவிதயம்
+செந்நாபி
+கருநாபி
+வசம்பு
+ஆனைக்குன்றிமனி
+ஆனைப்புளியமரம்
+தவசு முருங்கை
+வெள்ளருக்கு
+மஞ்சள் கடம்பு
+குப்பை மேனி
+வில்வம்
+சிறுபீளை
+பீளை
+பெரும்பீளை
+கிடைச்சி
+ஆனைக் கற்றாழை
+கதலை
+பெருமரம்
+அழிஞ்சில்
+கத்தாழை
+வாகை மரம்
+கருவாகை மரம்
+குதிரைமசால்
+கருவாகை மரம்
+ஈருள்ளி
+ஒற்றைப்பூடு
+காட்டுவாகை மரம்
+கற்றாழை
+சீமை மூசம்பரம்
+மூசம்பரம்
+சோத்துக் கற்றாழை
+அதிவிடயம்
+இரட்டைப்பாய் மருது
+அரத்தை
+ஏழிலைப்பாளை
+அறுகீரை
+முளைக்கீரை
+கீரை
+சிறுகீரை
+முள்ளுக்கீரை
+அரைக்கீரை
+கல்லுருவி
+நீர்மேல் நெருப்பு
+நீர்மேல் நெருப்பு
+காட்டு ஏலம்
+காட்டுச்சேனை
+காட்டுக்கருணை
+முந்திரி
+கல்மாணிக்கம்
+அக்ரஹாரம்
+காக்காய் கொல்லி
+அன்னாசிப் பழம்
+கோபுரந்தாங்கி
+நிலவேம்பு
+காவட்டம்புல்
+கர்ப்பூரப்புல்
+வெட்டிவேர்
+கருவேர்
+சதகுப்பை
+காட்டுக் காடைக்கண்ணி
+கர்ப்பூரவள்ளி
+பேய்மிரட்டி
+ராமசீதா
+சீத்தாப் பழம்
+கடம்பு
+கொட்டிக்கிழங்கு
+அகில்
+நிலக்கடலை
+கொட்டைப் பாக்கு
+துடைப்பம்
+ஆடுதீண்டாப்பாளை
+ஈச்சுரமுள்ளி
+மரிக்கொளுந்து
+பலா
+கொண்டை ராகிசு
+சேம்பு
+தண்ணீர்விட்டான் கிழங்கு
+நறுஞ்சுவைக் கீரை
+குருந்து
+காட்டு எலுமிச்சை
+நிலவேம்பு
+சீமைக் காடைக்கண்ணி
+காட்டுக் காடைக்கண்ணி
+பிலிம்பி
+தமரதம்
+வேம்பு
+இஞ்சி மரம்
+வலேந்த்ர போலம்
+குங்கிலியம்
+வெல்லியப்பபோலம்
+மூங்கில்
+காட்டாத்தி
+செங்கதப்பு
+சமுத்திரப் பழம்
+செம்முள்ளி
+செம்முள்ளி
+பசளைக் கீரை
+கொடிப்பசளைக் கீரை
+காட்டு இலுப்பை
+இலுப்பை
+மந்தாரை
+இறுவாட்சி
+மருதோன்றி
+கஸ்தூரி மஞ்சள்
+வருகமஞ்சள்
+காட்டுமுள்ளங்கி
+மூக்குரட்டை
+இலவம்
+கல் இலவு
+முள் இலவு
+பனைமரம்
+குங்கிலி
+குந்திருகம்
+மூக்கரத்தைக் கீரை
+கடுகு
+பால்மரம்
+ஐவிரலி
+நாய்ப் பாகற்காய்
+புளிமா
+அச்சரப்பட்டை
+பல்லிப்பூண்டு
+மகிலா மரம்
+பலசம்
+விலுதி
+கழற்சிக்காய்
+நொன்னிகுச்சா
+துவரை
+விழுந்தி
+பிறப்பான் கிழங்கு
+கோரோசனை
+எருக்கு
+சிறுபுன்னை
+வெள்ளெருக்கு
+எருக்கன்
+கானாம் வாழை
+கருப்புக் குங்கிலியம்
+கஞ்சா
+கஞ்சா
+காரை
+சிறுக்காரை
+ஆதந்தை
+ஆதண்டம்
+சுடுத்தொரட்டி
+சீமைப்பச்சைமிளகாய்
+சீமை மிளகாய்
+குடைமிளகாய்
+கல்முளையான்
+முடக்கற்றான்
+ஓமம்
+பப்பாளி
+களா
+சிறுகளா
+குரங்கு வெற்றிலை
+கருஞ்சீரகம்
+சகாசீரகம்
+பிளபுச்சீரகம்
+ஓமம்
+கிராம்பு
+ஜவ்வரிசி மரம்
+கடல்சிங்கி
+சிறுகொன்றை
+காட்டுக்கொளுப்பு
+வந்துகொல்லி
+நிலாவாரை
+நாட்டு நிலவாகை
+ஆவாரை
+சிறுகொன்றை
+தகரை
+நிலாவாரை
+செங்கொன்றை
+ஊசித்தகரை
+பொன்னா விரை
+தகரை
+கூத்தன்
+சவுக்கு
+நித்தியகல்யாணி
+தேவதாரு
+ஷரளா தேவதாரு
+வள்ளுளுவை
+பனைக் கீரை
+வல்லாரை
+கோவை
+ஆதொண்டை
+கோரை
+கண்டந்திப்பிலி
+கஷ்கொட்டை
+அய்யில்
+கசினிவிரை
+
+கடலை
+இலவங்கப்பட்டை
+பெரிய இலவங்கப்பட்டை
+காட்டுக் கருவப்பட்டை
+இலவங்கப் பருதி
+இலவங்கப்பட்டை
+வட்டத்திருப்பி
+பிரண்டை
+செம்பிரண்டை
+முலாம்பழம் Mulam
+ஆற்றுத்தும்மட்டி
+எலுமிச்சை
+கிச்சிலிப் பழம்
+கடார நாரத்தை
+நிலவேளை
+வேளை
+நாய்க்கடுகு
+சங்கம் குப்பி
+தழுதாரை
+கண்டுபரங்கி
+ஒடுகன்
+கருமுகை
+ககணம்
+கண்ணிக்கொடி
+கோவை
+காட்டுக்கொடி
+கோங்கிளம்
+தெங்கு
+காப்பிகொட்டை
+கற்பூரவல்லி
+மருந்துகூர்க்கன்
+சாமைக்கிழங்கு
+ஆதண்டம்
+நறுவிலி
+நருவிளி
+கொத்தமல்லி
+ஆகாயக் கருடன்
+ஆகாயக் கருடன்
+மரமஞ்சள்
+மாவிளிக்கிழங்கு
+விஷமூங்கில்
+குங்குமப்பூ
+கிலுகிலுப்பை
+வால்மிளகு
+ஜீரகம்
+முள்வெள்ளரி
+சுக்கங்காய்
+ஆகாயக் கக்கரிகாய்
+வெந்தயம்
+காட்டுத் துமட்டி
+கக்கரிகாய்
+பூசணி
+சீரகம்
+கல்யாணப் பூசணிக்காய்
+குறத்தி நிலப்பனை
+கூவைக் கிழங்கு
+கஸ்தூரி மஞ்சள்
+மஞ்சள்
+கர்ப்பூரக்கிச்சிலிக்கிழங்கு
+கஷ்கொட்டை
+கொத்தவரை
+சீமை மீன்கொல்லி
+கர்ப்பூரப்புல்
+அருகம்புல்
+கோரைக்கிழங்கு
+சீமைக் காட்டுமுள்ளங்கி
+ஊமத்தை
+கரு ஊமத்தை
+ஊமத்தை
+மாகாளிக்கிழங்கு
+வாத நாராயணன்
+வாத நாராயணன்
+பிரப்பங்கிழங்கு
+மூவிலை
+புல்லடி
+சிறு புல்லடி
+செவ்வள்ளிக் கொடி
+விள்ளலரிசி
+பெரும்வள்ளிக்கிழங்கு
+காய்வள்ளி
+நூறை
+செவ்வள்ளிக்கொடி
+கருங்காலி
+இறும்பிலி
+தும்பிலி
+கருங்காலி மரம் Karungali
+தும்பிலிக்காய்
+எழிலைப்படை
+வேளை
+கொள்ளு
+பயற்றங்காய்
+கரிசலாங்கண்ணி
+மஞ்சள் கரிசலாங்கண்ணி
+கரிசலாங்கண்ணி
+உருத்திராட்சம்
+ராகி
+ஏலம்
+நாவல்
+நிலக் கடம்பு
+வாய்விலங்கம்
+இலவு மரம்
+கல்யாண முருங்கை
+இலவங்கம்
+சாலமிசிரி
+சதுரக் கள்ளி
+பால்பெருக்கி
+சித்திரப்பாலாடை
+இலைக்கள்ளி
+மண்செவிக்கள்ளி
+அம்மன் பச்சரிசி
+கள்ளி
+விஷ்ணுக்கிரந்தி
+கணப்பூண்டு
+தில்லை
+
+விளாம்பழம்
+பெருங்காயம்
+சலிச்சிகை
+ஆல்
+சீமையத்தி
+சீமையால்
+பரம்
+கல்லால்
+காட்டாத்தி
+சீமை அத்தி
+சிறியபேயத்தி
+ஆனை
+அரசு
+அட்டாலை
+சொத்தைக்களா
+காட்டுக் கள்ளி
+வெட்புலா
+
+உகாய்
+மங்குஸ்தான்
+இரேவற்சின்னி
+கும்பிலி
+அருநெல்லி
+தேங்காய்
+வரித்தோல்
+கருநொச்சி
+குணசிங்கி
+நாவமல்லிக் கீரை
+கொஞ்சி
+கொஞ்சி
+குமிள் மரம்
+செம்பருந்து
+பருத்தி
+வல்லாரை
+செம்பஞ்சு
+சொத்தைக்களா
+தூபவர்க்கம்
+அமுதுபுஷ்பம்
+தைவெலை
+குளப்பாலை
+மிளகு
+பூலாங்கிழங்கு
+சூரியகாந்தி
+வலம்பிரி
+தேள் கொடுக்கு
+தேள் கட்டை
+நன்னாரி
+விராலி
+காட்டுக் கஸ்தூரி
+புளிச்சாக் கீரை
+வெண்டைக்காய்
+செம்பருத்தி
+புளிச்சைக்கீரை
+நாகமல்லி
+குறிஞ்சான்
+பார்லி அரிசி
+சாய மரம்
+வெப்பாலை
+பலைக்கீரை
+கோங்கு
+கருங்கோங்கு
+பார்லி
+கம்பு
+நீரடிமுத்து
+ஆத்து சங்கலை
+வல்லாரை
+நீர் முள்ளி
+நீர்முள்ளி
+அவுரி
+பால்வள்ளி
+அன்னாசிப்பூ
+காசித்துப்பை
+சிவனார் வேம்பு
+நீர் அவுரி இலை
+மகிலா மரம்
+தாலிக்கீரை
+சீனிக்கிழங்கு
+நிலப்பூசணி
+கொடிகாத்தான்
+காசிரத்தினம்
+கோதுமை
+மன்னா
+அமிர்தபலா
+மல்லிகை
+காட்டுக் கிராம்பு
+கச்சோளம்
+மடையன் சாம்பிராணி
+நீர்ப்பாளை
+புல்லந்தி
+சோரப் பத்திரி
+சுரை
+பிரம்மதந்தி
+உன்னிச்செடி
+மருதாணி
+எலுமிச்சைப்புல்
+குகமதி
+கடற்பாளை
+தும்பை
+பொடுதலை
+பிசின்பட்டை
+கோல்மிதி
+புல்லுருவி
+கஷ்கொட்டை
+முயல்கதிலை
+சீமைத் தக்காளி
+நாட்டிலுப்பை
+ஆத்து இலுப்பை
+கலப்பைக் கிழங்கு
+மாங்காய்
+கணுப்பலா
+ஆரைக்கீரை
+ஆரை
+வேம்பு
+மலைவேம்பு
+கருவேம்பு
+காயா
+காசன்
+புதினாக்கீரை
+புதினாக்கீரை
+புதினாக்கீரை
+புதினாக்கீரை
+சிறு நாகப்பூ
+சிறு நாகப்பூ
+செண்பகம்
+காட்டுச் செண்பகம்
+செண்பகம்
+ஊசில் மரம்
+ஆற்று நெற்றி
+தொட்டால் சுறுங்கி
+மகிழம்பூ
+மலைப்பாளை
+அந்திமல்லி
+பாகற்காய்
+பாகற்காய்
+காட்டுப் பாகற்காய்
+மிதி பாகற்காய்
+நுணா
+நுணா
+காட்டு முருங்கை
+முருங்கை
+கம்புளிப் பூச்சி மரம்
+பூனைக்காலி
+பூனைக்காலி
+முசுமுசுக்கை
+முசுமுசுக்கை
+கருவேப்பிலை
+வாழை
+நவரை
+காட்டு ஜாதிக்காய்
+ஜாதிக்காய்
+காட்டு ஜாதிக்காய்
+சாம்பிராணி
+வெள்ளைப்போளம்
+ஜாதமஞ்சி
+ஜாதமாசி
+
+செந்தாமரை
+ஓரிலைத் தாமரை
+புகையிலை
+கருஞ்சீரகம்
+சின்னக் குறிஞ்சி
+அரளி
+எட்டிமரம்
+பவழமல்லிகை
+அல்லி
+நெய்தல் கிழங்கு
+காடைக்கண்ணி
+ஆத்து வஞ்சி
+திருநீற்றுப் பச்சிலை
+கஞ்ஜன் கோரை
+எலுமிச்சந்துளசி
+துளசி
+துளசி
+ஒதிமரம்
+இத்தி
+சன்னுக் கீரை
+சிவதை
+கீரிப்பூண்டு
+நாகதாளி
+சப்பாத்திக்கள்ளி
+சாலாமிசிரி
+எலும்பொத்தி
+அச்சி
+நெல்
+புளியாரை
+ஊசிப்பாளை
+காட்டிலுப்பை
+தாழை
+தாழை
+தினை
+சாமை
+பணிவரகு
+சாமை
+தர்ப்பைப் புல்
+வரகு
+பாவட்டை
+பெருமுட்டி
+சிறுமுட்டி
+கம்பு
+பெரு நெருஞ்சில்
+சதகுப்பை
+காட்டு சதகுப்பை
+பச்சைப் பயறு
+உளுந்து
+நரிப்பயறு
+பேரீச்சம்
+சிற்றீச்சம்
+சிறு ஈச்சன்
+தரை ஈச்சன்
+ஈச்சம்
+கீழாநெல்லி
+கீழாநெல்லி
+நெல்லி
+இருபுலை
+நெல்லி
+நீர்ப்புலா
+செங்கீழாநெல்லி
+அருநெல்லி
+தக்காளி
+தீர்க்கந்தை
+கடுகு ரோகினி
+வெள்ளை மிளகு
+பெருஞ்சீரகம்
+காட்டு மிளகு
+வால் மிளகு
+கண்டந்திப்பிலி
+காட்டுத் திப்பிலி
+குறுமிளகு
+கொய்யாமரம்
+ஆகாயத் தாமரை
+கொடுக்காப்புளி
+இசங்கு
+கொடிவேலி
+கருங்கொடிவேலி
+செங்கொடிவேலி
+சித்திர மூலம்
+ஏலத்தளரி
+நெட்டிலிங்கம்
+நங்கை
+நின்னால் சிங்கி
+நீரலரி
+நெல்லிவம்
+புங்கை
+குவளை
+பெரிய நங்கை
+பருப்புக் கீரை
+முகுளிற்கீரை
+கூழாமணிக்கீரை
+முன்னை
+சுவர்முள்ளங்கி
+வண்ணி
+அல்பகொடாப் பழம்
+வாதுமை
+கைப்பு வாதுமை
+இனிப்பு வாதுமை
+கறுவேர்
+மூவிலை பச்சிலை
+கார்போக அரிசி
+செங்குங்குமம்
+நிலப்பூசணி
+ஒட்டத்தி
+கருப்பாளை
+கீழாநெல்லி
+மாசிப்பட்டை
+மரக்கரை
+முள்ளங்கி
+சர்ப்பகந்தி
+ஆனைப்பிரண்டை
+இளவேல் சீனி
+கர்க்கடசிங்கி
+பெருபீர்க்கம்
+ஆமணக்கு
+முசுட்டை
+கடரெங்கை
+பன்னீர்ப்பூ
+பன்னீர்ப்பூ
+ரோஜாப்பூ
+பன்னீர்ப்பூ
+குன்றிமணி
+பன்னீர்ப்பூ
+மஞ்சிட்டி
+கிரந்தி நயம்
+சுக்கங்கீரை
+அருவதா
+கரும்பு
+பேய்க்கரும்பு
+குதிரைக் குளம்படி
+பொங்கொரந்தி
+பெருங்களர்வா
+உகாய்
+களர்வா
+மருள்
+சந்தனம்
+கருப்புச்சுடை
+அசோகம்
+அசோகம்
+சடாமஞ்சில்
+கொடிக்கள்ளி
+கொட்டம்
+சீமைக்கதலை
+யானைத்திப்பிலி
+சர்க்கரை வேம்பு
+மட்புலந்தி
+வேப்புலந்தி
+புலா
+சிற்றெள் Cirrel
+மகாலிங்க மரம்
+காட்டுச்சேங்கொட்டை
+சீராங்கொட்டை
+ஆவாரை
+செம்பை
+அகத்தி
+வங்கரவாளைக் கீரை
+குங்கிலியம்
+தம்பகம்
+வட்டத்திரிப்பி
+அரிவாள் மூக்குப் பச்சிலை
+பொன்முசுட்டை
+மயிர்மாணிக்கம்
+வாகை
+பரங்கிச் சக்கை
+பரங்கிப் பட்டை
+காட்டுக்கொடி
+கண்டங்கத்திரி
+சுண்டைக் காய்
+முள்கத்திரி
+கரிமுள்ளி
+கத்தரிக்காய்
+மணத்தக்காளி
+சுண்டைக்காய்
+உருளைக் கிழங்கு
+சோளம்
+நத்தைச்சூரி
+கொட்டைக்கரந்தை
+சிவகரந்தை
+மரிமா
+நரிமங்கை
+மூக்கரத்தைக் கீரை
+பத்திரி
+பீநாரிமரம்
+குதிரைப்பிடுக்கான்
+மோதகவள்ளி
+பிரை
+குட்டிப்பலா
+எட்டி
+சாம்பிராணி
+படபட்டை
+சர்க்கரை வேம்பு
+வசம்பு
+சிரத்தை
+நாவல்
+நாவல் கொட்டை
+நந்தியாவட்டம்
+கிரந்தித்தகரம்
+காட்டுக் கருணை
+புளி
+கீரி
+காட்டாமணக்கு
+தாலிசபத்திரி
+தேக்கு
+முகவெள்ளை
+தான்றிக்காய்
+மருதமரம்
+தான்றிக்காய்
+தான்றி
+சாரப் பருப்பு
+பீத ரோகினி
+பூவரசு
+கர்ப்பூரவள்ளி
+சீந்தில் கொடி
+பேய் அமுது
+மிளகரணை
+உகாய்
+மலைச் செந்தத்தி
+தூரலோபம்
+தூரப்பரிகம்
+காஞ்சொரி
+சிறுகாஞ்சொரி
+பன்னிமோந்தான் கிழங்கு
+அத்தரசு
+சத்திச்சாரணை
+சாருவெள்ளை
+சாரணை
+நெருஞ்சி
+ஆரோக்கியப் பச்சை
+புடல்
+காட்டுப்பைபுடல்
+குரட்டை
+கவில்தும்பை
+வெந்தயம்
+காட்டுவெண்டை
+தவசு முருங்கை
+கரிப்பள்ளை
+கருணைத்தண்டு
+உத்லீர்
+கத்திரிக்கம்பு
+காட்டு வெங்காயம்
+ஒட்டத்தி
+வெள்ளைக் குந்திரிகம்
+வெள்ளைப் பயின்
+சுண்டை
+காட்டுச் சீரகம்
+வெள்ளைக்குந்திருகம்
+வெட்டிவேர்
+காட்டு வெங்காயம்
+தட்டைப் பயறு
+காராமணி
+ஓரிலைத் தாமரை
+களிப் பிரண்டை
+நொச்சி
+நொச்சி
+நரளை
+திராட்சை
+ஆகாயத் தாமரை
+நீராரை
+குறிஞ்சான்
+பொன்னிரைச்சி
+மஞ்சள் கரிசாலி
+வாசனைப்புல்
+சதாவலி
+அமுக்கரா
+அமுக்கரா
+அஸ்வகந்தி
+வேலக்காய்
+வெட்பாலை
+மருளமதை
+கலை
+இருள்
+நாய்க்கடுகு
+மனோரஞ்சிதம்
+பச்ச்சிலை
+கற்கோவை
+சுக்கு
+இசப்புக்கோல் விதை
+இலந்தை
+பல்லவப்பருனிச்செடி
+நரியிலந்தை
+சூரைமுள்ளு
+சூசை
+முள்ளுத்துப்பை
+இலந்தை
+சூரை
+சிறுபலதை
+சென்னை
+கோயம்புத்தூர்
+சேலம்
+மதுரை
+திருச்சிராப்பள்ளி
+திருநெல்வேலி
+திருப்பூர்
+கோலாலம்பூர்
+ஜோர்ஜ் டவுன்
+பெங்களூர்
+யாழ்ப்பாணம்
+மட்டக்களப்பு
+கொழும்பு
+ரொறன்ரோ
+சிங்கப்பூர்
+டர்பன்
+பாரிசு
+இலண்டன்
+>> மாநகராட்சிகள்
+சென்னை
+கோயம்புத்தூர்
+மதுரை
+திருச்சிராப்பள்ளி
+திருநெல்வேலி
+சேலம்
+ஈரோடு
+தூத்துக்குடி
+திருப்பூர்
+வேலூர்
+>> மாவட்டங்கள்
+அரியலூர்
+ஈரோடு
+கடலூர்
+கரூர்
+கன்னியாகுமரி
+காஞ்சிபுரம்
+கிருஷ்ணகிரி
+கோயம்புத்தூர்
+சிவகங்கை
+சென்னை
+சேலம்
+தஞ்சாவூர்
+தர்மபுரி
+திண்டுக்கல்
+திருச்சிராப்பள்ளி
+திருநெல்வேலி
+திருப்பூர்
+திருவண்ணாமலை
+திருவள்ளூர்
+திருவாரூர்
+தூத்துக்குடி
+தேனி
+நாகப்பட்டினம்
+நாமக்கல்
+நீலகிரி
+புதுக்கோட்டை
+பெரம்பலூர்
+மதுரை
+இராமநாதபுரம்
+விருதுநகர்
+விழுப்புரம்
+வேலூர்
+இலங்கை நகரங்கள்
+அங்கிரனோயா
+அம்பலாங்கொடை
+அம்பாந்தோட்டை
+அம்பாறை
+அம்பேவளை
+அலகல்லை
+அலவ்வை
+அவிசாவளை
+ஆலி எலை
+இக்கடுவை
+இடல்கசின்ன
+உடுவரை
+உணுப்பிட்டி
+உயிலங்குளம்
+உலப்பனை
+எரத்ன
+எல்ல
+ஒய்ய
+ஓமந்தை
+கடிகமுவை
+கடுவலை
+கட்டுநாயக்கா
+கம்பகா
+கல்படை
+களுத்துறை
+கிரிபத்கொடை
+கிரேட் வெசுடன்
+குருணாகல்
+கெபிதிகொல்லாவை
+கொட்டகலை
+கொழும்பு
+சாவகச்சேரி
+சிறீ ஜெயவர்தனபுர கோட்டை
+சிலாபம்
+சுன்னாகம்
+தம்பிலுவில்
+தலவாக்கலை
+திருக்கோணமலை
+துணுக்காய்
+தெகிவளை-கல்கிசை
+நானு ஓயா
+நீர்கொழும்பு
+பட்டிப்பலை
+பண்டாரவளை
+பருத்தித்துறை
+பலனை
+பிலிமத்தலாவை
+புத்தளம்
+புலோலி
+பூண்டுலோயா
+பெந்தோட்டை
+பெலிவுல்லோயா
+பொலன்னறுவை
+பொல்காவளை
+மசுகெலியா
+மட்டக்களப்பு
+மன்னார்
+மாத்தறை
+மாத்தளை
+மீரிகமை
+முல்லைத்தீவு
+மொறட்டுவை
+யாழ்ப்பாணம்
+றொசல்லை
+வட்டகொடை
+வவுனியா
+வாதுவை
+விடத்தல்தீவு
+வெயாங்கொடை
+]

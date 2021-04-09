@@ -35,9 +35,11 @@
          "உள்ளீடு": "லஸ்ஸிக்கு உள்ளீடு",
          "வேண்டிய_மொழி": "வேண்டிய மொழ",
          "வெளியீடு": "வெளியீடு",
-         "தனிப்பட்ட": "தனிப்பட்ட"
-       },
-       "லஸ்ஸியை_ஏற்றுகிறது": "லஸ்ஸியை ஏற்றுகிறது..."
+         "தனிப்பட்ட": "தனிப்பட்ட",
+         "லஸ்ஸியை_ஏற்றுகிறது": "லஸ்ஸியை ஏற்றுகிறது...",
+         "லஸ்ஸி_கிடையாது": "மன்னிக்கவும், இங்கே லஸ்ஸி கிடையாது.",
+         "லஸ்ஸி_கிடையாது_துணை": "நீங்கள் ஃபையர்ஃபாக்‌ஸ் அல்லது க்ரோமில் பார்க்கவும்."
+       }
      },
      "கேள்விகள்": {
        "தலைப்பு": "லஸ்ஸியைப் பற்றி அடிக்கடி கேட்கப்படும் கேள்விகள்",
@@ -113,7 +115,7 @@
        }
      },
      "தொடர்பு": {
-       "தலைப்பு": "லஸ்ஸி மென்பொருள் உருவாக்கியவர்களை இங்கே தொடரலாம்",
+       "தலைப்பு": "உருவாக்கியவர்களின் தொடர்புகள்",
        "வேலைகள்": {
          "முதலில் உருவாக்கியவர்": "முதலில் உருவாக்கியவர்",
          "உருவாக்கியவர்": "உருவாக்கியவர்",
@@ -344,6 +346,9 @@
       "எப்படி": "کام کیسا کرتا ہے؟"
     }
   },
+  "Bahasa melayu": {
+    "லஸ்ஸி": "Lassi"
+  },
   "汉语": {
     "லஸ்ஸி": "拉西",
     "மொழி": {"மேலும்": "更多"},
@@ -476,19 +481,10 @@
       "தலைப்பு": "Karibu katika Lassi",
       "துணைத்தலைப்பு": "Lassi ni miundombinu ya programu cha chanzo wazi kwa tafsiri ya lugha ya programu.",
       "எதற்கு": "Nini anafanya?",
-      "எதற்கு_பதில்": "Cada linguagem de programação é baseado em uma língua humana. Lassi dá você a liberdade de escrever o seu código na língua de sua escolha.",
-      "எப்படி": "Como funciona?",
-      "எப்படி_பதில்": "Lassi compila o seu código em base em regras de tradução padronizadas pela gramática de cada linguagem de programação.",
-      "செயலில்": "Demostração em açao",
-      "செயலில்_விவரம்": "Você pode explorar as funcionalidades de Lassi no espaço abaixo.",
       "உதாரணம்": {
         "நிரல்_மொழி": "Lugha ya programu",
         "மூல்_மொழி": "Lugha asili",
-        "எண்ணுரு": "Nambari",
-        "உள்ளீடு": "Entrada",
-        "வேண்டிய_மொழி": "Língua desejada",
-        "வெளியீடு": "Resultado",
-        "தனிப்பட்ட": "Automático"
+        "எண்ணுரு": "Nambari"
       }
     }
   },
@@ -528,9 +524,11 @@
         "உள்ளீடு": "Entrée",
         "வேண்டிய_மொழி": "Langue cible",
         "வெளியீடு": "Résultat",
-        "தனிப்பட்ட": "Automatique"
-      },
-      "லஸ்ஸியை_ஏற்றுகிறது": "Téléchargement de Lassi en cours..."
+        "தனிப்பட்ட": "Automatique",
+        "லஸ்ஸியை_ஏற்றுகிறது": "Téléchargement de Lassi en cours...",
+        "லஸ்ஸி_கிடையாது": "Nous sommes désolés, mais il n'y a pas de lassi ici.",
+        "லஸ்ஸி_கிடையாது_துணை": "Veuillez aller voir chez Firefox ou Chrome."
+      }
     },
     "கேள்விகள்": {
       "தலைப்பு": "Foire aux Questions",
@@ -622,5 +620,11 @@
   "Kanyen'ké:ha": {
     "லஸ்ஸி": "Lassi",
     "மொழி": {"மேலும்": "Ó:ya"}
+  },
+  "Ch'orti'": {
+    "லஸ்ஸி": "Lassi",
+     "அறிமுகம்": {
+       "தலைப்பு": "Inb'utz iyo'pa'r tama Lassi"
+     }
   }
 }

@@ -1,25 +1,19 @@
 <template>
   <v-list style="max-height: 70vh" class="overflow-y-auto">
-    <v-list-item-group v-model="தேர்ந்தேடுக்கப்பட்டது" color="amber lighten-2">
+    <v-list-item-group v-model="தேர்ந்தேடுக்கப்பட்டது" color="amber darken-1">
       <template v-for="(உரை, இ) in uraipattiyal">
-        <v-list-item
-         class="mb-2 py-2" :key="உரை.சாபி" :value="உரை.சாபி"
+        <v-list-item :key="உரை.சாபி" :value="உரை.சாபி"
+         :dir="வலதிலிருந்து(உரை.மூல்மொழி) ? 'rtl': 'ltr'"
         >
-          <v-row>
-            <v-col cols="6" :dir="வலதிலிருந்து(உரை.மூல்மொழி) ? 'rtl': 'ltr'">
-              <v-card
-               height="100" class="overflow-y-auto px-2"
-               outlined
-              >{{உரை.மூலுரை}}</v-card>
-            </v-col>
-            <v-col cols="6" :dir="வலதிலிருந்து(உரை.வேண்டியமொழி) ? 'rtl': 'ltr'">
-              <v-card
-               height="100" class="overflow-y-auto px-2"
-               outlined
-              >{{உரை.மொழியாக்கம்}}</v-card>
-            </v-col>
-            <v-col cols="12"><v-list-item-subtitle>{{உரை.சாபி}}</v-list-item-subtitle></v-col>
-          </v-row>
+          <v-list-item-content>
+            {{உரை.மூலுரை.slice(0, 50) + (உரை.மூலுரை.length > 50 ? "..." : '')}}
+            <v-list-item-subtitle v-if="உரை.சாபி !== உரை.மூலுரை">{{உரை.சாபி}}</v-list-item-subtitle>
+          </v-list-item-content>
+
+          <v-list-item-action>
+            <v-icon  v-if="உரை.மொழியாக்கம்" color="amber">mdi-check-bold</v-icon>
+          </v-list-item-action>
+
         </v-list-item>
         <v-divider :key="இ"/>
 
