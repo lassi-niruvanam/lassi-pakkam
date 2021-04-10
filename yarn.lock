@@ -4925,7 +4925,7 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-lassi-ilakkanankal@^1.0.12:
+lassi-ilakkanankal@^1.0.13:
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/lassi-ilakkanankal/-/lassi-ilakkanankal-1.0.13.tgz#8e6e97831afe9bfc1e62b843d22c2a003ea02459"
   integrity sha512-fnIxI44eHVGtI9Y+FfzwwuELozPO2qQpBHYzwf4JJKxUGc8nV+Teu8VNoG0W9YgCPo/qUQmxNIIpEJog4lA4oA==
