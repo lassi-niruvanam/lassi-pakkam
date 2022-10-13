@@ -188,7 +188,7 @@ export default {
         niralmozhikal: நிரல்மொழிகள்.sort((a, b) => (this.mozhikal(a).length < this.mozhikal(b).length)),
         takavalkal: {
           'python': {
-            'படம்': 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg'
+            'படம்': 'src/assets/logos/Python-logo-notext.svg'
           },
           'javascript': {
             'படம்': 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png'
