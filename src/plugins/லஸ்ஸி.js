@@ -18,7 +18,7 @@ class லஸ்ஸி {
     var உரை = new Blob([
       `
       // self.languagePluginUrl = 'http://localhost:8000/'
-  importScripts('https://pyodide-cdn2.iodide.io/v0.15.0/full/pyodide.js')
+  importScripts('https://cdn.jsdelivr.net/pyodide/v0.21.3/full/')
   self.postMessage({"செய்தி": "தயார்"})
 
   var onmessage = function(e) { // eslint-disable-line no-unused-vars
