@@ -12,7 +12,6 @@ app.use(history())
 var compression = require('compression')
 app.use(compression())
 
-// இது முக்கியமானது! உங்கள் கணினியில் உருவாக்கும் பொழுது இதை பயன்படுத்த கூடாது!
 if (process.env.NODE_ENV === 'production') {
 	// var secure = require('express-force-https')
 	// app.use(secure())
