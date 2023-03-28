@@ -18,7 +18,7 @@ specifiers:
   eslint-plugin-vue: ^9.9.0
   events: ^3.3.0
   express: ^4.18.2
-  lassi-ilakkanankal: ^2.0.7
+  lassi-ilakkanankal: ^2.0.8
   marked: ^4.2.12
   nuchabal: ^3.1.0
   roboto-fontface: ^0.10.0
@@ -44,7 +44,7 @@ dependencies:
   ennikkai: 2.0.3
   events: 3.3.0
   express: 4.18.2
-  lassi-ilakkanankal: 2.0.7
+  lassi-ilakkanankal: 2.0.8
   marked: 4.2.12
   nuchabal: 3.1.0
   roboto-fontface: 0.10.0
@@ -4834,8 +4834,8 @@ packages:
       randombytes: 2.1.0
     dev: false
 
-  /lassi-ilakkanankal/2.0.7:
-    resolution: {integrity: sha512-bOvAVBKO9Pm8B7HPoucUe2dl0u8kHp+0ehB4clZA3IlAp/0R2XtkZA13P/jvd65+IsQF7VHOpHE2m7s7ZIll6A==}
+  /lassi-ilakkanankal/2.0.8:
+    resolution: {integrity: sha512-6el98JnO1gzD2h7RlbqKWJ8ZVmrHE9lTmDowQrIJT9iiFFwt/4135V9y/qcYFA9YJ4IEaYXWgKfgRL366Mgjaw==}
     dependencies:
       '@constl/ipa': 0.6.38
       '@lassi-js/kili': 0.0.5_@constl+ipa@0.6.38
