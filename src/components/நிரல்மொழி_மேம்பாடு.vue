@@ -1,11 +1,11 @@
 <template>
-  <v-expansion-panel-title>
-    <v-row>
+  <v-list-item>
+    <v-row class="py-2">
       <v-col cols=3 class="text-center">
         <v-img v-if="படம்"
           tile class="mx-auto" max-height="70" contain max-width="70"
           :src="படம்" />
-        <h1 v-else class="text-center text-h1">
+        <h1 v-else class="text-h1">
           {{ இந்த_நிரல்மொழி_பெயர் ? இந்த_நிரல்மொழி_பெயர்[0] : niralmozhi[0] }}
         </h1>
         <v-card-title
@@ -31,8 +31,9 @@
         >{{ மொத்தமான_நிறைவு_வடிவூட்டப்பட்டது }} %</v-progress-circular>
       </v-col>
     </v-row>
-  </v-expansion-panel-title>
-  <v-expansion-panel-text>
+    <v-divider />
+  </v-list-item>
+  <!--<v-expansion-panel-text>
     <v-divider class="mb-2"></v-divider>
     <div class="d-flex">
       <v-tabs
@@ -44,11 +45,11 @@
         class="my-auto"
       >
         <v-btn
-          :href="'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/மூலம்/லஸ்ஸியிலக்கணங்கள்/இலக்கணங்கள்/' + niralmozhi"
+          :href="'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/இலக்கணங்கள்/' + niralmozhi"
           rel=”noopener”
           target="_blank"
           color="primary"
-          outlined
+          variant="outlined"
         >
           {{ $t('மேம்பாடு.இப்பொதே_பங்களி') }}
           <v-icon end>mdi-arrow-right</v-icon>
@@ -93,7 +94,7 @@
         </v-card>
       </v-window-item>
     </v-tabs>
-  </v-expansion-panel-text>
+  </v-expansion-panel-text>-->
 </template>
 <script setup lang="ts">
 import type {Nuchabäl} from 'nuchabal';
@@ -116,7 +117,7 @@ const தாவல் = ref(0);
 const படம் = computed(()=>{
   switch (சொத்துகள்.niralmozhi) {
     case 'python': 
-      return'src/assets/logos/Python-logo-notext.svg';
+      return 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg';
     case 'javascript':
       return  'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png'
     case 'json':

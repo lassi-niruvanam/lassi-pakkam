@@ -1,26 +1,29 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
+import அறிமுகம் from '@/பார்வைகள்/அறிமுகம்.vue'
+import கேள்விகள் from '@/பார்வைகள்/கேள்விகள்.vue'
+import மேம்பாடு from '@/பார்வைகள்/மேம்பாடு.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'அறிமுகம்',
-    component: () => import('@/பார்வைகள்/அறிமுகம்.vue'),
+    name: '',
+    component: அறிமுகம்,
   },
   {
     path: encodeURI('/அறிமுகம்'),
     name: 'அறிமுகம்',
-    component: () => import('@/பார்வைகள்/அறிமுகம்.vue'),
+    component: அறிமுகம்,
   },
   {
     path: encodeURI('/கேள்விகள்'),
     name: 'கேள்விகள்',
-    component: () => import('@/பார்வைகள்/கேள்விகள்.vue'),
+    component: கேள்விகள்,
   },
   {
     path: encodeURI('/மேம்பாடு'),
     name: 'மேம்பாடு',
-    component: () => import('@/பார்வைகள்/மேம்பாடு.vue'),
+    component: மேம்பாடு,
   },
   
 ]
