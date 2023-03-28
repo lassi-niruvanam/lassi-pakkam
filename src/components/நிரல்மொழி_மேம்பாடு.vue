@@ -1,11 +1,11 @@
 <template>
   <v-expansion-panel-title>
     <v-row>
-      <v-col cols=3>
+      <v-col cols=3 class="text-center">
         <v-img v-if="படம்"
           tile class="mx-auto" max-height="70" contain max-width="70"
           :src="படம்" />
-        <h1 v-else class="text-center display-4">
+        <h1 v-else class="text-center text-h1">
           {{ இந்த_நிரல்மொழி_பெயர் ? இந்த_நிரல்மொழி_பெயர்[0] : niralmozhi[0] }}
         </h1>
         <v-card-title
@@ -17,7 +17,7 @@
         <h1 class="font-weight-bold my-3">
           {{ $t('மேம்பாடு.மொழிகள்') }}
         </h1>
-        <p class="display-2">{{ மொழி_எண்_வடிவூட்டப்பட்டது }}</p>
+        <p class="text-h2">{{ மொழி_எண்_வடிவூட்டப்பட்டது }}</p>
       </v-col>
       <v-col class="text-center" cols=4>
         <h1 class="font-weight-bold my-3">
@@ -39,13 +39,12 @@
         v-model="தாவல்"
       >
         <v-tab :ripple="false">{{ $t('மேம்பாடு.மொழியாக்கம்_மேம்பாடு') }}</v-tab>
-        <!-- <v-tab :ripple="false">விவரக்குறிப்பு</v-tab> -->
       </v-tabs>
       <div
         class="my-auto"
       >
         <v-btn
-          :href="'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/மூலம்/லஸ்ஸியிலக்கணங்கள்/இலக்கணங்கள்/' + niral"
+          :href="'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/மூலம்/லஸ்ஸியிலக்கணங்கள்/இலக்கணங்கள்/' + niralmozhi"
           rel=”noopener”
           target="_blank"
           color="primary"
@@ -67,7 +66,7 @@
             <v-col cols=12>
               <v-row>
                 <v-col cols=2>
-                  <h3 class="display-5 grey--text">{{ mozhi_peyar(மூல்_மொழி(நிரல்மொழி)) }}</h3>
+                  <h3 class="display-5 grey--text">{{ நிரல்மொழி_மூல்_மொழி }}</h3>
                 </v-col>
                 <v-col cols=10 class="my-auto">
                   <v-progress-linear
@@ -86,26 +85,13 @@
                   <h3 class="display-5">{{ மொ }}</h3>
                 </v-col>
                 <v-col cols=10 class="my-auto">
-                  <v-progress-linear
-                    :model-value="niraivu(நிரல்மொழி, m) * 100"
-                    :buffer-value="100"
-                    color="amber"
-                    height="11"
-                    rounded
-                  ></v-progress-linear>
+                  <NiralmozhiMempatuNiraivu :niralmozhi="niralmozhi" :mozhi="மொ" />
                 </v-col>
               </v-row>
             </v-col>
           </v-row>
         </v-card>
       </v-window-item>
-      <!-- <v-tab-item>
-        <v-card
-          flat
-          class="pa-5"
-          min-height="300"
-        ></v-card>
-      </v-tab-item> -->
     </v-tabs>
   </v-expansion-panel-text>
 </template>
@@ -115,6 +101,8 @@ import { computed, inject, ref } from 'vue';
 import { எண்ணிக்கை } from 'ennikkai'
 import { லஸ்ஸியை_பயன்படுத்து } from '@/plugins/லஸ்ஸி';
 import { useI18n } from 'vue-i18n';
+
+import NiralmozhiMempatuNiraivu from "./நிரல்மொழி_மேம்பாடு_நிறைவு.vue"
 
 const சொத்துகள் = defineProps<{niralmozhi: string}>();
 
@@ -153,13 +141,14 @@ const படம் = computed(()=>{
       return undefined;
   }
 })
-const {மொழிகள், நிரல்மொழி_பெயர், நிறைவு} = லஸ்ஸியை_பயன்படுத்து();
+const {மொழிகள், நிரல்மொழி_பெயர், நிறைவு, மூல்_மொழி} = லஸ்ஸியை_பயன்படுத்து();
 const இந்த_நிரல்மொழி_பெயர் = நிரல்மொழி_பெயர்({நிரல்மொழி: computed(()=>சொத்துகள்.niralmozhi), மொழி: computed(()=>locale.value)})
 const கிடைக்கும்_மொழிகள் = மொழிகள்({நிரல்மொழி: computed(()=>சொத்துகள்.niralmozhi)})
 const மொழி_எண் = computed(()=>{
   return கிடைக்கும்_மொழிகள்.value.length
 })
-const மொத்தமான_நிறைவு = நிறைவு({நிரல்மொழி: சொத்துகள்.niralmozhi})
+const நிரல்மொழி_மூல்_மொழி = மூல்_மொழி({நிரல்மொழி: computed(()=>சொத்துகள்.niralmozhi)})
+const மொத்தமான_நிறைவு = நிறைவு({நிரல்மொழி:computed(()=>சொத்துகள்.niralmozhi)})
 const மொத்தமான_நிறைவு_வடிவூட்டப்பட்டது = computed(()=>{
   const முறைமை = nuchabäl?.rajilanïkChabäl({runuk: locale.value})
   if (!முறைமை) return ''

@@ -1,32 +1,57 @@
-# லஸ்ஸி வலைப் பக்கம்
-
+# base
+Considérer https://www.back4app.com/docs/advanced-guides/web-application-hosting
 ## Project setup
+
 ```
+# yarn
+yarn
+
+# npm
 npm install
+
+# pnpm
+pnpm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-npm run serve
+# yarn
+yarn dev
+
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
 ```
 
 ### Compiles and minifies for production
+
 ```
+# yarn
+yarn build
+
+# npm
 npm run build
+
+# pnpm
+pnpm build
 ```
 
 ### Lints and fixes files
+
 ```
+# yarn
+yarn lint
+
+# npm
 npm run lint
+
+# pnpm
+pnpm lint
 ```
-
-?மொழி=Kaqchikel
-
-### பண்புக்கூறுகள்
-https://commons.wikimedia.org/wiki/User:Valluvar_Vallalar_Vattam?uselang=ta
-https://creativecommons.org/licenses/by-sa/4.0/deed.bn
-
-https://undraw.co/
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+See [Configuration Reference](https://vitejs.dev/config/).

@@ -18,11 +18,11 @@
           multiple
         >
           <v-expansion-panel
-              class="my-2"
-              v-for="(நிரல்மொழி, i) in நிரல்மொழிகள்"
-              :key="i"
-            >
-            <!--<niralmozhi-mempatu :niralmozhi="நிரல்மொழி" />-->
+            class="my-2"
+            v-for="(நிரல்மொழி, i) in நிரல்மொழிகள்"
+            :key="i"
+          >
+            <niralmozhi-mempatu :niralmozhi="நிரல்மொழி" />
           </v-expansion-panel>
         </v-expansion-panels>
       </v-card>

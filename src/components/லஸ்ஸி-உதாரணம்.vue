@@ -5,154 +5,129 @@
   >
     <v-row class="text-center">
       <v-col cols="6">
-        <v-toolbar flat>
           <v-row>
-            <v-col cols="4" class="ps-0">
-              <v-autocomplete
+            <v-col cols="4">
+              <v-select
                 :items="நிரல்மொழிகள்"
                 v-model="நிரல்மொழி"
                 :label="$t('அறிமுகம்.உதாரணம்.நிரல்_மொழி')"
-                :disabled="!உதாரணமுரைதயார்"
-                cache-items
                 hide-no-data
-                outlined
-                dense
+                variant="outlined"
+                density="compact"
+                color="secondary"
                 hide-details
-              ></v-autocomplete>
+              ></v-select>
             </v-col>
-            <v-col cols="4" class="px-3">
-              <v-autocomplete
-                :items="மொழிகள்"
-                v-model="உள்மொழி"
+            <v-col cols="4">
+              <v-select
+                :items="நிரல்மொழியின்_மொழிகள்"
+                v-model="உள்_மொழி"
                 :label="$t('அறிமுகம்.உதாரணம்.மூல்_மொழி')"
-                :disabled="!உதாரணமுரைதயார்"
                 hide-no-data
-                outlined
-                dense
+                variant="outlined"
+                density="compact"
                 hide-details
-              >
-                <template v-slot:item="{ item }">
-                  <v-list-item-avatar>
-                    <v-icon v-if="நிறைவு(item) === 1" color="amber accent-4">mdi-check-circle</v-icon>
-                    <v-progress-circular v-else
-                      :value="நிறைவு(item) * 100"
-                      size="20"
-                      rotate="270" color="primary"
-                    ></v-progress-circular>
-                  </v-list-item-avatar>
-                  <v-list-item-content>
-                    <v-list-item-title v-text="item"></v-list-item-title>
-                  </v-list-item-content>
+                color="secondary"
+              > 
+                <template #item="{ item, props }">
+                  <mozhiPattiyalUrupadi v-bind="props" :நிரல்மொழி="நிரல்மொழி" :மொழி="item.value" />
                 </template>
-              </v-autocomplete>
+                <template #selection="{ item }">
+                  {{ nuchabäl.rubiChabäl({runuk: item.value }) }}
+                </template>
+              </v-select>
             </v-col>
-            <v-col cols="4" class="pe-0">
-              <v-autocomplete
-                v-model="உள்நிரலெண்ணுரு"
-                :items="[{text: $t('அறிமுகம்.உதாரணம்.தனிப்பட்ட'), value: null}].concat(நிரலெண்ணுருமுறைமைகள்.map(இ => ({text: இ, value :இ})))"
+            <v-col cols="4">
+              <v-select
+                v-model="உள்_நிரல்_எண்ணுரு"
+                :items="எண்ணுரு_முறைமை_உருப்படிகள்"
                 :label="$t('அறிமுகம்.உதாரணம்.எண்ணுரு')"
-                :disabled="!உதாரணமுரைதயார்"
                 hide-no-data
-                outlined
-                dense
+                variant="outlined"
+                density="compact"
                 hide-details
-              ></v-autocomplete>
+              ></v-select>
             </v-col>
           </v-row>
-        </v-toolbar>
       </v-col>
       <v-col cols="6">
-        <v-toolbar flat>
           <v-row>
-            <v-col cols="4" class="ps-0">
-              <v-autocomplete
-                v-model="நிரல்மொழி"
-                :items="நிரல்மொழிகள்"
-                disabled
-                hide-no-data
-                outlined
-                dense
-                hide-details
-              ></v-autocomplete>
+            <v-col cols="2">
+              <v-btn icon="mdi-swap-horizontal" variant="flat" size="small" @click="()=>மொழிகளை_பறிமாறு()"/>
             </v-col>
-            <v-col cols="4" class="px-3">
-              <v-autocomplete
-                :items="மொழிகள்"
-                v-model="வெள்மொழி"
+            <v-col cols="4">
+              <v-select
+                :items="நிரல்மொழியின்_மொழிகள்"
+                v-model="வெள்_மொழி"
                 :label="$t('அறிமுகம்.உதாரணம்.வேண்டிய_மொழி')"
-                :disabled="!வெளுரைதயார் || !உதாரணமுரைதயார்"
                 hide-no-data
-                outlined
-                dense
+                variant="outlined"
+                density="compact"
                 hide-details
+                color="secondary"
               >
-                <template v-slot:item="{ item }">
-                  <v-list-item-avatar>
-                    <v-icon v-if="நிறைவு(item) === 1" color="amber accent-4">mdi-check-circle</v-icon>
-                    <v-progress-circular v-else
-                      :value="நிறைவு(item) * 100"
-                      size="20"
-                      rotate="270" color="primary"
-                    ></v-progress-circular>
-                  </v-list-item-avatar>
-                  <v-list-item-content>
-                    <v-list-item-title v-text="item"></v-list-item-title>
-                  </v-list-item-content>
+                <template v-slot:item="{ item, props }">
+                  <mozhiPattiyalUrupadi v-bind="props" :நிரல்மொழி="நிரல்மொழி" :மொழி="item.value" />
                 </template>
-              </v-autocomplete>
+                <template #selection="{ item }">
+                  {{ nuchabäl.rubiChabäl({runuk: item.value }) }}
+                </template>
+              </v-select>
             </v-col>
-            <v-col cols="4" class="pe-0">
-              <v-autocomplete
-                :items="[{text: $t('அறிமுகம்.உதாரணம்.தனிப்பட்ட'), value: null}].concat(நிரலெண்ணுருமுறைமைகள்.map(இ => ({text: இ, value :இ})))"
-                v-model="வெள்நிரலெண்ணுரு"
+            <v-col cols="4">
+              <v-select
+                :items="எண்ணுரு_முறைமை_உருப்படிகள்"
+                v-model="வெள்_நிரல்_எண்ணுரு"
                 :label="$t('அறிமுகம்.உதாரணம்.எண்ணுரு')"
-                :disabled="!வெளுரைதயார் || !உதாரணமுரைதயார்"
                 hide-no-data
-                outlined
-                dense
+                variant="outlined"
+                density="compact"
                 hide-details
-              ></v-autocomplete>
+                color="secondary"
+              ></v-select>
             </v-col>
           </v-row>
-        </v-toolbar>
       </v-col>
     </v-row>
-    <v-row v-if="$லஸ்ஸி.தயாரானது" class="text-center mt-0">
+    <v-row v-if="லஸ்ஸி_தயாரானது" class="text-center mt-0">
       <v-col cols="6">
         <v-textarea
-          v-model="உதாரணமுரை"
-          :disabled="!உதாரணமுரைதயார்"
-          :loading="!உதாரணமுரைதயார்"
+          v-model="உதாரணம்_உரை"
+          :disabled="!உதாரணம்_உரை_தயாரானது"
+          :loading="!உதாரணம்_உரை_தயாரானது"
           :no-resize="true"
           :label="$t('அறிமுகம்.உதாரணம்.உள்ளீடு')"
-          :dir="வலதிலிருந்து(உள்மொழி) ? 'rtl': 'ltr'"
-          v-bind:class="[நோக்குநிலை(உள்மொழி)]"
-          height="500"
+          :dir="உள்_உரை_வலதிலிருந்து ? 'rtl': 'ltr'"
+          v-bind:class="[எழுத்து_திசை_வகை(உள்_மொழி)]"
+          rows="10"
           flat
-          outlined
+          variant="outlined"
+          color="secondary"
         >
         </v-textarea>
       </v-col>
       <v-col cols="6">
         <v-textarea
-          v-model="வெளியீடு"
-          v-bind:class="[நோக்குநிலை(வெள்மொழி)]"
-          height="500"
-          :readonly="வெளுரைதயார்"
-          :disabled="!வெளுரைதயார் || !உதாரணமுரைதயார்"
-          :loading="!வெளுரைதயார்"
+          v-model="மொழியாக்கம்"
+          :disabled="!வெள்_உரை_தயார்"
+          :loading="!வெள்_உரை_தயார்"
           :no-resize="true"
           :label="$t('அறிமுகம்.உதாரணம்.வெளியீடு')"
-          outlined
-          :dir="வலதிலிருந்து(வெள்மொழி) ? 'rtl': 'ltr'"
-        ></v-textarea>
+          :dir="வெள்_உரை_வலதிலிருந்து ? 'rtl': 'ltr'"
+          v-bind:class="[எழுத்து_திசை_வகை(வெள்_மொழி)]"
+          rows="10"
+          flat
+          variant="outlined"
+          color="secondary"
+        >
+        </v-textarea>
       </v-col>
     </v-row>
     <v-row v-else>
-      <v-col v-if="$லஸ்ஸி.கிடையாது" cols="12">
+      <v-col v-if="லஸ்ஸி_கிடையாது" cols="12">
         <v-card flat class="text-center py-6">
           <v-img
-           :src="require('../assets/ஐஸ்_வண்டி.svg')"
+           src="@/assets/ஐஸ்_வண்டி.svg"
            max-height="250"
            contain
           ></v-img>
@@ -163,7 +138,7 @@
       <v-col v-else cols="12">
         <v-card flat class="text-center py-6">
           <v-img
-           :src="require('../assets/தென்னை_மரம்.svg')"
+           src="@/assets/தென்னை_மரம்.svg"
            max-height="250"
            contain
           ></v-img>
@@ -180,25 +155,27 @@
   </v-sheet>
 </template>
 
-<script>
-import { நிரல்மொழிகள், இயற்கை_மொழிகள், நிறைவு } from 'lassi-ilakkanankal'
-import { வலதிலிருந்து, நோக்குநிலை, குறியீடு, எண்ணுரு, பெயர் } from '../nuchabal/nuchabal'
-import { முறைமைகள் } from '../ennikkai/ennikkai'
+<script setup lang="ts">
+import mozhiPattiyalUrupadi from "./மொழி-பட்டியல்-உருப்படி.vue"
+import { 
+  Nuchabäl
+} from 'nuchabal'
+import { எண்ணிக்கை } from 'ennikkai'
+import { ref, computed, watchEffect } from 'vue'
+import { லஸ்ஸியை_பயன்படுத்து } from "@/plugins/லஸ்ஸி"
+import {useI18n} from 'vue-i18n'
+import _இனங்காட்டிகள் from './இனங்காட்டிகள்.json'
+const மூல்_இனங்காட்டிகள் = _இனங்காட்டிகள் as { [மொழி: string]: string; }[] 
+// https://css-tricks.com/creating-an-editable-textarea-that-supports-syntax-highlighted-code/
 
-export default {
-  name: 'லஸ்ஸி-உதாரணம்',
-  data: function() {
-    return {
-      நிரல்மொழிகள்,
-      நிரல்மொழி: 'python',
-      வெளியீடு: '',
-      உள்மொழி: 'தமிழ்',
-      வெள்மொழி: 'English',
-      நிரலெண்ணுருமுறைமைகள்: முறைமைகள்,
-      உள்நிரலெண்ணுரு: null,
-      வெள்நிரலெண்ணுரு: null,
-      பிழை: null,
-      உதாரணங்கள்: {
+const {t, locale} = useI18n();
+
+const nuchabäl = new Nuchabäl({});
+const எ = new எண்ணிக்கை({})
+
+// லஸ்ஸியின் தகவல்கள்
+const { லஸ்ஸி_தயாரானது, மூல்_எண்ணுரு, லஸ்ஸி_கிடையாது, நிரல்மொழியாக்கம், மொழிகள், மூல்_மொழி, நிரல்மொழிகள் } = லஸ்ஸியை_பயன்படுத்து()
+const உதாரணங்கள்: {[நிரல்மொழி: string]: string} = {
           'python': `class Circle(object):
     pi = 3.141592653
     def __init__(self, radius):
@@ -225,140 +202,105 @@ for c in circles:
     "number": 1e5,
     "nested": {
         "bool": true,
-        "None": null
+        "None": null,
+        "another list": ["a", "b", "c"]
       }
   }`,
-      },
-      உதாரணமுரை: '',
-      உதாரணமுரைதயார்: false,
-      வெளுரைதயார்: false,
-      இனங்காட்டிகள்: require('./இனங்காட்டிகள்.json')
-    }
-  },
-  watch: {
-    நிரல்மொழி: function() {
-      this.உளுரைபுதிப்பிப்பு()
-    },
-    உள்மொழி: function(புதுச, பழச) {
-      if (புதுச === this.வெள்மொழி) {
-        this.வெள்மொழி = பழச
       }
-      this.உளுரைபுதிப்பிப்பு()
-    },
-    உள்நிரலெண்ணுரு: function() {
-      this.உளுரைபுதிப்பிப்பு()
-    },
-    வெள்மொழி: function(புதுச, பழச) {
-      this.வெளியீடு = ''
-      if (புதுச === this.உள்மொழி) {
-        this.உள்மொழி = பழச
-        this.உளுரைபுதிப்பிப்பு()
-      }
-      this.புதிப்பிப்பு()
-    },
-    வெள்நிரலெண்ணுரு: function() {
-      this.புதிப்பிப்பு()
-    },
-    உதாரணமுரை: function() {
-      this.புதிப்பிப்பு()
-    },
-    மொழிகள்: function(மொழி) {
-      let சாத்தியம் = மொழி.includes(this.$i18n.locale) ? this.$i18n.locale : 'தமிழ்'
-      this.உள்மொழி = மொழி.includes(சாத்தியம்) ? சாத்தியம் : மொழி[0]
-    }
-  },
-  mounted() {
-    this.உளுரைபுதிப்பிப்பு()
-  },
-  methods: {
-    வலதிலிருந்து: function(langue) {
-      return வலதிலிருந்து(langue)
-    },
-    நிறைவு: function(மொழி) {
-      return நிறைவு(this.நிரல்மொழி, குறியீடு(மொழி))
-    },
-    லஸ்ஸி: function (இலக்கு, உரை, நிரல்மொழி, உள்_மொழி, வெள்_மொழி, உள்_நிரல்_எண்ணுரு, வெள்_நிரல்_எண்ணுரு, செயலி, பிழைசெயலி) {
-      வெள்_நிரல்_எண்ணுரு = வெள்_நிரல்_எண்ணுரு ? வெள்_நிரல்_எண்ணுரு : எண்ணுரு(வெள்_மொழி)
-      உள்_நிரல்_எண்ணுரு = உள்_நிரல்_எண்ணுரு ? உள்_நிரல்_எண்ணுரு : எண்ணுரு(உள்_மொழி)
+const உதாரண_மூல்_குறியீடு = computed(()=>{
+  return உதாரணங்கள்[நிரல்மொழி.value]
+})
+    
+// விருப்பங்கள்
+const நிரல்மொழி = ref("python");
+const உள்_மொழி = ref("த");
+const வெள்_மொழி = ref("en");
 
-      this.$லஸ்ஸி.மொழியாக்கம்(
-        இலக்கு, உரை, நிரல்மொழி, உள்_மொழி, வெள்_மொழி, உள்_நிரல்_எண்ணுரு, வெள்_நிரல்_எண்ணுரு,
-        JSON.stringify(this.இனங்காட்டிகள்), செயலி, பிழைசெயலி
-      )
-    },
-    புதிப்பிப்பு: function() {
-      this.வெளுரைதயார் = false
+const நிரல்மொழியின்_மொழிகள் = மொழிகள்({நிரல்மொழி});
+const நிரல்மொழியின்_மூல்மொழி = மூல்_மொழி({நிரல்மொழி});
+watchEffect(()=>{
+  if (நிரல்மொழியின்_மூல்மொழி.value) வெள்_மொழி.value = நிரல்மொழியின்_மூல்மொழி.value
+  உள்_மொழி.value = நிரல்மொழியின்_மொழிகள்.value.includes(locale.value) ? locale.value : நிரல்மொழியின்_மொழிகள்.value[நிரல்மொழியின்_மொழிகள்.value.length - 1]
+})
+const மொழிகளை_பறிமாறு = () => {
+  const உள்_மொழி_முன்பு = உள்_மொழி.value
+  உள்_மொழி.value = வெள்_மொழி.value
+  வெள்_மொழி.value = உள்_மொழி_முன்பு
+  
+  const உள்_எண்ணுரு_முன்பு = உள்_நிரல்_எண்ணுரு.value
+  உள்_நிரல்_எண்ணுரு.value = வெள்_நிரல்_எண்ணுரு.value
+  வெள்_நிரல்_எண்ணுரு.value = உள்_எண்ணுரு_முன்பு
+}
 
-      this.லஸ்ஸி(
-        'வெள்',
-        this.உதாரணமுரை,
-        this.நிரல்மொழி,
-        this.உள்மொழி,
-        this.வெள்மொழி,
-        this.உள்நிரலெண்ணுரு,
-        this.வெள்நிரலெண்ணுரு,
-        (நி) => {
-         this.வெளியீடு = நி
-         this.வெளுரைதயார் = true
-         this.பிழை = null
-        },
-        (பிழை) => {
-          console.log('பையோடைட் பிழை: ', பிழை)
-          this.வெளியீடு = பிழை
-          this.பிழை = பிழை
-          this.வெளுரைதயார் = true
-        }
-      )
-    },
-    உளுரைபுதிப்பிப்பு: function() {
-      const உதாரணமுரை = this.உதாரணங்கள்[this.நிரல்மொழி]
+const உள்_நிரல்_எண்ணுரு = ref("");
+const வெள்_நிரல்_எண்ணுரு = ref("");
+const நிரல்மொழி_மூல்_எண்ணுரு = மூல்_எண்ணுரு({நிரல்மொழி});
 
-      if (உதாரணமுரை) {
-        if (குறியீடு(this.உள்மொழி) === இயற்கை_மொழிகள்(this.நிரல்மொழி)[0]) {
-          this.உதாரணமுரை = உதாரணமுரை
-          return
-        }
-        this.உதாரணமுரைதயார் = false
-        this.லஸ்ஸி(
-          'உள்',
-          உதாரணமுரை,
-          this.நிரல்மொழி,
-          "English",
-          this.உள்மொழி,
-          'latin',
-          this.உள்நிரலெண்ணுரு,
-          (நி) => {
-            this.உதாரணமுரை = நி
-            this.உதாரணமுரைதயார் = true
-          },
-          (பிழை) => {
-            console.log('பையோடைட் பிழை: ', பிழை)
-            this.வெளுரைதயார் = true
-          }
-        )
-      } else {
-        this.உதாரணமுரை = ''
-      }
-    },
-    உள்மொழிபுதிப்பிப்பு: function() {
-      this.மொழி = this.மொழி || பெயர்(this.மொழிகள்[0])
-    },
-    நோக்குநிலை: function(மொழி) {
-      const நோக்கு = நோக்குநிலை(மொழி)
-      switch (நோக்கு) {
-        case 'செங்குத்து-வஇட':
-        return 'vertical-rl'
-        case 'செங்குத்து-இடவ':
-        return 'vertical-lr'
-      }
-    }
-  },
-  computed: {
-    மொழிகள்: function() {
-      return இயற்கை_மொழிகள்(this.நிரல்மொழி).map(மொழி => பெயர்(மொழி)).sort((இ,ஈ) => this.நிறைவு(இ) < this.நிறைவு(ஈ))
-    }
+const எண்ணுரு_முறைமை_உருப்படிகள் = computed(()=>{
+  return [
+    {title: t('அறிமுகம்.உதாரணம்.தனிப்பட்ட'), value: ""},
+    ...எ.முறைமைகள்.map(இ => ({title: இ, value :இ}))
+  ]
+})
+
+const உரை = computed(()=>{
+  return உதாரணம்_உரை.value
+})
+
+// லஸ்ஸி
+const இனங்காட்டிகள் = ref<{ [மொழி: string]: string }[]>(மூல்_இனங்காட்டிகள்)
+const {
+  மொழியாக்கம்: உதாரணம்_உரை, பிழை: உள்_உரை_பிழை, தயாரானது: உதாரணம்_உரை_தயாரானது
+} = நிரல்மொழியாக்கம்({
+  உள்_மொழி: நிரல்மொழியின்_மூல்மொழி,
+  வெள்_மொழி: உள்_மொழி,
+  உரை: உதாரண_மூல்_குறியீடு,
+  நிரல்மொழி,
+  உள்_நிரல்_எண்ணுரு: நிரல்மொழி_மூல்_எண்ணுரு,
+  வெள்_நிரல்_எண்ணுரு: உள்_நிரல்_எண்ணுரு,
+  இனங்காட்டிகள்
+})
+const { மொழியாக்கம், பிழை, தயாரானது: வெள்_உரை_தயார் } = நிரல்மொழியாக்கம்({
+  உள்_மொழி,
+  வெள்_மொழி,
+  உரை,
+  நிரல்மொழி,
+  உள்_நிரல்_எண்ணுரு,
+  வெள்_நிரல்_எண்ணுரு,
+  இனங்காட்டிகள்
+})
+
+// வேறு கருவிகள்
+const வலதிலிருந்து = (மொழி: string): boolean => {
+  const திசை = nuchabäl.rucholanemTzibanem({runuk: மொழி})
+  return திசை === '←↓';
+}
+const எழுத்து_திசை_வகை = (மொழி: string) => {
+  const திசை = nuchabäl.rucholanemTzibanem({runuk: மொழி})
+  switch (திசை) {
+    case '↓←':
+      return 'vertical-rl'
+    case '↓→':
+      return 'vertical-lr'
   }
 }
+const உள்_உரை_வலதிலிருந்து = ref(false);
+const உள்_உரை_எழுத்து_திசை_வகை = ref<'vertical-rl'|'vertical-lr'>();
+watchEffect(()=>{
+  if (உதாரணம்_உரை_தயாரானது) {
+    உள்_உரை_வலதிலிருந்து.value = வலதிலிருந்து(உள்_மொழி.value)
+    உள்_உரை_எழுத்து_திசை_வகை.value = எழுத்து_திசை_வகை(உள்_மொழி.value)
+  }
+})
+const வெள்_உரை_வலதிலிருந்து = ref(false);
+const வெள்_உரை_எழுத்து_திசை_வகை = ref<'vertical-rl'|'vertical-lr'>();
+watchEffect(()=>{
+  if (வெள்_உரை_தயார்) {
+    வெள்_உரை_வலதிலிருந்து.value = வலதிலிருந்து(வெள்_மொழி.value);
+    வெள்_உரை_எழுத்து_திசை_வகை.value = எழுத்து_திசை_வகை(வெள்_மொழி.value);
+  }
+})
+
 </script>
 
 <style>
