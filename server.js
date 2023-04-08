@@ -3,22 +3,17 @@
 var express = require('express')
 var path = require('path')
 var serveStatic = require('serve-static')
-var secure = require('express-force-https');
 
 var app = express();
-app.use(secure);
 
 var history = require('connect-history-api-fallback')
 app.use(history())
 
-var compression = require('compression')
-app.use(compression())
+var compression = require('compression');
+app.use(compression());
 
-// இது முக்கியமானது! உங்கள் கணினியில் உருவாக்கும் பொழுது இதை பயன்படுத்த கூடாது!
-if (process.env.NODE_ENV === 'production') {
-	// var secure = require('express-force-https')
-	// app.use(secure())
-}
+var secure = require('express-force-https');
+app.use(secure());
 
 app.use(serveStatic(path.join(__dirname, "/dist")))
 
