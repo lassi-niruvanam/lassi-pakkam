@@ -3,8 +3,10 @@
 var express = require('express')
 var path = require('path')
 var serveStatic = require('serve-static')
+var secure = require('express-force-https');
 
-var app = express()
+var app = express();
+app.use(secure);
 
 var history = require('connect-history-api-fallback')
 app.use(history())
