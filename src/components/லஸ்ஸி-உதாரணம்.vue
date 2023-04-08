@@ -148,6 +148,7 @@
           flat
           variant="outlined"
           color="secondary"
+          readonly
         >
         </v-textarea>
       </v-col>
