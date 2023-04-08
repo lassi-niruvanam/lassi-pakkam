@@ -100,7 +100,7 @@
                   <v-divider />
                   <v-card-text style="overflow-y: auto;">
                     <v-list>
-                      <v-list-item v-for="இ in இனங்காட்டிகள்" :key="இ">
+                      <v-list-item v-for="இ in இனங்காட்டிகள்" :key="Object.keys(இ)[0]">
                         <v-row>
                           <v-col cols="6">
                             <v-text-field variant="outlined" density="compact">{{ இ[உள்_மொழி] }}</v-text-field>
