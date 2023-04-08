@@ -86,6 +86,35 @@
                 color="secondary"
               ></v-select>
             </v-col>
+            <v-col cols="2">
+              <v-dialog v-model="இனங்காட்டி_பெட்டி">
+                <template #activator="{props}">
+                  <v-btn v-bind="props" icon="mdi-xml" size="small" variant="outlined" />
+                </template>
+                <v-card :width="mdAndUp ? 500 : 300" class="mx-auto">
+                  <v-card-item>
+                    <v-card-title>
+                      இனங்காட்டிகள்
+                    </v-card-title>
+                  </v-card-item>
+                  <v-divider />
+                  <v-card-text style="overflow-y: auto;">
+                    <v-list>
+                      <v-list-item v-for="இ in இனங்காட்டிகள்" :key="இ">
+                        <v-row>
+                          <v-col cols="6">
+                            <v-text-field variant="outlined" density="compact">{{ இ[உள்_மொழி] }}</v-text-field>
+                          </v-col>
+                          <v-col cols="6">
+                            <v-text-field variant="outlined" density="compact" @update:model-value="இ => இனங்காட்டியை_சேமி(இ)">{{ இ[வெள்_மொழி] }}</v-text-field>
+                          </v-col>
+                        </v-row>
+                      </v-list-item>
+                    </v-list>
+                  </v-card-text>
+                </v-card>
+              </v-dialog>
+            </v-col>
           </v-row>
       </v-col>
     </v-row>
@@ -93,12 +122,12 @@
       <v-col cols="6">
         <v-textarea
           v-model="உதாரணம்_உரை"
+          v-bind:class="[உள்_உரை_எழுத்து_திசை_வகை]"
           :disabled="!உதாரணம்_உரை_தயாரானது"
           :loading="!உதாரணம்_உரை_தயாரானது"
           :no-resize="true"
           :label="$t('அறிமுகம்.உதாரணம்.உள்ளீடு')"
           :dir="உள்_உரை_வலதிலிருந்து ? 'rtl': 'ltr'"
-          v-bind:class="[எழுத்து_திசை_வகை(உள்_மொழி)]"
           rows="10"
           flat
           variant="outlined"
@@ -109,12 +138,12 @@
       <v-col cols="6">
         <v-textarea
           v-model="மொழியாக்கம்"
+          v-bind:class="[வெள்_உரை_எழுத்து_திசை_வகை]"
           :disabled="!வெள்_உரை_தயார்"
           :loading="!வெள்_உரை_தயார்"
           :no-resize="true"
           :label="$t('அறிமுகம்.உதாரணம்.வெளியீடு')"
           :dir="வெள்_உரை_வலதிலிருந்து ? 'rtl': 'ltr'"
-          v-bind:class="[எழுத்து_திசை_வகை(வெள்_மொழி)]"
           rows="10"
           flat
           variant="outlined"
@@ -165,6 +194,7 @@ import { ref, computed, watchEffect } from 'vue'
 import { லஸ்ஸியை_பயன்படுத்து } from "@/plugins/லஸ்ஸி"
 import {useI18n} from 'vue-i18n'
 import _இனங்காட்டிகள் from './இனங்காட்டிகள்.json'
+import { useDisplay } from "vuetify"
 const மூல்_இனங்காட்டிகள் = _இனங்காட்டிகள் as { [மொழி: string]: string; }[] 
 // https://css-tricks.com/creating-an-editable-textarea-that-supports-syntax-highlighted-code/
 
@@ -172,6 +202,11 @@ const {t, locale} = useI18n();
 
 const nuchabäl = new Nuchabäl({});
 const எ = new எண்ணிக்கை({})
+
+const { mdAndUp } = useDisplay()
+
+// இனங்காட்டிகள்
+const இனங்காட்டி_பெட்டி = ref(false);
 
 // லஸ்ஸியின் தகவல்கள்
 const { லஸ்ஸி_தயாரானது, மூல்_எண்ணுரு, லஸ்ஸி_கிடையாது, நிரல்மொழியாக்கம், மொழிகள், மூல்_மொழி, நிரல்மொழிகள் } = லஸ்ஸியை_பயன்படுத்து()
@@ -287,7 +322,7 @@ const எழுத்து_திசை_வகை = (மொழி: string) => {
 const உள்_உரை_வலதிலிருந்து = ref(false);
 const உள்_உரை_எழுத்து_திசை_வகை = ref<'vertical-rl'|'vertical-lr'>();
 watchEffect(()=>{
-  if (உதாரணம்_உரை_தயாரானது) {
+  if (உதாரணம்_உரை_தயாரானது.value) {
     உள்_உரை_வலதிலிருந்து.value = வலதிலிருந்து(உள்_மொழி.value)
     உள்_உரை_எழுத்து_திசை_வகை.value = எழுத்து_திசை_வகை(உள்_மொழி.value)
   }
@@ -295,11 +330,17 @@ watchEffect(()=>{
 const வெள்_உரை_வலதிலிருந்து = ref(false);
 const வெள்_உரை_எழுத்து_திசை_வகை = ref<'vertical-rl'|'vertical-lr'>();
 watchEffect(()=>{
-  if (வெள்_உரை_தயார்) {
+  console.log({"வெள்_உரை_தயார்":வெள்_உரை_தயார்.value})
+  if (வெள்_உரை_தயார்.value) {
     வெள்_உரை_வலதிலிருந்து.value = வலதிலிருந்து(வெள்_மொழி.value);
     வெள்_உரை_எழுத்து_திசை_வகை.value = எழுத்து_திசை_வகை(வெள்_மொழி.value);
   }
 })
+
+// இனங்காட்டிகள்
+const இனங்காட்டியை_சேமி = (இ: string) => {
+  console.log(இ)
+}
 
 </script>
 
