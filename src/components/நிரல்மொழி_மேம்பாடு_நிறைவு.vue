@@ -26,7 +26,7 @@ import { லஸ்ஸியை_பயன்படுத்து } from '@/plugi
 import { Nuchabäl } from 'nuchabal';
 import { computed, inject } from 'vue';
 
-const சொத்துகள் = defineProps<{niralmozhi: string, mozhi: string, mulMozhi: string}>();
+const சொத்துகள் = defineProps<{niralmozhi: string, mozhi: string, mulMozhi?: string}>();
 
 const nuchabäl = inject<Nuchabäl>("nuchabäl")
 

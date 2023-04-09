@@ -34,7 +34,6 @@
       </v-row>
     </v-expansion-panel-title>
     <v-expansion-panel-text>
-      <v-divider class="mb-2"></v-divider>
       
       <div class="d-flex">
         <p class="text-h5">{{$t('மேம்பாடு.மொழியாக்கம்_மேம்பாடு')}}</p>
