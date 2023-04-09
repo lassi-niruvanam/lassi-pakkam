@@ -12,8 +12,14 @@ app.use(history())
 var compression = require('compression');
 app.use(compression());
 
-var secure = require('express-force-https');
-app.use(secure());
+function requireHTTPS(req, res, next) {
+	// The 'x-forwarded-proto' check is for Heroku
+	if (!req.secure && req.get('x-forwarded-proto') !== 'https' && process.env.NODE_ENV !== "development") {
+		return res.redirect('https://' + req.get('host') + req.url);
+	}
+	next();
+}
+app.use(requireHTTPS());
 
 app.use(serveStatic(path.join(__dirname, "/dist")))
 
