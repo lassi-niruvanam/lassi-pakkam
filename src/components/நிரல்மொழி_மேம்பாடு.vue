@@ -1,100 +1,64 @@
 <template>
-  <v-list-item>
-    <v-row class="py-2">
-      <v-col cols=3 class="text-center">
-        <v-img v-if="படம்"
-          tile class="mx-auto" max-height="70" contain max-width="70"
-          :src="படம்" />
-        <h1 v-else class="text-h1">
-          {{ இந்த_நிரல்மொழி_பெயர் ? இந்த_நிரல்மொழி_பெயர்[0] : niralmozhi[0] }}
-        </h1>
-        <v-card-title
-          class="justify-center pb-0"
-        >{{ இந்த_நிரல்மொழி_பெயர் }}</v-card-title>
-      </v-col>
-      <v-divider vertical/>
-      <v-col class="text-center" cols=4>
-        <h1 class="font-weight-bold my-3">
-          {{ $t('மேம்பாடு.மொழிகள்') }}
-        </h1>
-        <p class="text-h2">{{ மொழி_எண்_வடிவூட்டப்பட்டது }}</p>
-      </v-col>
-      <v-col class="text-center" cols=4>
-        <h1 class="font-weight-bold my-3">
-          {{ $t('மேம்பாடு.நிறைவு') }}
-        </h1>
-        <v-progress-circular
-          :model-value="மொத்தமான_நிறைவு * 100"
-          size="60"
-          width="8"
-          :color="மொத்தமான_நிறைவு === 0 ? 'grey lighten-2' : 'primary'"
-        >{{ மொத்தமான_நிறைவு_வடிவூட்டப்பட்டது }} %</v-progress-circular>
-      </v-col>
-    </v-row>
-    <v-divider />
-  </v-list-item>
-  <!--<v-expansion-panel-text>
-    <v-divider class="mb-2"></v-divider>
-    <div class="d-flex">
-      <v-tabs
-        v-model="தாவல்"
-      >
-        <v-tab :ripple="false">{{ $t('மேம்பாடு.மொழியாக்கம்_மேம்பாடு') }}</v-tab>
-      </v-tabs>
-      <div
-        class="my-auto"
-      >
+  <v-expansion-panel>
+    <v-expansion-panel-title>
+      <v-row class="py-2">
+        <v-col cols=3 class="text-center">
+          <v-img v-if="படம்"
+            tile class="mx-auto" max-height="70" contain max-width="70"
+            :src="படம்" />
+          <h1 v-else class="text-h1">
+            {{ இந்த_நிரல்மொழி_பெயர் ? இந்த_நிரல்மொழி_பெயர்[0] : niralmozhi[0] }}
+          </h1>
+          <v-card-title
+            class="justify-center pb-0"
+          >{{ இந்த_நிரல்மொழி_பெயர் }}</v-card-title>
+        </v-col>
+        <v-divider vertical/>
+        <v-col class="text-center" cols=4>
+          <h1 class="font-weight-bold my-3">
+            {{ $t('மேம்பாடு.மொழிகள்') }}
+          </h1>
+          <p class="text-h2">{{ மொழி_எண்_வடிவூட்டப்பட்டது }}</p>
+        </v-col>
+        <v-col class="text-center" cols=4>
+          <h1 class="font-weight-bold my-3">
+            {{ $t('மேம்பாடு.நிறைவு') }}
+          </h1>
+          <v-progress-circular
+            :model-value="மொத்தமான_நிறைவு * 100"
+            size="60"
+            width="8"
+            :color="மொத்தமான_நிறைவு === 0 ? 'grey lighten-2' : 'primary'"
+          >{{ மொத்தமான_நிறைவு_வடிவூட்டப்பட்டது }} %</v-progress-circular>
+        </v-col>
+      </v-row>
+    </v-expansion-panel-title>
+    <v-expansion-panel-text>
+      <v-divider class="mb-2"></v-divider>
+      
+      <div class="d-flex">
+        <p class="text-h5">{{$t('மேம்பாடு.மொழியாக்கம்_மேம்பாடு')}}</p>
+        <v-spacer/>
         <v-btn
-          :href="'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/இலக்கணங்கள்/' + niralmozhi"
-          rel=”noopener”
-          target="_blank"
-          color="primary"
-          variant="outlined"
-        >
-          {{ $t('மேம்பாடு.இப்பொதே_பங்களி') }}
-          <v-icon end>mdi-arrow-right</v-icon>
-        </v-btn>
+            :href="'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/இலக்கணங்கள்/' + niralmozhi"
+            rel=”noopener”
+            target="_blank"
+            color="primary"
+            variant="outlined"
+          >
+            {{ $t('மேம்பாடு.இப்பொதே_பங்களி') }}
+            <v-icon end>mdi-open-in-new</v-icon>
+          </v-btn>
       </div>
-    </div>
-    <v-tabs v-model="தாவல்">
-      <v-window-item>
-        <v-card
-          flat
-          class="pa-5"
-          min-height="150"
-        >
-          <v-row>
-            <v-col cols=12>
-              <v-row>
-                <v-col cols=2>
-                  <h3 class="display-5 grey--text">{{ நிரல்மொழி_மூல்_மொழி }}</h3>
-                </v-col>
-                <v-col cols=10 class="my-auto">
-                  <v-progress-linear
-                    :model-value="100"
-                    :buffer-value="100"
-                    color="grey lighten-2"
-                    height="11"
-                    rounded
-                  ></v-progress-linear>
-                </v-col>
-              </v-row>
-            </v-col>
-            <v-col v-for="மொ in கிடைக்கும்_மொழிகள்.slice(1)" :key="மொ" cols=12>
-              <v-row>
-                <v-col cols=2>
-                  <h3 class="display-5">{{ மொ }}</h3>
-                </v-col>
-                <v-col cols=10 class="my-auto">
-                  <NiralmozhiMempatuNiraivu :niralmozhi="niralmozhi" :mozhi="மொ" />
-                </v-col>
-              </v-row>
-            </v-col>
-          </v-row>
-        </v-card>
-      </v-window-item>
-    </v-tabs>
-  </v-expansion-panel-text>-->
+      <v-list>
+        <NiralmozhiMempatuNiraivu v-for="மொ in கிடைக்கும்_மொழிகள்" :key="மொ" :niralmozhi="niralmozhi" :mozhi="மொ" :mulMozhi="நிரல்மொழி_மூல்_மொழி"/>
+      </v-list>
+      
+      
+    </v-expansion-panel-text>
+    
+    <v-divider />
+  </v-expansion-panel>
 </template>
 <script setup lang="ts">
 import type {Nuchabäl} from 'nuchabal';

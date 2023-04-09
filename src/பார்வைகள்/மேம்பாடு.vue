@@ -13,10 +13,10 @@
         <h1 class="display-1 font-weight-bold py-10">
           லஸ்ஸிக்கு மேலே தொடர்ந்து வேலை செய்கிறோம்
         </h1>
-        <v-list>
+        <v-expansion-panels>
             <niralmozhi-mempatu v-for="நிரல்மொழி in நிரல்மொழிகள்"
             :key="நிரல்மொழி" :niralmozhi="நிரல்மொழி" />
-        </v-list>
+        </v-expansion-panels>
       </v-card>
     </v-container>
 </template>
