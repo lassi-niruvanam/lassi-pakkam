@@ -21,7 +21,7 @@ import { inject } from 'vue';
 
 const props = defineProps<{நிரல்மொழி: string, மொழி: string}>();
 
-const nuchabäl = inject<Nuchabäl>("nuchabäl")
+const nuchabäl = inject<Nuchabäl>("nuch'ab'äl")
 const மொழி_பெயர் = nuchabäl?.rubiChabäl({runuk: props.மொழி  }) || props.மொழி;
 
 const { நிறைவு } = லஸ்ஸியை_பயன்படுத்து();

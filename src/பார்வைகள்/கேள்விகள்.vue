@@ -13,7 +13,7 @@
              contain
             ></v-img>
             <h1 class="display-1 font-weight-bold mb-3">
-              {{ $t('கேள்விகள்.தலைப்பு') }}
+              {{ $மொ('கேள்விகள்.தலைப்பு') }}
             </h1>
           </v-col>
           <v-col
@@ -22,13 +22,13 @@
           >
             <h2
               class="headline font-weight-bold mb-3"
-              v-html="compiledMarkdown( $t('கேள்விகள்.'+ கேள்வி.கேள்வி) )"
+              v-html="compiledMarkdown( $மொ('கேள்விகள்.'+ கேள்வி.கேள்வி) )"
             >
             </h2>
 
             <div
              v-for="(பதில், ஈ) in கேள்வி.பதில்" :key="'பதில்-' + ஈ"
-             v-html="compiledMarkdown( $t('கேள்விகள்.' + பதில்) )"
+             v-html="compiledMarkdown( $மொ('கேள்விகள்.' + பதில்) )"
             ></div>
 
           </v-col>
@@ -46,6 +46,10 @@
 <script setup lang="ts">
 import {marked} from 'marked'
 import DOMPurify from 'dompurify';
+import {கிளிமூக்கை_பயன்படுத்து} from "@lassi-js/kilimukku-vue"
+
+const {மொழியாக்கம்_பயன்படுத்து} = கிளிமூக்கை_பயன்படுத்து();
+const {$மொ} = மொழியாக்கம்_பயன்படுத்து({})
 
 const compiledMarkdown = (உரை: string) => {
   return DOMPurify.sanitize(marked(உரை));

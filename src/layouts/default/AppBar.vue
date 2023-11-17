@@ -6,7 +6,6 @@
     <v-app-bar-title>
       <v-tabs
         v-model="தற்பொழுது_தாவல்"
-        :left="true"
         color="secondary"
       >
           <v-tab
@@ -16,21 +15,27 @@
             :ripple="false"
             color="secondary"
           >
-            <h3>{{ $t('தாவல்.' + தாவல்) }}</h3>
+            <h3>{{ $மொ('தாவல்.' + தாவல்) }}</h3>
           </v-tab>
       </v-tabs>
       
     </v-app-bar-title>
-    <v-btn icon href="https://github.com/lassi-niruvanam/lassi">
-      <v-icon>
-      mdi-git
-    </v-icon></v-btn>
+    <v-btn icon="mdi-git" href="https://github.com/lassi-niruvanam/lassi" />
+    <itaimukam-mozhi-pattiyal>
+      <template #activator="{props}">
+        <v-btn v-bind="props" icon="mdi-earth" color="primary"/>
+      </template>
+    </itaimukam-mozhi-pattiyal>
   </v-app-bar>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+import ItaimukamMozhiPattiyal from "@/components/மொழிகள்/இடைமுகம்_மொழி_பட்டியல்.vue"
+import {கிளிமூக்கை_பயன்படுத்து} from "@lassi-js/kilimukku-vue"
 
+const {மொழியாக்கம்_பயன்படுத்து} = கிளிமூக்கை_பயன்படுத்து();
+const {$மொ} = மொழியாக்கம்_பயன்படுத்து({})
 const தற்பொழுது_தாவல் = ref('அறிமுகம்');
 const தாவல்கள் =[
   'அறிமுகம்', 'கேள்விகள்', 'மேம்பாடு',

@@ -23,12 +23,12 @@
 </template>
 <script setup lang="ts">
 import { லஸ்ஸியை_பயன்படுத்து } from '@/plugins/லஸ்ஸி';
-import { Nuchabäl } from 'nuchabal';
+import type { Nuchabäl } from 'nuchabal';
 import { computed, inject } from 'vue';
 
 const சொத்துகள் = defineProps<{niralmozhi: string, mozhi: string, mulMozhi?: string}>();
 
-const nuchabäl = inject<Nuchabäl>("nuchabäl")
+const nuchabäl = inject<Nuchabäl>("nuch'ab'äl")
 
 const {நிறைவு} = லஸ்ஸியை_பயன்படுத்து();
 const இந்த_நிறைவு = நிறைவு({நிரல்மொழி: சொத்துகள்.niralmozhi, மொழி: சொத்துகள்.mozhi})

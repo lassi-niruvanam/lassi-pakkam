@@ -16,13 +16,13 @@
         <v-divider vertical/>
         <v-col class="text-center" cols=4>
           <h1 class="font-weight-bold my-3">
-            {{ $t('மேம்பாடு.மொழிகள்') }}
+            {{ $மொ('மேம்பாடு.மொழிகள்') }}
           </h1>
           <p class="text-h2">{{ மொழி_எண்_வடிவூட்டப்பட்டது }}</p>
         </v-col>
         <v-col class="text-center" cols=4>
           <h1 class="font-weight-bold my-3">
-            {{ $t('மேம்பாடு.நிறைவு') }}
+            {{ $மொ('மேம்பாடு.நிறைவு') }}
           </h1>
           <v-progress-circular
             :model-value="மொத்தமான_நிறைவு * 100"
@@ -36,7 +36,7 @@
     <v-expansion-panel-text>
       
       <div class="d-flex">
-        <p class="text-h5">{{$t('மேம்பாடு.மொழியாக்கம்_மேம்பாடு')}}</p>
+        <p class="text-h5">{{$மொ('மேம்பாடு.மொழியாக்கம்_மேம்பாடு')}}</p>
         <v-spacer/>
         <v-btn
             :href="'https://github.com/lassi-samaaj/lassi-ilakkanangal/tree/master/இலக்கணங்கள்/' + niralmozhi"
@@ -45,7 +45,7 @@
             color="primary"
             variant="outlined"
           >
-            {{ $t('மேம்பாடு.இப்பொதே_பங்களி') }}
+            {{ $மொ('மேம்பாடு.இப்பொதே_பங்களி') }}
             <v-icon end>mdi-open-in-new</v-icon>
           </v-btn>
       </div>
@@ -60,22 +60,19 @@
   </v-expansion-panel>
 </template>
 <script setup lang="ts">
-import type {Nuchabäl} from 'nuchabal';
-import { computed, inject, ref } from 'vue';
-import { எண்ணிக்கை } from 'ennikkai'
+import { computed } from 'vue';
 import { லஸ்ஸியை_பயன்படுத்து } from '@/plugins/லஸ்ஸி';
-import { useI18n } from 'vue-i18n';
+import { மொழிகளைப்_பயன்படுத்து, எண்களைப்_பயன்படுத்து, கிளிமூக்கை_பயன்படுத்து } from '@lassi-js/kilimukku-vue';
 
 import NiralmozhiMempatuNiraivu from "./நிரல்மொழி_மேம்பாடு_நிறைவு.vue"
 
+const {மொழியாக்கம்_பயன்படுத்து} = கிளிமூக்கை_பயன்படுத்து();
+const {$மொ} = மொழியாக்கம்_பயன்படுத்து({})
+
 const சொத்துகள் = defineProps<{niralmozhi: string}>();
 
-const nuchabäl = inject<Nuchabäl>("nuchabäl")
-
-const { locale } = useI18n();
-const எ = new எண்ணிக்கை({}) 
-
-const தாவல் = ref(0);
+const {மொழி} = மொழிகளைப்_பயன்படுத்து();
+const {எண்ணை_வடிவூட்டு} = எண்களைப்_பயன்படுத்து();
 
 const படம் = computed(()=>{
   switch (சொத்துகள்.niralmozhi) {
@@ -106,25 +103,16 @@ const படம் = computed(()=>{
   }
 })
 const {மொழிகள், நிரல்மொழி_பெயர், நிறைவு, மூல்_மொழி} = லஸ்ஸியை_பயன்படுத்து();
-const இந்த_நிரல்மொழி_பெயர் = நிரல்மொழி_பெயர்({நிரல்மொழி: computed(()=>சொத்துகள்.niralmozhi), மொழி: computed(()=>locale.value)})
+const இந்த_நிரல்மொழி_பெயர் = நிரல்மொழி_பெயர்({நிரல்மொழி: computed(()=>சொத்துகள்.niralmozhi), மொழி: computed(()=>மொழி.value)})
 const கிடைக்கும்_மொழிகள் = மொழிகள்({நிரல்மொழி: computed(()=>சொத்துகள்.niralmozhi)})
 const மொழி_எண் = computed(()=>{
   return கிடைக்கும்_மொழிகள்.value.length
 })
 const நிரல்மொழி_மூல்_மொழி = மூல்_மொழி({நிரல்மொழி: computed(()=>சொத்துகள்.niralmozhi)})
 const மொத்தமான_நிறைவு = நிறைவு({நிரல்மொழி:computed(()=>சொத்துகள்.niralmozhi)})
-const மொத்தமான_நிறைவு_வடிவூட்டப்பட்டது = computed(()=>{
-  const முறைமை = nuchabäl?.rajilanïkChabäl({runuk: locale.value})
-  if (!முறைமை) return ''
-  return எ.உரைக்கு({எண்: Math.round(மொத்தமான_நிறைவு.value * 100), மொழி: முறைமை})
-})
-const எண்ணுரு_முறைமை = computed(()=>{
-  return nuchabäl?.rajilanïkChabäl({runuk: locale.value})
-})
-const மொழி_எண்_வடிவூட்டப்பட்டது = computed(()=>{
-  if (!எண்ணுரு_முறைமை.value) return
-  return எ.உரைக்கு({எண்: மொழி_எண்.value, மொழி: எண்ணுரு_முறைமை.value })
-});
+const மொத்தமான_நிறைவு_வடிவூட்டப்பட்டது = எண்ணை_வடிவூட்டு(computed(()=>Math.round(மொத்தமான_நிறைவு.value * 100)));
+
+const மொழி_எண்_வடிவூட்டப்பட்டது = எண்ணை_வடிவூட்டு(மொழி_எண்);
 
 // நிறைவு
 

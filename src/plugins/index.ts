@@ -9,8 +9,7 @@ import { loadFonts } from './webfontloader'
 import vuetify from './vuetify'
 import router from '../router'
 import லஸ்ஸி from './லஸ்ஸி'
-import i18n from './i18n'
-import nuchabäl from './nuchabäl'
+import கிளிமூக்கு from './கிளிமூக்கு/கிளிமூக்கு'
 
 // Types
 import type { App } from 'vue'
@@ -20,7 +19,6 @@ export function registerPlugins (app: App) {
   app
     .use(vuetify)
     .use(router)
-    .use(nuchabäl)
     .use(லஸ்ஸி)
-    .use(i18n)
+    .use(கிளிமூக்கு)
 }
