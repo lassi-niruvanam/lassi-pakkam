@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.0.12
     version: 1.0.12(vue@3.2.47)(wrtc@0.4.7)
   '@mdi/font':
-    specifier: 7.0.96
-    version: 7.0.96
+    specifier: 7.4.47
+    version: 7.4.47
   compression:
     specifier: ^1.7.4
     version: 1.7.4
@@ -2827,8 +2827,8 @@ packages:
       - supports-color
     dev: false
 
-  /@mdi/font@7.0.96:
-    resolution: {integrity: sha512-rzlxTfR64hqY8yiBzDjmANfcd8rv+T5C0Yedv/TWk2QyAQYdc66e0kaN1ipmnYU3RukHRTRcBARHzzm+tIhL7w==}
+  /@mdi/font@7.4.47:
+    resolution: {integrity: sha512-43MtGpd585SNzHZPcYowu/84Vz2a2g31TvPMTm9uTiCSWzaheQySUcSyUH/46fPnuPQWof2yd0pGBtzee/IQWw==}
     dev: false
 
   /@multiformats/mafmt@11.1.2:
@@ -5062,6 +5062,7 @@ packages:
 
   /domexception@1.0.1:
     resolution: {integrity: sha512-raigMkn7CJNNo6Ihro1fzG7wr3fHuYVytzquZKX5n0yizGsTcYgzdIUwj1X9pK0VvjeihV+XiclP+DjwbsSKug==}
+    deprecated: Use your platform's native DOMException instead
     requiresBuild: true
     dependencies:
       webidl-conversions: 4.0.2
