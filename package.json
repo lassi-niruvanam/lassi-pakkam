@@ -10,7 +10,7 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": "20.x"
+    "node": "21.x"
   },
   "dependencies": {
     "@lassi-js/kilimukku-vue": "^1.0.12",
