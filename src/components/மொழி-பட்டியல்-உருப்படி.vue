@@ -16,13 +16,14 @@
 </template>
 <script setup lang="ts">
 import { லஸ்ஸியை_பயன்படுத்து } from '@/plugins/லஸ்ஸி';
-import { Nuchabäl } from 'nuchabal';
-import { inject } from 'vue';
+import { கிளிமூக்கை_பயன்படுத்து } from '@lassi-js/kilimukku-vue';
 
 const props = defineProps<{நிரல்மொழி: string, மொழி: string}>();
 
-const nuchabäl = inject<Nuchabäl>("nuch'ab'äl")
-const மொழி_பெயர் = nuchabäl?.rubiChabäl({runuk: props.மொழி  }) || props.மொழி;
+const { கிடைக்கும்_மொழிகளை_பயன்படுத்து } = கிளிமூக்கை_பயன்படுத்து();
+const {மொழியின்_பெயர், } = கிடைக்கும்_மொழிகளை_பயன்படுத்து({});
+
+const மொழி_பெயர் = மொழியின்_பெயர்(props.மொழி)
 
 const { நிறைவு } = லஸ்ஸியை_பயன்படுத்து();
 
