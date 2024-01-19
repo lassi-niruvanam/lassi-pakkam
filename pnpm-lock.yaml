@@ -71,8 +71,8 @@ devDependencies:
     specifier: ^5.0.0
     version: 5.0.2
   '@types/node':
-    specifier: ^18.14.1
-    version: 18.14.1
+    specifier: ^20.0.0
+    version: 20.11.5
   '@types/uuid':
     specifier: ^9.0.1
     version: 9.0.1
@@ -99,7 +99,7 @@ devDependencies:
     version: 4.9.5
   vite:
     specifier: ^4.1.4
-    version: 4.1.4(@types/node@18.14.1)(sass@1.58.3)
+    version: 4.1.4(@types/node@20.11.5)(sass@1.58.3)
   vite-plugin-vuetify:
     specifier: ^1.0.2
     version: 1.0.2(vite@4.1.4)(vue@3.2.47)(vuetify@3.1.6)
@@ -1043,7 +1043,7 @@ packages:
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.10
-      '@types/node': 18.18.9
+      '@types/node': 20.11.5
     dev: false
 
   /@grpc/proto-loader@0.7.10:
@@ -3259,14 +3259,14 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.4
       '@types/keyv': 3.1.4
-      '@types/node': 18.18.9
+      '@types/node': 20.11.5
       '@types/responselike': 1.0.3
     dev: false
 
   /@types/dns-packet@5.2.4:
     resolution: {integrity: sha512-OAruArypdNxR/tzbmrtoyEuXeNTLaZCpO19BXaNC10T5ACIbvjmvhmV2RDEy2eLc3w8IjK7SY3cvUCcAW+sfoQ==}
     dependencies:
-      '@types/node': 18.14.1
+      '@types/node': 20.11.5
     dev: false
 
   /@types/dompurify@3.0.0:
@@ -3286,7 +3286,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 18.18.9
+      '@types/node': 20.11.5
     dev: false
 
   /@types/long@4.0.2:
@@ -3305,21 +3305,23 @@ packages:
     resolution: {integrity: sha512-A2PmB8MRcNVEkw6wzGT5rtBHqyHOVjiRMkJH+zpJKXipSi+GGkHg6JjNFApDiYK9WefJqkVG0taln1VMl4TGfw==}
     dependencies:
       '@types/dns-packet': 5.2.4
-      '@types/node': 18.14.1
+      '@types/node': 20.11.5
     dev: false
 
   /@types/node@16.18.61:
     resolution: {integrity: sha512-k0N7BqGhJoJzdh6MuQg1V1ragJiXTh8VUBAZTWjJ9cUq23SG0F0xavOwZbhiP4J3y20xd6jxKx+xNUhkMAi76Q==}
     dev: false
 
-  /@types/node@18.14.1:
-    resolution: {integrity: sha512-QH+37Qds3E0eDlReeboBxfHbX9omAcBCXEzswCu6jySP642jiM3cYSIkU/REqwhCUqXdonHFuBfJDiAJxMNhaQ==}
-
   /@types/node@18.18.9:
     resolution: {integrity: sha512-0f5klcuImLnG4Qreu9hPj/rEfFq6YRc5n2mAjSsH+ec/mJL+3voBH0+8T7o8RpFjH7ovc+TRsL/c7OYIQsPTfQ==}
     dependencies:
       undici-types: 5.26.5
     dev: false
+
+  /@types/node@20.11.5:
+    resolution: {integrity: sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==}
+    dependencies:
+      undici-types: 5.26.5
 
   /@types/node@8.10.66:
     resolution: {integrity: sha512-tktOkFUA4kXx2hhhrB8bIFb5TbwzS4uOhKEmwiD+NoiL0qtP2OQ9mFldbgD4dV1djrlBYP6eBuQZiWjuHUpqFw==}
@@ -3330,7 +3332,7 @@ packages:
   /@types/responselike@1.0.3:
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
     dependencies:
-      '@types/node': 18.18.9
+      '@types/node': 20.11.5
     dev: false
 
   /@types/retry@0.12.1:
@@ -3367,7 +3369,7 @@ packages:
     resolution: {integrity: sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q==}
     requiresBuild: true
     dependencies:
-      '@types/node': 18.18.9
+      '@types/node': 20.11.5
     dev: false
     optional: true
 
@@ -3512,7 +3514,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.1.4(@types/node@18.14.1)(sass@1.58.3)
+      vite: 4.1.4(@types/node@20.11.5)(sass@1.58.3)
       vue: 3.2.47
     dev: true
 
@@ -6799,7 +6801,7 @@ packages:
       '@libp2p/interface-peer-info': 1.0.9
       '@libp2p/interface-pubsub': 3.0.6
       '@multiformats/multiaddr': 11.6.1
-      '@types/node': 18.14.1
+      '@types/node': 18.18.9
       interface-datastore: 7.0.4
       ipfs-unixfs: 9.0.1
       multiformats: 11.0.2
@@ -6818,7 +6820,7 @@ packages:
       '@libp2p/interface-peer-info': 1.0.9
       '@libp2p/interface-pubsub': 3.0.6
       '@multiformats/multiaddr': 11.6.1
-      '@types/node': 18.14.1
+      '@types/node': 18.18.9
       interface-datastore: 7.0.4
       ipfs-unixfs: 9.0.1
       multiformats: 11.0.2
@@ -10047,7 +10049,7 @@ packages:
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
       '@types/long': 4.0.2
-      '@types/node': 18.14.1
+      '@types/node': 20.11.5
       long: 4.0.0
     dev: false
 
@@ -10066,7 +10068,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 18.14.1
+      '@types/node': 20.11.5
       long: 5.2.1
     dev: false
 
@@ -10085,7 +10087,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 18.18.9
+      '@types/node': 20.11.5
       long: 5.2.3
     dev: false
 
@@ -11373,7 +11375,6 @@ packages:
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     requiresBuild: true
-    dev: false
 
   /undici@5.21.1:
     resolution: {integrity: sha512-JptL7wJkvuuZfevy0imEcM6P/Q40uI5msocbfrE6KguU6kz/pFk4L0A6//XbMIOq+FSIXxgDMAOgfeH+S/WFaA==}
@@ -11539,13 +11540,13 @@ packages:
       '@vuetify/loader-shared': 1.7.1(vue@3.2.47)(vuetify@3.1.6)
       debug: 4.3.4
       upath: 2.0.1
-      vite: 4.1.4(@types/node@18.14.1)(sass@1.58.3)
+      vite: 4.1.4(@types/node@20.11.5)(sass@1.58.3)
       vuetify: 3.1.6(vite-plugin-vuetify@1.0.2)(vue@3.2.47)
     transitivePeerDependencies:
       - supports-color
       - vue
 
-  /vite@4.1.4(@types/node@18.14.1)(sass@1.58.3):
+  /vite@4.1.4(@types/node@20.11.5)(sass@1.58.3):
     resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -11570,7 +11571,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.14.1
+      '@types/node': 20.11.5
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
