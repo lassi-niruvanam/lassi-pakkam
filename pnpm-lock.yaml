@@ -80,8 +80,8 @@ devDependencies:
     specifier: ^1.6.35
     version: 1.6.35
   '@vitejs/plugin-vue':
-    specifier: ^4.0.0
-    version: 4.0.0(vite@4.1.4)(vue@3.2.47)
+    specifier: ^5.0.0
+    version: 5.0.3(vite@4.1.4)(vue@3.2.47)
   '@vue/eslint-config-typescript':
     specifier: ^11.0.2
     version: 11.0.2(eslint-plugin-vue@9.9.0)(eslint@8.34.0)(typescript@4.9.5)
@@ -3507,11 +3507,11 @@ packages:
     resolution: {integrity: sha512-MVEJ4vWAPNbrGLjz7ITnHYg+YXZ6ijAqtH5/cHwSoCpbvuJ98aLXwFfPKAUfZpJMQR5uXB58UJajbY130IRF/w==}
     dev: false
 
-  /@vitejs/plugin-vue@4.0.0(vite@4.1.4)(vue@3.2.47):
-    resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
-    engines: {node: ^14.18.0 || >=16.0.0}
+  /@vitejs/plugin-vue@5.0.3(vite@4.1.4)(vue@3.2.47):
+    resolution: {integrity: sha512-b8S5dVS40rgHdDrw+DQi/xOM9ed+kSRZzfm1T74bMmBDCd8XO87NKlFYInzCtwvtWwXZvo1QxE2OSspTATWrbA==}
+    engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
-      vite: ^4.0.0
+      vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
       vite: 4.1.4(@types/node@20.11.5)(sass@1.58.3)
