@@ -9,6 +9,9 @@
     "lint": "eslint . --fix --ignore-path .gitignore",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@lassi-js/kilimukku-vue": "^1.0.12",
     "@mdi/font": "7.4.47",
