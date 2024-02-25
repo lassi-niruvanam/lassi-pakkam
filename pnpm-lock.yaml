@@ -22,7 +22,7 @@ dependencies:
     version: 3.28.0
   dompurify:
     specifier: ^3.0.1
-    version: 3.0.1
+    version: 3.0.9
   events:
     specifier: ^3.3.0
     version: 3.3.0
@@ -66,7 +66,7 @@ dependencies:
 devDependencies:
   '@types/dompurify':
     specifier: ^3.0.0
-    version: 3.0.0
+    version: 3.0.5
   '@types/marked':
     specifier: ^5.0.0
     version: 5.0.2
@@ -3337,10 +3337,10 @@ packages:
       '@types/node': 20.11.20
     dev: false
 
-  /@types/dompurify@3.0.0:
-    resolution: {integrity: sha512-EcSqmgm/xJwH8CcJPy9AHNypp/j58CYga3nWdl93/wLxX6OH+rSD3aAj75NQazcZd1YKHJ/pjNZ9qmgVajggwQ==}
+  /@types/dompurify@3.0.5:
+    resolution: {integrity: sha512-1Wg0g3BtQF7sSb27fJQAKck1HECM6zV1EB66j8JH9i3LCjYabJa0FSdiSgsD5K/RbrsR0SiraKacLB+T8ZVYAg==}
     dependencies:
-      '@types/trusted-types': 2.0.3
+      '@types/trusted-types': 2.0.7
     dev: true
 
   /@types/http-cache-semantics@4.0.4:
@@ -3421,8 +3421,8 @@ packages:
     resolution: {integrity: sha512-mQkU2jY8jJEF7YHjHvsQO8+3ughTL1mcnn96igfhONmR+fUPSKIkefQYpSe8bsly2Ep7oQbn/6VG5/9/0qcArQ==}
     dev: false
 
-  /@types/trusted-types@2.0.3:
-    resolution: {integrity: sha512-NfQ4gyz38SL8sDNrSixxU2Os1a5xcdFxipAFxYEuLUlvU2uDwS4NUpsImcf1//SlWItCVMMLiylsxbmNMToV/g==}
+  /@types/trusted-types@2.0.7:
+    resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
     dev: true
 
   /@types/uuid@9.0.1:
@@ -5187,8 +5187,8 @@ packages:
     dev: false
     optional: true
 
-  /dompurify@3.0.1:
-    resolution: {integrity: sha512-60tsgvPKwItxZZdfLmamp0MTcecCta3avOhsLgPZ0qcWt96OasFfhkeIRbJ6br5i0fQawT1/RBGB5L58/Jpwuw==}
+  /dompurify@3.0.9:
+    resolution: {integrity: sha512-uyb4NDIvQ3hRn6NiC+SIFaP4mJ/MdXlvtunaqK9Bn6dD3RuB/1S/gasEjDHD8eiaqdSael2vBv+hOs7Y+jhYOQ==}
     dev: false
 
   /dot-case@3.0.4:
