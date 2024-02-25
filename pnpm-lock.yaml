@@ -72,7 +72,7 @@ devDependencies:
     version: 5.0.2
   '@types/node':
     specifier: ^20.0.0
-    version: 20.11.5
+    version: 20.11.20
   '@types/uuid':
     specifier: ^9.0.1
     version: 9.0.1
@@ -99,7 +99,7 @@ devDependencies:
     version: 5.3.3
   vite:
     specifier: ^4.1.4
-    version: 4.5.2(@types/node@20.11.5)(sass@1.58.3)
+    version: 4.5.2(@types/node@20.11.20)(sass@1.58.3)
   vite-plugin-vuetify:
     specifier: ^2.0.0
     version: 2.0.1(vite@4.5.2)(vue@3.2.47)(vuetify@3.1.6)
@@ -3334,7 +3334,7 @@ packages:
   /@types/dns-packet@5.2.4:
     resolution: {integrity: sha512-OAruArypdNxR/tzbmrtoyEuXeNTLaZCpO19BXaNC10T5ACIbvjmvhmV2RDEy2eLc3w8IjK7SY3cvUCcAW+sfoQ==}
     dependencies:
-      '@types/node': 20.11.5
+      '@types/node': 20.11.20
     dev: false
 
   /@types/dompurify@3.0.0:
@@ -3373,27 +3373,21 @@ packages:
     resolution: {integrity: sha512-A2PmB8MRcNVEkw6wzGT5rtBHqyHOVjiRMkJH+zpJKXipSi+GGkHg6JjNFApDiYK9WefJqkVG0taln1VMl4TGfw==}
     dependencies:
       '@types/dns-packet': 5.2.4
-      '@types/node': 20.11.5
+      '@types/node': 20.11.20
     dev: false
 
   /@types/node@16.18.83:
     resolution: {integrity: sha512-TmBqzDY/GeCEmLob/31SunOQnqYE3ZiiuEh1U9o3HqE1E2cqKZQA5RQg4krEguCY3StnkXyDmCny75qyFLx/rA==}
     dev: false
 
-  /@types/node@18.18.9:
-    resolution: {integrity: sha512-0f5klcuImLnG4Qreu9hPj/rEfFq6YRc5n2mAjSsH+ec/mJL+3voBH0+8T7o8RpFjH7ovc+TRsL/c7OYIQsPTfQ==}
+  /@types/node@18.19.18:
+    resolution: {integrity: sha512-80CP7B8y4PzZF0GWx15/gVWRrB5y/bIjNI84NK3cmQJu0WZwvmj2WMA5LcofQFVfLqqCSp545+U2LsrVzX36Zg==}
     dependencies:
       undici-types: 5.26.5
     dev: false
 
   /@types/node@20.11.20:
     resolution: {integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==}
-    dependencies:
-      undici-types: 5.26.5
-    dev: false
-
-  /@types/node@20.11.5:
-    resolution: {integrity: sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==}
     dependencies:
       undici-types: 5.26.5
 
@@ -3590,7 +3584,7 @@ packages:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.2(@types/node@20.11.5)(sass@1.58.3)
+      vite: 4.5.2(@types/node@20.11.20)(sass@1.58.3)
       vue: 3.2.47
     dev: true
 
@@ -6971,7 +6965,7 @@ packages:
       '@libp2p/interface-peer-info': 1.0.9
       '@libp2p/interface-pubsub': 3.0.6
       '@multiformats/multiaddr': 11.6.1
-      '@types/node': 18.18.9
+      '@types/node': 18.19.18
       interface-datastore: 7.0.4
       ipfs-unixfs: 9.0.1
       multiformats: 11.0.2
@@ -6990,7 +6984,7 @@ packages:
       '@libp2p/interface-peer-info': 1.0.9
       '@libp2p/interface-pubsub': 3.0.6
       '@multiformats/multiaddr': 11.6.1
-      '@types/node': 18.18.9
+      '@types/node': 18.19.18
       interface-datastore: 7.0.4
       ipfs-unixfs: 9.0.1
       multiformats: 11.0.2
@@ -10227,7 +10221,7 @@ packages:
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
       '@types/long': 4.0.2
-      '@types/node': 20.11.5
+      '@types/node': 20.11.20
       long: 4.0.0
     dev: false
 
@@ -10246,7 +10240,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.11.5
+      '@types/node': 20.11.20
       long: 5.2.1
     dev: false
 
@@ -11724,13 +11718,13 @@ packages:
       '@vuetify/loader-shared': 2.0.1(vue@3.2.47)(vuetify@3.1.6)
       debug: 4.3.4
       upath: 2.0.1
-      vite: 4.5.2(@types/node@20.11.5)(sass@1.58.3)
+      vite: 4.5.2(@types/node@20.11.20)(sass@1.58.3)
       vue: 3.2.47
       vuetify: 3.1.6(vite-plugin-vuetify@2.0.1)(vue@3.2.47)
     transitivePeerDependencies:
       - supports-color
 
-  /vite@4.5.2(@types/node@20.11.5)(sass@1.58.3):
+  /vite@4.5.2(@types/node@20.11.20)(sass@1.58.3):
     resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -11758,7 +11752,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.11.5
+      '@types/node': 20.11.20
       esbuild: 0.18.20
       postcss: 8.4.35
       rollup: 3.29.4
