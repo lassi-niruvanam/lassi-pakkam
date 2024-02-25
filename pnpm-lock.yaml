@@ -78,7 +78,7 @@ devDependencies:
     version: 9.0.1
   '@types/webfontloader':
     specifier: ^1.6.35
-    version: 1.6.35
+    version: 1.6.38
   '@vitejs/plugin-vue':
     specifier: ^5.0.0
     version: 5.0.3(vite@4.5.2)(vue@3.2.47)
@@ -3429,8 +3429,8 @@ packages:
     resolution: {integrity: sha512-rFT3ak0/2trgvp4yYZo5iKFEPsET7vKydKF+VRCxlQ9bpheehyAJH89dAkaLEq/j/RZXJIqcgsmPJKUP1Z28HA==}
     dev: true
 
-  /@types/webfontloader@1.6.35:
-    resolution: {integrity: sha512-IJlrsiDWq6KghQ7tPlL5tcwSUyOxLDceT+AFUY7Ylj0Fcv3/h3QkANqQxZ0B5mEpEKxhTw76vDmvrruSMV9n9Q==}
+  /@types/webfontloader@1.6.38:
+    resolution: {integrity: sha512-kUaF72Fv202suFx6yBrwXqeVRMx7hGtJTesyESZgn9sEPCUeDXm2p0SiyS1MTqW74nQP4p7JyrOCwZ7pNFns4w==}
     dev: true
 
   /@types/yauzl@2.10.3:
