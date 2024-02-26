@@ -19,7 +19,7 @@ dependencies:
     version: 2.0.0
   core-js:
     specifier: ^3.28.0
-    version: 3.28.0
+    version: 3.36.0
   dompurify:
     specifier: ^3.0.1
     version: 3.0.9
@@ -7712,8 +7712,8 @@ packages:
       browserslist: 4.23.0
     dev: false
 
-  /core-js@3.28.0:
-    resolution: {integrity: sha512-GiZn9D4Z/rSYvTeg1ljAIsEqFm0LaN9gVtwDCrKL80zHtS31p9BAjmTxVqTQDMpwlMolJZOFntUG2uwyj7DAqw==}
+  /core-js@3.36.0:
+    resolution: {integrity: sha512-mt7+TUBbTFg5+GngsAxeKBTl5/VS0guFeJacYge9OmHb+m058UwwIm41SE9T4Den7ClatV57B6TYTuJ0CX1MAw==}
     requiresBuild: true
     dev: false
 
