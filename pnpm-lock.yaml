@@ -49,7 +49,7 @@ dependencies:
     version: 1.15.0
   uuid:
     specifier: ^9.0.0
-    version: 9.0.0
+    version: 9.0.1
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -75,7 +75,7 @@ devDependencies:
     version: 20.11.20
   '@types/uuid':
     specifier: ^9.0.1
-    version: 9.0.1
+    version: 9.0.8
   '@types/webfontloader':
     specifier: ^1.6.35
     version: 1.6.38
@@ -382,7 +382,7 @@ packages:
       ssim: 0.0.0
       tslib: 2.5.0
       uint8arrays: 4.0.3
-      uuid: 9.0.0
+      uuid: 9.0.1
       wherearewe: 2.0.1
       wrtc: 0.4.7
       xlsx: '@cdn.sheetjs.com/xlsx-0.19.1/xlsx-0.19.1.tgz'
@@ -541,7 +541,7 @@ packages:
     dependencies:
       '@constl/ipa': 0.6.48(electron@23.3.13)(go-ipfs@0.22.0)(ipfs@0.66.1)(ipfsd-ctl@13.0.0)(wrtc@0.4.7)
       events: 3.3.0
-      uuid: 9.0.0
+      uuid: 9.0.1
     dev: false
 
   /@constl/orbit-db-kuiper@0.0.2(prom-client@15.0.0):
@@ -3425,8 +3425,8 @@ packages:
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
     dev: true
 
-  /@types/uuid@9.0.1:
-    resolution: {integrity: sha512-rFT3ak0/2trgvp4yYZo5iKFEPsET7vKydKF+VRCxlQ9bpheehyAJH89dAkaLEq/j/RZXJIqcgsmPJKUP1Z28HA==}
+  /@types/uuid@9.0.8:
+    resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
     dev: true
 
   /@types/webfontloader@1.6.38:
@@ -11657,11 +11657,6 @@ packages:
 
   /uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
-    hasBin: true
-    dev: false
-
-  /uuid@9.0.0:
-    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
     hasBin: true
     dev: false
 
