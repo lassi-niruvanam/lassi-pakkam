@@ -105,7 +105,7 @@ devDependencies:
     version: 2.0.2(vite@5.1.4)(vue@3.4.21)(vuetify@3.5.6)
   vue-tsc:
     specifier: ^2.0.0
-    version: 2.0.0(typescript@5.3.3)
+    version: 2.0.1(typescript@5.3.3)
 
 packages:
 
@@ -6453,8 +6453,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vue/language-core@2.0.0(typescript@5.3.3):
-    resolution: {integrity: sha512-NVF9aRtJ7KrT2U6gAj2Er3P4jmHVL58Erwc7eBAzU4k0lbFf/vEEg0IU1kriJrqYPadzlgokFvL1cfCD2pZl1Q==}
+  /@vue/language-core@2.0.1(typescript@5.3.3):
+    resolution: {integrity: sha512-TZ9xKj3WhZol2hWvXcCjGDiOVkmQ1aG7MS3YJkhVMeoLYyopP5XFn9Obc9qorxG6vZDWapRxBkyEzJ9d6xL3Zg==}
     peerDependencies:
       typescript: '*'
     peerDependenciesMeta:
@@ -7182,7 +7182,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001591
-      electron-to-chromium: 1.4.689
+      electron-to-chromium: 1.4.690
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: false
@@ -8366,8 +8366,8 @@ packages:
       encoding: 0.1.13
     dev: false
 
-  /electron-to-chromium@1.4.689:
-    resolution: {integrity: sha512-GatzRKnGPS1go29ep25reM94xxd1Wj8ritU0yRhCJ/tr1Bg8gKnm6R9O/yPOhGQBoLMZ9ezfrpghNaTw97C/PQ==}
+  /electron-to-chromium@1.4.690:
+    resolution: {integrity: sha512-+2OAGjUx68xElQhydpcbqH50hE8Vs2K6TkAeLhICYfndb67CVH0UsZaijmRUE3rHlIxU1u0jxwhgVe6fK3YANA==}
     dev: false
 
   /electron-webrtc@0.3.0:
@@ -16243,14 +16243,14 @@ packages:
       he: 1.2.0
     dev: true
 
-  /vue-tsc@2.0.0(typescript@5.3.3):
-    resolution: {integrity: sha512-+5ykgWkeSRvGd43rjRViD/7rLsva1Dhd/gljDJcZuW/DQab7XttC3amZDUWtDNJtoXs+ACiZLUAaVvYtD7edhw==}
+  /vue-tsc@2.0.1(typescript@5.3.3):
+    resolution: {integrity: sha512-a4Il11tE8khq8tZn0DucITCr3+q2B9cxL6uTQAoprnhBrxBu6vc//hp3zyTnIS1t/zCTCfdipkY7M2dqiR2plQ==}
     hasBin: true
     peerDependencies:
       typescript: '*'
     dependencies:
       '@volar/typescript': 2.1.0
-      '@vue/language-core': 2.0.0(typescript@5.3.3)
+      '@vue/language-core': 2.0.1(typescript@5.3.3)
       semver: 7.6.0
       typescript: 5.3.3
     dev: true
