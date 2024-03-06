@@ -58,7 +58,7 @@ dependencies:
     version: 4.3.0(vue@3.4.21)
   vuetify:
     specifier: ^3.1.6
-    version: 3.5.7(typescript@5.3.3)(vite-plugin-vuetify@2.0.2)(vue@3.4.21)
+    version: 3.5.8(typescript@5.3.3)(vite-plugin-vuetify@2.0.2)(vue@3.4.21)
   webfontloader:
     specifier: ^1.6.28
     version: 1.6.28
@@ -102,7 +102,7 @@ devDependencies:
     version: 5.1.5(@types/node@20.11.23)(sass@1.71.1)
   vite-plugin-vuetify:
     specifier: ^2.0.0
-    version: 2.0.2(vite@5.1.5)(vue@3.4.21)(vuetify@3.5.7)
+    version: 2.0.2(vite@5.1.5)(vue@3.4.21)(vuetify@3.5.8)
   vue-tsc:
     specifier: ^2.0.0
     version: 2.0.5(typescript@5.3.3)
@@ -6501,7 +6501,7 @@ packages:
   /@vue/shared@3.4.21:
     resolution: {integrity: sha512-PuJe7vDIi6VYSinuEbUIQgMIRZGgM8e4R+G+/dQTk0X1NEdvgvvgv7m+rfmDH1gZzyA1OjjoWskvHlfRNfQf3g==}
 
-  /@vuetify/loader-shared@2.0.2(vue@3.4.21)(vuetify@3.5.7):
+  /@vuetify/loader-shared@2.0.2(vue@3.4.21)(vuetify@3.5.8):
     resolution: {integrity: sha512-91itRxkTRKUhEZhWR/ICfYml1WkVxC7/DIeJEyUzzzLQxRo9wpyk+rhFtwHUUJE2O8wL1VG9L6TkR5SIUswwKQ==}
     peerDependencies:
       vue: ^3.0.0
@@ -6509,7 +6509,7 @@ packages:
     dependencies:
       upath: 2.0.1
       vue: 3.4.21(typescript@5.3.3)
-      vuetify: 3.5.7(typescript@5.3.3)(vite-plugin-vuetify@2.0.2)(vue@3.4.21)
+      vuetify: 3.5.8(typescript@5.3.3)(vite-plugin-vuetify@2.0.2)(vue@3.4.21)
 
   /abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -7182,7 +7182,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001594
-      electron-to-chromium: 1.4.692
+      electron-to-chromium: 1.4.693
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: false
@@ -8366,8 +8366,8 @@ packages:
       encoding: 0.1.13
     dev: false
 
-  /electron-to-chromium@1.4.692:
-    resolution: {integrity: sha512-d5rZRka9n2Y3MkWRN74IoAsxR0HK3yaAt7T50e3iT9VZmCCQDT3geXUO5ZRMhDToa1pkCeQXuNo+0g+NfDOVPA==}
+  /electron-to-chromium@1.4.693:
+    resolution: {integrity: sha512-/if4Ueg0GUQlhCrW2ZlXwDAm40ipuKo+OgeHInlL8sbjt+hzISxZK949fZeJaVsheamrzANXvw1zQTvbxTvSHw==}
     dev: false
 
   /electron-webrtc@0.3.0:
@@ -16134,7 +16134,7 @@ packages:
     dev: false
     optional: true
 
-  /vite-plugin-vuetify@2.0.2(vite@5.1.5)(vue@3.4.21)(vuetify@3.5.7):
+  /vite-plugin-vuetify@2.0.2(vite@5.1.5)(vue@3.4.21)(vuetify@3.5.8):
     resolution: {integrity: sha512-steZz+B3Fj06mzQ9RyV1ewwQ8yGIU+l/Pi3KQhKhyRJSMS5vKCh2jThglbUBLdJER5vv4jxl0FJujPuKJ41tJw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
@@ -16142,12 +16142,12 @@ packages:
       vue: ^3.0.0
       vuetify: ^3.0.0
     dependencies:
-      '@vuetify/loader-shared': 2.0.2(vue@3.4.21)(vuetify@3.5.7)
+      '@vuetify/loader-shared': 2.0.2(vue@3.4.21)(vuetify@3.5.8)
       debug: 4.3.4
       upath: 2.0.1
       vite: 5.1.5(@types/node@20.11.23)(sass@1.71.1)
       vue: 3.4.21(typescript@5.3.3)
-      vuetify: 3.5.7(typescript@5.3.3)(vite-plugin-vuetify@2.0.2)(vue@3.4.21)
+      vuetify: 3.5.8(typescript@5.3.3)(vite-plugin-vuetify@2.0.2)(vue@3.4.21)
     transitivePeerDependencies:
       - supports-color
 
@@ -16270,8 +16270,8 @@ packages:
       '@vue/shared': 3.4.21
       typescript: 5.3.3
 
-  /vuetify@3.5.7(typescript@5.3.3)(vite-plugin-vuetify@2.0.2)(vue@3.4.21):
-    resolution: {integrity: sha512-BFj/puY8odRwY50pRfE1gpawnxreY8PtPb/tDw3oumxSLXhoXw8q6YLA6QUvqZrYEzcYpojxZIYhNWUky2KN1w==}
+  /vuetify@3.5.8(typescript@5.3.3)(vite-plugin-vuetify@2.0.2)(vue@3.4.21):
+    resolution: {integrity: sha512-8nGS+lKejZkev55HFwIfsRt+9fOqbeDQNmXxfmLKAlnUT8FtynVwbjAwHMtX/OQAQ3ZwRaR1ptqQQmx3OgxzbQ==}
     engines: {node: ^12.20 || >=14.13}
     peerDependencies:
       typescript: '>=4.7'
@@ -16290,7 +16290,7 @@ packages:
         optional: true
     dependencies:
       typescript: 5.3.3
-      vite-plugin-vuetify: 2.0.2(vite@5.1.5)(vue@3.4.21)(vuetify@3.5.7)
+      vite-plugin-vuetify: 2.0.2(vite@5.1.5)(vue@3.4.21)(vuetify@3.5.8)
       vue: 3.4.21(typescript@5.3.3)
 
   /walker@1.0.8:
