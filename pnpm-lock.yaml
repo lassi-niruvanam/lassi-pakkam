@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@lassi-js/kilimukku-vue':
     specifier: ^1.0.12
-    version: 1.1.1(@constl/ipa@1.0.0)(react-native@0.73.5)(vue@3.4.21)(wrtc@0.4.7)
+    version: 1.1.1(@constl/ipa@1.0.0)(react-native@0.73.6)(vue@3.4.21)(wrtc@0.4.7)
   '@mdi/font':
     specifier: 7.4.47
     version: 7.4.47
@@ -81,7 +81,7 @@ devDependencies:
     version: 1.6.38
   '@vitejs/plugin-vue':
     specifier: ^5.0.0
-    version: 5.0.4(vite@5.1.5)(vue@3.4.21)
+    version: 5.0.4(vite@5.1.6)(vue@3.4.21)
   '@vue/eslint-config-typescript':
     specifier: ^13.0.0
     version: 13.0.0(eslint-plugin-vue@9.22.0)(eslint@8.57.0)(typescript@5.4.2)
@@ -99,10 +99,10 @@ devDependencies:
     version: 5.4.2
   vite:
     specifier: ^5.0.0
-    version: 5.1.5(@types/node@20.11.25)(sass@1.71.1)
+    version: 5.1.6(@types/node@20.11.25)(sass@1.71.1)
   vite-plugin-vuetify:
     specifier: ^2.0.0
-    version: 2.0.3(vite@5.1.5)(vue@3.4.21)(vuetify@3.5.8)
+    version: 2.0.3(vite@5.1.6)(vue@3.4.21)(vuetify@3.5.8)
   vue-tsc:
     specifier: ^2.0.0
     version: 2.0.6(typescript@5.4.2)
@@ -1700,7 +1700,7 @@ packages:
       '@libp2p/peer-record': 5.0.4
       '@libp2p/pubsub': 6.0.6
       '@libp2p/topology': 4.0.3
-      '@multiformats/multiaddr': 12.1.14
+      '@multiformats/multiaddr': 12.2.0
       abortable-iterator: 4.0.3
       denque: 1.5.1
       it-length-prefixed: 8.0.4
@@ -1820,16 +1820,16 @@ packages:
     resolution: {integrity: sha512-kKXJcm5gM8FN8O8U20H19/85b8R33K0Q2u5cnm9mfblK/7QcNChlOhCTWgnrr8wYiuF1ZbYIZcioxW79QfjnmQ==}
     dev: false
 
-  /@constl/bohr-db@1.1.0(react-native@0.73.5):
+  /@constl/bohr-db@1.1.0(react-native@0.73.6):
     resolution: {integrity: sha512-7XT+jASK69Y+41dYuDEjaatKfv6CSpthf+d7YT7gGcd6tyd6VNryb06pD9imTyARXFSieAeV72LpRYMnSzP1hg==}
     dependencies:
       '@orbitdb/core': 2.1.0
-      '@orbitdb/feed-db': 1.0.0(react-native@0.73.5)
-      '@orbitdb/ordered-keyvalue-db': 1.0.0(react-native@0.73.5)
-      '@orbitdb/set-db': 1.0.0(react-native@0.73.5)
+      '@orbitdb/feed-db': 1.0.0(react-native@0.73.6)
+      '@orbitdb/ordered-keyvalue-db': 1.0.0(react-native@0.73.6)
+      '@orbitdb/set-db': 1.0.0(react-native@0.73.6)
       ajv: 8.12.0
       events: 3.3.0
-      helia: 3.0.1(react-native@0.73.5)
+      helia: 3.0.1(react-native@0.73.6)
       uuid: 9.0.1
     transitivePeerDependencies:
       - bufferutil
@@ -1909,7 +1909,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@constl/ipa@1.0.0(react-native@0.73.5)(wrtc@0.4.7):
+  /@constl/ipa@1.0.0(react-native@0.73.6)(wrtc@0.4.7):
     resolution: {integrity: sha512-OYVjvdj0pwHZJHhE0XqtcF7NeK0gRIuf3v91K0w79OQ0pNG6O/XxXOg6hYSUIOJQhpSoYVAUFxdbr2gJ/IvTvA==}
     engines: {node: '>=20'}
     peerDependencies:
@@ -1919,7 +1919,7 @@ packages:
       '@chainsafe/libp2p-noise': 15.0.0
       '@chainsafe/libp2p-yamux': 6.0.2
       '@chriscdn/promise-semaphore': 2.0.9
-      '@constl/bohr-db': 1.1.0(react-native@0.73.5)
+      '@constl/bohr-db': 1.1.0(react-native@0.73.6)
       '@constl/mandataire': 0.1.16
       '@constl/utils-ipa': 1.0.0
       '@helia/block-brokers': 2.0.2
@@ -1936,16 +1936,16 @@ packages:
       '@libp2p/mdns': 10.0.16
       '@libp2p/pubsub-peer-discovery': 10.0.2
       '@libp2p/tcp': 9.0.16
-      '@libp2p/webrtc': 4.0.20(react-native@0.73.5)
+      '@libp2p/webrtc': 4.0.20(react-native@0.73.6)
       '@libp2p/webrtc-direct': 6.0.0
       '@libp2p/websockets': 8.0.16
       '@libp2p/webtransport': 4.0.20
       '@localfirst/auth': 5.4.1
       '@localfirst/crypto': 5.4.1
       '@orbitdb/core': 2.1.0
-      '@orbitdb/feed-db': 1.0.0(react-native@0.73.5)
-      '@orbitdb/ordered-keyvalue-db': 1.0.0(react-native@0.73.5)
-      '@orbitdb/set-db': 1.0.0(react-native@0.73.5)
+      '@orbitdb/feed-db': 1.0.0(react-native@0.73.6)
+      '@orbitdb/ordered-keyvalue-db': 1.0.0(react-native@0.73.6)
+      '@orbitdb/set-db': 1.0.0(react-native@0.73.6)
       ajv: 8.12.0
       approx-string-match: 2.0.0
       axios: 1.6.7
@@ -1960,7 +1960,7 @@ packages:
       events: 3.3.0
       genversion: 3.2.0
       geojson-validation: 1.0.2
-      helia: 3.0.1(react-native@0.73.5)
+      helia: 3.0.1(react-native@0.73.6)
       indexed-db-stream: 1.0.0
       iso-constants: github.com/inverted-capital/iso-constants/2af6fdfb2cacaa03ebd58543703918783e62649f
       it-to-buffer: 4.0.5
@@ -3146,7 +3146,7 @@ packages:
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dependencies:
       '@ipld/dag-cbor': 9.2.0
-      cborg: 4.1.0
+      cborg: 4.1.1
       multiformats: 13.1.0
       varint: 6.0.0
     dev: false
@@ -3307,7 +3307,7 @@ packages:
     peerDependencies:
       '@constl/ipa': 1.0.0
     dependencies:
-      '@constl/ipa': 1.0.0(react-native@0.73.5)(wrtc@0.4.7)
+      '@constl/ipa': 1.0.0(react-native@0.73.6)(wrtc@0.4.7)
       '@constl/utils-ipa': 1.0.0
       '@orbitdb/core': 2.1.0
       deepcopy: 2.1.0
@@ -3315,14 +3315,14 @@ packages:
       - supports-color
     dev: false
 
-  /@lassi-js/kilimukku-vue@1.1.1(@constl/ipa@1.0.0)(react-native@0.73.5)(vue@3.4.21)(wrtc@0.4.7):
+  /@lassi-js/kilimukku-vue@1.1.1(@constl/ipa@1.0.0)(react-native@0.73.6)(vue@3.4.21)(wrtc@0.4.7):
     resolution: {integrity: sha512-YWXSLsbrMNcAedtiYEZx9XIJLw1Gjvz0oBvc36C4ALqp54PcuLe74nbPZ9cURNFqFYzldT6DNK+N/pyrnCIqgA==}
     peerDependencies:
       vue: ^3.4.19
     dependencies:
       '@chriscdn/promise-semaphore': 2.0.9
       '@lassi-js/kili': 0.3.9(@constl/ipa@1.0.0)
-      '@lassi-js/kilimukku': 1.1.3(react-native@0.73.5)(wrtc@0.4.7)
+      '@lassi-js/kilimukku': 1.1.3(react-native@0.73.6)(wrtc@0.4.7)
       ennikkai: 2.2.7(@constl/ipa@1.0.0)
       js-cookie: 3.0.5
       lodash: 4.17.21
@@ -3340,10 +3340,10 @@ packages:
       - wrtc
     dev: false
 
-  /@lassi-js/kilimukku@1.1.3(react-native@0.73.5)(wrtc@0.4.7):
+  /@lassi-js/kilimukku@1.1.3(react-native@0.73.6)(wrtc@0.4.7):
     resolution: {integrity: sha512-UhKajCbuSztIxsec++SrnG34DR18yYsbHO/958de4FpZKeiB28ApGMvVuYgPdIn1lkjmW7lEPMgN8Jns5N31qA==}
     dependencies:
-      '@constl/ipa': 1.0.0(react-native@0.73.5)(wrtc@0.4.7)
+      '@constl/ipa': 1.0.0(react-native@0.73.6)(wrtc@0.4.7)
       '@constl/utils-ipa': 1.0.0
       '@lassi-js/kili': 0.3.9(@constl/ipa@1.0.0)
       uuid: 9.0.1
@@ -3654,7 +3654,7 @@ packages:
       '@libp2p/interface-connection': 4.0.0
       '@libp2p/interface-peer-id': 2.0.2
       '@libp2p/interfaces': 3.3.2
-      '@multiformats/multiaddr': 12.1.14
+      '@multiformats/multiaddr': 12.2.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -3854,7 +3854,7 @@ packages:
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dependencies:
       '@libp2p/interface-peer-id': 2.0.2
-      '@multiformats/multiaddr': 12.1.14
+      '@multiformats/multiaddr': 12.2.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -4015,7 +4015,7 @@ packages:
       '@libp2p/interface-connection': 4.0.0
       '@libp2p/interface-stream-muxer': 3.0.6
       '@libp2p/interfaces': 3.3.2
-      '@multiformats/multiaddr': 12.1.14
+      '@multiformats/multiaddr': 12.2.0
       it-stream-types: 1.0.5
     transitivePeerDependencies:
       - supports-color
@@ -4653,7 +4653,7 @@ packages:
       '@libp2p/logger': 2.1.1
       '@libp2p/utils': 3.0.13
       '@multiformats/mafmt': 12.1.6
-      '@multiformats/multiaddr': 12.1.14
+      '@multiformats/multiaddr': 12.2.0
       stream-to-it: 0.2.4
     transitivePeerDependencies:
       - supports-color
@@ -4863,7 +4863,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@libp2p/webrtc@4.0.20(react-native@0.73.5):
+  /@libp2p/webrtc@4.0.20(react-native@0.73.6):
     resolution: {integrity: sha512-TJ/T9ce2Y5qhX6VcGi8prq6qal3u3cGdM1N8CnNYJ3EFP9T8VYgbwnY/9D7RK08f0r33Z/CMUP0phK4LhS6EWQ==}
     dependencies:
       '@chainsafe/libp2p-noise': 15.0.0
@@ -4887,7 +4887,7 @@ packages:
       p-timeout: 6.1.2
       protons-runtime: 5.4.0
       race-signal: 1.0.2
-      react-native-webrtc: 118.0.2(react-native@0.73.5)
+      react-native-webrtc: 118.0.2(react-native@0.73.6)
       uint8arraylist: 2.4.8
       uint8arrays: 5.0.2
     transitivePeerDependencies:
@@ -4905,7 +4905,7 @@ packages:
       '@libp2p/logger': 2.1.1
       '@libp2p/utils': 3.0.13
       '@multiformats/mafmt': 12.1.6
-      '@multiformats/multiaddr': 12.1.14
+      '@multiformats/multiaddr': 12.2.0
       '@multiformats/multiaddr-to-uri': 9.0.8
       abortable-iterator: 4.0.3
       it-ws: 5.0.6
@@ -5144,6 +5144,18 @@ packages:
     resolution: {integrity: sha512-eMk0b9ReBbV23xXU693TAIrLyeO5iTgBZGSJfpqriG8UkYvr/hC9u9pyMlAakDNHWmbhMZCDs6KQO0jzKD8OTw==}
     dev: false
 
+  /@multiformats/dns@1.0.1:
+    resolution: {integrity: sha512-SuhXtRrj8O8Na+eVmmKh5DlvGDemHIRtENqb8KujA5hOpAHWm4P0QdaTqPnZKjFeUVAuKMGxh91UKf66NIA86w==}
+    dependencies:
+      '@types/dns-packet': 5.6.5
+      buffer: 6.0.3
+      dns-packet: 5.6.1
+      hashlru: 2.3.0
+      p-queue: 8.0.1
+      progress-events: 1.0.0
+      uint8arrays: 5.0.2
+    dev: false
+
   /@multiformats/mafmt@11.1.2:
     resolution: {integrity: sha512-3n1o5eLU7WzTAPLuz3AodV7Iql6NWf7Ws8fqVaGT7o5nDDabUPYGBm2cZuh3OrqmwyCY61LrNUIsjzivU6UdpQ==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
@@ -5215,6 +5227,21 @@ packages:
       - supports-color
     dev: false
 
+  /@multiformats/multiaddr@12.2.0:
+    resolution: {integrity: sha512-7HfwdG1uBR8t7N7nuK26oXbY0bB9aFJ69NdendqEAbr2mgrng8y+u5qpFem2WjNPARAooejfwCeQVAa39g7ezg==}
+    dependencies:
+      '@chainsafe/is-ip': 2.0.2
+      '@chainsafe/netmask': 2.0.0
+      '@libp2p/interface': 1.1.4
+      '@multiformats/dns': 1.0.1
+      multiformats: 13.1.0
+      race-signal: 1.0.2
+      uint8-varint: 2.0.4
+      uint8arrays: 5.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@multiformats/murmur3@2.1.8:
     resolution: {integrity: sha512-6vId1C46ra3R1sbJUOFCZnsUIveR9oF20yhPmAFxPm0JfrX3/ZRCgP3YDrBzlGoEppOXnA9czHeYc0T9mB6hbA==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
@@ -5226,7 +5253,7 @@ packages:
   /@multiformats/uri-to-multiaddr@7.0.1:
     resolution: {integrity: sha512-POqZHHZiLj8WiL5ONYx6QhWGA/r5kjcYcozHgzd/+jnyjU/qo6H2l8sKzE8cE3GdDklJtn/qJE5o3UGQBiR9Bg==}
     dependencies:
-      '@multiformats/multiaddr': 12.1.14
+      '@multiformats/multiaddr': 12.2.0
       is-ip: 5.0.1
     transitivePeerDependencies:
       - supports-color
@@ -5298,11 +5325,11 @@ packages:
       - supports-color
     dev: false
 
-  /@orbitdb/feed-db@1.0.0(react-native@0.73.5):
+  /@orbitdb/feed-db@1.0.0(react-native@0.73.6):
     resolution: {integrity: sha512-5wD8fNCwJcsQ+YSbG8J3b0WUSGU1oKkaI8r1nUwflXm9oHOtFoexY+Bq5DCgDvcbB7YBpvQpAX4KejlEu52ZwQ==}
     dependencies:
       '@orbitdb/core': 2.1.0
-      helia: 3.0.1(react-native@0.73.5)
+      helia: 3.0.1(react-native@0.73.6)
     transitivePeerDependencies:
       - bufferutil
       - react-native
@@ -5310,11 +5337,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@orbitdb/ordered-keyvalue-db@1.0.0(react-native@0.73.5):
+  /@orbitdb/ordered-keyvalue-db@1.0.0(react-native@0.73.6):
     resolution: {integrity: sha512-0VTNEpAfQHZifIT1uEo3ghhURhc+I3oj4x13DG4dFnomm4V+ENhSnQPdE69/2b5MVkbcTZt/b6mY2cvmoYi+OQ==}
     dependencies:
       '@orbitdb/core': 2.1.0
-      helia: 3.0.1(react-native@0.73.5)
+      helia: 3.0.1(react-native@0.73.6)
     transitivePeerDependencies:
       - bufferutil
       - react-native
@@ -5322,11 +5349,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@orbitdb/set-db@1.0.0(react-native@0.73.5):
+  /@orbitdb/set-db@1.0.0(react-native@0.73.6):
     resolution: {integrity: sha512-XgmB0dGminHK3kHg6TaDjJVLyVEz48YDixVc7YEAYQ8vIjsH4ylBz0kM6hJV87DPX6fgGKWAQYBNbb/TmFdTOA==}
     dependencies:
       '@orbitdb/core': 2.1.0
-      helia: 3.0.1(react-native@0.73.5)
+      helia: 3.0.1(react-native@0.73.6)
     transitivePeerDependencies:
       - bufferutil
       - react-native
@@ -5744,7 +5771,7 @@ packages:
     resolution: {integrity: sha512-bRBcb2T+I88aG74LMVHaKms2p/T8aQd8+BZ7LuuzXlRfog1bMWWn/C5i0HVuvW4RPtXQYgIlGiXVDy9Ir1So/w==}
     dev: false
 
-  /@react-native/virtualized-lists@0.73.4(react-native@0.73.5):
+  /@react-native/virtualized-lists@0.73.4(react-native@0.73.6):
     resolution: {integrity: sha512-HpmLg1FrEiDtrtAbXiwCgXFYyloK/dOIPIuWW3fsqukwJEWAiTzm1nXGJ7xPU5XTHiWZ4sKup5Ebaj8z7iyWog==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -5752,95 +5779,95 @@ packages:
     dependencies:
       invariant: 2.2.4
       nullthrows: 1.1.1
-      react-native: 0.73.5(@babel/core@7.24.0)(@babel/preset-env@7.24.0)(react@18.2.0)
+      react-native: 0.73.6(@babel/core@7.24.0)(@babel/preset-env@7.24.0)(react@18.2.0)
     dev: false
 
-  /@rollup/rollup-android-arm-eabi@4.12.0:
-    resolution: {integrity: sha512-+ac02NL/2TCKRrJu2wffk1kZ+RyqxVUlbjSagNgPm94frxtr+XDL12E5Ll1enWskLrtrZ2r8L3wED1orIibV/w==}
+  /@rollup/rollup-android-arm-eabi@4.12.1:
+    resolution: {integrity: sha512-iU2Sya8hNn1LhsYyf0N+L4Gf9Qc+9eBTJJJsaOGUp+7x4n2M9dxTt8UvhJl3oeftSjblSlpCfvjA/IfP3g5VjQ==}
     cpu: [arm]
     os: [android]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-android-arm64@4.12.0:
-    resolution: {integrity: sha512-OBqcX2BMe6nvjQ0Nyp7cC90cnumt8PXmO7Dp3gfAju/6YwG0Tj74z1vKrfRz7qAv23nBcYM8BCbhrsWqO7PzQQ==}
+  /@rollup/rollup-android-arm64@4.12.1:
+    resolution: {integrity: sha512-wlzcWiH2Ir7rdMELxFE5vuM7D6TsOcJ2Yw0c3vaBR3VOsJFVTx9xvwnAvhgU5Ii8Gd6+I11qNHwndDscIm0HXg==}
     cpu: [arm64]
     os: [android]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-darwin-arm64@4.12.0:
-    resolution: {integrity: sha512-X64tZd8dRE/QTrBIEs63kaOBG0b5GVEd3ccoLtyf6IdXtHdh8h+I56C2yC3PtC9Ucnv0CpNFJLqKFVgCYe0lOQ==}
+  /@rollup/rollup-darwin-arm64@4.12.1:
+    resolution: {integrity: sha512-YRXa1+aZIFN5BaImK+84B3uNK8C6+ynKLPgvn29X9s0LTVCByp54TB7tdSMHDR7GTV39bz1lOmlLDuedgTwwHg==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-darwin-x64@4.12.0:
-    resolution: {integrity: sha512-cc71KUZoVbUJmGP2cOuiZ9HSOP14AzBAThn3OU+9LcA1+IUqswJyR1cAJj3Mg55HbjZP6OLAIscbQsQLrpgTOg==}
+  /@rollup/rollup-darwin-x64@4.12.1:
+    resolution: {integrity: sha512-opjWJ4MevxeA8FhlngQWPBOvVWYNPFkq6/25rGgG+KOy0r8clYwL1CFd+PGwRqqMFVQ4/Qd3sQu5t7ucP7C/Uw==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-linux-arm-gnueabihf@4.12.0:
-    resolution: {integrity: sha512-a6w/Y3hyyO6GlpKL2xJ4IOh/7d+APaqLYdMf86xnczU3nurFTaVN9s9jOXQg97BE4nYm/7Ga51rjec5nfRdrvA==}
+  /@rollup/rollup-linux-arm-gnueabihf@4.12.1:
+    resolution: {integrity: sha512-uBkwaI+gBUlIe+EfbNnY5xNyXuhZbDSx2nzzW8tRMjUmpScd6lCQYKY2V9BATHtv5Ef2OBq6SChEP8h+/cxifQ==}
     cpu: [arm]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-linux-arm64-gnu@4.12.0:
-    resolution: {integrity: sha512-0fZBq27b+D7Ar5CQMofVN8sggOVhEtzFUwOwPppQt0k+VR+7UHMZZY4y+64WJ06XOhBTKXtQB/Sv0NwQMXyNAA==}
+  /@rollup/rollup-linux-arm64-gnu@4.12.1:
+    resolution: {integrity: sha512-0bK9aG1kIg0Su7OcFTlexkVeNZ5IzEsnz1ept87a0TUgZ6HplSgkJAnFpEVRW7GRcikT4GlPV0pbtVedOaXHQQ==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-linux-arm64-musl@4.12.0:
-    resolution: {integrity: sha512-eTvzUS3hhhlgeAv6bfigekzWZjaEX9xP9HhxB0Dvrdbkk5w/b+1Sxct2ZuDxNJKzsRStSq1EaEkVSEe7A7ipgQ==}
+  /@rollup/rollup-linux-arm64-musl@4.12.1:
+    resolution: {integrity: sha512-qB6AFRXuP8bdkBI4D7UPUbE7OQf7u5OL+R94JE42Z2Qjmyj74FtDdLGeriRyBDhm4rQSvqAGCGC01b8Fu2LthQ==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-linux-riscv64-gnu@4.12.0:
-    resolution: {integrity: sha512-ix+qAB9qmrCRiaO71VFfY8rkiAZJL8zQRXveS27HS+pKdjwUfEhqo2+YF2oI+H/22Xsiski+qqwIBxVewLK7sw==}
+  /@rollup/rollup-linux-riscv64-gnu@4.12.1:
+    resolution: {integrity: sha512-sHig3LaGlpNgDj5o8uPEoGs98RII8HpNIqFtAI8/pYABO8i0nb1QzT0JDoXF/pxzqO+FkxvwkHZo9k0NJYDedg==}
     cpu: [riscv64]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-linux-x64-gnu@4.12.0:
-    resolution: {integrity: sha512-TenQhZVOtw/3qKOPa7d+QgkeM6xY0LtwzR8OplmyL5LrgTWIXpTQg2Q2ycBf8jm+SFW2Wt/DTn1gf7nFp3ssVA==}
+  /@rollup/rollup-linux-x64-gnu@4.12.1:
+    resolution: {integrity: sha512-nD3YcUv6jBJbBNFvSbp0IV66+ba/1teuBcu+fBBPZ33sidxitc6ErhON3JNavaH8HlswhWMC3s5rgZpM4MtPqQ==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-linux-x64-musl@4.12.0:
-    resolution: {integrity: sha512-LfFdRhNnW0zdMvdCb5FNuWlls2WbbSridJvxOvYWgSBOYZtgBfW9UGNJG//rwMqTX1xQE9BAodvMH9tAusKDUw==}
+  /@rollup/rollup-linux-x64-musl@4.12.1:
+    resolution: {integrity: sha512-7/XVZqgBby2qp/cO0TQ8uJK+9xnSdJ9ct6gSDdEr4MfABrjTyrW6Bau7HQ73a2a5tPB7hno49A0y1jhWGDN9OQ==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-win32-arm64-msvc@4.12.0:
-    resolution: {integrity: sha512-JPDxovheWNp6d7AHCgsUlkuCKvtu3RB55iNEkaQcf0ttsDU/JZF+iQnYcQJSk/7PtT4mjjVG8N1kpwnI9SLYaw==}
+  /@rollup/rollup-win32-arm64-msvc@4.12.1:
+    resolution: {integrity: sha512-CYc64bnICG42UPL7TrhIwsJW4QcKkIt9gGlj21gq3VV0LL6XNb1yAdHVp1pIi9gkts9gGcT3OfUYHjGP7ETAiw==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-win32-ia32-msvc@4.12.0:
-    resolution: {integrity: sha512-fjtuvMWRGJn1oZacG8IPnzIV6GF2/XG+h71FKn76OYFqySXInJtseAqdprVTDTyqPxQOG9Exak5/E9Z3+EJ8ZA==}
+  /@rollup/rollup-win32-ia32-msvc@4.12.1:
+    resolution: {integrity: sha512-LN+vnlZ9g0qlHGlS920GR4zFCqAwbv2lULrR29yGaWP9u7wF5L7GqWu9Ah6/kFZPXPUkpdZwd//TNR+9XC9hvA==}
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
     optional: true
 
-  /@rollup/rollup-win32-x64-msvc@4.12.0:
-    resolution: {integrity: sha512-ZYmr5mS2wd4Dew/JjT0Fqi2NPB/ZhZ2VvPp7SmvPZb4Y1CG/LRcS6tcRo2cYU7zLK5A7cdbhWnnWmUjoI4qapg==}
+  /@rollup/rollup-win32-x64-msvc@4.12.1:
+    resolution: {integrity: sha512-n+vkrSyphvmU0qkQ6QBNXCGr2mKjhP08mPRM/Xp5Ck2FV4NrHU+y6axzDeixUrCBHVUS51TZhjqrKBBsHLKb2Q==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
@@ -6373,14 +6400,14 @@ packages:
     resolution: {integrity: sha512-MVEJ4vWAPNbrGLjz7ITnHYg+YXZ6ijAqtH5/cHwSoCpbvuJ98aLXwFfPKAUfZpJMQR5uXB58UJajbY130IRF/w==}
     dev: false
 
-  /@vitejs/plugin-vue@5.0.4(vite@5.1.5)(vue@3.4.21):
+  /@vitejs/plugin-vue@5.0.4(vite@5.1.6)(vue@3.4.21):
     resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.1.5(@types/node@20.11.25)(sass@1.71.1)
+      vite: 5.1.6(@types/node@20.11.25)(sass@1.71.1)
       vue: 3.4.21(typescript@5.4.2)
     dev: true
 
@@ -7176,7 +7203,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001596
+      caniuse-lite: 1.0.30001597
       electron-to-chromium: 1.4.699
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
@@ -7261,7 +7288,7 @@ packages:
       http-cache-semantics: 4.1.1
       keyv: 4.5.4
       mimic-response: 4.0.0
-      normalize-url: 8.0.0
+      normalize-url: 8.0.1
       responselike: 3.0.0
     dev: false
 
@@ -7349,8 +7376,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /caniuse-lite@1.0.30001596:
-    resolution: {integrity: sha512-zpkZ+kEr6We7w63ORkoJ2pOfBwBkY/bJrG/UZ90qNb45Isblu8wzDgevEOrRL1r9dWayHjYiiyCMEXPn4DweGQ==}
+  /caniuse-lite@1.0.30001597:
+    resolution: {integrity: sha512-7LjJvmQU6Sj7bL0j5b5WY/3n7utXUJvAe1lxhsHDbLmwX9mdL86Yjtr+5SRCyf8qME4M7pU2hswj0FpyBVCv9w==}
     dev: false
 
   /canonicalize@2.0.0:
@@ -7383,6 +7410,11 @@ packages:
 
   /cborg@4.1.0:
     resolution: {integrity: sha512-hbWI4lRY0SdkTBbAH1STpY60rqR1gqGz4XaGZ6BXxncqCaAAOtmg2UNLA/6AJ8WG+p14J5P9t7Ul8f0u2ZLOhg==}
+    hasBin: true
+    dev: false
+
+  /cborg@4.1.1:
+    resolution: {integrity: sha512-XBEXWdr1N0pjAX0l2a+BKmWGIMDYoLrrqgAWWETtaqn3HC4zn0dZoNO8vC+8oDZfDLMyVRfRD3kMuoYgT67KBQ==}
     hasBin: true
     dev: false
 
@@ -8466,7 +8498,7 @@ packages:
     peerDependencies:
       '@constl/ipa': ^1.0.0
     dependencies:
-      '@constl/ipa': 1.0.0(react-native@0.73.5)(wrtc@0.4.7)
+      '@constl/ipa': 1.0.0(react-native@0.73.6)(wrtc@0.4.7)
       '@lassi-js/kili': 0.3.9(@constl/ipa@1.0.0)
       deepmerge: 4.3.1
       events: 3.3.0
@@ -9640,6 +9672,13 @@ packages:
       function-bind: 1.1.2
     dev: false
 
+  /hasown@2.0.2:
+    resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      function-bind: 1.1.2
+    dev: false
+
   /hat@0.0.3:
     resolution: {integrity: sha512-zpImx2GoKXy42fVDSEad2BPKuSQdLcqsCYa48K3zHSzM/ugWuYjLDr8IXxpVuL7uCLHw56eaiLxCRthhOzf5ug==}
     requiresBuild: true
@@ -9658,7 +9697,7 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /helia@3.0.1(react-native@0.73.5):
+  /helia@3.0.1(react-native@0.73.6):
     resolution: {integrity: sha512-Uf9h2RQuiyZxQkBXmbV9HF9/ILSWellXDuSk9Qwn+hRwtlIuEmaHW2HIRHXoaUF9A+WBPplLmiShaYtbaOgbMQ==}
     dependencies:
       '@chainsafe/libp2p-gossipsub': 11.2.1
@@ -9685,7 +9724,7 @@ packages:
       '@libp2p/tcp': 9.0.16
       '@libp2p/upnp-nat': 1.0.14
       '@libp2p/utils': 5.2.6
-      '@libp2p/webrtc': 4.0.20(react-native@0.73.5)
+      '@libp2p/webrtc': 4.0.20(react-native@0.73.6)
       '@libp2p/websockets': 8.0.16
       '@libp2p/webtransport': 4.0.20
       blockstore-core: 4.4.0
@@ -11010,7 +11049,7 @@ packages:
   /is-core-module@2.13.1:
     resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
     dependencies:
-      hasown: 2.0.1
+      hasown: 2.0.2
     dev: false
 
   /is-date-object@1.0.5:
@@ -11122,7 +11161,7 @@ packages:
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dependencies:
       '@multiformats/mafmt': 12.1.6
-      '@multiformats/multiaddr': 12.1.14
+      '@multiformats/multiaddr': 12.2.0
       iso-url: 1.2.1
       multiformats: 13.1.0
       uint8arrays: 5.0.2
@@ -13219,8 +13258,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /normalize-url@8.0.0:
-    resolution: {integrity: sha512-uVFpKhj5MheNBJRTiMZ9pE/7hD1QTeEvugSJW/OmLzAp78PB5O6adfMNTvmfKhXBkvCzC+rqifWcVYpGFwTjnw==}
+  /normalize-url@8.0.1:
+    resolution: {integrity: sha512-IO9QvjUMWxPQQhs60oOu10CRkWCiZzSUkzbXGGV9pviYl1fXYcvkzQ5jV9z8Y6un8ARoVRl4EtC6v6jNqbaJ/w==}
     engines: {node: '>=14.16'}
     dev: false
 
@@ -13285,7 +13324,7 @@ packages:
     peerDependencies:
       '@constl/ipa': ^1.0.0
     dependencies:
-      '@constl/ipa': 1.0.0(react-native@0.73.5)(wrtc@0.4.7)
+      '@constl/ipa': 1.0.0(react-native@0.73.6)(wrtc@0.4.7)
       '@lassi-js/kili': 0.3.9(@constl/ipa@1.0.0)
       deepmerge: 4.3.1
       events: 3.3.0
@@ -14508,7 +14547,7 @@ packages:
       p-defer: 3.0.0
     dev: false
 
-  /react-native-webrtc@118.0.2(react-native@0.73.5):
+  /react-native-webrtc@118.0.2(react-native@0.73.6):
     resolution: {integrity: sha512-ICSv/iYXRILIHgWJXVI1ZlYkQeWZIuqi02FI+38Ch6YRbFZWUwcfhALZ5AhTRAlnUzpt+qsBxWrsq8eIG+3lTw==}
     peerDependencies:
       react-native: '>=0.60.0'
@@ -14516,13 +14555,13 @@ packages:
       base64-js: 1.5.1
       debug: 4.3.4
       event-target-shim: 6.0.2
-      react-native: 0.73.5(@babel/core@7.24.0)(@babel/preset-env@7.24.0)(react@18.2.0)
+      react-native: 0.73.6(@babel/core@7.24.0)(@babel/preset-env@7.24.0)(react@18.2.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /react-native@0.73.5(@babel/core@7.24.0)(@babel/preset-env@7.24.0)(react@18.2.0):
-    resolution: {integrity: sha512-iHgDArmF4CrhL0qTj+Rn+CBN5pZWUL9lUGl8ub+V9Hwu/vnzQQh8rTMVSwVd2sV6N76KjpE5a4TfIAHkpIHhKg==}
+  /react-native@0.73.6(@babel/core@7.24.0)(@babel/preset-env@7.24.0)(react@18.2.0):
+    resolution: {integrity: sha512-oqmZe8D2/VolIzSPZw+oUd6j/bEmeRHwsLn1xLA5wllEYsZ5zNuMsDus235ONOnCRwexqof/J3aztyQswSmiaA==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -14538,7 +14577,7 @@ packages:
       '@react-native/gradle-plugin': 0.73.4
       '@react-native/js-polyfills': 0.73.1
       '@react-native/normalize-colors': 0.73.2
-      '@react-native/virtualized-lists': 0.73.4(react-native@0.73.5)
+      '@react-native/virtualized-lists': 0.73.4(react-native@0.73.6)
       abort-controller: 3.0.0
       anser: 1.4.10
       ansi-regex: 5.0.1
@@ -14909,26 +14948,26 @@ packages:
     resolution: {integrity: sha512-OlwfYEgA2RdboZohpldlvJ1xngOins5d7ejqnIBWr9KaMxsnBqotpptRXTyfNRLnFpqzX6sTDt+X+a+6udnU8g==}
     dev: false
 
-  /rollup@4.12.0:
-    resolution: {integrity: sha512-wz66wn4t1OHIJw3+XU7mJJQV/2NAfw5OAk6G6Hoo3zcvz/XOfQ52Vgi+AN4Uxoxi0KBBwk2g8zPrTDA4btSB/Q==}
+  /rollup@4.12.1:
+    resolution: {integrity: sha512-ggqQKvx/PsB0FaWXhIvVkSWh7a/PCLQAsMjBc+nA2M8Rv2/HG0X6zvixAB7KyZBRtifBUhy5k8voQX/mRnABPg==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
     dependencies:
       '@types/estree': 1.0.5
     optionalDependencies:
-      '@rollup/rollup-android-arm-eabi': 4.12.0
-      '@rollup/rollup-android-arm64': 4.12.0
-      '@rollup/rollup-darwin-arm64': 4.12.0
-      '@rollup/rollup-darwin-x64': 4.12.0
-      '@rollup/rollup-linux-arm-gnueabihf': 4.12.0
-      '@rollup/rollup-linux-arm64-gnu': 4.12.0
-      '@rollup/rollup-linux-arm64-musl': 4.12.0
-      '@rollup/rollup-linux-riscv64-gnu': 4.12.0
-      '@rollup/rollup-linux-x64-gnu': 4.12.0
-      '@rollup/rollup-linux-x64-musl': 4.12.0
-      '@rollup/rollup-win32-arm64-msvc': 4.12.0
-      '@rollup/rollup-win32-ia32-msvc': 4.12.0
-      '@rollup/rollup-win32-x64-msvc': 4.12.0
+      '@rollup/rollup-android-arm-eabi': 4.12.1
+      '@rollup/rollup-android-arm64': 4.12.1
+      '@rollup/rollup-darwin-arm64': 4.12.1
+      '@rollup/rollup-darwin-x64': 4.12.1
+      '@rollup/rollup-linux-arm-gnueabihf': 4.12.1
+      '@rollup/rollup-linux-arm64-gnu': 4.12.1
+      '@rollup/rollup-linux-arm64-musl': 4.12.1
+      '@rollup/rollup-linux-riscv64-gnu': 4.12.1
+      '@rollup/rollup-linux-x64-gnu': 4.12.1
+      '@rollup/rollup-linux-x64-musl': 4.12.1
+      '@rollup/rollup-win32-arm64-msvc': 4.12.1
+      '@rollup/rollup-win32-ia32-msvc': 4.12.1
+      '@rollup/rollup-win32-x64-msvc': 4.12.1
       fsevents: 2.3.3
 
   /rpc-utils@0.6.2:
@@ -16095,7 +16134,7 @@ packages:
     dev: false
     optional: true
 
-  /vite-plugin-vuetify@2.0.3(vite@5.1.5)(vue@3.4.21)(vuetify@3.5.8):
+  /vite-plugin-vuetify@2.0.3(vite@5.1.6)(vue@3.4.21)(vuetify@3.5.8):
     resolution: {integrity: sha512-HbYajgGgb/noaVKNRhnnXIiQZrNXfNIeanUGAwXgOxL6h/KULS40Uf51Kyz8hNmdegF+DwjgXXI/8J1PNS83xw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
@@ -16106,14 +16145,14 @@ packages:
       '@vuetify/loader-shared': 2.0.3(vue@3.4.21)(vuetify@3.5.8)
       debug: 4.3.4
       upath: 2.0.1
-      vite: 5.1.5(@types/node@20.11.25)(sass@1.71.1)
+      vite: 5.1.6(@types/node@20.11.25)(sass@1.71.1)
       vue: 3.4.21(typescript@5.4.2)
       vuetify: 3.5.8(typescript@5.4.2)(vite-plugin-vuetify@2.0.3)(vue@3.4.21)
     transitivePeerDependencies:
       - supports-color
 
-  /vite@5.1.5(@types/node@20.11.25)(sass@1.71.1):
-    resolution: {integrity: sha512-BdN1xh0Of/oQafhU+FvopafUp6WaYenLU/NFoL5WyJL++GxkNfieKzBhM24H3HVsPQrlAqB7iJYTHabzaRed5Q==}
+  /vite@5.1.6(@types/node@20.11.25)(sass@1.71.1):
+    resolution: {integrity: sha512-yYIAZs9nVfRJ/AiOLCA91zzhjsHUgMjB+EigzFb6W2XTLO8JixBCKCjvhKZaye+NKYHCrkv3Oh50dH9EdLU2RA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -16143,7 +16182,7 @@ packages:
       '@types/node': 20.11.25
       esbuild: 0.19.12
       postcss: 8.4.35
-      rollup: 4.12.0
+      rollup: 4.12.1
       sass: 1.71.1
     optionalDependencies:
       fsevents: 2.3.3
@@ -16233,7 +16272,7 @@ packages:
         optional: true
     dependencies:
       typescript: 5.4.2
-      vite-plugin-vuetify: 2.0.3(vite@5.1.5)(vue@3.4.21)(vuetify@3.5.8)
+      vite-plugin-vuetify: 2.0.3(vite@5.1.6)(vue@3.4.21)(vuetify@3.5.8)
       vue: 3.4.21(typescript@5.4.2)
 
   /walker@1.0.8:
