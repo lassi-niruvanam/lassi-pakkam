@@ -93,13 +93,13 @@ devDependencies:
     version: 9.23.0(eslint@8.57.0)
   sass:
     specifier: ^1.58.3
-    version: 1.71.1
+    version: 1.72.0
   typescript:
     specifier: ^5.0.0
     version: 5.4.2
   vite:
     specifier: ^5.0.0
-    version: 5.1.6(@types/node@20.11.27)(sass@1.71.1)
+    version: 5.1.6(@types/node@20.11.27)(sass@1.72.0)
   vite-plugin-vuetify:
     specifier: ^2.0.0
     version: 2.0.3(vite@5.1.6)(vue@3.4.21)(vuetify@3.5.9)
@@ -1700,7 +1700,7 @@ packages:
       '@libp2p/peer-record': 5.0.4
       '@libp2p/pubsub': 6.0.6
       '@libp2p/topology': 4.0.3
-      '@multiformats/multiaddr': 12.2.0
+      '@multiformats/multiaddr': 12.2.1
       abortable-iterator: 4.0.3
       denque: 1.5.1
       it-length-prefixed: 8.0.4
@@ -3640,7 +3640,7 @@ packages:
       '@libp2p/interface-connection': 4.0.0
       '@libp2p/interface-peer-id': 2.0.2
       '@libp2p/interfaces': 3.3.2
-      '@multiformats/multiaddr': 12.2.0
+      '@multiformats/multiaddr': 12.2.1
     dev: false
 
   /@libp2p/interface-connection@3.1.1:
@@ -3812,7 +3812,7 @@ packages:
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dependencies:
       '@libp2p/interface-peer-id': 2.0.2
-      '@multiformats/multiaddr': 12.2.0
+      '@multiformats/multiaddr': 12.2.1
     dev: false
 
   /@libp2p/interface-peer-info@1.0.9:
@@ -3949,7 +3949,7 @@ packages:
       '@libp2p/interface-connection': 4.0.0
       '@libp2p/interface-stream-muxer': 3.0.6
       '@libp2p/interfaces': 3.3.2
-      '@multiformats/multiaddr': 12.2.0
+      '@multiformats/multiaddr': 12.2.1
       it-stream-types: 1.0.5
     dev: false
 
@@ -4561,7 +4561,7 @@ packages:
       '@libp2p/logger': 2.1.1
       '@libp2p/utils': 3.0.13
       '@multiformats/mafmt': 12.1.6
-      '@multiformats/multiaddr': 12.2.0
+      '@multiformats/multiaddr': 12.2.1
       stream-to-it: 0.2.4
     transitivePeerDependencies:
       - supports-color
@@ -4809,7 +4809,7 @@ packages:
       '@libp2p/logger': 2.1.1
       '@libp2p/utils': 3.0.13
       '@multiformats/mafmt': 12.1.6
-      '@multiformats/multiaddr': 12.2.0
+      '@multiformats/multiaddr': 12.2.1
       '@multiformats/multiaddr-to-uri': 9.0.8
       abortable-iterator: 4.0.3
       it-ws: 5.0.6
@@ -5058,6 +5058,18 @@ packages:
       uint8arrays: 5.0.2
     dev: false
 
+  /@multiformats/dns@1.0.3:
+    resolution: {integrity: sha512-fGpJ0CBWfSaEze9D8rL86b+Ykek9OLpC0AJe8eGvARAT9FgTuZBdGRgvFvmkRsM3vZt7kPdd+8wacHvwEBJaLw==}
+    dependencies:
+      '@types/dns-packet': 5.6.5
+      buffer: 6.0.3
+      dns-packet: 5.6.1
+      hashlru: 2.3.0
+      p-queue: 8.0.1
+      progress-events: 1.0.0
+      uint8arrays: 5.0.3
+    dev: false
+
   /@multiformats/mafmt@11.1.2:
     resolution: {integrity: sha512-3n1o5eLU7WzTAPLuz3AodV7Iql6NWf7Ws8fqVaGT7o5nDDabUPYGBm2cZuh3OrqmwyCY61LrNUIsjzivU6UdpQ==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
@@ -5118,6 +5130,18 @@ packages:
       uint8arrays: 5.0.2
     dev: false
 
+  /@multiformats/multiaddr@12.2.1:
+    resolution: {integrity: sha512-UwjoArBbv64FlaetV4DDwh+PUMfzXUBltxQwdh+uTYnGFzVa8ZfJsn1vt1RJlJ6+Xtrm3RMekF/B+K338i2L5Q==}
+    dependencies:
+      '@chainsafe/is-ip': 2.0.2
+      '@chainsafe/netmask': 2.0.0
+      '@libp2p/interface': 1.1.4
+      '@multiformats/dns': 1.0.3
+      multiformats: 13.1.0
+      uint8-varint: 2.0.4
+      uint8arrays: 5.0.3
+    dev: false
+
   /@multiformats/murmur3@2.1.8:
     resolution: {integrity: sha512-6vId1C46ra3R1sbJUOFCZnsUIveR9oF20yhPmAFxPm0JfrX3/ZRCgP3YDrBzlGoEppOXnA9czHeYc0T9mB6hbA==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
@@ -5129,7 +5153,7 @@ packages:
   /@multiformats/uri-to-multiaddr@7.0.1:
     resolution: {integrity: sha512-POqZHHZiLj8WiL5ONYx6QhWGA/r5kjcYcozHgzd/+jnyjU/qo6H2l8sKzE8cE3GdDklJtn/qJE5o3UGQBiR9Bg==}
     dependencies:
-      '@multiformats/multiaddr': 12.2.0
+      '@multiformats/multiaddr': 12.2.1
       is-ip: 5.0.1
     dev: false
 
@@ -6279,7 +6303,7 @@ packages:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.1.6(@types/node@20.11.27)(sass@1.71.1)
+      vite: 5.1.6(@types/node@20.11.27)(sass@1.72.0)
       vue: 3.4.21(typescript@5.4.2)
     dev: true
 
@@ -11019,7 +11043,7 @@ packages:
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dependencies:
       '@multiformats/mafmt': 12.1.6
-      '@multiformats/multiaddr': 12.2.0
+      '@multiformats/multiaddr': 12.2.1
       iso-url: 1.2.1
       multiformats: 13.1.0
       uint8arrays: 5.0.3
@@ -14863,8 +14887,8 @@ packages:
       truncate-utf8-bytes: 1.0.2
     dev: false
 
-  /sass@1.71.1:
-    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
+  /sass@1.72.0:
+    resolution: {integrity: sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -16007,13 +16031,13 @@ packages:
       '@vuetify/loader-shared': 2.0.3(vue@3.4.21)(vuetify@3.5.9)
       debug: 4.3.4
       upath: 2.0.1
-      vite: 5.1.6(@types/node@20.11.27)(sass@1.71.1)
+      vite: 5.1.6(@types/node@20.11.27)(sass@1.72.0)
       vue: 3.4.21(typescript@5.4.2)
       vuetify: 3.5.9(typescript@5.4.2)(vite-plugin-vuetify@2.0.3)(vue@3.4.21)
     transitivePeerDependencies:
       - supports-color
 
-  /vite@5.1.6(@types/node@20.11.27)(sass@1.71.1):
+  /vite@5.1.6(@types/node@20.11.27)(sass@1.72.0):
     resolution: {integrity: sha512-yYIAZs9nVfRJ/AiOLCA91zzhjsHUgMjB+EigzFb6W2XTLO8JixBCKCjvhKZaye+NKYHCrkv3Oh50dH9EdLU2RA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -16045,7 +16069,7 @@ packages:
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.12.1
-      sass: 1.71.1
+      sass: 1.72.0
     optionalDependencies:
       fsevents: 2.3.3
 
