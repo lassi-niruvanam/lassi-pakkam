@@ -19,7 +19,7 @@ dependencies:
     version: 2.0.0
   core-js:
     specifier: ^3.28.0
-    version: 3.36.0
+    version: 3.36.1
   dompurify:
     specifier: ^3.0.1
     version: 3.0.9
@@ -1513,7 +1513,7 @@ packages:
       babel-plugin-polyfill-corejs2: 0.4.10(@babel/core@7.24.0)
       babel-plugin-polyfill-corejs3: 0.9.0(@babel/core@7.24.0)
       babel-plugin-polyfill-regenerator: 0.5.5(@babel/core@7.24.0)
-      core-js-compat: 3.36.0
+      core-js-compat: 3.36.1
       semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
@@ -3140,7 +3140,7 @@ packages:
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dependencies:
       '@ipld/dag-cbor': 9.2.0
-      cborg: 4.1.2
+      cborg: 4.1.3
       multiformats: 13.1.0
       varint: 6.0.0
     dev: false
@@ -6841,7 +6841,7 @@ packages:
     dependencies:
       '@babel/core': 7.24.0
       '@babel/helper-define-polyfill-provider': 0.5.0(@babel/core@7.24.0)
-      core-js-compat: 3.36.0
+      core-js-compat: 3.36.1
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -7309,8 +7309,8 @@ packages:
     hasBin: true
     dev: false
 
-  /cborg@4.1.2:
-    resolution: {integrity: sha512-xhohCEHG5XE+b+9qFq639MQhCYE6fD2ybfVHO7/U0iyuzNzVdg5wSlozHRvBNuFBdQNikSdbxhBxS7pLQFvHig==}
+  /cborg@4.1.3:
+    resolution: {integrity: sha512-I8sAcVtiarz0dZ4IYixNUaL2hIl9cMDjo1ytI57F5fUlekTEO5Im8aXbAvsuayeP76hHSPRMwos0AUuntHJjqQ==}
     hasBin: true
     dev: false
 
@@ -7681,14 +7681,14 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /core-js-compat@3.36.0:
-    resolution: {integrity: sha512-iV9Pd/PsgjNWBXeq8XRtWVSgz2tKAfhfvBs7qxYty+RlRd+OCksaWmOnc4JKrTc1cToXL1N0s3l/vwlxPtdElw==}
+  /core-js-compat@3.36.1:
+    resolution: {integrity: sha512-Dk997v9ZCt3X/npqzyGdTlq6t7lDBhZwGvV94PKzDArjp7BTRm7WlDAXYd/OWdeFHO8OChQYRJNJvUCqCbrtKA==}
     dependencies:
       browserslist: 4.23.0
     dev: false
 
-  /core-js@3.36.0:
-    resolution: {integrity: sha512-mt7+TUBbTFg5+GngsAxeKBTl5/VS0guFeJacYge9OmHb+m058UwwIm41SE9T4Den7ClatV57B6TYTuJ0CX1MAw==}
+  /core-js@3.36.1:
+    resolution: {integrity: sha512-BTvUrwxVBezj5SZ3f10ImnX2oRByMxql3EimVqMysepbC9EeMUOpLwdy6Eoili2x6E4kf+ZUB5k/+Jv55alPfA==}
     requiresBuild: true
     dev: false
 
