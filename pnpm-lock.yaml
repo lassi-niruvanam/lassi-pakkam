@@ -93,13 +93,13 @@ devDependencies:
     version: 9.24.1(eslint@9.0.0)
   sass:
     specifier: ^1.58.3
-    version: 1.74.1
+    version: 1.75.0
   typescript:
     specifier: ^5.0.0
     version: 5.4.5
   vite:
     specifier: ^5.0.0
-    version: 5.2.8(@types/node@20.12.7)(sass@1.74.1)
+    version: 5.2.8(@types/node@20.12.7)(sass@1.75.0)
   vite-plugin-vuetify:
     specifier: ^2.0.0
     version: 2.0.3(vite@5.2.8)(vue@3.4.21)(vuetify@3.5.15)
@@ -2927,7 +2927,7 @@ packages:
       '@hapi/file': 3.0.0
       '@hapi/hoek': 11.0.4
       '@hapi/pez': 6.1.0
-      '@hapi/wreck': 18.0.1
+      '@hapi/wreck': 18.1.0
     dev: false
 
   /@hapi/teamwork@5.1.1:
@@ -2986,8 +2986,8 @@ packages:
       '@hapi/hoek': 9.3.0
     dev: false
 
-  /@hapi/wreck@18.0.1:
-    resolution: {integrity: sha512-OLHER70+rZxvDl75xq3xXOfd3e8XIvz8fWY0dqg92UvhZ29zo24vQgfqgHSYhB5ZiuFpSLeriOisAlxAo/1jWg==}
+  /@hapi/wreck@18.1.0:
+    resolution: {integrity: sha512-0z6ZRCmFEfV/MQqkQomJ7sl/hyxvcZM7LtuVqN3vdAO4vM9eBbowl0kaqQj9EJJQab+3Uuh1GxbGIBFy4NfJ4w==}
     dependencies:
       '@hapi/boom': 10.0.1
       '@hapi/bourne': 3.0.0
@@ -6401,7 +6401,7 @@ packages:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.2.8(@types/node@20.12.7)(sass@1.74.1)
+      vite: 5.2.8(@types/node@20.12.7)(sass@1.75.0)
       vue: 3.4.21(typescript@5.4.5)
     dev: true
 
@@ -7198,7 +7198,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001608
-      electron-to-chromium: 1.4.731
+      electron-to-chromium: 1.4.734
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: false
@@ -8380,8 +8380,8 @@ packages:
       encoding: 0.1.13
     dev: false
 
-  /electron-to-chromium@1.4.731:
-    resolution: {integrity: sha512-+TqVfZjpRz2V/5SPpmJxq9qK620SC5SqCnxQIOi7i/U08ZDcTpKbT7Xjj9FU5CbXTMUb4fywbIr8C7cGv4hcjw==}
+  /electron-to-chromium@1.4.734:
+    resolution: {integrity: sha512-pYfGUc+ll8AOzLbLC0lfgwkvCZIV+sKGuFFsSNuF3K3ujrmem8jIjg/t6DNq0J7biTSS1hCt/Hts0nmA3ZyprQ==}
     dev: false
 
   /electron-webrtc@0.3.0:
@@ -15059,8 +15059,8 @@ packages:
       truncate-utf8-bytes: 1.0.2
     dev: false
 
-  /sass@1.74.1:
-    resolution: {integrity: sha512-w0Z9p/rWZWelb88ISOLyvqTWGmtmu2QJICqDBGyNnfG4OUnPX9BBjjYIXUpXCMOOg5MQWNpqzt876la1fsTvUA==}
+  /sass@1.75.0:
+    resolution: {integrity: sha512-ShMYi3WkrDWxExyxSZPst4/okE9ts46xZmJDSawJQrnte7M1V9fScVB+uNXOVKRBt0PggHOwoZcn8mYX4trnBw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -16210,13 +16210,13 @@ packages:
       '@vuetify/loader-shared': 2.0.3(vue@3.4.21)(vuetify@3.5.15)
       debug: 4.3.4
       upath: 2.0.1
-      vite: 5.2.8(@types/node@20.12.7)(sass@1.74.1)
+      vite: 5.2.8(@types/node@20.12.7)(sass@1.75.0)
       vue: 3.4.21(typescript@5.4.5)
       vuetify: 3.5.15(typescript@5.4.5)(vite-plugin-vuetify@2.0.3)(vue@3.4.21)
     transitivePeerDependencies:
       - supports-color
 
-  /vite@5.2.8(@types/node@20.12.7)(sass@1.74.1):
+  /vite@5.2.8(@types/node@20.12.7)(sass@1.75.0):
     resolution: {integrity: sha512-OyZR+c1CE8yeHw5V5t59aXsUPPVTHMDjEZz8MgguLL/Q7NblxhZUlTu9xSPqlsUO/y+X7dlU05jdhvyycD55DA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -16248,7 +16248,7 @@ packages:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.14.0
-      sass: 1.74.1
+      sass: 1.75.0
     optionalDependencies:
       fsevents: 2.3.3
 
