@@ -58,7 +58,7 @@ importers:
         version: 3.4.23(typescript@5.4.5)
       vue-router:
         specifier: ^4.1.6
-        version: 4.3.0(vue@3.4.23(typescript@5.4.5))
+        version: 4.3.1(vue@3.4.23(typescript@5.4.5))
       vuetify:
         specifier: ^3.1.6
         version: 3.5.16(typescript@5.4.5)(vite-plugin-vuetify@2.0.3)(vue@3.4.23(typescript@5.4.5))
@@ -4871,8 +4871,8 @@ packages:
   it-byte-stream@1.0.8:
     resolution: {integrity: sha512-H32LbN6kdX8HXqH68z5uivfkVYJEi5tIPRwIQNR5Qsx3uoDRhYdBRHzf3NOVAf6vqulFUSQLuU+Y0rs/QeWn3A==}
 
-  it-concat@3.0.1:
-    resolution: {integrity: sha512-adsCBiPaDM46TrrpmNPEWru++/oFiLWZAnteM5ODPs0NRkDfjDyom+qyXvag7bP/Kp3Z6Vqv+U1idZs5gmyIAg==}
+  it-concat@3.0.3:
+    resolution: {integrity: sha512-ibYOqqF6MJUcB3970cDicVmpMOEDlrInV90X66++lM1OM7pm3NHCMtxHYQR2MMPUtLJmVaGUudYwA+6Q1FbYbQ==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
 
   it-drain@2.0.1:
@@ -7362,8 +7362,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  vue-router@4.3.0:
-    resolution: {integrity: sha512-dqUcs8tUeG+ssgWhcPbjHvazML16Oga5w34uCUmsk7i0BcnskoLGwjpa15fqMr2Fa5JgVBrdL2MEgqz6XZ/6IQ==}
+  vue-router@4.3.1:
+    resolution: {integrity: sha512-D0h3oyP6vp28BOvxv2hVpiqFTjTJizCf1BuMmCibc8UW0Ll/N80SWqDd/hqPMaZfzW1j+s2s+aTRyBIP9ElzOw==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -14430,7 +14430,7 @@ snapshots:
       ipfs-daemon: 0.16.1(encoding@0.1.13)
       ipfs-http-client: 60.0.1(encoding@0.1.13)
       ipfs-utils: 9.0.14(encoding@0.1.13)
-      it-concat: 3.0.1
+      it-concat: 3.0.3
       it-merge: 2.0.1
       it-pipe: 2.0.5
       it-split: 2.0.2
@@ -15435,10 +15435,10 @@ snapshots:
       race-signal: 1.0.2
       uint8arraylist: 2.4.8
 
-  it-concat@3.0.1:
+  it-concat@3.0.3:
     dependencies:
       uint8arraylist: 2.4.8
-      uint8arrays: 4.0.10
+      uint8arrays: 5.0.3
 
   it-drain@2.0.1: {}
 
@@ -18428,7 +18428,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-router@4.3.0(vue@3.4.23(typescript@5.4.5)):
+  vue-router@4.3.1(vue@3.4.23(typescript@5.4.5)):
     dependencies:
       '@vue/devtools-api': 6.6.1
       vue: 3.4.23(typescript@5.4.5)
