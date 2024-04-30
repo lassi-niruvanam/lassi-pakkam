@@ -25,7 +25,7 @@ importers:
         version: 3.37.0
       dompurify:
         specifier: ^3.0.1
-        version: 3.1.1
+        version: 3.1.2
       events:
         specifier: ^3.3.0
         version: 3.3.0
@@ -3585,8 +3585,8 @@ packages:
     resolution: {integrity: sha512-raigMkn7CJNNo6Ihro1fzG7wr3fHuYVytzquZKX5n0yizGsTcYgzdIUwj1X9pK0VvjeihV+XiclP+DjwbsSKug==}
     deprecated: Use your platform's native DOMException instead
 
-  dompurify@3.1.1:
-    resolution: {integrity: sha512-tVP8C/GJwnABOn/7cx/ymx/hXpmBfWIPihC1aOEvS8GbMqy3pgeYtJk1HXN3CO7tu+8bpY18f6isjR5Cymj0TQ==}
+  dompurify@3.1.2:
+    resolution: {integrity: sha512-hLGGBI1tw5N8qTELr3blKjAML/LY4ANxksbS612UiJyDfyf/2D092Pvm+S7pmeTGJRqvlJkFzBoHBQKgQlOQVg==}
 
   dot-case@3.0.4:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
@@ -13382,7 +13382,7 @@ snapshots:
       webidl-conversions: 4.0.2
     optional: true
 
-  dompurify@3.1.1: {}
+  dompurify@3.1.2: {}
 
   dot-case@3.0.4:
     dependencies:
