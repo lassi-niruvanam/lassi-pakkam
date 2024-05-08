@@ -43,7 +43,7 @@ importers:
         version: 4.3.0
       nuchabal:
         specifier: ^3.1.0
-        version: 3.2.2(@constl/ipa@0.6.48(electron@23.3.13)(encoding@0.1.13)(go-ipfs@0.22.0)(ipfs@0.66.1(encoding@0.1.13))(ipfsd-ctl@13.0.0(encoding@0.1.13))(wrtc@0.4.7))
+        version: 3.2.4(@constl/ipa@0.6.48(electron@23.3.13)(encoding@0.1.13)(go-ipfs@0.22.0)(ipfs@0.66.1(encoding@0.1.13))(ipfsd-ctl@13.0.0(encoding@0.1.13))(wrtc@0.4.7))
       roboto-fontface:
         specifier: ^0.10.0
         version: 0.10.0
@@ -1499,11 +1499,6 @@ packages:
     peerDependencies:
       '@constl/ipa': ^1.0.12
 
-  '@lassi-js/kili@0.3.9':
-    resolution: {integrity: sha512-/EnrM0HUOUwt/gMNUa4ExqETD4QhDFPd4tQsMmwxXx2f1tJkulbHuPQk+B5w0CgHf1Qj71bskTgWDY9R70/xJw==}
-    peerDependencies:
-      '@constl/ipa': 1.0.0
-
   '@lassi-js/kilimukku-vue@1.1.4':
     resolution: {integrity: sha512-uH8WLjD+HeKnDNNYeAMEK2oBAIBAhxWwy0NGmS1IPTIb3d84TkXBdvZmNc3aPL95QgFflCkXRqS5YVWxa9KezA==}
     peerDependencies:
@@ -2052,10 +2047,6 @@ packages:
   '@opentelemetry/api@1.8.0':
     resolution: {integrity: sha512-I/s6F7yKUDdtMsoBWXJe8Qz40Tui5vsuKCWJEWVL+5q9sSWRzzx6v2KeNsOBEwd94j0eWkpWCH4yB6rZg9Mf0w==}
     engines: {node: '>=8.0.0'}
-
-  '@orbitdb/core@2.1.0':
-    resolution: {integrity: sha512-IjNPZrvZrFCoALF6owbWpdwn3rO6ekkurSA1Ccp5p2sgatJa3j2yCXN0qJpr6pistqwc9tZSKYsYmGUQ2bkEUw==}
-    engines: {node: '>=20.0.0'}
 
   '@orbitdb/core@2.2.0':
     resolution: {integrity: sha512-W1jScRjNVne7l0V9camdFQXrPPcWxSz7LwJzq6SryMe+xfVArrV4ADiElk7+dpQa6zwOOQpSUUfX2o46kY5dTw==}
@@ -5854,11 +5845,6 @@ packages:
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
-
-  nuchabal@3.2.2:
-    resolution: {integrity: sha512-stQS0BCDNE55Ya2vNjZjOre8YHJp7hZRwVl2+w5iYW/eSqDJRJev/PYjOct8NoZZZSdC+YJJQFmlNp+lRS9HZw==}
-    peerDependencies:
-      '@constl/ipa': ^1.0.0
 
   nuchabal@3.2.4:
     resolution: {integrity: sha512-sOhaO8cO0fRgnCM6rQ5FjxPS+ubTQ9f2xTP3vEgRbFqCXFb/oGDzn2DzoIn7V9h+zEhaD8/yaQZCgyQZkYRNvQ==}
@@ -9932,15 +9918,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@lassi-js/kili@0.3.9(@constl/ipa@0.6.48(electron@23.3.13)(encoding@0.1.13)(go-ipfs@0.22.0)(ipfs@0.66.1(encoding@0.1.13))(ipfsd-ctl@13.0.0(encoding@0.1.13))(wrtc@0.4.7))':
-    dependencies:
-      '@constl/ipa': 0.6.48(electron@23.3.13)(encoding@0.1.13)(go-ipfs@0.22.0)(ipfs@0.66.1(encoding@0.1.13))(ipfsd-ctl@13.0.0(encoding@0.1.13))(wrtc@0.4.7)
-      '@constl/utils-ipa': 1.0.0
-      '@orbitdb/core': 2.1.0
-      deepcopy: 2.1.0
-    transitivePeerDependencies:
-      - supports-color
-
   '@lassi-js/kilimukku-vue@1.1.4(@constl/ipa@0.6.48(electron@23.3.13)(encoding@0.1.13)(go-ipfs@0.22.0)(ipfs@0.66.1(encoding@0.1.13))(ipfsd-ctl@13.0.0(encoding@0.1.13))(wrtc@0.4.7))(encoding@0.1.13)(react-native@0.73.6(@babel/core@7.24.5)(@babel/preset-env@7.24.4(@babel/core@7.24.5))(encoding@0.1.13)(react@18.2.0))(vue@3.4.27(typescript@5.4.5))':
     dependencies:
       '@chriscdn/promise-semaphore': 2.0.9
@@ -11448,18 +11425,6 @@ snapshots:
       fastq: 1.17.1
 
   '@opentelemetry/api@1.8.0': {}
-
-  '@orbitdb/core@2.1.0':
-    dependencies:
-      '@ipld/dag-cbor': 9.2.0
-      '@libp2p/crypto': 3.0.4
-      it-pipe: 3.0.1
-      level: 8.0.1
-      lru: 3.1.0
-      multiformats: 12.1.3
-      p-queue: 8.0.1
-      timeout-abort-controller: 3.0.0
-      uint8arrays: 5.0.2
 
   '@orbitdb/core@2.2.0':
     dependencies:
@@ -16838,15 +16803,6 @@ snapshots:
   nth-check@2.1.1:
     dependencies:
       boolbase: 1.0.0
-
-  nuchabal@3.2.2(@constl/ipa@0.6.48(electron@23.3.13)(encoding@0.1.13)(go-ipfs@0.22.0)(ipfs@0.66.1(encoding@0.1.13))(ipfsd-ctl@13.0.0(encoding@0.1.13))(wrtc@0.4.7)):
-    dependencies:
-      '@constl/ipa': 0.6.48(electron@23.3.13)(encoding@0.1.13)(go-ipfs@0.22.0)(ipfs@0.66.1(encoding@0.1.13))(ipfsd-ctl@13.0.0(encoding@0.1.13))(wrtc@0.4.7)
-      '@lassi-js/kili': 0.3.9(@constl/ipa@0.6.48(electron@23.3.13)(encoding@0.1.13)(go-ipfs@0.22.0)(ipfs@0.66.1(encoding@0.1.13))(ipfsd-ctl@13.0.0(encoding@0.1.13))(wrtc@0.4.7))
-      deepmerge: 4.3.1
-      events: 3.3.0
-    transitivePeerDependencies:
-      - supports-color
 
   nuchabal@3.2.4(@constl/ipa@0.6.48(electron@23.3.13)(encoding@0.1.13)(go-ipfs@0.22.0)(ipfs@0.66.1(encoding@0.1.13))(ipfsd-ctl@13.0.0(encoding@0.1.13))(wrtc@0.4.7)):
     dependencies:
