@@ -44,7 +44,7 @@
     </v-container>
 </template>
 <script setup lang="ts">
-import {marked} from 'marked'
+import {parse} from 'marked'
 import DOMPurify from 'dompurify';
 import {கிளிமூக்கை_பயன்படுத்து} from "@lassi-js/kilimukku-vue"
 
@@ -52,7 +52,7 @@ const {மொழியாக்கம்_பயன்படுத்து} = �
 const {$மொ} = மொழியாக்கம்_பயன்படுத்து({})
 
 const compiledMarkdown = (உரை: string) => {
-  return DOMPurify.sanitize(marked(உரை));
+  return DOMPurify.sanitize(parse(உரை) as string);
 }
 
 const கேள்விகள் = [
