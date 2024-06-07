@@ -43,7 +43,7 @@ importers:
         version: 12.0.2
       nuchabal:
         specifier: ^3.2.4
-        version: 3.2.5(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))
+        version: 3.2.7(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))
       roboto-fontface:
         specifier: ^0.10.0
         version: 0.10.0
@@ -2572,8 +2572,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.4.794:
-    resolution: {integrity: sha512-6FApLtsYhDCY0Vglq3AptsdxQ+PJLc6AxlAM0HjEihUAiOPPbkASEsq9gtxUeZY9o0sJIEa3WnF0vVH4VT4iug==}
+  electron-to-chromium@1.4.795:
+    resolution: {integrity: sha512-hHo4lK/8wb4NUa+NJYSFyJ0xedNHiR6ylilDtb8NUW9d4dmBFmGiecYEKCEbti1wTNzbKXLfl4hPWEkAFbHYlw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3984,8 +3984,8 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
-  nuchabal@3.2.5:
-    resolution: {integrity: sha512-58UChUw9yRWI2sYB3V/52s4ryOZEq9WFMS7z0Uo2OJ5peIJ3aehGQGl+On7TkBY4lps62JIZdgS46kP/N8Q4SQ==}
+  nuchabal@3.2.7:
+    resolution: {integrity: sha512-1q3m0mYiLi6ueiNkJOiIly1alZqIz2Y7sdNgOov71H0BP62dBQr6vXVrpGzn4aPuotMQu5DICGXhkfEE0GUhGw==}
     peerDependencies:
       '@constl/ipa': ^1.0.12
 
@@ -6842,7 +6842,7 @@ snapshots:
       '@lassi-js/kilimukku': 1.1.7(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0))
       ennikkai: 2.3.0(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))
       lodash: 4.17.21
-      nuchabal: 3.2.5(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))
+      nuchabal: 3.2.7(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))
       uuid: 9.0.1
       vue: 3.4.27(typescript@5.4.5)
     transitivePeerDependencies:
@@ -8797,7 +8797,7 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001629
-      electron-to-chromium: 1.4.794
+      electron-to-chromium: 1.4.795
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.0)
 
@@ -9171,7 +9171,7 @@ snapshots:
     dependencies:
       jake: 10.9.1
 
-  electron-to-chromium@1.4.794: {}
+  electron-to-chromium@1.4.795: {}
 
   emoji-regex@8.0.0: {}
 
@@ -10977,7 +10977,7 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nuchabal@3.2.5(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0))):
+  nuchabal@3.2.7(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0))):
     dependencies:
       '@constl/ipa': 1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0))
       '@lassi-js/kili': 0.3.14(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))
