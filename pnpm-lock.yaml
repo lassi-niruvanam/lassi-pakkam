@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@lassi-js/kilimukku-vue':
         specifier: ^1.1.4
-        version: 1.1.5(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0))(vue@3.4.27(typescript@5.4.5))
+        version: 1.1.6(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0))(vue@3.4.27(typescript@5.4.5))
       '@mdi/font':
         specifier: 7.4.47
         version: 7.4.47
@@ -1195,8 +1195,8 @@ packages:
     peerDependencies:
       '@constl/ipa': ^1.0.14
 
-  '@lassi-js/kilimukku-vue@1.1.5':
-    resolution: {integrity: sha512-qZT4ds4ABed7ul9blBCjE8H6Bh+FDvJ3uF//ViJEbWzRYuw59kgv1N1GuL08HH/oCPJ9mA2l0dTyslyLtYKf2g==}
+  '@lassi-js/kilimukku-vue@1.1.6':
+    resolution: {integrity: sha512-bu0AZRTZs2N/AC4NV2AmZIKlK4GWYcH0GjpEwZ8adAEfLPjPWmhviOfDG2jBSFUdyq6ucCOE9XsmAvGLhY9fZw==}
     peerDependencies:
       vue: ^3.4.19
 
@@ -2572,8 +2572,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.4.792:
-    resolution: {integrity: sha512-rkg5/N3L+Y844JyfgPUyuKK0Hk0efo3JNxUDKvz3HgP6EmN4rNGhr2D8boLsfTV/hGo7ZGAL8djw+jlg99zQyA==}
+  electron-to-chromium@1.4.794:
+    resolution: {integrity: sha512-6FApLtsYhDCY0Vglq3AptsdxQ+PJLc6AxlAM0HjEihUAiOPPbkASEsq9gtxUeZY9o0sJIEa3WnF0vVH4VT4iug==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -6835,7 +6835,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@lassi-js/kilimukku-vue@1.1.5(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0))(vue@3.4.27(typescript@5.4.5))':
+  '@lassi-js/kilimukku-vue@1.1.6(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0))(vue@3.4.27(typescript@5.4.5))':
     dependencies:
       '@chriscdn/promise-semaphore': 2.0.9
       '@lassi-js/kili': 0.3.14(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(encoding@0.1.13)(react@18.2.0)))
@@ -7129,7 +7129,7 @@ snapshots:
       '@multiformats/multiaddr': 12.3.0
       it-pushable: 3.2.3
       it-stream-types: 2.0.1
-      multiformats: 13.1.1
+      multiformats: 13.1.0
       progress-events: 1.0.0
       uint8arraylist: 2.4.8
 
@@ -8797,7 +8797,7 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001629
-      electron-to-chromium: 1.4.792
+      electron-to-chromium: 1.4.794
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.0)
 
@@ -9171,7 +9171,7 @@ snapshots:
     dependencies:
       jake: 10.9.1
 
-  electron-to-chromium@1.4.792: {}
+  electron-to-chromium@1.4.794: {}
 
   emoji-regex@8.0.0: {}
 
@@ -10120,7 +10120,7 @@ snapshots:
 
   it-filter@3.1.0:
     dependencies:
-      it-peekable: 3.0.4
+      it-peekable: 3.0.5
 
   it-filter@3.1.1:
     dependencies:
@@ -11257,7 +11257,7 @@ snapshots:
     dependencies:
       uint8-varint: 2.0.4
       uint8arraylist: 2.4.8
-      uint8arrays: 5.1.0
+      uint8arrays: 5.0.3
 
   proxy-addr@2.0.7:
     dependencies:
@@ -11893,7 +11893,7 @@ snapshots:
 
   uint8arraylist@2.4.8:
     dependencies:
-      uint8arrays: 5.1.0
+      uint8arrays: 5.0.3
 
   uint8arrays@3.1.1:
     dependencies:
