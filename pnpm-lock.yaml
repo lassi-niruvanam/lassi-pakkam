@@ -71,7 +71,7 @@ importers:
         version: 3.0.5
       '@types/node':
         specifier: ^20.12.11
-        version: 20.14.3
+        version: 20.14.4
       '@types/uuid':
         specifier: ^9.0.8
         version: 9.0.8
@@ -80,7 +80,7 @@ importers:
         version: 1.6.38
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
-        version: 5.0.5(vite@5.3.1(@types/node@20.14.3)(sass@1.77.6)(terser@5.31.1))(vue@3.4.29(typescript@5.4.5))
+        version: 5.0.5(vite@5.3.1(@types/node@20.14.4)(sass@1.77.6)(terser@5.31.1))(vue@3.4.29(typescript@5.4.5))
       '@vue/eslint-config-typescript':
         specifier: ^13.0.0
         version: 13.0.0(eslint-plugin-vue@9.26.0(eslint@9.5.0))(eslint@9.5.0)(typescript@5.4.5)
@@ -98,10 +98,10 @@ importers:
         version: 5.4.5
       vite:
         specifier: ^5.2.11
-        version: 5.3.1(@types/node@20.14.3)(sass@1.77.6)(terser@5.31.1)
+        version: 5.3.1(@types/node@20.14.4)(sass@1.77.6)(terser@5.31.1)
       vite-plugin-vuetify:
         specifier: ^2.0.3
-        version: 2.0.3(vite@5.3.1(@types/node@20.14.3)(sass@1.77.6)(terser@5.31.1))(vue@3.4.29(typescript@5.4.5))(vuetify@3.6.9)
+        version: 2.0.3(vite@5.3.1(@types/node@20.14.4)(sass@1.77.6)(terser@5.31.1))(vue@3.4.29(typescript@5.4.5))(vuetify@3.6.9)
       vue-tsc:
         specifier: ^2.0.16
         version: 2.0.21(typescript@5.4.5)
@@ -1776,9 +1776,6 @@ packages:
   '@types/node@18.19.36':
     resolution: {integrity: sha512-tX1BNmYSWEvViftB26VLNxT6mEr37M7+ldUtq7rlKnv4/2fKYsJIOmqJAjT6h1DNuwQjIKgw3VJ/Dtw3yiTIQw==}
 
-  '@types/node@20.14.3':
-    resolution: {integrity: sha512-Nuzqa6WAxeGnve6SXqiPAM9rA++VQs+iLZ1DDd56y0gdvygSZlQvZuvdFPR3yLqkVxPu4WrO02iDEyH1g+wazw==}
-
   '@types/node@20.14.4':
     resolution: {integrity: sha512-1ChboN+57suCT2t/f8lwtPY/k3qTpuD/qnqQuYoBg6OQOcPyaw7PiZVdGpaZYAvhDDtqrt0oAaM8+oSu1xsUGw==}
 
@@ -2564,8 +2561,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.4.803:
-    resolution: {integrity: sha512-61H9mLzGOCLLVsnLiRzCbc63uldP0AniRYPV3hbGVtONA1pI7qSGILdbofR7A8TMbOypDocEAjH/e+9k1QIe3g==}
+  electron-to-chromium@1.4.804:
+    resolution: {integrity: sha512-gXMMs2m7aUTdZpORQAvMCyH0JHywSpZxjblSc/C81aDr34jh0hmpplTFcM4AYrYALVmiVT/r63oA3tEG1BPVRw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -8261,7 +8258,7 @@ snapshots:
 
   '@types/dns-packet@5.6.5':
     dependencies:
-      '@types/node': 20.14.3
+      '@types/node': 20.14.4
 
   '@types/dompurify@3.0.5':
     dependencies:
@@ -8290,7 +8287,7 @@ snapshots:
   '@types/multicast-dns@7.2.4':
     dependencies:
       '@types/dns-packet': 5.6.5
-      '@types/node': 20.14.3
+      '@types/node': 20.14.4
 
   '@types/murmurhash3js-revisited@3.0.3': {}
 
@@ -8299,10 +8296,6 @@ snapshots:
       '@types/node': 20.14.4
 
   '@types/node@18.19.36':
-    dependencies:
-      undici-types: 5.26.5
-
-  '@types/node@20.14.3':
     dependencies:
       undici-types: 5.26.5
 
@@ -8330,7 +8323,7 @@ snapshots:
 
   '@types/ws@8.5.10':
     dependencies:
-      '@types/node': 20.14.3
+      '@types/node': 20.14.4
 
   '@types/yargs-parser@21.0.3': {}
 
@@ -8430,9 +8423,9 @@ snapshots:
 
   '@vascosantos/moving-average@1.1.0': {}
 
-  '@vitejs/plugin-vue@5.0.5(vite@5.3.1(@types/node@20.14.3)(sass@1.77.6)(terser@5.31.1))(vue@3.4.29(typescript@5.4.5))':
+  '@vitejs/plugin-vue@5.0.5(vite@5.3.1(@types/node@20.14.4)(sass@1.77.6)(terser@5.31.1))(vue@3.4.29(typescript@5.4.5))':
     dependencies:
-      vite: 5.3.1(@types/node@20.14.3)(sass@1.77.6)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.4)(sass@1.77.6)(terser@5.31.1)
       vue: 3.4.29(typescript@5.4.5)
 
   '@volar/language-core@2.3.0-alpha.15':
@@ -8810,7 +8803,7 @@ snapshots:
   browserslist@4.23.1:
     dependencies:
       caniuse-lite: 1.0.30001636
-      electron-to-chromium: 1.4.803
+      electron-to-chromium: 1.4.804
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.1)
 
@@ -9184,7 +9177,7 @@ snapshots:
     dependencies:
       jake: 10.9.1
 
-  electron-to-chromium@1.4.803: {}
+  electron-to-chromium@1.4.804: {}
 
   emoji-regex@8.0.0: {}
 
@@ -11263,7 +11256,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.14.3
+      '@types/node': 20.14.4
       long: 5.2.3
 
   protons-runtime@5.4.0:
@@ -11977,24 +11970,24 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-vuetify@2.0.3(vite@5.3.1(@types/node@20.14.3)(sass@1.77.6)(terser@5.31.1))(vue@3.4.29(typescript@5.4.5))(vuetify@3.6.9):
+  vite-plugin-vuetify@2.0.3(vite@5.3.1(@types/node@20.14.4)(sass@1.77.6)(terser@5.31.1))(vue@3.4.29(typescript@5.4.5))(vuetify@3.6.9):
     dependencies:
       '@vuetify/loader-shared': 2.0.3(vue@3.4.29(typescript@5.4.5))(vuetify@3.6.9(typescript@5.4.5)(vite-plugin-vuetify@2.0.3)(vue@3.4.29(typescript@5.4.5)))
       debug: 4.3.4
       upath: 2.0.1
-      vite: 5.3.1(@types/node@20.14.3)(sass@1.77.6)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.4)(sass@1.77.6)(terser@5.31.1)
       vue: 3.4.29(typescript@5.4.5)
       vuetify: 3.6.9(typescript@5.4.5)(vite-plugin-vuetify@2.0.3)(vue@3.4.29(typescript@5.4.5))
     transitivePeerDependencies:
       - supports-color
 
-  vite@5.3.1(@types/node@20.14.3)(sass@1.77.6)(terser@5.31.1):
+  vite@5.3.1(@types/node@20.14.4)(sass@1.77.6)(terser@5.31.1):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.38
       rollup: 4.18.0
     optionalDependencies:
-      '@types/node': 20.14.3
+      '@types/node': 20.14.4
       fsevents: 2.3.3
       sass: 1.77.6
       terser: 5.31.1
@@ -12048,7 +12041,7 @@ snapshots:
       vue: 3.4.29(typescript@5.4.5)
     optionalDependencies:
       typescript: 5.4.5
-      vite-plugin-vuetify: 2.0.3(vite@5.3.1(@types/node@20.14.3)(sass@1.77.6)(terser@5.31.1))(vue@3.4.29(typescript@5.4.5))(vuetify@3.6.9)
+      vite-plugin-vuetify: 2.0.3(vite@5.3.1(@types/node@20.14.4)(sass@1.77.6)(terser@5.31.1))(vue@3.4.29(typescript@5.4.5))(vuetify@3.6.9)
 
   walker@1.0.8:
     dependencies:
