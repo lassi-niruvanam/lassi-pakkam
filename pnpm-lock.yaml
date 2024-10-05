@@ -3331,8 +3331,8 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  iso-constants@https://codeload.github.com/inverted-capital/iso-constants/tar.gz/2af6fdfb2cacaa03ebd58543703918783e62649f:
-    resolution: {tarball: https://codeload.github.com/inverted-capital/iso-constants/tar.gz/2af6fdfb2cacaa03ebd58543703918783e62649f}
+  iso-constants@git+https://git@github.com:inverted-capital/iso-constants.git#2af6fdfb2cacaa03ebd58543703918783e62649f:
+    resolution: {commit: 2af6fdfb2cacaa03ebd58543703918783e62649f, repo: git@github.com:inverted-capital/iso-constants.git, type: git}
     version: 0.1.2
     engines: {node: '>=10'}
 
@@ -3759,10 +3759,6 @@ packages:
     resolution: {integrity: sha512-1UsH5FzJd9quUsD1qY+zUG4JY3jo3YEMxbMYH9jT6NK3j4iORhlwTK8fYTfAUBhDKjgLfKjAh7aoazNE23oIRA==}
     engines: {node: '>=18'}
     hasBin: true
-
-  micromatch@4.0.5:
-    resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
-    engines: {node: '>=8.6'}
 
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
@@ -6346,7 +6342,7 @@ snapshots:
       geojson-validation: 1.0.2
       helia: 3.0.1(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(encoding@0.1.13)(react@18.2.0))
       indexed-db-stream: 1.0.0
-      iso-constants: https://codeload.github.com/inverted-capital/iso-constants/tar.gz/2af6fdfb2cacaa03ebd58543703918783e62649f
+      iso-constants: git+https://git@github.com:inverted-capital/iso-constants.git#2af6fdfb2cacaa03ebd58543703918783e62649f
       it-to-buffer: 4.0.7
       jszip: 3.10.1
       lodash: 4.17.21
@@ -6417,7 +6413,7 @@ snapshots:
       geojson-validation: 1.0.2
       helia: 3.0.1(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(encoding@0.1.13)(react@18.2.0))
       indexed-db-stream: 1.0.0
-      iso-constants: https://codeload.github.com/inverted-capital/iso-constants/tar.gz/2af6fdfb2cacaa03ebd58543703918783e62649f
+      iso-constants: git+https://git@github.com:inverted-capital/iso-constants.git#2af6fdfb2cacaa03ebd58543703918783e62649f
       it-to-buffer: 4.0.7
       jszip: 3.10.1
       lodash: 4.17.21
@@ -8601,7 +8597,7 @@ snapshots:
 
   '@vue/shared@3.5.10': {}
 
-  '@vuetify/loader-shared@2.0.3(vue@3.5.10(typescript@5.6.2))(vuetify@3.7.2)':
+  '@vuetify/loader-shared@2.0.3(vue@3.5.10(typescript@5.6.2))(vuetify@3.7.2(typescript@5.6.2)(vite-plugin-vuetify@2.0.4)(vue@3.5.10(typescript@5.6.2)))':
     dependencies:
       upath: 2.0.1
       vue: 3.5.10(typescript@5.6.2)
@@ -9558,7 +9554,7 @@ snapshots:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.5
+      micromatch: 4.0.8
 
   fast-json-stable-stringify@2.1.0: {}
 
@@ -10193,7 +10189,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  iso-constants@https://codeload.github.com/inverted-capital/iso-constants/tar.gz/2af6fdfb2cacaa03ebd58543703918783e62649f: {}
+  iso-constants@git+https://git@github.com:inverted-capital/iso-constants.git#2af6fdfb2cacaa03ebd58543703918783e62649f: {}
 
   isobject@3.0.1: {}
 
@@ -10846,11 +10842,6 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
-
-  micromatch@4.0.5:
-    dependencies:
-      braces: 3.0.3
-      picomatch: 2.3.1
 
   micromatch@4.0.8:
     dependencies:
@@ -12083,7 +12074,7 @@ snapshots:
 
   vite-plugin-vuetify@2.0.4(vite@5.4.8(@types/node@20.16.10)(sass@1.79.4)(terser@5.34.1))(vue@3.5.10(typescript@5.6.2))(vuetify@3.7.2):
     dependencies:
-      '@vuetify/loader-shared': 2.0.3(vue@3.5.10(typescript@5.6.2))(vuetify@3.7.2)
+      '@vuetify/loader-shared': 2.0.3(vue@3.5.10(typescript@5.6.2))(vuetify@3.7.2(typescript@5.6.2)(vite-plugin-vuetify@2.0.4)(vue@3.5.10(typescript@5.6.2)))
       debug: 4.3.6
       upath: 2.0.1
       vite: 5.4.8(@types/node@20.16.10)(sass@1.79.4)(terser@5.34.1)
