@@ -83,13 +83,13 @@ importers:
         version: 5.1.4(vite@5.4.8(@types/node@20.16.11)(sass@1.79.5)(terser@5.34.1))(vue@3.5.10(typescript@5.6.3))
       '@vue/eslint-config-typescript':
         specifier: ^14.0.0
-        version: 14.0.1(eslint-plugin-vue@9.28.0(eslint@9.12.0))(eslint@9.12.0)(typescript@5.6.3)
+        version: 14.0.1(eslint-plugin-vue@9.29.0(eslint@9.12.0))(eslint@9.12.0)(typescript@5.6.3)
       eslint:
         specifier: ^9.2.0
         version: 9.12.0
       eslint-plugin-vue:
         specifier: ^9.26.0
-        version: 9.28.0(eslint@9.12.0)
+        version: 9.29.0(eslint@9.12.0)
       sass:
         specifier: ^1.77.0
         version: 1.79.5
@@ -2323,8 +2323,8 @@ packages:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
 
-  caniuse-lite@1.0.30001667:
-    resolution: {integrity: sha512-7LTwJjcRkzKFmtqGsibMeuXmvFDfZq/nzIjnmgCGzKKRVzjD72selLDK1oPF/Oxzmt4fNcPvTDvGqSDG4tCALw==}
+  caniuse-lite@1.0.30001668:
+    resolution: {integrity: sha512-nWLrdxqCdblixUO+27JtGJJE/txpJlyUy5YN1u53wLZkP0emYCo5zgS6QYft7VUYR42LGgi/S5hdLZTrnyIddw==}
 
   catering@2.1.1:
     resolution: {integrity: sha512-K7Qy8O9p76sL3/3m7/zLKbRkyOlSZAgzEaLhyj2mXS8PsCud2Eo4hAb8aLtZqHh0QGqLcb9dlJSu6lHRVENm1w==}
@@ -2752,8 +2752,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-plugin-vue@9.28.0:
-    resolution: {integrity: sha512-ShrihdjIhOTxs+MfWun6oJWuk+g/LAhN+CiuOl/jjkG3l0F2AuK5NMTaWqyvBgkFtpYmyks6P4603mLmhNJW8g==}
+  eslint-plugin-vue@9.29.0:
+    resolution: {integrity: sha512-hamyjrBhNH6Li6R1h1VF9KHfshJlKgKEg3ARbGTn72CMNDSMhWbgC7NdkRDEh25AFW+4SDATzyNM+3gWuZii8g==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -2934,8 +2934,8 @@ packages:
   flow-enums-runtime@0.0.6:
     resolution: {integrity: sha512-3PYnM29RFXwvAN6Pc/scUfkI7RwhQ/xqyLUyPNlXUp9S40zI8nup9tUSrTLSVnWGBN38FNiGWbwZOB6uR4OGdw==}
 
-  flow-parser@0.247.1:
-    resolution: {integrity: sha512-DHwcm06fWbn2Z6uFD3NaBZ5lMOoABIQ4asrVA80IWvYjjT5WdbghkUOL1wIcbLcagnFTdCZYOlSNnKNp/xnRZQ==}
+  flow-parser@0.248.0:
+    resolution: {integrity: sha512-IJVGA/PgRFNvTWBxqG7PKO0ZjX7wdTEz9yk3Xb8nPuCNdcqVphaK1cGhb1CS56Rniu2RPtOA5L0smNoQHRjM+w==}
     engines: {node: '>=0.4.0'}
 
   follow-redirects@1.15.6:
@@ -8646,12 +8646,12 @@ snapshots:
 
   '@vue/devtools-api@6.6.4': {}
 
-  '@vue/eslint-config-typescript@14.0.1(eslint-plugin-vue@9.28.0(eslint@9.12.0))(eslint@9.12.0)(typescript@5.6.3)':
+  '@vue/eslint-config-typescript@14.0.1(eslint-plugin-vue@9.29.0(eslint@9.12.0))(eslint@9.12.0)(typescript@5.6.3)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 8.8.1(@typescript-eslint/parser@8.8.1(eslint@9.12.0)(typescript@5.6.3))(eslint@9.12.0)(typescript@5.6.3)
       '@typescript-eslint/parser': 8.8.1(eslint@9.12.0)(typescript@5.6.3)
       eslint: 9.12.0
-      eslint-plugin-vue: 9.28.0(eslint@9.12.0)
+      eslint-plugin-vue: 9.29.0(eslint@9.12.0)
       typescript-eslint: 8.8.1(eslint@9.12.0)(typescript@5.6.3)
       vue-eslint-parser: 9.4.3(eslint@9.12.0)
     optionalDependencies:
@@ -8974,7 +8974,7 @@ snapshots:
 
   browserslist@4.24.0:
     dependencies:
-      caniuse-lite: 1.0.30001667
+      caniuse-lite: 1.0.30001668
       electron-to-chromium: 1.5.36
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.0)
@@ -9027,7 +9027,7 @@ snapshots:
 
   camelcase@6.3.0: {}
 
-  caniuse-lite@1.0.30001667: {}
+  caniuse-lite@1.0.30001668: {}
 
   catering@2.1.1: {}
 
@@ -9465,7 +9465,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-plugin-vue@9.28.0(eslint@9.12.0):
+  eslint-plugin-vue@9.29.0(eslint@9.12.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.12.0)
       eslint: 9.12.0
@@ -9736,7 +9736,7 @@ snapshots:
 
   flow-enums-runtime@0.0.6: {}
 
-  flow-parser@0.247.1: {}
+  flow-parser@0.248.0: {}
 
   follow-redirects@1.15.6: {}
 
@@ -10541,7 +10541,7 @@ snapshots:
       '@babel/register': 7.25.7(@babel/core@7.25.8)
       babel-core: 7.0.0-bridge.0(@babel/core@7.25.8)
       chalk: 4.1.2
-      flow-parser: 0.247.1
+      flow-parser: 0.248.0
       graceful-fs: 4.2.11
       micromatch: 4.0.8
       neo-async: 2.6.2
