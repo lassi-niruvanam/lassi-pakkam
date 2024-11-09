@@ -39,8 +39,8 @@ importers:
         specifier: ^2.0.10
         version: 2.0.10(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.26.0)(@babel/preset-env@7.24.5(@babel/core@7.26.0))(encoding@0.1.13)(react@18.2.0))
       marked:
-        specifier: ^14.0.0
-        version: 14.1.4
+        specifier: ^15.0.0
+        version: 15.0.0
       nuchabal:
         specifier: ^3.2.4
         version: 3.2.7(@constl/ipa@1.0.12(encoding@0.1.13)(react-native@0.74.1(@babel/core@7.26.0)(@babel/preset-env@7.24.5(@babel/core@7.26.0))(encoding@0.1.13)(react@18.2.0)))
@@ -4036,8 +4036,8 @@ packages:
   makeerror@1.0.12:
     resolution: {integrity: sha512-JmqCvUhmt43madlpFzG4BQzG2Z3m6tvQDNKdClZnO3VbIudJYmxsT0FNJMeiB2+JTSlTQTSbU8QdesVmwJcmLg==}
 
-  marked@14.1.4:
-    resolution: {integrity: sha512-vkVZ8ONmUdPnjCKc5uTRvmkRbx4EAi2OkTOXmfTDhZz3OFqMNBM1oTTWwTr4HY4uAEojhzPf+Fy8F1DWa3Sndg==}
+  marked@15.0.0:
+    resolution: {integrity: sha512-0mouKmBROJv/WSHJBPZZyYofUgawMChnD5je/g+aOBXsHDjb/IsnTQj7mnhQZu+qPJmRQ0ecX3mLGEUm3BgwYA==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -11997,7 +11997,7 @@ snapshots:
     dependencies:
       tmpl: 1.0.5
 
-  marked@14.1.4: {}
+  marked@15.0.0: {}
 
   marky@1.2.5: {}
 
