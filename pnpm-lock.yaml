@@ -40,7 +40,7 @@ importers:
         version: 2.0.10(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(react@18.3.1))
       marked:
         specifier: ^15.0.0
-        version: 15.0.4
+        version: 15.0.5
       nuchabal:
         specifier: ^3.2.4
         version: 3.2.7(@constl/ipa@1.4.6(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(react@18.3.1)))
@@ -3456,8 +3456,8 @@ packages:
   makeerror@1.0.12:
     resolution: {integrity: sha512-JmqCvUhmt43madlpFzG4BQzG2Z3m6tvQDNKdClZnO3VbIudJYmxsT0FNJMeiB2+JTSlTQTSbU8QdesVmwJcmLg==}
 
-  marked@15.0.4:
-    resolution: {integrity: sha512-TCHvDqmb3ZJ4PWG7VEGVgtefA5/euFmsIhxtD0XsBxI39gUSKL81mIRFdt0AiNQozUahd4ke98ZdirExd/vSEw==}
+  marked@15.0.5:
+    resolution: {integrity: sha512-xN+kSuqHjxWg+Q47yhhZMUP+kO1qHobvXkkm6FX+7N6lDvanLDd8H7AQ0jWDDyq+fDt/cSrJaBGyWYHXy0KQWA==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -9471,7 +9471,7 @@ snapshots:
     dependencies:
       tmpl: 1.0.5
 
-  marked@15.0.4: {}
+  marked@15.0.5: {}
 
   marky@1.2.5: {}
 
