@@ -25,7 +25,7 @@ importers:
         version: 3.40.0
       dompurify:
         specifier: ^3.1.2
-        version: 3.2.3
+        version: 3.2.4
       events:
         specifier: ^3.3.0
         version: 3.3.0
@@ -2446,8 +2446,8 @@ packages:
     resolution: {integrity: sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw==}
     engines: {node: '>=6'}
 
-  dompurify@3.2.3:
-    resolution: {integrity: sha512-U1U5Hzc2MO0oW3DF+G9qYN0aT7atAou4AgI0XjWz061nyBPbdxkfdhfy5uMgGn6+oLFCfn44ZGbdDqCzVmlOWA==}
+  dompurify@3.2.4:
+    resolution: {integrity: sha512-ysFSFEDVduQpyhzAob/kkuJjf5zWkZD8/A9ywSp1byueyuCfHamrCBa14/Oc2iiB0e51B+NpxSl5gmzn+Ms/mg==}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -7334,7 +7334,7 @@ snapshots:
 
   '@types/dompurify@3.2.0':
     dependencies:
-      dompurify: 3.2.3
+      dompurify: 3.2.4
 
   '@types/estree@1.0.6': {}
 
@@ -8229,7 +8229,7 @@ snapshots:
     dependencies:
       '@leichtgewicht/ip-codec': 2.0.5
 
-  dompurify@3.2.3:
+  dompurify@3.2.4:
     optionalDependencies:
       '@types/trusted-types': 2.0.7
 
