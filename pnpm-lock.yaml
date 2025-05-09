@@ -48,8 +48,8 @@ importers:
         specifier: ^0.10.0
         version: 0.10.0
       serve-static:
-        specifier: ^1.15.0
-        version: 1.16.2
+        specifier: ^2.0.0
+        version: 2.2.0
       uuid:
         specifier: ^11.0.0
         version: 11.1.0
