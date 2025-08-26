@@ -80,7 +80,7 @@ importers:
         version: 1.6.38
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.1(vite@7.1.3(@types/node@22.17.1)(sass@1.90.0)(terser@5.43.1))(vue@3.5.19(typescript@5.9.2))
+        version: 6.0.1(vite@7.1.3(@types/node@22.17.1)(sass@1.91.0)(terser@5.43.1))(vue@3.5.19(typescript@5.9.2))
       '@vue/eslint-config-typescript':
         specifier: ^14.0.0
         version: 14.6.0(eslint-plugin-vue@10.4.0(@typescript-eslint/parser@8.35.1(eslint@9.34.0)(typescript@5.9.2))(eslint@9.34.0)(vue-eslint-parser@10.2.0(eslint@9.34.0)))(eslint@9.34.0)(typescript@5.9.2)
@@ -92,16 +92,16 @@ importers:
         version: 10.4.0(@typescript-eslint/parser@8.35.1(eslint@9.34.0)(typescript@5.9.2))(eslint@9.34.0)(vue-eslint-parser@10.2.0(eslint@9.34.0))
       sass:
         specifier: ^1.77.0
-        version: 1.90.0
+        version: 1.91.0
       typescript:
         specifier: 5.9.2
         version: 5.9.2
       vite:
         specifier: ^7.0.0
-        version: 7.1.3(@types/node@22.17.1)(sass@1.90.0)(terser@5.43.1)
+        version: 7.1.3(@types/node@22.17.1)(sass@1.91.0)(terser@5.43.1)
       vite-plugin-vuetify:
         specifier: ^2.0.3
-        version: 2.1.2(vite@7.1.3(@types/node@22.17.1)(sass@1.90.0)(terser@5.43.1))(vue@3.5.19(typescript@5.9.2))(vuetify@3.9.5)
+        version: 2.1.2(vite@7.1.3(@types/node@22.17.1)(sass@1.91.0)(terser@5.43.1))(vue@3.5.19(typescript@5.9.2))(vuetify@3.9.5)
       vue-tsc:
         specifier: ^3.0.0
         version: 3.0.6(typescript@5.9.2)
@@ -1954,8 +1954,8 @@ packages:
   '@types/node@22.17.1':
     resolution: {integrity: sha512-y3tBaz+rjspDTylNjAX37jEC3TETEFGNJL6uQDxwF9/8GLLIjW1rvVHlynyuUKMnMr1Roq8jOv3vkopBjC4/VA==}
 
-  '@types/node@22.17.2':
-    resolution: {integrity: sha512-gL6z5N9Jm9mhY+U2KXZpteb+09zyffliRkZyZOHODGATyC5B1Jt/7TzuuiLkFsSUMLbS1OLmlj/E+/3KF4Q/4w==}
+  '@types/node@22.18.0':
+    resolution: {integrity: sha512-m5ObIqwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD0QMXhxjqMHMENlj+SqF5QxoUwaQNFe+8kz8XM8ZQhqkQPTgMQ==}
 
   '@types/retry@0.12.2':
     resolution: {integrity: sha512-XISRgDJ2Tc5q4TRqvgJtzsRkFYNJzZrhTdtMoGVBttwzzQJkPnS3WWTFc7kuDRoPtPakl+T+OfdEUjYJj7Jbow==}
@@ -2709,8 +2709,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.5.208:
-    resolution: {integrity: sha512-ozZyibehoe7tOhNaf16lKmljVf+3npZcJIEbJRVftVsmAg5TeA1mGS9dVCZzOwr2xT7xK15V0p7+GZqSPgkuPg==}
+  electron-to-chromium@1.5.209:
+    resolution: {integrity: sha512-Xoz0uMrim9ZETCQt8UgM5FxQF9+imA7PBpokoGcZloA1uw2LeHzTlip5cb5KOAsXZLjh/moN2vReN3ZjJmjI9A==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -4596,8 +4596,8 @@ packages:
   sanitize-filename@1.6.3:
     resolution: {integrity: sha512-y/52Mcy7aw3gRm7IrcGDFx/bCk4AhRh2eI9luHOQM86nZsqwiRkkq2GekHXBBD+SmPidc8i2PqtYZl+pWJ8Oeg==}
 
-  sass@1.90.0:
-    resolution: {integrity: sha512-9GUyuksjw70uNpb1MTYWsH9MQHOHY6kwfnkafC24+7aOMZn9+rVMBxRbLvw756mrBFbIsFg6Xw9IkR2Fnn3k+Q==}
+  sass@1.91.0:
+    resolution: {integrity: sha512-aFOZHGf+ur+bp1bCHZ+u8otKGh77ZtmFyXDo4tlYvT7PWql41Kwd8wdkPqhhT+h2879IVblcHFglIMofsFd1EA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -6922,14 +6922,14 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
       jest-mock: 29.7.0
 
   '@jest/fake-timers@29.7.0':
     dependencies:
       '@jest/types': 29.6.3
       '@sinonjs/fake-timers': 10.3.0
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
       jest-message-util: 29.7.0
       jest-mock: 29.7.0
       jest-util: 29.7.0
@@ -6963,7 +6963,7 @@ snapshots:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
       '@types/yargs': 17.0.33
       chalk: 4.1.2
 
@@ -8578,7 +8578,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
 
   '@types/istanbul-lib-coverage@2.0.6': {}
 
@@ -8607,13 +8607,13 @@ snapshots:
 
   '@types/node-forge@1.3.14':
     dependencies:
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
 
   '@types/node@22.17.1':
     dependencies:
       undici-types: 6.21.0
 
-  '@types/node@22.17.2':
+  '@types/node@22.18.0':
     dependencies:
       undici-types: 6.21.0
 
@@ -8744,10 +8744,10 @@ snapshots:
       '@typescript-eslint/types': 8.35.1
       eslint-visitor-keys: 4.2.1
 
-  '@vitejs/plugin-vue@6.0.1(vite@7.1.3(@types/node@22.17.1)(sass@1.90.0)(terser@5.43.1))(vue@3.5.19(typescript@5.9.2))':
+  '@vitejs/plugin-vue@6.0.1(vite@7.1.3(@types/node@22.17.1)(sass@1.91.0)(terser@5.43.1))(vue@3.5.19(typescript@5.9.2))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.29
-      vite: 7.1.3(@types/node@22.17.1)(sass@1.90.0)(terser@5.43.1)
+      vite: 7.1.3(@types/node@22.17.1)(sass@1.91.0)(terser@5.43.1)
       vue: 3.5.19(typescript@5.9.2)
 
   '@volar/language-core@2.4.23':
@@ -9193,7 +9193,7 @@ snapshots:
   browserslist@4.25.3:
     dependencies:
       caniuse-lite: 1.0.30001737
-      electron-to-chromium: 1.5.208
+      electron-to-chromium: 1.5.209
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.3)
 
@@ -9275,7 +9275,7 @@ snapshots:
 
   chrome-launcher@0.15.2:
     dependencies:
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
       escape-string-regexp: 4.0.0
       is-wsl: 2.2.0
       lighthouse-logger: 1.4.2
@@ -9284,7 +9284,7 @@ snapshots:
 
   chromium-edge-launcher@0.2.0:
     dependencies:
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
       escape-string-regexp: 4.0.0
       is-wsl: 2.2.0
       lighthouse-logger: 1.4.2
@@ -9550,7 +9550,7 @@ snapshots:
     dependencies:
       jake: 10.9.2
 
-  electron-to-chromium@1.5.208: {}
+  electron-to-chromium@1.5.209: {}
 
   emoji-regex@8.0.0: {}
 
@@ -10721,7 +10721,7 @@ snapshots:
       '@jest/environment': 29.7.0
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
       jest-mock: 29.7.0
       jest-util: 29.7.0
 
@@ -10731,7 +10731,7 @@ snapshots:
     dependencies:
       '@jest/types': 29.6.3
       '@types/graceful-fs': 4.1.9
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -10758,7 +10758,7 @@ snapshots:
   jest-mock@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
       jest-util: 29.7.0
 
   jest-regex-util@29.6.3: {}
@@ -10766,7 +10766,7 @@ snapshots:
   jest-util@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -10783,7 +10783,7 @@ snapshots:
 
   jest-worker@29.7.0:
     dependencies:
-      '@types/node': 22.17.2
+      '@types/node': 22.18.0
       jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
@@ -11919,7 +11919,7 @@ snapshots:
     dependencies:
       truncate-utf8-bytes: 1.0.2
 
-  sass@1.90.0:
+  sass@1.91.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.3
@@ -12302,18 +12302,18 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-vuetify@2.1.2(vite@7.1.3(@types/node@22.17.1)(sass@1.90.0)(terser@5.43.1))(vue@3.5.19(typescript@5.9.2))(vuetify@3.9.5):
+  vite-plugin-vuetify@2.1.2(vite@7.1.3(@types/node@22.17.1)(sass@1.91.0)(terser@5.43.1))(vue@3.5.19(typescript@5.9.2))(vuetify@3.9.5):
     dependencies:
       '@vuetify/loader-shared': 2.1.1(vue@3.5.19(typescript@5.9.2))(vuetify@3.9.5)
       debug: 4.4.1
       upath: 2.0.1
-      vite: 7.1.3(@types/node@22.17.1)(sass@1.90.0)(terser@5.43.1)
+      vite: 7.1.3(@types/node@22.17.1)(sass@1.91.0)(terser@5.43.1)
       vue: 3.5.19(typescript@5.9.2)
       vuetify: 3.9.5(typescript@5.9.2)(vite-plugin-vuetify@2.1.2)(vue@3.5.19(typescript@5.9.2))
     transitivePeerDependencies:
       - supports-color
 
-  vite@7.1.3(@types/node@22.17.1)(sass@1.90.0)(terser@5.43.1):
+  vite@7.1.3(@types/node@22.17.1)(sass@1.91.0)(terser@5.43.1):
     dependencies:
       esbuild: 0.25.9
       fdir: 6.5.0(picomatch@4.0.3)
@@ -12324,7 +12324,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.17.1
       fsevents: 2.3.3
-      sass: 1.90.0
+      sass: 1.91.0
       terser: 5.43.1
 
   vlq@1.0.1: {}
@@ -12369,7 +12369,7 @@ snapshots:
       vue: 3.5.19(typescript@5.9.2)
     optionalDependencies:
       typescript: 5.9.2
-      vite-plugin-vuetify: 2.1.2(vite@7.1.3(@types/node@22.17.1)(sass@1.90.0)(terser@5.43.1))(vue@3.5.19(typescript@5.9.2))(vuetify@3.9.5)
+      vite-plugin-vuetify: 2.1.2(vite@7.1.3(@types/node@22.17.1)(sass@1.91.0)(terser@5.43.1))(vue@3.5.19(typescript@5.9.2))(vuetify@3.9.5)
 
   walker@1.0.8:
     dependencies:
