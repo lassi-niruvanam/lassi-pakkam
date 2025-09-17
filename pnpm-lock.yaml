@@ -71,7 +71,7 @@ importers:
         version: 3.2.0
       '@types/node':
         specifier: ^22.0.0
-        version: 22.18.4
+        version: 22.18.5
       '@types/uuid':
         specifier: ^10.0.0
         version: 10.0.0
@@ -80,7 +80,7 @@ importers:
         version: 1.6.38
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.1(vite@7.1.5(@types/node@22.18.4)(sass@1.92.1)(terser@5.44.0))(vue@3.5.21(typescript@5.9.2))
+        version: 6.0.1(vite@7.1.5(@types/node@22.18.5)(sass@1.92.1)(terser@5.44.0))(vue@3.5.21(typescript@5.9.2))
       '@vue/eslint-config-typescript':
         specifier: ^14.0.0
         version: 14.6.0(eslint-plugin-vue@10.4.0(@typescript-eslint/parser@8.35.1(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0)(vue-eslint-parser@10.2.0(eslint@9.35.0)))(eslint@9.35.0)(typescript@5.9.2)
@@ -98,10 +98,10 @@ importers:
         version: 5.9.2
       vite:
         specifier: ^7.0.0
-        version: 7.1.5(@types/node@22.18.4)(sass@1.92.1)(terser@5.44.0)
+        version: 7.1.5(@types/node@22.18.5)(sass@1.92.1)(terser@5.44.0)
       vite-plugin-vuetify:
         specifier: ^2.0.3
-        version: 2.1.2(vite@7.1.5(@types/node@22.18.4)(sass@1.92.1)(terser@5.44.0))(vue@3.5.21(typescript@5.9.2))(vuetify@3.10.1)
+        version: 2.1.2(vite@7.1.5(@types/node@22.18.5)(sass@1.92.1)(terser@5.44.0))(vue@3.5.21(typescript@5.9.2))(vuetify@3.10.1)
       vue-tsc:
         specifier: ^3.0.0
         version: 3.0.7(typescript@5.9.2)
@@ -1966,8 +1966,8 @@ packages:
   '@types/node-forge@1.3.14':
     resolution: {integrity: sha512-mhVF2BnD4BO+jtOp7z1CdzaK4mbuK0LLQYAvdOLqHTavxFNq4zA1EmYkpnFjP8HOUzedfQkRnp0E2ulSAYSzAw==}
 
-  '@types/node@22.18.4':
-    resolution: {integrity: sha512-UJdblFqXymSBhmZf96BnbisoFIr8ooiiBRMolQgg77Ea+VM37jXw76C2LQr9n8wm9+i/OvlUlW6xSvqwzwqznw==}
+  '@types/node@22.18.5':
+    resolution: {integrity: sha512-g9BpPfJvxYBXUWI9bV37j6d6LTMNQ88hPwdWWUeYZnMhlo66FIg9gCc1/DZb15QylJSKwOZjwrckvOTWpOiChg==}
 
   '@types/retry@0.12.2':
     resolution: {integrity: sha512-XISRgDJ2Tc5q4TRqvgJtzsRkFYNJzZrhTdtMoGVBttwzzQJkPnS3WWTFc7kuDRoPtPakl+T+OfdEUjYJj7Jbow==}
@@ -2735,8 +2735,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.5.218:
-    resolution: {integrity: sha512-uwwdN0TUHs8u6iRgN8vKeWZMRll4gBkz+QMqdS7DDe49uiK68/UX92lFb61oiFPrpYZNeZIqa4bA7O6Aiasnzg==}
+  electron-to-chromium@1.5.219:
+    resolution: {integrity: sha512-JqaXfxHOS0WvKweEnrPHWRm8cnPVbdB7vXCQHPPFoAJFM3xig5/+/H08ZVkvJf4unvj8yncKy6MerOPj1NW1GQ==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3005,8 +3005,8 @@ packages:
   flow-enums-runtime@0.0.6:
     resolution: {integrity: sha512-3PYnM29RFXwvAN6Pc/scUfkI7RwhQ/xqyLUyPNlXUp9S40zI8nup9tUSrTLSVnWGBN38FNiGWbwZOB6uR4OGdw==}
 
-  flow-parser@0.281.0:
-    resolution: {integrity: sha512-T97TugUp9nRqpkTTHhdOQWGKCpt5Ym49Cn6HVLJib6kn47jv3KZAXtyFWnQm51E+VFigUIcH7EyRFQKUeTWwYQ==}
+  flow-parser@0.282.0:
+    resolution: {integrity: sha512-rFveu+DQNZ8Jt/Vp8/tiTEULCF6jB4WJMEXwBHsFgZwu41Qn5iHaLBaqO05lx+ny3whVpwnHMqMFBKs76P8FbA==}
     engines: {node: '>=0.4.0'}
 
   follow-redirects@1.15.9:
@@ -6954,14 +6954,14 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       jest-mock: 29.7.0
 
   '@jest/fake-timers@29.7.0':
     dependencies:
       '@jest/types': 29.6.3
       '@sinonjs/fake-timers': 10.3.0
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       jest-message-util: 29.7.0
       jest-mock: 29.7.0
       jest-util: 29.7.0
@@ -6995,7 +6995,7 @@ snapshots:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       '@types/yargs': 17.0.33
       chalk: 4.1.2
 
@@ -8608,7 +8608,7 @@ snapshots:
 
   '@types/dns-packet@5.6.5':
     dependencies:
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
 
   '@types/dompurify@3.2.0':
     dependencies:
@@ -8618,7 +8618,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
 
   '@types/istanbul-lib-coverage@2.0.6': {}
 
@@ -8641,15 +8641,15 @@ snapshots:
   '@types/multicast-dns@7.2.4':
     dependencies:
       '@types/dns-packet': 5.6.5
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
 
   '@types/murmurhash3js-revisited@3.0.3': {}
 
   '@types/node-forge@1.3.14':
     dependencies:
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
 
-  '@types/node@22.18.4':
+  '@types/node@22.18.5':
     dependencies:
       undici-types: 6.21.0
 
@@ -8676,11 +8676,11 @@ snapshots:
 
   '@types/ws@8.18.0':
     dependencies:
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
 
   '@types/ws@8.5.13':
     dependencies:
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
 
   '@types/yargs-parser@21.0.3': {}
 
@@ -8780,10 +8780,10 @@ snapshots:
       '@typescript-eslint/types': 8.35.1
       eslint-visitor-keys: 4.2.1
 
-  '@vitejs/plugin-vue@6.0.1(vite@7.1.5(@types/node@22.18.4)(sass@1.92.1)(terser@5.44.0))(vue@3.5.21(typescript@5.9.2))':
+  '@vitejs/plugin-vue@6.0.1(vite@7.1.5(@types/node@22.18.5)(sass@1.92.1)(terser@5.44.0))(vue@3.5.21(typescript@5.9.2))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.29
-      vite: 7.1.5(@types/node@22.18.4)(sass@1.92.1)(terser@5.44.0)
+      vite: 7.1.5(@types/node@22.18.5)(sass@1.92.1)(terser@5.44.0)
       vue: 3.5.21(typescript@5.9.2)
 
   '@volar/language-core@2.4.23':
@@ -9232,7 +9232,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.8.4
       caniuse-lite: 1.0.30001743
-      electron-to-chromium: 1.5.218
+      electron-to-chromium: 1.5.219
       node-releases: 2.0.21
       update-browserslist-db: 1.1.3(browserslist@4.26.2)
 
@@ -9314,7 +9314,7 @@ snapshots:
 
   chrome-launcher@0.15.2:
     dependencies:
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       escape-string-regexp: 4.0.0
       is-wsl: 2.2.0
       lighthouse-logger: 1.4.2
@@ -9323,7 +9323,7 @@ snapshots:
 
   chromium-edge-launcher@0.2.0:
     dependencies:
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       escape-string-regexp: 4.0.0
       is-wsl: 2.2.0
       lighthouse-logger: 1.4.2
@@ -9593,7 +9593,7 @@ snapshots:
     dependencies:
       jake: 10.9.2
 
-  electron-to-chromium@1.5.218: {}
+  electron-to-chromium@1.5.219: {}
 
   emoji-regex@8.0.0: {}
 
@@ -9956,7 +9956,7 @@ snapshots:
 
   flow-enums-runtime@0.0.6: {}
 
-  flow-parser@0.281.0: {}
+  flow-parser@0.282.0: {}
 
   follow-redirects@1.15.9(debug@4.4.1):
     optionalDependencies:
@@ -10764,7 +10764,7 @@ snapshots:
       '@jest/environment': 29.7.0
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       jest-mock: 29.7.0
       jest-util: 29.7.0
 
@@ -10774,7 +10774,7 @@ snapshots:
     dependencies:
       '@jest/types': 29.6.3
       '@types/graceful-fs': 4.1.9
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -10801,7 +10801,7 @@ snapshots:
   jest-mock@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       jest-util: 29.7.0
 
   jest-regex-util@29.6.3: {}
@@ -10809,7 +10809,7 @@ snapshots:
   jest-util@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -10826,7 +10826,7 @@ snapshots:
 
   jest-worker@29.7.0:
     dependencies:
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
@@ -10860,7 +10860,7 @@ snapshots:
       '@babel/register': 7.28.3(@babel/core@7.28.4)
       babel-core: 7.0.0-bridge.0(@babel/core@7.28.4)
       chalk: 4.1.2
-      flow-parser: 0.281.0
+      flow-parser: 0.282.0
       graceful-fs: 4.2.11
       micromatch: 4.0.8
       neo-async: 2.6.2
@@ -12346,18 +12346,18 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-vuetify@2.1.2(vite@7.1.5(@types/node@22.18.4)(sass@1.92.1)(terser@5.44.0))(vue@3.5.21(typescript@5.9.2))(vuetify@3.10.1):
+  vite-plugin-vuetify@2.1.2(vite@7.1.5(@types/node@22.18.5)(sass@1.92.1)(terser@5.44.0))(vue@3.5.21(typescript@5.9.2))(vuetify@3.10.1):
     dependencies:
       '@vuetify/loader-shared': 2.1.1(vue@3.5.21(typescript@5.9.2))(vuetify@3.10.1)
       debug: 4.4.1
       upath: 2.0.1
-      vite: 7.1.5(@types/node@22.18.4)(sass@1.92.1)(terser@5.44.0)
+      vite: 7.1.5(@types/node@22.18.5)(sass@1.92.1)(terser@5.44.0)
       vue: 3.5.21(typescript@5.9.2)
       vuetify: 3.10.1(typescript@5.9.2)(vite-plugin-vuetify@2.1.2)(vue@3.5.21(typescript@5.9.2))
     transitivePeerDependencies:
       - supports-color
 
-  vite@7.1.5(@types/node@22.18.4)(sass@1.92.1)(terser@5.44.0):
+  vite@7.1.5(@types/node@22.18.5)(sass@1.92.1)(terser@5.44.0):
     dependencies:
       esbuild: 0.25.9
       fdir: 6.5.0(picomatch@4.0.3)
@@ -12366,7 +12366,7 @@ snapshots:
       rollup: 4.50.1
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.18.4
+      '@types/node': 22.18.5
       fsevents: 2.3.3
       sass: 1.92.1
       terser: 5.44.0
@@ -12413,7 +12413,7 @@ snapshots:
       vue: 3.5.21(typescript@5.9.2)
     optionalDependencies:
       typescript: 5.9.2
-      vite-plugin-vuetify: 2.1.2(vite@7.1.5(@types/node@22.18.4)(sass@1.92.1)(terser@5.44.0))(vue@3.5.21(typescript@5.9.2))(vuetify@3.10.1)
+      vite-plugin-vuetify: 2.1.2(vite@7.1.5(@types/node@22.18.5)(sass@1.92.1)(terser@5.44.0))(vue@3.5.21(typescript@5.9.2))(vuetify@3.10.1)
 
   walker@1.0.8:
     dependencies:
