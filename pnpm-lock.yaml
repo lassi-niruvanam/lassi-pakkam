@@ -61,7 +61,7 @@ importers:
         version: 4.6.4(vue@3.5.25(typescript@5.9.3))
       vuetify:
         specifier: ^3.6.4
-        version: 3.11.3(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.25(typescript@5.9.3))
+        version: 3.11.4(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.25(typescript@5.9.3))
       webfontloader:
         specifier: ^1.6.28
         version: 1.6.28
@@ -101,7 +101,7 @@ importers:
         version: 7.3.0(@types/node@24.10.4)(sass@1.97.0)(terser@5.44.1)
       vite-plugin-vuetify:
         specifier: ^2.0.3
-        version: 2.1.2(vite@7.3.0(@types/node@24.10.4)(sass@1.97.0)(terser@5.44.1))(vue@3.5.25(typescript@5.9.3))(vuetify@3.11.3)
+        version: 2.1.2(vite@7.3.0(@types/node@24.10.4)(sass@1.97.0)(terser@5.44.1))(vue@3.5.25(typescript@5.9.3))(vuetify@3.11.4)
       vue-tsc:
         specifier: ^3.0.0
         version: 3.1.8(typescript@5.9.3)
@@ -2320,8 +2320,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  baseline-browser-mapping@2.9.7:
-    resolution: {integrity: sha512-k9xFKplee6KIio3IDbwj+uaCLpqzOwakOgmqzPezM0sFJlFKcg30vk2wOiAJtkTSfx0SSQDSe8q+mWA/fSH5Zg==}
+  baseline-browser-mapping@2.9.8:
+    resolution: {integrity: sha512-Y1fOuNDowLfgKOypdc9SPABfoWXuZHBOyCS4cD52IeZBhr4Md6CLLs6atcxVrzRmQ06E7hSlm5bHHApPKR/byA==}
     hasBin: true
 
   bintrees@1.0.2:
@@ -5105,8 +5105,8 @@ packages:
       typescript:
         optional: true
 
-  vuetify@3.11.3:
-    resolution: {integrity: sha512-sZe/2f143cbqtJupkynOGOHxgn+YjRrXIj0atZlBECbOr4nZPCmSdukPSbudb0wU3fQpUjlaTGx0m4vIBPQqGQ==}
+  vuetify@3.11.4:
+    resolution: {integrity: sha512-614MKpopMzNjkQVD5CS/xr77p4CqtF2wNqQByAi7oTEcKzA+gOsy5O3l97ZIqomNidOSGXyVg5s6t5bNO9p4+Q==}
     peerDependencies:
       typescript: '>=4.7'
       vite-plugin-vuetify: '>=2.1.0'
@@ -5231,7 +5231,7 @@ packages:
         optional: true
 
   xlsx@https://cdn.sheetjs.com/xlsx-0.19.1/xlsx-0.19.1.tgz:
-    resolution: {integrity: sha512-pPh/ybd1bChlhCrtQ9QmRUx2yjQwMbS4tfvV9MSA2Qmm7vRUHQtPDMlLjAvQ2A4v8G92i2RlrNkSOKb1bwY7ww==, tarball: https://cdn.sheetjs.com/xlsx-0.19.1/xlsx-0.19.1.tgz}
+    resolution: {tarball: https://cdn.sheetjs.com/xlsx-0.19.1/xlsx-0.19.1.tgz}
     version: 0.19.1
     engines: {node: '>=0.8'}
     hasBin: true
@@ -8884,11 +8884,11 @@ snapshots:
 
   '@vue/shared@3.5.25': {}
 
-  '@vuetify/loader-shared@2.1.1(vue@3.5.25(typescript@5.9.3))(vuetify@3.11.3)':
+  '@vuetify/loader-shared@2.1.1(vue@3.5.25(typescript@5.9.3))(vuetify@3.11.4)':
     dependencies:
       upath: 2.0.1
       vue: 3.5.25(typescript@5.9.3)
-      vuetify: 3.11.3(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.25(typescript@5.9.3))
+      vuetify: 3.11.4(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.25(typescript@5.9.3))
 
   abort-controller@3.0.0:
     dependencies:
@@ -9137,7 +9137,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  baseline-browser-mapping@2.9.7: {}
+  baseline-browser-mapping@2.9.8: {}
 
   bintrees@1.0.2: {}
 
@@ -9229,7 +9229,7 @@ snapshots:
 
   browserslist@4.28.1:
     dependencies:
-      baseline-browser-mapping: 2.9.7
+      baseline-browser-mapping: 2.9.8
       caniuse-lite: 1.0.30001760
       electron-to-chromium: 1.5.267
       node-releases: 2.0.27
@@ -12395,14 +12395,14 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-vuetify@2.1.2(vite@7.3.0(@types/node@24.10.4)(sass@1.97.0)(terser@5.44.1))(vue@3.5.25(typescript@5.9.3))(vuetify@3.11.3):
+  vite-plugin-vuetify@2.1.2(vite@7.3.0(@types/node@24.10.4)(sass@1.97.0)(terser@5.44.1))(vue@3.5.25(typescript@5.9.3))(vuetify@3.11.4):
     dependencies:
-      '@vuetify/loader-shared': 2.1.1(vue@3.5.25(typescript@5.9.3))(vuetify@3.11.3)
+      '@vuetify/loader-shared': 2.1.1(vue@3.5.25(typescript@5.9.3))(vuetify@3.11.4)
       debug: 4.4.1
       upath: 2.0.1
       vite: 7.3.0(@types/node@24.10.4)(sass@1.97.0)(terser@5.44.1)
       vue: 3.5.25(typescript@5.9.3)
-      vuetify: 3.11.3(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.25(typescript@5.9.3))
+      vuetify: 3.11.4(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.25(typescript@5.9.3))
     transitivePeerDependencies:
       - supports-color
 
@@ -12457,12 +12457,12 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  vuetify@3.11.3(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.25(typescript@5.9.3)):
+  vuetify@3.11.4(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.25(typescript@5.9.3)):
     dependencies:
       vue: 3.5.25(typescript@5.9.3)
     optionalDependencies:
       typescript: 5.9.3
-      vite-plugin-vuetify: 2.1.2(vite@7.3.0(@types/node@24.10.4)(sass@1.97.0)(terser@5.44.1))(vue@3.5.25(typescript@5.9.3))(vuetify@3.11.3)
+      vite-plugin-vuetify: 2.1.2(vite@7.3.0(@types/node@24.10.4)(sass@1.97.0)(terser@5.44.1))(vue@3.5.25(typescript@5.9.3))(vuetify@3.11.4)
 
   walker@1.0.8:
     dependencies:
