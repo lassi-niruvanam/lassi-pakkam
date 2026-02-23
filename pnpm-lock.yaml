@@ -61,7 +61,7 @@ importers:
         version: 4.6.4(vue@3.5.28(typescript@5.9.3))
       vuetify:
         specifier: ^3.6.4
-        version: 3.12.0(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.28(typescript@5.9.3))
+        version: 3.12.1(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.28(typescript@5.9.3))
       webfontloader:
         specifier: ^1.6.28
         version: 1.6.28
@@ -101,7 +101,7 @@ importers:
         version: 7.3.1(@types/node@24.10.13)(sass@1.97.3)(terser@5.46.0)
       vite-plugin-vuetify:
         specifier: ^2.0.3
-        version: 2.1.3(vite@7.3.1(@types/node@24.10.13)(sass@1.97.3)(terser@5.46.0))(vue@3.5.28(typescript@5.9.3))(vuetify@3.12.0)
+        version: 2.1.3(vite@7.3.1(@types/node@24.10.13)(sass@1.97.3)(terser@5.46.0))(vue@3.5.28(typescript@5.9.3))(vuetify@3.12.1)
       vue-tsc:
         specifier: ^3.0.0
         version: 3.2.5(typescript@5.9.3)
@@ -2452,8 +2452,8 @@ packages:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
 
-  caniuse-lite@1.0.30001770:
-    resolution: {integrity: sha512-x/2CLQ1jHENRbHg5PSId2sXq1CIO1CISvwWAj027ltMVG2UNgW+w9oH2+HzgEIRFembL8bUlXtfbBHR1fCg2xw==}
+  caniuse-lite@1.0.30001774:
+    resolution: {integrity: sha512-DDdwPGz99nmIEv216hKSgLD+D4ikHQHjBC/seF98N9CPqRX4M5mSxT9eTV6oyisnJcuzxtZy4n17yKKQYmYQOA==}
 
   catering@2.1.1:
     resolution: {integrity: sha512-K7Qy8O9p76sL3/3m7/zLKbRkyOlSZAgzEaLhyj2mXS8PsCud2Eo4hAb8aLtZqHh0QGqLcb9dlJSu6lHRVENm1w==}
@@ -3946,6 +3946,9 @@ packages:
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
 
+  minimatch@3.1.3:
+    resolution: {integrity: sha512-M2GCs7Vk83NxkUyQV1bkABc4yxgz9kILhHImZiBPAZ9ybuvCb0/H7lEl5XvIg3g+9d4eNotkZA5IWwYl0tibaA==}
+
   minimatch@5.1.6:
     resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
     engines: {node: '>=10'}
@@ -5082,8 +5085,8 @@ packages:
       typescript:
         optional: true
 
-  vuetify@3.12.0:
-    resolution: {integrity: sha512-N1y3sxLAyrblBHJ6vFTQoTM9icwZd/jNUsmYVQTvHNQHN22XDqb0w2+ujaSoEn/JCHbtGb70tKRlB9SJ6HhVgg==}
+  vuetify@3.12.1:
+    resolution: {integrity: sha512-JDHDzs1e195YJ9L3X4nWQySGSMyTxr0BefIY4+l/CpAgTd9pPV5F6oZzI8ZLuikMxS4HhfSGHteOAe6u/zh4vQ==}
     peerDependencies:
       typescript: '>=4.7'
       vite-plugin-vuetify: '>=2.1.0'
@@ -8847,11 +8850,11 @@ snapshots:
 
   '@vue/shared@3.5.28': {}
 
-  '@vuetify/loader-shared@2.1.2(vue@3.5.28(typescript@5.9.3))(vuetify@3.12.0)':
+  '@vuetify/loader-shared@2.1.2(vue@3.5.28(typescript@5.9.3))(vuetify@3.12.1)':
     dependencies:
       upath: 2.0.1
       vue: 3.5.28(typescript@5.9.3)
-      vuetify: 3.12.0(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.28(typescript@5.9.3))
+      vuetify: 3.12.1(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.28(typescript@5.9.3))
 
   abort-controller@3.0.0:
     dependencies:
@@ -9197,7 +9200,7 @@ snapshots:
   browserslist@4.28.1:
     dependencies:
       baseline-browser-mapping: 2.10.0
-      caniuse-lite: 1.0.30001770
+      caniuse-lite: 1.0.30001774
       electron-to-chromium: 1.5.302
       node-releases: 2.0.27
       update-browserslist-db: 1.2.3(browserslist@4.28.1)
@@ -9260,7 +9263,7 @@ snapshots:
 
   camelcase@6.3.0: {}
 
-  caniuse-lite@1.0.30001770: {}
+  caniuse-lite@1.0.30001774: {}
 
   catering@2.1.1: {}
 
@@ -10030,7 +10033,7 @@ snapshots:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.1.2
+      minimatch: 3.1.3
       once: 1.4.0
       path-is-absolute: 1.0.1
 
@@ -11227,6 +11230,10 @@ snapshots:
     dependencies:
       brace-expansion: 1.1.12
 
+  minimatch@3.1.3:
+    dependencies:
+      brace-expansion: 1.1.12
+
   minimatch@5.1.6:
     dependencies:
       brace-expansion: 2.0.2
@@ -11334,7 +11341,7 @@ snapshots:
 
   node-dir@0.1.17:
     dependencies:
-      minimatch: 3.1.2
+      minimatch: 3.1.3
 
   node-domexception@2.0.1: {}
 
@@ -12197,7 +12204,7 @@ snapshots:
     dependencies:
       '@istanbuljs/schema': 0.1.3
       glob: 7.2.3
-      minimatch: 3.1.2
+      minimatch: 3.1.3
 
   throat@5.0.0: {}
 
@@ -12332,14 +12339,14 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-vuetify@2.1.3(vite@7.3.1(@types/node@24.10.13)(sass@1.97.3)(terser@5.46.0))(vue@3.5.28(typescript@5.9.3))(vuetify@3.12.0):
+  vite-plugin-vuetify@2.1.3(vite@7.3.1(@types/node@24.10.13)(sass@1.97.3)(terser@5.46.0))(vue@3.5.28(typescript@5.9.3))(vuetify@3.12.1):
     dependencies:
-      '@vuetify/loader-shared': 2.1.2(vue@3.5.28(typescript@5.9.3))(vuetify@3.12.0)
+      '@vuetify/loader-shared': 2.1.2(vue@3.5.28(typescript@5.9.3))(vuetify@3.12.1)
       debug: 4.4.3
       upath: 2.0.1
       vite: 7.3.1(@types/node@24.10.13)(sass@1.97.3)(terser@5.46.0)
       vue: 3.5.28(typescript@5.9.3)
-      vuetify: 3.12.0(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.28(typescript@5.9.3))
+      vuetify: 3.12.1(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.28(typescript@5.9.3))
     transitivePeerDependencies:
       - supports-color
 
@@ -12394,12 +12401,12 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  vuetify@3.12.0(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.28(typescript@5.9.3)):
+  vuetify@3.12.1(typescript@5.9.3)(vite-plugin-vuetify@2.1.3)(vue@3.5.28(typescript@5.9.3)):
     dependencies:
       vue: 3.5.28(typescript@5.9.3)
     optionalDependencies:
       typescript: 5.9.3
-      vite-plugin-vuetify: 2.1.3(vite@7.3.1(@types/node@24.10.13)(sass@1.97.3)(terser@5.46.0))(vue@3.5.28(typescript@5.9.3))(vuetify@3.12.0)
+      vite-plugin-vuetify: 2.1.3(vite@7.3.1(@types/node@24.10.13)(sass@1.97.3)(terser@5.46.0))(vue@3.5.28(typescript@5.9.3))(vuetify@3.12.1)
 
   walker@1.0.8:
     dependencies:
