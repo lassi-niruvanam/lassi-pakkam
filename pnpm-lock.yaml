@@ -61,7 +61,7 @@ importers:
         version: 4.6.4(vue@3.5.31(typescript@6.0.2))
       vuetify:
         specifier: ^3.6.4
-        version: 3.12.4(typescript@6.0.2)(vite-plugin-vuetify@2.1.3)(vue@3.5.31(typescript@6.0.2))
+        version: 3.12.5(typescript@6.0.2)(vite-plugin-vuetify@2.1.3)(vue@3.5.31(typescript@6.0.2))
       webfontloader:
         specifier: ^1.6.28
         version: 1.6.28
@@ -101,7 +101,7 @@ importers:
         version: 8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1)
       vite-plugin-vuetify:
         specifier: ^2.0.3
-        version: 2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.4)
+        version: 2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5)
       vue-tsc:
         specifier: ^3.0.0
         version: 3.2.6(typescript@6.0.2)
@@ -2710,8 +2710,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.5.330:
-    resolution: {integrity: sha512-jFNydB5kFtYUobh4IkWUnXeyDbjf/r9gcUEXe1xcrcUxIGfTdzPXA+ld6zBRbwvgIGVzDll/LTIiDztEtckSnA==}
+  electron-to-chromium@1.5.331:
+    resolution: {integrity: sha512-IbxXrsTlD3hRodkLnbxAPP4OuJYdWCeM3IOdT+CpcMoIwIoDfCmRpEtSPfwBXxVkg9xmBeY7Lz2Eo2TDn/HC3Q==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -4169,8 +4169,8 @@ packages:
   node-int64@0.4.0:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
 
-  node-releases@2.0.36:
-    resolution: {integrity: sha512-TdC8FSgHz8Mwtw9g5L4gR/Sh9XhSP/0DEkQxfEFXOpiul5IiHgHan2VhYYb6agDSfp4KuvltmGApc8HMgUrIkA==}
+  node-releases@2.0.37:
+    resolution: {integrity: sha512-1h5gKZCF+pO/o3Iqt5Jp7wc9rH3eJJ0+nh/CIoiRwjRxde/hAHyLPXYN4V3CqKAbiZPSeJFSWHmJsbkicta0Eg==}
 
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -5140,8 +5140,8 @@ packages:
       typescript:
         optional: true
 
-  vuetify@3.12.4:
-    resolution: {integrity: sha512-9pyvSdL4vGEioOSJKjoyRxyPc2HYYINWkwxE4ku8PuGGRhCoEchXL57EL1JabIy+D8lUsx+co/G+tUaksvpXrw==}
+  vuetify@3.12.5:
+    resolution: {integrity: sha512-Gk3eDIiBXpv+QjMTYmXXk/uvpqaSNAgprcV/Og0btBUx4saLN7AUmqUi34hRmBqu2tpype2GVvg2yxJUqP2mdg==}
     peerDependencies:
       typescript: '>=4.7'
       vite-plugin-vuetify: '>=2.1.0'
@@ -5266,7 +5266,7 @@ packages:
         optional: true
 
   xlsx@https://cdn.sheetjs.com/xlsx-0.19.1/xlsx-0.19.1.tgz:
-    resolution: {tarball: https://cdn.sheetjs.com/xlsx-0.19.1/xlsx-0.19.1.tgz}
+    resolution: {integrity: sha512-pPh/ybd1bChlhCrtQ9QmRUx2yjQwMbS4tfvV9MSA2Qmm7vRUHQtPDMlLjAvQ2A4v8G92i2RlrNkSOKb1bwY7ww==, tarball: https://cdn.sheetjs.com/xlsx-0.19.1/xlsx-0.19.1.tgz}
     version: 0.19.1
     engines: {node: '>=0.8'}
     hasBin: true
@@ -8912,11 +8912,11 @@ snapshots:
 
   '@vue/shared@3.5.31': {}
 
-  '@vuetify/loader-shared@2.1.2(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.4)':
+  '@vuetify/loader-shared@2.1.2(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5)':
     dependencies:
       upath: 2.0.1
       vue: 3.5.31(typescript@6.0.2)
-      vuetify: 3.12.4(typescript@6.0.2)(vite-plugin-vuetify@2.1.3)(vue@3.5.31(typescript@6.0.2))
+      vuetify: 3.12.5(typescript@6.0.2)(vite-plugin-vuetify@2.1.3)(vue@3.5.31(typescript@6.0.2))
 
   abort-controller@3.0.0:
     dependencies:
@@ -9263,8 +9263,8 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.10.13
       caniuse-lite: 1.0.30001784
-      electron-to-chromium: 1.5.330
-      node-releases: 2.0.36
+      electron-to-chromium: 1.5.331
+      node-releases: 2.0.37
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
 
   bs58@5.0.0:
@@ -9618,7 +9618,7 @@ snapshots:
     dependencies:
       jake: 10.9.2
 
-  electron-to-chromium@1.5.330: {}
+  electron-to-chromium@1.5.331: {}
 
   emoji-regex@8.0.0: {}
 
@@ -11470,7 +11470,7 @@ snapshots:
 
   node-int64@0.4.0: {}
 
-  node-releases@2.0.36: {}
+  node-releases@2.0.37: {}
 
   normalize-path@3.0.0: {}
 
@@ -12440,14 +12440,14 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-vuetify@2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.4):
+  vite-plugin-vuetify@2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5):
     dependencies:
-      '@vuetify/loader-shared': 2.1.2(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.4)
+      '@vuetify/loader-shared': 2.1.2(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5)
       debug: 4.4.3
       upath: 2.0.1
       vite: 8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1)
       vue: 3.5.31(typescript@6.0.2)
-      vuetify: 3.12.4(typescript@6.0.2)(vite-plugin-vuetify@2.1.3)(vue@3.5.31(typescript@6.0.2))
+      vuetify: 3.12.5(typescript@6.0.2)(vite-plugin-vuetify@2.1.3)(vue@3.5.31(typescript@6.0.2))
     transitivePeerDependencies:
       - supports-color
 
@@ -12505,12 +12505,12 @@ snapshots:
     optionalDependencies:
       typescript: 6.0.2
 
-  vuetify@3.12.4(typescript@6.0.2)(vite-plugin-vuetify@2.1.3)(vue@3.5.31(typescript@6.0.2)):
+  vuetify@3.12.5(typescript@6.0.2)(vite-plugin-vuetify@2.1.3)(vue@3.5.31(typescript@6.0.2)):
     dependencies:
       vue: 3.5.31(typescript@6.0.2)
     optionalDependencies:
       typescript: 6.0.2
-      vite-plugin-vuetify: 2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.4)
+      vite-plugin-vuetify: 2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5)
 
   walker@1.0.8:
     dependencies:
