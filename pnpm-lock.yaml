@@ -80,7 +80,7 @@ importers:
         version: 1.6.38
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.5(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))
+        version: 6.0.5(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.99.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))
       '@vue/eslint-config-typescript':
         specifier: ^14.0.0
         version: 14.7.0(eslint-plugin-vue@10.8.0(@typescript-eslint/parser@8.56.0(eslint@10.1.0)(typescript@6.0.2))(eslint@10.1.0)(vue-eslint-parser@10.4.0(eslint@10.1.0)))(eslint@10.1.0)(typescript@6.0.2)
@@ -92,16 +92,16 @@ importers:
         version: 10.8.0(@typescript-eslint/parser@8.56.0(eslint@10.1.0)(typescript@6.0.2))(eslint@10.1.0)(vue-eslint-parser@10.4.0(eslint@10.1.0))
       sass:
         specifier: ^1.77.0
-        version: 1.98.0
+        version: 1.99.0
       typescript:
         specifier: 6.0.2
         version: 6.0.2
       vite:
         specifier: ^8.0.0
-        version: 8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1)
+        version: 8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.99.0)(terser@5.46.1)
       vite-plugin-vuetify:
         specifier: ^2.0.3
-        version: 2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5)
+        version: 2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.99.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5)
       vue-tsc:
         specifier: ^3.0.0
         version: 3.2.6(typescript@6.0.2)
@@ -4650,8 +4650,8 @@ packages:
   sanitize-filename@1.6.3:
     resolution: {integrity: sha512-y/52Mcy7aw3gRm7IrcGDFx/bCk4AhRh2eI9luHOQM86nZsqwiRkkq2GekHXBBD+SmPidc8i2PqtYZl+pWJ8Oeg==}
 
-  sass@1.98.0:
-    resolution: {integrity: sha512-+4N/u9dZ4PrgzGgPlKnaaRQx64RO0JBKs9sDhQ2pLgN6JQZ25uPQZKQYaBJU48Kd5BxgXoJ4e09Dq7nMcOUW3A==}
+  sass@1.99.0:
+    resolution: {integrity: sha512-kgW13M54DUB7IsIRM5LvJkNlpH+WhMpooUcaWGFARkF1Tc82v9mIWkCbCYf+MBvpIUBSeSOTilpZjEPr2VYE6Q==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -8815,10 +8815,10 @@ snapshots:
       '@typescript-eslint/types': 8.56.0
       eslint-visitor-keys: 5.0.1
 
-  '@vitejs/plugin-vue@6.0.5(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))':
+  '@vitejs/plugin-vue@6.0.5(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.99.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-rc.2
-      vite: 8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1)
+      vite: 8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.99.0)(terser@5.46.1)
       vue: 3.5.31(typescript@6.0.2)
 
   '@volar/language-core@2.4.28':
@@ -12017,7 +12017,7 @@ snapshots:
     dependencies:
       truncate-utf8-bytes: 1.0.2
 
-  sass@1.98.0:
+  sass@1.99.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.5
@@ -12440,18 +12440,18 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-vuetify@2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5):
+  vite-plugin-vuetify@2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.99.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5):
     dependencies:
       '@vuetify/loader-shared': 2.1.2(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5)
       debug: 4.4.3
       upath: 2.0.1
-      vite: 8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1)
+      vite: 8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.99.0)(terser@5.46.1)
       vue: 3.5.31(typescript@6.0.2)
       vuetify: 3.12.5(typescript@6.0.2)(vite-plugin-vuetify@2.1.3)(vue@3.5.31(typescript@6.0.2))
     transitivePeerDependencies:
       - supports-color
 
-  vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1):
+  vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.99.0)(terser@5.46.1):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -12462,7 +12462,7 @@ snapshots:
       '@types/node': 24.12.0
       esbuild: 0.27.2
       fsevents: 2.3.3
-      sass: 1.98.0
+      sass: 1.99.0
       terser: 5.46.1
     transitivePeerDependencies:
       - '@emnapi/core'
@@ -12510,7 +12510,7 @@ snapshots:
       vue: 3.5.31(typescript@6.0.2)
     optionalDependencies:
       typescript: 6.0.2
-      vite-plugin-vuetify: 2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.98.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5)
+      vite-plugin-vuetify: 2.1.3(vite@8.0.3(@emnapi/core@1.9.0)(@emnapi/runtime@1.9.0)(@types/node@24.12.0)(esbuild@0.27.2)(sass@1.99.0)(terser@5.46.1))(vue@3.5.31(typescript@6.0.2))(vuetify@3.12.5)
 
   walker@1.0.8:
     dependencies:
