@@ -83,13 +83,13 @@ importers:
         version: 6.0.6(vite@8.0.9(@types/node@24.12.2)(esbuild@0.27.2)(sass@1.99.0)(terser@5.46.1))(vue@3.5.32(typescript@6.0.3))
       '@vue/eslint-config-typescript':
         specifier: ^14.0.0
-        version: 14.7.0(eslint-plugin-vue@10.8.0(@typescript-eslint/parser@8.56.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1)))(eslint@10.2.1)(typescript@6.0.3)
+        version: 14.7.0(eslint-plugin-vue@10.9.0(@typescript-eslint/parser@8.56.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1)))(eslint@10.2.1)(typescript@6.0.3)
       eslint:
         specifier: ^10.0.0
         version: 10.2.1
       eslint-plugin-vue:
         specifier: ^10.0.0
-        version: 10.8.0(@typescript-eslint/parser@8.56.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1))
+        version: 10.9.0(@typescript-eslint/parser@8.56.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1))
       sass:
         specifier: ^1.77.0
         version: 1.99.0
@@ -2714,8 +2714,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.5.341:
-    resolution: {integrity: sha512-1sZTssferjgDgaqRTc0ieP+ozzpOy7LQTPTtEW3yQFn4+ORdIAZWV5BthXPyHF7YqLvFJCUPhNhdAJQYlYUgiw==}
+  electron-to-chromium@1.5.343:
+    resolution: {integrity: sha512-YHnQ3MXI08icvL9ZKnEBy05F2EQ8ob01UaMOuMbM8l+4UcAq6MPPbBTJBbsBUg3H8JeZNt+O4fjsoWth3p6IFg==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -2797,8 +2797,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-plugin-vue@10.8.0:
-    resolution: {integrity: sha512-f1J/tcbnrpgC8suPN5AtdJ5MQjuXbSU9pGRSSYAuF3SHoiYCOdEX6O22pLaRyLHXvDcOe+O5ENgc1owQ587agA==}
+  eslint-plugin-vue@10.9.0:
+    resolution: {integrity: sha512-EFNNzu4HqtTRb5DJINpyd+u3bDdzETWDMpCzG+UBHz1tpsnMDCeOcf61u4Wy/cbXnMymK+MT9bjH7KcG1fItSw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       '@stylistic/eslint-plugin': ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
@@ -8877,11 +8877,11 @@ snapshots:
 
   '@vue/devtools-api@6.6.4': {}
 
-  '@vue/eslint-config-typescript@14.7.0(eslint-plugin-vue@10.8.0(@typescript-eslint/parser@8.56.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1)))(eslint@10.2.1)(typescript@6.0.3)':
+  '@vue/eslint-config-typescript@14.7.0(eslint-plugin-vue@10.9.0(@typescript-eslint/parser@8.56.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1)))(eslint@10.2.1)(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/utils': 8.56.0(eslint@10.2.1)(typescript@6.0.3)
       eslint: 10.2.1
-      eslint-plugin-vue: 10.8.0(@typescript-eslint/parser@8.56.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1))
+      eslint-plugin-vue: 10.9.0(@typescript-eslint/parser@8.56.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1))
       fast-glob: 3.3.3
       typescript-eslint: 8.56.0(eslint@10.2.1)(typescript@6.0.3)
       vue-eslint-parser: 10.4.0(eslint@10.2.1)
@@ -9275,7 +9275,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.10.20
       caniuse-lite: 1.0.30001788
-      electron-to-chromium: 1.5.341
+      electron-to-chromium: 1.5.343
       node-releases: 2.0.37
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
 
@@ -9630,7 +9630,7 @@ snapshots:
     dependencies:
       jake: 10.9.2
 
-  electron-to-chromium@1.5.341: {}
+  electron-to-chromium@1.5.343: {}
 
   emoji-regex@8.0.0: {}
 
@@ -9733,7 +9733,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-plugin-vue@10.8.0(@typescript-eslint/parser@8.56.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1)):
+  eslint-plugin-vue@10.9.0(@typescript-eslint/parser@8.56.0(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1)(vue-eslint-parser@10.4.0(eslint@10.2.1)):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.2.1)
       eslint: 10.2.1
