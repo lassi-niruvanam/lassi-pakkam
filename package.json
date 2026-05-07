@@ -30,7 +30,7 @@
     "uuid": "^11.0.0",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2",
-    "vuetify": "^3.6.4",
+    "vuetify": "^4.0.0",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
